@@ -20,29 +20,29 @@ H = 20                       # chip height
 CHIP_TOP_PAD = 1              # transparent rows above a chip, so its label lines up with 14px comment text
 PALETTES = {
     "dark": {
-        "fill": "#3d3d3d", "border": "#6e6e6e", "text": "#f4f4f4", "icon": "#dfdfdf", "divider": "#7d7d7d",
-        "sev": ["#ff6b6b", "#ff9a4d", "#f2cc4d"],          # action_required, remediation_recommended, informational
+        "fill": "#3d3d3d", "text": "#f4f4f4", "icon": "#dfdfdf", "divider": "#7d7d7d",
+        "sev": ["#ff4d4f", "#ff8a2a", "#ffd21f"],          # action_required, remediation_recommended, informational
         "tints": {
-            "bug": "#ff6b6b", "book-marked": "#6cb6ff", "paperclip": "#c3c3c3", "monitor": "#8fb4d9", "palette": "#ff9a4d",
-            "link": "#8fd3e8", "users": "#f5b83d", "scroll": "#d9b98a", "brain": "#f58fc4", "shield-plus": "#9db8ff",
-            "menu": "#4ec2a4", "sun-dim": "#f2cc4d", "diamond": "#a8a1fd", "bolt": "#ff9a4d", "move-up-right": "#6cb6ff",
-            "eye": "#8fd3e8", "clipboard-check": "#4ec2a4", "pen-tool": "#f58fc4", "triangle": "#d9b98a",
-            "square-check": "#6cb6ff", "square-dot": "#a8a1fd", "check": "#4ec2a4", "x": "#ff6b6b",
-            "circle-check": "#4ec2a4", "circle-x": "#ff6b6b", "triangle-alert": "#f2cc4d", "sparkles": "#f2cc4d",
-            "arrow-big-left": "#f5b83d", "rocket": "#ff6b6b", "scale": "#f5b83d", "file-text": "#6cb6ff",
+            "bug": "#ff4d4f", "book-marked": "#4da3ff", "paperclip": "#c3c3c3", "monitor": "#7ab8f5", "palette": "#ff8a2a",
+            "link": "#3fc8e4", "users": "#ffb020", "scroll": "#e6ae62", "brain": "#ff6fb5", "shield-plus": "#7c9dff",
+            "menu": "#2fd0a5", "sun-dim": "#ffd21f", "diamond": "#9b8cff", "bolt": "#ff8a2a", "move-up-right": "#4da3ff",
+            "eye": "#3fc8e4", "clipboard-check": "#2fd0a5", "pen-tool": "#ff6fb5", "triangle": "#e6ae62",
+            "square-check": "#4da3ff", "square-dot": "#9b8cff", "check": "#2fd0a5", "x": "#ff4d4f",
+            "circle-check": "#2fd0a5", "circle-x": "#ff4d4f", "triangle-alert": "#ffd21f", "sparkles": "#ffd21f",
+            "arrow-big-left": "#ffb020", "rocket": "#ff4d4f", "scale": "#ffb020", "file-text": "#4da3ff",
         },
     },
     "light": {
-        "fill": "#f4f4f4", "border": "#d0d0d0", "text": "#1c1c1c", "icon": "#3d3d3d", "divider": "#c3c3c3",
-        "sev": ["#cf222e", "#bc4c00", "#9a6700"],
+        "fill": "#f4f4f4", "text": "#1c1c1c", "icon": "#3d3d3d", "divider": "#c3c3c3",
+        "sev": ["#dc2626", "#d9480f", "#b7791f"],
         "tints": {
-            "bug": "#cf222e", "book-marked": "#0969da", "paperclip": "#57606a", "monitor": "#4a6785", "palette": "#bc4c00",
-            "link": "#1b7c83", "users": "#9a6700", "scroll": "#7d5a2c", "brain": "#bf3989", "shield-plus": "#4f5fd6",
-            "menu": "#1a7f64", "sun-dim": "#9a6700", "diamond": "#6e56cf", "bolt": "#bc4c00", "move-up-right": "#0969da",
-            "eye": "#1b7c83", "clipboard-check": "#1a7f64", "pen-tool": "#bf3989", "triangle": "#7d5a2c",
-            "square-check": "#0969da", "square-dot": "#6e56cf", "check": "#1a7f64", "x": "#cf222e",
-            "circle-check": "#1a7f64", "circle-x": "#cf222e", "triangle-alert": "#9a6700", "sparkles": "#9a6700",
-            "arrow-big-left": "#9a6700", "rocket": "#cf222e", "scale": "#9a6700", "file-text": "#0969da",
+            "bug": "#dc2626", "book-marked": "#0b6bdf", "paperclip": "#57606a", "monitor": "#3b6ea5", "palette": "#d9480f",
+            "link": "#0e8a92", "users": "#b7791f", "scroll": "#8a5a1c", "brain": "#d6247f", "shield-plus": "#4350e0",
+            "menu": "#0f8a66", "sun-dim": "#b7791f", "diamond": "#6741d9", "bolt": "#d9480f", "move-up-right": "#0b6bdf",
+            "eye": "#0e8a92", "clipboard-check": "#0f8a66", "pen-tool": "#d6247f", "triangle": "#8a5a1c",
+            "square-check": "#0b6bdf", "square-dot": "#6741d9", "check": "#0f8a66", "x": "#dc2626",
+            "circle-check": "#0f8a66", "circle-x": "#dc2626", "triangle-alert": "#b7791f", "sparkles": "#b7791f",
+            "arrow-big-left": "#b7791f", "rocket": "#dc2626", "scale": "#b7791f", "file-text": "#0b6bdf",
         },
     },
 }
@@ -60,11 +60,11 @@ def _paint(theme: str, style: str, icon: str | None) -> dict:
     if theme != "auto":
         pal = PALETTES[theme]
         tint = _tint(icon, style, pal) if icon else pal["icon"]
-        return {"frame": f'fill="{pal["fill"]}" stroke="{pal["border"]}"', "text": f'fill="{pal["text"]}"',
+        return {"frame": f'fill="{pal["fill"]}"', "text": f'fill="{pal["text"]}"',
                 "divider": f'fill="{pal["divider"]}"', "stroke": f'stroke="{tint}"', "solid": f'fill="{tint}"', "css": ""}
     def rules(pal):
         tint = _tint(icon, style, pal) if icon else pal["icon"]
-        return (f'.f{{fill:{pal["fill"]};stroke:{pal["border"]}}}.t{{fill:{pal["text"]}}}.d{{fill:{pal["divider"]}}}'
+        return (f'.f{{fill:{pal["fill"]}}}.t{{fill:{pal["text"]}}}.d{{fill:{pal["divider"]}}}'
                 f'.i{{stroke:{tint}}}.b{{fill:{tint}}}')
     css = f'<style>{rules(PALETTES["light"])}@media (prefers-color-scheme:dark){{{rules(PALETTES["dark"])}}}</style>'
     return {"frame": 'class="f"', "text": 'class="t"', "divider": 'class="d"', "stroke": 'class="i"', "solid": 'class="b"', "css": css}
@@ -154,7 +154,7 @@ def chip(icon: str | None, label: str | None, count: str | None = None, style: s
         body += f'<path d="{d}" {paint["text"]}/>'
         x += w
     width = round(x + pad)
-    frame = f'<rect x="0.5" y="0.5" width="{width - 1}" height="{H - 1}" rx="5.5" {paint["frame"]}/>'
+    frame = f'<rect width="{width}" height="{H}" rx="6" {paint["frame"]}/>'
     return paint["css"] + frame + body, width
 
 
