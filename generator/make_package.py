@@ -10,7 +10,7 @@ import json
 import shutil
 from pathlib import Path
 
-from chips import _svg, chip, pill
+from chips import CHIP_TOP_PAD, H, _svg, chip, pill
 
 ROOT = Path(__file__).parent.parent   # repository root
 OUT = ROOT
@@ -40,13 +40,13 @@ BRAND, GRAY, SCALE = "#634fd1", "#3d3d3d", ["#ce2c31", "#e36209", "#d4a72c"]
 manifest, seen = [], set()
 
 
-def save(path: str, body: str, width: float, **meta) -> None:
+def save(path: str, body: str, width: float, top_pad: int = 0, **meta) -> None:
     assert path not in seen, path
     seen.add(path)
     target = OUT / "v1" / f"{path}.svg"
     target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_text(_svg(width, body))
-    manifest.append({"file": f"v1/{path}.svg", "width": width, **meta})
+    target.write_text(_svg(width, body, top_pad))
+    manifest.append({"file": f"v1/{path}.svg", "width": width, "height": H + top_pad, **meta})
 
 
 def label_chip(family: str, key: str, icon: str | None, label: str, alt: str, alt_icon: str, variants=("", "icon"), count=None) -> None:
@@ -56,7 +56,7 @@ def label_chip(family: str, key: str, icon: str | None, label: str, alt: str, al
             body, w = chip(None if variant == "text" else icon, None if variant == "icon" else label, count, style, "auto")
             form = f"count-{count.replace('+', 'plus')}" if count else variant or "label"
             text = alt_icon if variant == "icon" else label if variant == "text" else alt
-            save(f"chip/{style}/{family}/{key}/{form}", body, w, family=family, key=key, form=form, style=style,
+            save(f"chip/{style}/{family}/{key}/{form}", body, w, CHIP_TOP_PAD, family=family, key=key, form=form, style=style,
                  alt=f"{text} ({count})" if count else text, **({"count": count} if count else {}))
 
 

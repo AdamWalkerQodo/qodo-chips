@@ -17,6 +17,7 @@ HERE = Path(__file__).parent
 ICONS = json.loads((HERE / "assets/icons.json").read_text())
 
 H = 20                       # chip height
+CHIP_TOP_PAD = 1              # transparent rows above a chip, so its label lines up with 14px comment text
 PALETTES = {
     "dark": {
         "fill": "#3d3d3d", "border": "#6e6e6e", "text": "#f4f4f4", "icon": "#dfdfdf", "divider": "#7d7d7d",
@@ -127,9 +128,11 @@ def _icon(icon: str | None, x: float, paint: dict) -> str:
     return lucide(icon, x, paint["stroke"])
 
 
-def _svg(width: float, body: str) -> str:
-    w = _num(width)
-    return f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{H}" viewBox="0 0 {w} {H}">{body}</svg>'
+def _svg(width: float, body: str, top_pad: int = 0) -> str:
+    w, h = _num(width), H + top_pad
+    if top_pad:
+        body = f'<g transform="translate(0 {top_pad})">{body}</g>'
+    return f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">{body}</svg>'
 
 
 def chip(icon: str | None, label: str | None, count: str | None = None, style: str = "mono", theme: str = "dark") -> tuple[str, float]:

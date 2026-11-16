@@ -3,12 +3,12 @@
 Image chips for Qodo's code review comments on GitHub, GitLab and Azure DevOps: finding type, category, severity, status, counters and group pills.
 
 <p>
-<img src="v1/chip/color/type/bugs/count-3.svg" height="20" align="top" alt="Bugs (3)">
-<img src="v1/chip/color/type/rule-violations/count-12.svg" height="20" align="top" alt="Rule violations (12)">
-<img src="v1/chip/color/severity/action-required/legacy/label.svg" height="20" align="top" alt="Action required">
-<img src="v1/chip/color/category/correctness/label.svg" height="20" align="top" alt="Correctness">
-<img src="v1/chip/color/status/resolved/label.svg" height="20" align="top" alt="Resolved">
-<img src="v1/chip/mono/type/bugs/label.svg" height="20" align="top" alt="Bug">
+<img src="v1/chip/color/type/bugs/count-3.svg" height="21" align="top" alt="Bugs (3)">
+<img src="v1/chip/color/type/rule-violations/count-12.svg" height="21" align="top" alt="Rule violations (12)">
+<img src="v1/chip/color/severity/action-required/legacy/label.svg" height="21" align="top" alt="Action required">
+<img src="v1/chip/color/category/correctness/label.svg" height="21" align="top" alt="Correctness">
+<img src="v1/chip/color/status/resolved/label.svg" height="21" align="top" alt="Resolved">
+<img src="v1/chip/mono/type/bugs/label.svg" height="21" align="top" alt="Bug">
 <img src="v1/pill/finding-type/bugs/brand-icon.svg" height="20" align="top" alt="Bugs">
 </p>
 
@@ -25,11 +25,11 @@ https://raw.githubusercontent.com/AdamWalkerQodo/qodo-chips/main/v1
 In a comment:
 
 ```html
-<img src="{base}/chip/color/type/bugs/label.svg" height="20" align="top" alt="🐞 Bug">
+<img src="{base}/chip/color/type/bugs/label.svg" height="21" align="top" alt="🐞 Bug">
 ```
 
-- `height="20"` keeps the chip at its drawn size.
-- `align="top"` centres it on the text line.
+- `height="21"` keeps a chip at its drawn size: 20px plus one transparent row on top, which lines its label up with 14px comment text. Group pills are 20px tall.
+- `align="top"` pins the image to the top of the text line.
 - `alt` should be the text chip it replaces, so the comment still reads correctly if the image fails to load.
 
 ## Light and dark
