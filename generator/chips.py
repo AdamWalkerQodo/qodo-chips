@@ -28,7 +28,7 @@ PALETTES = {
             "eye": "#8fd3e8", "clipboard-check": "#4ec2a4", "pen-tool": "#f58fc4", "triangle": "#d9b98a",
             "square-check": "#6cb6ff", "square-dot": "#a8a1fd", "check": "#4ec2a4", "x": "#ff6b6b",
             "circle-check": "#4ec2a4", "circle-x": "#ff6b6b", "triangle-alert": "#f2cc4d", "sparkles": "#f2cc4d",
-            "arrow-big-left": "#f5b83d", "rocket": "#ff6b6b", "scale": "#f5b83d",
+            "arrow-big-left": "#f5b83d", "rocket": "#ff6b6b", "scale": "#f5b83d", "file-text": "#6cb6ff",
         },
     },
     "light": {
@@ -41,7 +41,7 @@ PALETTES = {
             "eye": "#1b7c83", "clipboard-check": "#1a7f64", "pen-tool": "#bf3989", "triangle": "#7d5a2c",
             "square-check": "#0969da", "square-dot": "#6e56cf", "check": "#1a7f64", "x": "#cf222e",
             "circle-check": "#1a7f64", "circle-x": "#cf222e", "triangle-alert": "#9a6700", "sparkles": "#9a6700",
-            "arrow-big-left": "#9a6700", "rocket": "#cf222e", "scale": "#9a6700",
+            "arrow-big-left": "#9a6700", "rocket": "#cf222e", "scale": "#9a6700", "file-text": "#0969da",
         },
     },
 }

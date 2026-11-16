@@ -26,7 +26,8 @@ TYPES = [("bugs", "Bug", "Bugs", "bug", "🐞"), ("rule-violations", "Rule viola
 CATEGORIES = [("correctness", "Correctness", "menu", "≡"), ("reliability", "Reliability", "sun-dim", "☼"), ("security", "Security", "shield-plus", "⛨"),
               ("quality", "Quality", "diamond", "✧"), ("maintainability", "Maintainability", "bolt", "⚙"), ("performance", "Performance", "move-up-right", "➹"),
               ("observability", "Observability", "eye", "◔"), ("compliance", "Compliance", "clipboard-check", "§"), ("design", "Design", "pen-tool", "❖"),
-              ("architecture", "Architecture", "triangle", "⌂"), ("accessibility", "Accessibility", "square-check", "☑"), ("testability", "Testability", "square-dot", "▣")]
+              ("architecture", "Architecture", "triangle", "⌂"), ("accessibility", "Accessibility", "square-check", "☑"), ("testability", "Testability", "square-dot", "▣"),
+              ("documentation", "Documentation", "file-text", "¶"), ("other", "Other", "circle-ellipsis", "✨️")]
 LEVELS = [("action-required", "🔴"), ("remediation-recommended", "🟠"), ("informational", "🟡")]
 TERMS = {"legacy": ["Action required", "Review recommended", "Optional"], "high-medium-low": ["High", "Medium", "Low"],
          "critical-warning-informational": ["Critical", "Warning", "Informational"],

@@ -10472,6 +10472,958 @@
   "count": "20+"
  },
  {
+  "file": "v1/chip/mono/category/documentation/label.svg",
+  "width": 113,
+  "family": "category",
+  "key": "documentation",
+  "form": "label",
+  "style": "mono",
+  "alt": "¶ Documentation"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/label.svg",
+  "width": 113,
+  "family": "category",
+  "key": "documentation",
+  "form": "label",
+  "style": "color",
+  "alt": "¶ Documentation"
+ },
+ {
+  "file": "v1/chip/mono/category/documentation/icon.svg",
+  "width": 26,
+  "family": "category",
+  "key": "documentation",
+  "form": "icon",
+  "style": "mono",
+  "alt": "¶"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/icon.svg",
+  "width": 26,
+  "family": "category",
+  "key": "documentation",
+  "form": "icon",
+  "style": "color",
+  "alt": "¶"
+ },
+ {
+  "file": "v1/chip/mono/category/documentation/count-0.svg",
+  "width": 131,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-0",
+  "style": "mono",
+  "alt": "¶ Documentation (0)",
+  "count": "0"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/count-0.svg",
+  "width": 131,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-0",
+  "style": "color",
+  "alt": "¶ Documentation (0)",
+  "count": "0"
+ },
+ {
+  "file": "v1/chip/mono/category/documentation/count-1.svg",
+  "width": 128,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-1",
+  "style": "mono",
+  "alt": "¶ Documentation (1)",
+  "count": "1"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/count-1.svg",
+  "width": 128,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-1",
+  "style": "color",
+  "alt": "¶ Documentation (1)",
+  "count": "1"
+ },
+ {
+  "file": "v1/chip/mono/category/documentation/count-2.svg",
+  "width": 131,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-2",
+  "style": "mono",
+  "alt": "¶ Documentation (2)",
+  "count": "2"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/count-2.svg",
+  "width": 131,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-2",
+  "style": "color",
+  "alt": "¶ Documentation (2)",
+  "count": "2"
+ },
+ {
+  "file": "v1/chip/mono/category/documentation/count-3.svg",
+  "width": 131,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-3",
+  "style": "mono",
+  "alt": "¶ Documentation (3)",
+  "count": "3"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/count-3.svg",
+  "width": 131,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-3",
+  "style": "color",
+  "alt": "¶ Documentation (3)",
+  "count": "3"
+ },
+ {
+  "file": "v1/chip/mono/category/documentation/count-4.svg",
+  "width": 131,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-4",
+  "style": "mono",
+  "alt": "¶ Documentation (4)",
+  "count": "4"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/count-4.svg",
+  "width": 131,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-4",
+  "style": "color",
+  "alt": "¶ Documentation (4)",
+  "count": "4"
+ },
+ {
+  "file": "v1/chip/mono/category/documentation/count-5.svg",
+  "width": 131,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-5",
+  "style": "mono",
+  "alt": "¶ Documentation (5)",
+  "count": "5"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/count-5.svg",
+  "width": 131,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-5",
+  "style": "color",
+  "alt": "¶ Documentation (5)",
+  "count": "5"
+ },
+ {
+  "file": "v1/chip/mono/category/documentation/count-6.svg",
+  "width": 131,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-6",
+  "style": "mono",
+  "alt": "¶ Documentation (6)",
+  "count": "6"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/count-6.svg",
+  "width": 131,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-6",
+  "style": "color",
+  "alt": "¶ Documentation (6)",
+  "count": "6"
+ },
+ {
+  "file": "v1/chip/mono/category/documentation/count-7.svg",
+  "width": 130,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-7",
+  "style": "mono",
+  "alt": "¶ Documentation (7)",
+  "count": "7"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/count-7.svg",
+  "width": 130,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-7",
+  "style": "color",
+  "alt": "¶ Documentation (7)",
+  "count": "7"
+ },
+ {
+  "file": "v1/chip/mono/category/documentation/count-8.svg",
+  "width": 131,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-8",
+  "style": "mono",
+  "alt": "¶ Documentation (8)",
+  "count": "8"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/count-8.svg",
+  "width": 131,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-8",
+  "style": "color",
+  "alt": "¶ Documentation (8)",
+  "count": "8"
+ },
+ {
+  "file": "v1/chip/mono/category/documentation/count-9.svg",
+  "width": 131,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-9",
+  "style": "mono",
+  "alt": "¶ Documentation (9)",
+  "count": "9"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/count-9.svg",
+  "width": 131,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-9",
+  "style": "color",
+  "alt": "¶ Documentation (9)",
+  "count": "9"
+ },
+ {
+  "file": "v1/chip/mono/category/documentation/count-10.svg",
+  "width": 136,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-10",
+  "style": "mono",
+  "alt": "¶ Documentation (10)",
+  "count": "10"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/count-10.svg",
+  "width": 136,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-10",
+  "style": "color",
+  "alt": "¶ Documentation (10)",
+  "count": "10"
+ },
+ {
+  "file": "v1/chip/mono/category/documentation/count-11.svg",
+  "width": 133,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-11",
+  "style": "mono",
+  "alt": "¶ Documentation (11)",
+  "count": "11"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/count-11.svg",
+  "width": 133,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-11",
+  "style": "color",
+  "alt": "¶ Documentation (11)",
+  "count": "11"
+ },
+ {
+  "file": "v1/chip/mono/category/documentation/count-12.svg",
+  "width": 136,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-12",
+  "style": "mono",
+  "alt": "¶ Documentation (12)",
+  "count": "12"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/count-12.svg",
+  "width": 136,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-12",
+  "style": "color",
+  "alt": "¶ Documentation (12)",
+  "count": "12"
+ },
+ {
+  "file": "v1/chip/mono/category/documentation/count-13.svg",
+  "width": 136,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-13",
+  "style": "mono",
+  "alt": "¶ Documentation (13)",
+  "count": "13"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/count-13.svg",
+  "width": 136,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-13",
+  "style": "color",
+  "alt": "¶ Documentation (13)",
+  "count": "13"
+ },
+ {
+  "file": "v1/chip/mono/category/documentation/count-14.svg",
+  "width": 136,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-14",
+  "style": "mono",
+  "alt": "¶ Documentation (14)",
+  "count": "14"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/count-14.svg",
+  "width": 136,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-14",
+  "style": "color",
+  "alt": "¶ Documentation (14)",
+  "count": "14"
+ },
+ {
+  "file": "v1/chip/mono/category/documentation/count-15.svg",
+  "width": 136,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-15",
+  "style": "mono",
+  "alt": "¶ Documentation (15)",
+  "count": "15"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/count-15.svg",
+  "width": 136,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-15",
+  "style": "color",
+  "alt": "¶ Documentation (15)",
+  "count": "15"
+ },
+ {
+  "file": "v1/chip/mono/category/documentation/count-16.svg",
+  "width": 136,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-16",
+  "style": "mono",
+  "alt": "¶ Documentation (16)",
+  "count": "16"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/count-16.svg",
+  "width": 136,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-16",
+  "style": "color",
+  "alt": "¶ Documentation (16)",
+  "count": "16"
+ },
+ {
+  "file": "v1/chip/mono/category/documentation/count-17.svg",
+  "width": 135,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-17",
+  "style": "mono",
+  "alt": "¶ Documentation (17)",
+  "count": "17"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/count-17.svg",
+  "width": 135,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-17",
+  "style": "color",
+  "alt": "¶ Documentation (17)",
+  "count": "17"
+ },
+ {
+  "file": "v1/chip/mono/category/documentation/count-18.svg",
+  "width": 136,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-18",
+  "style": "mono",
+  "alt": "¶ Documentation (18)",
+  "count": "18"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/count-18.svg",
+  "width": 136,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-18",
+  "style": "color",
+  "alt": "¶ Documentation (18)",
+  "count": "18"
+ },
+ {
+  "file": "v1/chip/mono/category/documentation/count-19.svg",
+  "width": 136,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-19",
+  "style": "mono",
+  "alt": "¶ Documentation (19)",
+  "count": "19"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/count-19.svg",
+  "width": 136,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-19",
+  "style": "color",
+  "alt": "¶ Documentation (19)",
+  "count": "19"
+ },
+ {
+  "file": "v1/chip/mono/category/documentation/count-20.svg",
+  "width": 138,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-20",
+  "style": "mono",
+  "alt": "¶ Documentation (20)",
+  "count": "20"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/count-20.svg",
+  "width": 138,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-20",
+  "style": "color",
+  "alt": "¶ Documentation (20)",
+  "count": "20"
+ },
+ {
+  "file": "v1/chip/mono/category/documentation/count-20plus.svg",
+  "width": 146,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-20plus",
+  "style": "mono",
+  "alt": "¶ Documentation (20+)",
+  "count": "20+"
+ },
+ {
+  "file": "v1/chip/color/category/documentation/count-20plus.svg",
+  "width": 146,
+  "family": "category",
+  "key": "documentation",
+  "form": "count-20plus",
+  "style": "color",
+  "alt": "¶ Documentation (20+)",
+  "count": "20+"
+ },
+ {
+  "file": "v1/chip/mono/category/other/label.svg",
+  "width": 60,
+  "family": "category",
+  "key": "other",
+  "form": "label",
+  "style": "mono",
+  "alt": "✨️ Other"
+ },
+ {
+  "file": "v1/chip/color/category/other/label.svg",
+  "width": 60,
+  "family": "category",
+  "key": "other",
+  "form": "label",
+  "style": "color",
+  "alt": "✨️ Other"
+ },
+ {
+  "file": "v1/chip/mono/category/other/icon.svg",
+  "width": 26,
+  "family": "category",
+  "key": "other",
+  "form": "icon",
+  "style": "mono",
+  "alt": "✨️"
+ },
+ {
+  "file": "v1/chip/color/category/other/icon.svg",
+  "width": 26,
+  "family": "category",
+  "key": "other",
+  "form": "icon",
+  "style": "color",
+  "alt": "✨️"
+ },
+ {
+  "file": "v1/chip/mono/category/other/count-0.svg",
+  "width": 79,
+  "family": "category",
+  "key": "other",
+  "form": "count-0",
+  "style": "mono",
+  "alt": "✨️ Other (0)",
+  "count": "0"
+ },
+ {
+  "file": "v1/chip/color/category/other/count-0.svg",
+  "width": 79,
+  "family": "category",
+  "key": "other",
+  "form": "count-0",
+  "style": "color",
+  "alt": "✨️ Other (0)",
+  "count": "0"
+ },
+ {
+  "file": "v1/chip/mono/category/other/count-1.svg",
+  "width": 76,
+  "family": "category",
+  "key": "other",
+  "form": "count-1",
+  "style": "mono",
+  "alt": "✨️ Other (1)",
+  "count": "1"
+ },
+ {
+  "file": "v1/chip/color/category/other/count-1.svg",
+  "width": 76,
+  "family": "category",
+  "key": "other",
+  "form": "count-1",
+  "style": "color",
+  "alt": "✨️ Other (1)",
+  "count": "1"
+ },
+ {
+  "file": "v1/chip/mono/category/other/count-2.svg",
+  "width": 79,
+  "family": "category",
+  "key": "other",
+  "form": "count-2",
+  "style": "mono",
+  "alt": "✨️ Other (2)",
+  "count": "2"
+ },
+ {
+  "file": "v1/chip/color/category/other/count-2.svg",
+  "width": 79,
+  "family": "category",
+  "key": "other",
+  "form": "count-2",
+  "style": "color",
+  "alt": "✨️ Other (2)",
+  "count": "2"
+ },
+ {
+  "file": "v1/chip/mono/category/other/count-3.svg",
+  "width": 79,
+  "family": "category",
+  "key": "other",
+  "form": "count-3",
+  "style": "mono",
+  "alt": "✨️ Other (3)",
+  "count": "3"
+ },
+ {
+  "file": "v1/chip/color/category/other/count-3.svg",
+  "width": 79,
+  "family": "category",
+  "key": "other",
+  "form": "count-3",
+  "style": "color",
+  "alt": "✨️ Other (3)",
+  "count": "3"
+ },
+ {
+  "file": "v1/chip/mono/category/other/count-4.svg",
+  "width": 79,
+  "family": "category",
+  "key": "other",
+  "form": "count-4",
+  "style": "mono",
+  "alt": "✨️ Other (4)",
+  "count": "4"
+ },
+ {
+  "file": "v1/chip/color/category/other/count-4.svg",
+  "width": 79,
+  "family": "category",
+  "key": "other",
+  "form": "count-4",
+  "style": "color",
+  "alt": "✨️ Other (4)",
+  "count": "4"
+ },
+ {
+  "file": "v1/chip/mono/category/other/count-5.svg",
+  "width": 79,
+  "family": "category",
+  "key": "other",
+  "form": "count-5",
+  "style": "mono",
+  "alt": "✨️ Other (5)",
+  "count": "5"
+ },
+ {
+  "file": "v1/chip/color/category/other/count-5.svg",
+  "width": 79,
+  "family": "category",
+  "key": "other",
+  "form": "count-5",
+  "style": "color",
+  "alt": "✨️ Other (5)",
+  "count": "5"
+ },
+ {
+  "file": "v1/chip/mono/category/other/count-6.svg",
+  "width": 79,
+  "family": "category",
+  "key": "other",
+  "form": "count-6",
+  "style": "mono",
+  "alt": "✨️ Other (6)",
+  "count": "6"
+ },
+ {
+  "file": "v1/chip/color/category/other/count-6.svg",
+  "width": 79,
+  "family": "category",
+  "key": "other",
+  "form": "count-6",
+  "style": "color",
+  "alt": "✨️ Other (6)",
+  "count": "6"
+ },
+ {
+  "file": "v1/chip/mono/category/other/count-7.svg",
+  "width": 78,
+  "family": "category",
+  "key": "other",
+  "form": "count-7",
+  "style": "mono",
+  "alt": "✨️ Other (7)",
+  "count": "7"
+ },
+ {
+  "file": "v1/chip/color/category/other/count-7.svg",
+  "width": 78,
+  "family": "category",
+  "key": "other",
+  "form": "count-7",
+  "style": "color",
+  "alt": "✨️ Other (7)",
+  "count": "7"
+ },
+ {
+  "file": "v1/chip/mono/category/other/count-8.svg",
+  "width": 79,
+  "family": "category",
+  "key": "other",
+  "form": "count-8",
+  "style": "mono",
+  "alt": "✨️ Other (8)",
+  "count": "8"
+ },
+ {
+  "file": "v1/chip/color/category/other/count-8.svg",
+  "width": 79,
+  "family": "category",
+  "key": "other",
+  "form": "count-8",
+  "style": "color",
+  "alt": "✨️ Other (8)",
+  "count": "8"
+ },
+ {
+  "file": "v1/chip/mono/category/other/count-9.svg",
+  "width": 79,
+  "family": "category",
+  "key": "other",
+  "form": "count-9",
+  "style": "mono",
+  "alt": "✨️ Other (9)",
+  "count": "9"
+ },
+ {
+  "file": "v1/chip/color/category/other/count-9.svg",
+  "width": 79,
+  "family": "category",
+  "key": "other",
+  "form": "count-9",
+  "style": "color",
+  "alt": "✨️ Other (9)",
+  "count": "9"
+ },
+ {
+  "file": "v1/chip/mono/category/other/count-10.svg",
+  "width": 84,
+  "family": "category",
+  "key": "other",
+  "form": "count-10",
+  "style": "mono",
+  "alt": "✨️ Other (10)",
+  "count": "10"
+ },
+ {
+  "file": "v1/chip/color/category/other/count-10.svg",
+  "width": 84,
+  "family": "category",
+  "key": "other",
+  "form": "count-10",
+  "style": "color",
+  "alt": "✨️ Other (10)",
+  "count": "10"
+ },
+ {
+  "file": "v1/chip/mono/category/other/count-11.svg",
+  "width": 81,
+  "family": "category",
+  "key": "other",
+  "form": "count-11",
+  "style": "mono",
+  "alt": "✨️ Other (11)",
+  "count": "11"
+ },
+ {
+  "file": "v1/chip/color/category/other/count-11.svg",
+  "width": 81,
+  "family": "category",
+  "key": "other",
+  "form": "count-11",
+  "style": "color",
+  "alt": "✨️ Other (11)",
+  "count": "11"
+ },
+ {
+  "file": "v1/chip/mono/category/other/count-12.svg",
+  "width": 83,
+  "family": "category",
+  "key": "other",
+  "form": "count-12",
+  "style": "mono",
+  "alt": "✨️ Other (12)",
+  "count": "12"
+ },
+ {
+  "file": "v1/chip/color/category/other/count-12.svg",
+  "width": 83,
+  "family": "category",
+  "key": "other",
+  "form": "count-12",
+  "style": "color",
+  "alt": "✨️ Other (12)",
+  "count": "12"
+ },
+ {
+  "file": "v1/chip/mono/category/other/count-13.svg",
+  "width": 84,
+  "family": "category",
+  "key": "other",
+  "form": "count-13",
+  "style": "mono",
+  "alt": "✨️ Other (13)",
+  "count": "13"
+ },
+ {
+  "file": "v1/chip/color/category/other/count-13.svg",
+  "width": 84,
+  "family": "category",
+  "key": "other",
+  "form": "count-13",
+  "style": "color",
+  "alt": "✨️ Other (13)",
+  "count": "13"
+ },
+ {
+  "file": "v1/chip/mono/category/other/count-14.svg",
+  "width": 84,
+  "family": "category",
+  "key": "other",
+  "form": "count-14",
+  "style": "mono",
+  "alt": "✨️ Other (14)",
+  "count": "14"
+ },
+ {
+  "file": "v1/chip/color/category/other/count-14.svg",
+  "width": 84,
+  "family": "category",
+  "key": "other",
+  "form": "count-14",
+  "style": "color",
+  "alt": "✨️ Other (14)",
+  "count": "14"
+ },
+ {
+  "file": "v1/chip/mono/category/other/count-15.svg",
+  "width": 83,
+  "family": "category",
+  "key": "other",
+  "form": "count-15",
+  "style": "mono",
+  "alt": "✨️ Other (15)",
+  "count": "15"
+ },
+ {
+  "file": "v1/chip/color/category/other/count-15.svg",
+  "width": 83,
+  "family": "category",
+  "key": "other",
+  "form": "count-15",
+  "style": "color",
+  "alt": "✨️ Other (15)",
+  "count": "15"
+ },
+ {
+  "file": "v1/chip/mono/category/other/count-16.svg",
+  "width": 84,
+  "family": "category",
+  "key": "other",
+  "form": "count-16",
+  "style": "mono",
+  "alt": "✨️ Other (16)",
+  "count": "16"
+ },
+ {
+  "file": "v1/chip/color/category/other/count-16.svg",
+  "width": 84,
+  "family": "category",
+  "key": "other",
+  "form": "count-16",
+  "style": "color",
+  "alt": "✨️ Other (16)",
+  "count": "16"
+ },
+ {
+  "file": "v1/chip/mono/category/other/count-17.svg",
+  "width": 83,
+  "family": "category",
+  "key": "other",
+  "form": "count-17",
+  "style": "mono",
+  "alt": "✨️ Other (17)",
+  "count": "17"
+ },
+ {
+  "file": "v1/chip/color/category/other/count-17.svg",
+  "width": 83,
+  "family": "category",
+  "key": "other",
+  "form": "count-17",
+  "style": "color",
+  "alt": "✨️ Other (17)",
+  "count": "17"
+ },
+ {
+  "file": "v1/chip/mono/category/other/count-18.svg",
+  "width": 84,
+  "family": "category",
+  "key": "other",
+  "form": "count-18",
+  "style": "mono",
+  "alt": "✨️ Other (18)",
+  "count": "18"
+ },
+ {
+  "file": "v1/chip/color/category/other/count-18.svg",
+  "width": 84,
+  "family": "category",
+  "key": "other",
+  "form": "count-18",
+  "style": "color",
+  "alt": "✨️ Other (18)",
+  "count": "18"
+ },
+ {
+  "file": "v1/chip/mono/category/other/count-19.svg",
+  "width": 84,
+  "family": "category",
+  "key": "other",
+  "form": "count-19",
+  "style": "mono",
+  "alt": "✨️ Other (19)",
+  "count": "19"
+ },
+ {
+  "file": "v1/chip/color/category/other/count-19.svg",
+  "width": 84,
+  "family": "category",
+  "key": "other",
+  "form": "count-19",
+  "style": "color",
+  "alt": "✨️ Other (19)",
+  "count": "19"
+ },
+ {
+  "file": "v1/chip/mono/category/other/count-20.svg",
+  "width": 86,
+  "family": "category",
+  "key": "other",
+  "form": "count-20",
+  "style": "mono",
+  "alt": "✨️ Other (20)",
+  "count": "20"
+ },
+ {
+  "file": "v1/chip/color/category/other/count-20.svg",
+  "width": 86,
+  "family": "category",
+  "key": "other",
+  "form": "count-20",
+  "style": "color",
+  "alt": "✨️ Other (20)",
+  "count": "20"
+ },
+ {
+  "file": "v1/chip/mono/category/other/count-20plus.svg",
+  "width": 94,
+  "family": "category",
+  "key": "other",
+  "form": "count-20plus",
+  "style": "mono",
+  "alt": "✨️ Other (20+)",
+  "count": "20+"
+ },
+ {
+  "file": "v1/chip/color/category/other/count-20plus.svg",
+  "width": 94,
+  "family": "category",
+  "key": "other",
+  "form": "count-20plus",
+  "style": "color",
+  "alt": "✨️ Other (20+)",
+  "count": "20+"
+ },
+ {
   "file": "v1/chip/mono/severity/action-required/icon.svg",
   "width": 26,
   "family": "severity",
@@ -20628,6 +21580,86 @@
   "coloring": "grayscale",
   "icon": true,
   "alt": "Testability"
+ },
+ {
+  "file": "v1/pill/finding-category/documentation/brand.svg",
+  "width": 105,
+  "family": "pill",
+  "grouping": "finding-category",
+  "key": "documentation",
+  "coloring": "brand",
+  "icon": false,
+  "alt": "Documentation"
+ },
+ {
+  "file": "v1/pill/finding-category/documentation/brand-icon.svg",
+  "width": 123,
+  "family": "pill",
+  "grouping": "finding-category",
+  "key": "documentation",
+  "coloring": "brand",
+  "icon": true,
+  "alt": "Documentation"
+ },
+ {
+  "file": "v1/pill/finding-category/documentation/grayscale.svg",
+  "width": 105,
+  "family": "pill",
+  "grouping": "finding-category",
+  "key": "documentation",
+  "coloring": "grayscale",
+  "icon": false,
+  "alt": "Documentation"
+ },
+ {
+  "file": "v1/pill/finding-category/documentation/grayscale-icon.svg",
+  "width": 123,
+  "family": "pill",
+  "grouping": "finding-category",
+  "key": "documentation",
+  "coloring": "grayscale",
+  "icon": true,
+  "alt": "Documentation"
+ },
+ {
+  "file": "v1/pill/finding-category/other/brand.svg",
+  "width": 49,
+  "family": "pill",
+  "grouping": "finding-category",
+  "key": "other",
+  "coloring": "brand",
+  "icon": false,
+  "alt": "Other"
+ },
+ {
+  "file": "v1/pill/finding-category/other/brand-icon.svg",
+  "width": 67,
+  "family": "pill",
+  "grouping": "finding-category",
+  "key": "other",
+  "coloring": "brand",
+  "icon": true,
+  "alt": "Other"
+ },
+ {
+  "file": "v1/pill/finding-category/other/grayscale.svg",
+  "width": 49,
+  "family": "pill",
+  "grouping": "finding-category",
+  "key": "other",
+  "coloring": "grayscale",
+  "icon": false,
+  "alt": "Other"
+ },
+ {
+  "file": "v1/pill/finding-category/other/grayscale-icon.svg",
+  "width": 67,
+  "family": "pill",
+  "grouping": "finding-category",
+  "key": "other",
+  "coloring": "grayscale",
+  "icon": true,
+  "alt": "Other"
  },
  {
   "file": "v1/pill/relevance/strong/brand.svg",
