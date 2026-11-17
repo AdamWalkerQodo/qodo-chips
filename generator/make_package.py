@@ -10,7 +10,7 @@ import json
 import shutil
 from pathlib import Path
 
-from chips import BANNER_H, BUTTON_H, CHIP_TOP_PAD, H, PALETTES, _svg, _tint, banner, button, chip, dotted_divider, pill
+from chips import BANNER_H, BUTTON_H, CHIP_TOP_PAD, H, PALETTES, _svg, _tint, banner, button, chip, dotted_divider, pill, title
 
 ROOT = Path(__file__).parent.parent   # repository root
 OUT = ROOT
@@ -40,6 +40,16 @@ RISK_COMPLEXITY = ["Straightforward", "Interacting branches", "Data transformati
 RISK_DAMAGE = ["Cosmetic", "Reversible", "Recoverable", "Incorrect results", "Temporary loss", "Confidentiality", "Integrity",
                "Financial error", "Data loss", "Critical loss"]
 RISK_FACTORS = [("complexity", "waypoints", "🧩", RISK_COMPLEXITY), ("damage", "flame", "🩹", RISK_DAMAGE)]
+# Merge suggestion banners: (tone, reason key, label, detail line, icon). The engine picks one by verdict and main reason.
+VERDICT_BANNERS = [
+    ("not-safe", "high-findings", "Not ready for merging", "High severity findings not addressed", "circle-x"),
+    ("not-safe", "high-risk-findings", "Not ready for merging", "High merge risk, with findings not addressed", "circle-x"),
+    ("consider", "medium-findings", "Needs a closer look before merging", "Medium severity findings not addressed", "triangle-alert"),
+    ("consider", "security-findings", "Needs a closer look before merging", "Security findings not addressed", "triangle-alert"),
+    ("consider", "high-risk", "Needs a closer look before merging", "Merge risk is high", "triangle-alert"),
+    ("consider", "medium-risk", "Needs a closer look before merging", "Merge risk is medium", "triangle-alert"),
+    ("safe", "clear", "Looks ready for merging", "No high or medium severity findings open", "circle-check"),
+]
 COLOR_FAMILIES = {"type", "source", "risk"}   # every other chip exists in mono only; severity chips use the group badge colourings instead
 TERMS = {"legacy": ["Action required", "Review recommended", "Optional"], "high-medium-low": ["High", "Medium", "Low"],
          "critical-warning-informational": ["Critical", "Warning", "Informational"],
@@ -139,10 +149,14 @@ def main() -> None:
 
     # Merge verdict section of the PR description: verdict badges, placeholder buttons and the dotted divider.
     (OUT / "v1" / "verdict").mkdir(parents=True, exist_ok=True)
-    for key, label, icon in [("not-safe", "Not safe to merge", "circle-x"), ("consider", "Consider merging", "triangle-alert"),
-                             ("safe", "Safe to merge", "circle-check")]:
-        (OUT / "v1" / "verdict" / f"banner-{key}.svg").write_text(banner(label, icon, key))
-        manifest.append({"file": f"v1/verdict/banner-{key}.svg", "width": "100%", "height": BANNER_H, "family": "verdict", "key": key, "alt": label})
+    for tone, reason, label, detail, icon in VERDICT_BANNERS:
+        (OUT / "v1" / "verdict" / f"banner-{tone}-{reason}.svg").write_text(banner(label, detail, icon, tone))
+        manifest.append({"file": f"v1/verdict/banner-{tone}-{reason}.svg", "width": "100%", "height": BANNER_H, "family": "verdict",
+                         "key": f"{tone}-{reason}", "alt": f"{label}: {detail}"})
+    (OUT / "v1" / "title").mkdir(parents=True, exist_ok=True)
+    body, w = title("Qodo suggestion")
+    (OUT / "v1" / "title" / "qodo-suggestion.svg").write_text(body)
+    manifest.append({"file": "v1/title/qodo-suggestion.svg", "width": w, "height": 28, "family": "title", "key": "qodo-suggestion", "alt": "Qodo suggestion"})
     for key, label, icon, primary in [("view-in-qodo", "View in Qodo", "qodo", True),
                                      ("finding-summary", "Finding summary", "clipboard-check", False), ("pr-overview", "PR overview", "file-text", False)]:
         body, w = button(label, icon, primary)
