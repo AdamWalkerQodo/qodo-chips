@@ -263,11 +263,11 @@ def suggestion_card(label: str, detail: str, icon: str, tone: str) -> str:
 def metric_card(label: str, value: str, icon: str, tone: str = "neutral") -> str:
     """A metric card: a small label over one large value. It starts with CARD_GAP of empty space."""
     light_ink, dark_ink = VALUE_INKS[tone]
-    css = (f"<style>.f{{x:{CARD_GAP}px;width:calc(100% - {CARD_GAP}px);fill:#f3f4f6}}.l{{fill:#59636e}}.v{{fill:{light_ink}}}.i{{stroke:#59636e}}"
+    css = (f"<style>.f{{width:calc(100% - {CARD_GAP}px);fill:#f3f4f6}}.l{{fill:#59636e}}.v{{fill:{light_ink}}}.i{{stroke:#59636e}}"
            f"@media (prefers-color-scheme:dark){{.f{{fill:#1c2128}}.l{{fill:#9198a1}}.v{{fill:{dark_ink}}}.i{{stroke:#9198a1}}}}</style>")
     left = CARD_GAP + 14
     name, _ = text_path(label, 11.5, left + 20, "Regular", CARD_H)
     number, _ = text_path(value, 20, left, "SemiBold", CARD_H)
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{CARD_H}">{css}<rect width="100%" height="{CARD_H}" rx="8" class="f"/>'
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{CARD_H}">{css}<rect x="{CARD_GAP}" width="100%" height="{CARD_H}" rx="8" class="f"/>'
             f'{_card_icon(icon, left, 11.5, 14)}'
             f'<path d="{name}" class="l" transform="translate(0 -15.5)"/><path d="{number}" class="v" transform="translate(0 10)"/></svg>')
