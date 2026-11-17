@@ -97,7 +97,7 @@ def main() -> None:
         label_chip("status", key, icon, label, f"{glyph} {label}", glyph, variants=("", "icon", "text"))
     label_chip("flag", "new", "sparkles", "New", "⭐ New", "⭐")
     counters("flag", "new", "sparkles", "New", "⭐ New")
-    label_chip("flag", "local-find", "computer", "Local find", "💻 Local find", "💻")
+    label_chip("flag", "local-find", "laptop", "Local find", "💻 Local find", "💻")
     for key, label, icon, emoji in MODES:
         label_chip("mode", key, icon, label, f"{emoji} {label}", emoji, variants=("",))
     label_chip("mode", "auto", "wand-sparkles", "Auto", "Auto:", "Auto:", variants=("",))   # sits before the chosen mode's chip
