@@ -186,11 +186,11 @@ def chip(icon: str | None, label: str | None, count: str | None = None, style: s
     return paint["css"] + frame + body, width
 
 
-def pill(label: str | None, color: str, icon: str | None = None, count: str | None = None) -> tuple[str, float]:
+def pill(label: str | None, color: str, icon: str | None = None, count: str | None = None, icon_color: str = "#ffffff") -> tuple[str, float]:
     """A group pill: solid colour, white semibold label, optional icon and counter cell. Same on light and dark pages."""
     x, body = 8, ""
     if icon:
-        body += _icon(icon, x, {"stroke": 'stroke="#ffffff"', "solid": 'fill="#ffffff"'})
+        body += _icon(icon, x, {"stroke": f'stroke="{icon_color}"', "solid": f'fill="{icon_color}"'})
         x += 12
     if label:
         x += 6 if icon else 0

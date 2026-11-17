@@ -10,7 +10,7 @@ import json
 import shutil
 from pathlib import Path
 
-from chips import BUTTON_H, CHIP_TOP_PAD, H, _svg, button, chip, dotted_divider, pill
+from chips import PALETTES, _tint, BUTTON_H, CHIP_TOP_PAD, H, _svg, button, chip, dotted_divider, pill
 
 ROOT = Path(__file__).parent.parent   # repository root
 OUT = ROOT
@@ -72,9 +72,16 @@ def label_chip(family: str, key: str, icon: str | None, label: str, alt: str, al
                  alt=f"{text} ({count})" if count else text, **({"count": count} if count else {}))
 
 
+def grayscale_icon_color(coloring: str, icon: str | None, grouping: str = "action-level") -> str:
+    """Grayscale badges keep a coloured icon for severity and finding type; every other badge icon is white."""
+    if coloring != "grayscale" or not icon or grouping not in ("action-level", "finding-type"):
+        return "#ffffff"
+    return _tint(icon, "color", PALETTES["dark"])
+
+
 def severity_chip(coloring: str, color: str, key: str, form: str, label: str | None, icon: str | None, count: str | None, alt: str) -> None:
     """Severity chips look like the group badge: a solid pill in the badge's colouring, in place of the mono/color styles."""
-    body, w = pill(label, color, icon, count)
+    body, w = pill(label, color, icon, count, grayscale_icon_color(coloring, icon))
     save(f"chip/{coloring}/severity/{key}/{form}", body, w, CHIP_TOP_PAD, family="severity", key=key, form=form, style=coloring, alt=alt,
          **({"count": count} if count else {}))
 
@@ -159,7 +166,7 @@ def main() -> None:
             colorings.append(("scale", SCALE[[lv for lv, _ in LEVELS].index(key.split("/")[0])]))
         for coloring, color in colorings:
             for with_icon in (False, True):
-                body, w = pill(label, color, icon if with_icon else None)
+                body, w = pill(label, color, icon if with_icon else None, icon_color=grayscale_icon_color(coloring, icon, grouping))
                 save(f"pill/{grouping}/{key}/{coloring}{'-icon' if with_icon else ''}", body, w,
                      family="pill", grouping=grouping, key=key, coloring=coloring, icon=with_icon, alt=alt)
 
