@@ -6,6 +6,7 @@ Styles: "mono" (grey icon) and "color" (icon tinted like today's emoji).
 from __future__ import annotations
 
 import json
+import re
 from functools import lru_cache
 from pathlib import Path
 
@@ -202,17 +203,25 @@ def pill(label: str | None, color: str, icon: str | None = None, count: str | No
 BUTTON_H = 28
 
 
+QODO_MARK = re.search(r"<svg[^>]*>(.*)</svg>", (HERE / "assets/qodo-anteater.svg").read_text(), re.S).group(1)
+
+
 def button(label: str, icon: str, primary: bool = False) -> tuple[str, float]:
-    """A button image, 28px tall: brand fill when primary, else the chip's neutral fill that follows the page theme."""
+    """A button image, 28px tall: brand fill when primary, else the chip's neutral fill that follows the page theme.
+
+    The icon "qodo" is the Qodo anteater mark, in its own colours."""
     paint = _paint("auto", "mono", None)
     if primary:
         paint = {"frame": 'fill="#634fd1"', "text": 'fill="#ffffff"', "stroke": 'stroke="#ffffff"', "css": ""}
-    shapes = "".join(f"<{tag} {_attrs(a)}/>" for tag, a in ICONS[icon])
-    body = (f'<g transform="translate(10 7.5) scale({_num(13 / 24)})" fill="none" {paint["stroke"]} stroke-width="2" '
-            f'stroke-linecap="round" stroke-linejoin="round">{shapes}</g>')
-    d, w = text_path(label, 12.5, 29, "SemiBold", BUTTON_H)
+    if icon == "qodo":
+        body, x = f'<g transform="translate(7 4.5) scale({_num(19 / 32)})" fill="none">{QODO_MARK}</g>', 32
+    else:
+        shapes = "".join(f"<{tag} {_attrs(a)}/>" for tag, a in ICONS[icon])
+        body, x = (f'<g transform="translate(10 7.5) scale({_num(13 / 24)})" fill="none" {paint["stroke"]} stroke-width="2" '
+                   f'stroke-linecap="round" stroke-linejoin="round">{shapes}</g>'), 29
+    d, w = text_path(label, 12.5, x, "SemiBold", BUTTON_H)
     body += f'<path d="{d}" {paint["text"]}/>'
-    width = round(29 + w + 12)
+    width = round(x + w + 12)
     return paint["css"] + f'<rect width="{width}" height="{BUTTON_H}" rx="6" {paint["frame"]}/>' + body, width
 
 
