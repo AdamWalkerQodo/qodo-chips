@@ -210,9 +210,9 @@ def button(label: str, icon: str, primary: bool = False) -> tuple[str, float]:
         frame = lambda w: f'<rect width="{w}" height="{BUTTON_H}" rx="6" {frame_w}/>'  # noqa: E731
         ink_fill, ink_stroke = 'fill="#ffffff"', 'stroke="#ffffff"'
     else:
-        light, dark = PALETTES["light"], PALETTES["dark"]
-        css = (f'<style>.o{{stroke:{light["divider"]}}}.t{{fill:{light["text"]}}}.i{{stroke:{light["icon"]}}}'
-               f'@media (prefers-color-scheme:dark){{.o{{stroke:{dark["divider"]}}}.t{{fill:{dark["text"]}}}.i{{stroke:{dark["icon"]}}}}}</style>')
+        # Muted ink and a quiet outline, so the outlined buttons sit behind the primary one.
+        css = ('<style>.o{stroke:#d0d4d9}.t{fill:#57606a}.i{stroke:#6e7781}'
+               '@media (prefers-color-scheme:dark){.o{stroke:#4b515a}.t{fill:#aab1ba}.i{stroke:#8b939c}}</style>')
         frame = lambda w: f'<rect x="0.5" y="0.5" width="{w - 1}" height="{BUTTON_H - 1}" rx="5.5" fill="none" class="o"/>'  # noqa: E731
         ink_fill, ink_stroke = 'class="t"', 'class="i"'
     shapes = "".join(f"<{tag} {_attrs(a)}/>" for tag, a in ICONS[icon])
