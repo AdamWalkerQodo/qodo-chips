@@ -6,8 +6,8 @@ Image chips for Qodo's code review comments on GitHub, GitLab and Azure DevOps: 
 <img src="v1/chip/color/type/bugs/count-3.svg" height="21" align="top" alt="Bugs (3)">
 <img src="v1/chip/color/type/rule-violations/count-12.svg" height="21" align="top" alt="Rule violations (12)">
 <img src="v1/chip/color/severity/action-required/legacy/label.svg" height="21" align="top" alt="Action required">
-<img src="v1/chip/color/category/correctness/label.svg" height="21" align="top" alt="Correctness">
-<img src="v1/chip/color/status/resolved/label.svg" height="21" align="top" alt="Resolved">
+<img src="v1/chip/mono/category/correctness/label.svg" height="21" align="top" alt="Correctness">
+<img src="v1/chip/mono/status/resolved/label.svg" height="21" align="top" alt="Resolved">
 <img src="v1/chip/mono/type/bugs/label.svg" height="21" align="top" alt="Bug">
 <img src="v1/pill/finding-type/bugs/brand-icon.svg" height="20" align="top" alt="Bugs">
 </p>
@@ -31,6 +31,14 @@ In a comment:
 - `height="21"` keeps a chip at its drawn size: 20px plus one transparent row on top, which lines its label up with 14px comment text. Group pills are 20px tall.
 - `align="top"` pins the image to the top of the text line.
 - `alt` should be the text chip it replaces, so the comment still reads correctly if the image fails to load.
+
+## Colour
+
+Colour is used sparingly. Icons are grey, with three exceptions:
+
+- Finding type chips and their counters are always coloured.
+- Source status icons are always coloured.
+- Severity chips are coloured only when the group badges use the colour scale; otherwise they are grey.
 
 ## Light and dark
 
@@ -62,7 +70,7 @@ manifest.json                    every file with its width and alt text
 
 | Part | Values |
 |---|---|
-| `style` | `mono` (grey icon), `color` (coloured icon). `mode` and `link` chips have a grey icon in both |
+| `style` | `mono` (grey icon) for every chip; `color` (coloured icon) only for `type`, `source` and `severity` |
 | `family` | Review comments: `type`, `category`, `severity`, `relevance`, `status`, `flag`, `mode`, `link`, `source`. PR description: `pr-type`, `review-time`. Merge risk: `risk`, `risk-level`, `risk-blast-radius`, `risk-complexity`, `risk-damage` |
 | `key` | the chip, for example `bugs`, `correctness`, `resolved`, `new`. Severity keys are `{level}/{wording}`, for example `action-required/p0-p1-p2` |
 | `grouping` | `finding-type`, `finding-category`, `action-level`, `relevance` |

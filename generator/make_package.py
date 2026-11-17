@@ -40,7 +40,7 @@ RISK_COMPLEXITY = ["Straightforward", "Interacting branches", "Data transformati
 RISK_DAMAGE = ["Cosmetic", "Reversible", "Recoverable", "Incorrect results", "Temporary loss", "Confidentiality", "Integrity",
                "Financial error", "Data loss", "Critical loss"]
 RISK_FACTORS = [("complexity", "puzzle", "🧩", RISK_COMPLEXITY), ("damage", "bandage", "🩹", RISK_DAMAGE)]
-GREY_ICON_FAMILIES = {"link", "mode"}   # buttons and review modes keep a grey icon in the color style too
+COLOR_FAMILIES = {"type", "source", "severity"}   # every other chip exists in mono only; severity colour is used with colour-scale group badges
 TERMS = {"legacy": ["Action required", "Review recommended", "Optional"], "high-medium-low": ["High", "Medium", "Low"],
          "critical-warning-informational": ["Critical", "Warning", "Informational"],
          "required-recommended-optional": ["Required", "Recommended", "Optional"], "p0-p1-p2": ["P0", "P1", "P2"]}
@@ -62,11 +62,10 @@ def save(path: str, body: str, width: float, top_pad: int = 0, **meta) -> None:
 
 
 def label_chip(family: str, key: str, icon: str | None, label: str, alt: str, alt_icon: str, variants=("", "icon"), count=None) -> None:
-    """One chip in both styles. variants: "" = icon + label, "icon" = icon only, "text" = label only."""
+    """One chip in mono, plus color for the families that use it. variants: "" = icon + label, "icon" = icon only, "text" = label only."""
     for variant in variants:
-        for style in ("mono", "color"):
-            body, w = chip(None if variant == "text" else icon, None if variant == "icon" else label, count,
-                           "mono" if family in GREY_ICON_FAMILIES else style, "auto")
+        for style in ("mono", "color") if family in COLOR_FAMILIES else ("mono",):
+            body, w = chip(None if variant == "text" else icon, None if variant == "icon" else label, count, style, "auto")
             form = f"count-{count.replace('+', 'plus')}" if count else variant or "label"
             text = alt_icon if variant == "icon" else label if variant == "text" else alt
             save(f"chip/{style}/{family}/{key}/{form}", body, w, CHIP_TOP_PAD, family=family, key=key, form=form, style=style,

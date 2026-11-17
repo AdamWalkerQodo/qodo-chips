@@ -5250,16 +5250,6 @@
   "alt": "≡ Correctness"
  },
  {
-  "file": "v1/chip/color/category/correctness/label.svg",
-  "width": 97,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "label",
-  "style": "color",
-  "alt": "≡ Correctness"
- },
- {
   "file": "v1/chip/mono/category/correctness/icon.svg",
   "width": 26,
   "height": 21,
@@ -5270,16 +5260,6 @@
   "alt": "≡"
  },
  {
-  "file": "v1/chip/color/category/correctness/icon.svg",
-  "width": 26,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "icon",
-  "style": "color",
-  "alt": "≡"
- },
- {
   "file": "v1/chip/mono/category/correctness/count-0.svg",
   "width": 115,
   "height": 21,
@@ -5287,17 +5267,6 @@
   "key": "correctness",
   "form": "count-0",
   "style": "mono",
-  "alt": "≡ Correctness (0)",
-  "count": "0"
- },
- {
-  "file": "v1/chip/color/category/correctness/count-0.svg",
-  "width": 115,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "count-0",
-  "style": "color",
   "alt": "≡ Correctness (0)",
   "count": "0"
  },
@@ -5313,17 +5282,6 @@
   "count": "1"
  },
  {
-  "file": "v1/chip/color/category/correctness/count-1.svg",
-  "width": 112,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "count-1",
-  "style": "color",
-  "alt": "≡ Correctness (1)",
-  "count": "1"
- },
- {
   "file": "v1/chip/mono/category/correctness/count-2.svg",
   "width": 115,
   "height": 21,
@@ -5331,17 +5289,6 @@
   "key": "correctness",
   "form": "count-2",
   "style": "mono",
-  "alt": "≡ Correctness (2)",
-  "count": "2"
- },
- {
-  "file": "v1/chip/color/category/correctness/count-2.svg",
-  "width": 115,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "count-2",
-  "style": "color",
   "alt": "≡ Correctness (2)",
   "count": "2"
  },
@@ -5357,17 +5304,6 @@
   "count": "3"
  },
  {
-  "file": "v1/chip/color/category/correctness/count-3.svg",
-  "width": 115,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "count-3",
-  "style": "color",
-  "alt": "≡ Correctness (3)",
-  "count": "3"
- },
- {
   "file": "v1/chip/mono/category/correctness/count-4.svg",
   "width": 115,
   "height": 21,
@@ -5375,17 +5311,6 @@
   "key": "correctness",
   "form": "count-4",
   "style": "mono",
-  "alt": "≡ Correctness (4)",
-  "count": "4"
- },
- {
-  "file": "v1/chip/color/category/correctness/count-4.svg",
-  "width": 115,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "count-4",
-  "style": "color",
   "alt": "≡ Correctness (4)",
   "count": "4"
  },
@@ -5401,17 +5326,6 @@
   "count": "5"
  },
  {
-  "file": "v1/chip/color/category/correctness/count-5.svg",
-  "width": 115,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "count-5",
-  "style": "color",
-  "alt": "≡ Correctness (5)",
-  "count": "5"
- },
- {
   "file": "v1/chip/mono/category/correctness/count-6.svg",
   "width": 115,
   "height": 21,
@@ -5419,17 +5333,6 @@
   "key": "correctness",
   "form": "count-6",
   "style": "mono",
-  "alt": "≡ Correctness (6)",
-  "count": "6"
- },
- {
-  "file": "v1/chip/color/category/correctness/count-6.svg",
-  "width": 115,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "count-6",
-  "style": "color",
   "alt": "≡ Correctness (6)",
   "count": "6"
  },
@@ -5445,17 +5348,6 @@
   "count": "7"
  },
  {
-  "file": "v1/chip/color/category/correctness/count-7.svg",
-  "width": 114,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "count-7",
-  "style": "color",
-  "alt": "≡ Correctness (7)",
-  "count": "7"
- },
- {
   "file": "v1/chip/mono/category/correctness/count-8.svg",
   "width": 115,
   "height": 21,
@@ -5463,17 +5355,6 @@
   "key": "correctness",
   "form": "count-8",
   "style": "mono",
-  "alt": "≡ Correctness (8)",
-  "count": "8"
- },
- {
-  "file": "v1/chip/color/category/correctness/count-8.svg",
-  "width": 115,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "count-8",
-  "style": "color",
   "alt": "≡ Correctness (8)",
   "count": "8"
  },
@@ -5489,17 +5370,6 @@
   "count": "9"
  },
  {
-  "file": "v1/chip/color/category/correctness/count-9.svg",
-  "width": 115,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "count-9",
-  "style": "color",
-  "alt": "≡ Correctness (9)",
-  "count": "9"
- },
- {
   "file": "v1/chip/mono/category/correctness/count-10.svg",
   "width": 120,
   "height": 21,
@@ -5507,17 +5377,6 @@
   "key": "correctness",
   "form": "count-10",
   "style": "mono",
-  "alt": "≡ Correctness (10)",
-  "count": "10"
- },
- {
-  "file": "v1/chip/color/category/correctness/count-10.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "count-10",
-  "style": "color",
   "alt": "≡ Correctness (10)",
   "count": "10"
  },
@@ -5533,17 +5392,6 @@
   "count": "11"
  },
  {
-  "file": "v1/chip/color/category/correctness/count-11.svg",
-  "width": 117,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "count-11",
-  "style": "color",
-  "alt": "≡ Correctness (11)",
-  "count": "11"
- },
- {
   "file": "v1/chip/mono/category/correctness/count-12.svg",
   "width": 120,
   "height": 21,
@@ -5551,17 +5399,6 @@
   "key": "correctness",
   "form": "count-12",
   "style": "mono",
-  "alt": "≡ Correctness (12)",
-  "count": "12"
- },
- {
-  "file": "v1/chip/color/category/correctness/count-12.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "count-12",
-  "style": "color",
   "alt": "≡ Correctness (12)",
   "count": "12"
  },
@@ -5577,17 +5414,6 @@
   "count": "13"
  },
  {
-  "file": "v1/chip/color/category/correctness/count-13.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "count-13",
-  "style": "color",
-  "alt": "≡ Correctness (13)",
-  "count": "13"
- },
- {
   "file": "v1/chip/mono/category/correctness/count-14.svg",
   "width": 120,
   "height": 21,
@@ -5595,17 +5421,6 @@
   "key": "correctness",
   "form": "count-14",
   "style": "mono",
-  "alt": "≡ Correctness (14)",
-  "count": "14"
- },
- {
-  "file": "v1/chip/color/category/correctness/count-14.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "count-14",
-  "style": "color",
   "alt": "≡ Correctness (14)",
   "count": "14"
  },
@@ -5621,17 +5436,6 @@
   "count": "15"
  },
  {
-  "file": "v1/chip/color/category/correctness/count-15.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "count-15",
-  "style": "color",
-  "alt": "≡ Correctness (15)",
-  "count": "15"
- },
- {
   "file": "v1/chip/mono/category/correctness/count-16.svg",
   "width": 120,
   "height": 21,
@@ -5639,17 +5443,6 @@
   "key": "correctness",
   "form": "count-16",
   "style": "mono",
-  "alt": "≡ Correctness (16)",
-  "count": "16"
- },
- {
-  "file": "v1/chip/color/category/correctness/count-16.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "count-16",
-  "style": "color",
   "alt": "≡ Correctness (16)",
   "count": "16"
  },
@@ -5665,17 +5458,6 @@
   "count": "17"
  },
  {
-  "file": "v1/chip/color/category/correctness/count-17.svg",
-  "width": 119,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "count-17",
-  "style": "color",
-  "alt": "≡ Correctness (17)",
-  "count": "17"
- },
- {
   "file": "v1/chip/mono/category/correctness/count-18.svg",
   "width": 120,
   "height": 21,
@@ -5683,17 +5465,6 @@
   "key": "correctness",
   "form": "count-18",
   "style": "mono",
-  "alt": "≡ Correctness (18)",
-  "count": "18"
- },
- {
-  "file": "v1/chip/color/category/correctness/count-18.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "count-18",
-  "style": "color",
   "alt": "≡ Correctness (18)",
   "count": "18"
  },
@@ -5709,17 +5480,6 @@
   "count": "19"
  },
  {
-  "file": "v1/chip/color/category/correctness/count-19.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "count-19",
-  "style": "color",
-  "alt": "≡ Correctness (19)",
-  "count": "19"
- },
- {
   "file": "v1/chip/mono/category/correctness/count-20.svg",
   "width": 122,
   "height": 21,
@@ -5727,17 +5487,6 @@
   "key": "correctness",
   "form": "count-20",
   "style": "mono",
-  "alt": "≡ Correctness (20)",
-  "count": "20"
- },
- {
-  "file": "v1/chip/color/category/correctness/count-20.svg",
-  "width": 122,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "count-20",
-  "style": "color",
   "alt": "≡ Correctness (20)",
   "count": "20"
  },
@@ -5753,17 +5502,6 @@
   "count": "20+"
  },
  {
-  "file": "v1/chip/color/category/correctness/count-20plus.svg",
-  "width": 130,
-  "height": 21,
-  "family": "category",
-  "key": "correctness",
-  "form": "count-20plus",
-  "style": "color",
-  "alt": "≡ Correctness (20+)",
-  "count": "20+"
- },
- {
   "file": "v1/chip/mono/category/reliability/label.svg",
   "width": 82,
   "height": 21,
@@ -5771,16 +5509,6 @@
   "key": "reliability",
   "form": "label",
   "style": "mono",
-  "alt": "☼ Reliability"
- },
- {
-  "file": "v1/chip/color/category/reliability/label.svg",
-  "width": 82,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "label",
-  "style": "color",
   "alt": "☼ Reliability"
  },
  {
@@ -5794,16 +5522,6 @@
   "alt": "☼"
  },
  {
-  "file": "v1/chip/color/category/reliability/icon.svg",
-  "width": 26,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "icon",
-  "style": "color",
-  "alt": "☼"
- },
- {
   "file": "v1/chip/mono/category/reliability/count-0.svg",
   "width": 100,
   "height": 21,
@@ -5811,17 +5529,6 @@
   "key": "reliability",
   "form": "count-0",
   "style": "mono",
-  "alt": "☼ Reliability (0)",
-  "count": "0"
- },
- {
-  "file": "v1/chip/color/category/reliability/count-0.svg",
-  "width": 100,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "count-0",
-  "style": "color",
   "alt": "☼ Reliability (0)",
   "count": "0"
  },
@@ -5837,17 +5544,6 @@
   "count": "1"
  },
  {
-  "file": "v1/chip/color/category/reliability/count-1.svg",
-  "width": 98,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "count-1",
-  "style": "color",
-  "alt": "☼ Reliability (1)",
-  "count": "1"
- },
- {
   "file": "v1/chip/mono/category/reliability/count-2.svg",
   "width": 100,
   "height": 21,
@@ -5855,17 +5551,6 @@
   "key": "reliability",
   "form": "count-2",
   "style": "mono",
-  "alt": "☼ Reliability (2)",
-  "count": "2"
- },
- {
-  "file": "v1/chip/color/category/reliability/count-2.svg",
-  "width": 100,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "count-2",
-  "style": "color",
   "alt": "☼ Reliability (2)",
   "count": "2"
  },
@@ -5881,17 +5566,6 @@
   "count": "3"
  },
  {
-  "file": "v1/chip/color/category/reliability/count-3.svg",
-  "width": 100,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "count-3",
-  "style": "color",
-  "alt": "☼ Reliability (3)",
-  "count": "3"
- },
- {
   "file": "v1/chip/mono/category/reliability/count-4.svg",
   "width": 100,
   "height": 21,
@@ -5899,17 +5573,6 @@
   "key": "reliability",
   "form": "count-4",
   "style": "mono",
-  "alt": "☼ Reliability (4)",
-  "count": "4"
- },
- {
-  "file": "v1/chip/color/category/reliability/count-4.svg",
-  "width": 100,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "count-4",
-  "style": "color",
   "alt": "☼ Reliability (4)",
   "count": "4"
  },
@@ -5925,17 +5588,6 @@
   "count": "5"
  },
  {
-  "file": "v1/chip/color/category/reliability/count-5.svg",
-  "width": 100,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "count-5",
-  "style": "color",
-  "alt": "☼ Reliability (5)",
-  "count": "5"
- },
- {
   "file": "v1/chip/mono/category/reliability/count-6.svg",
   "width": 100,
   "height": 21,
@@ -5943,17 +5595,6 @@
   "key": "reliability",
   "form": "count-6",
   "style": "mono",
-  "alt": "☼ Reliability (6)",
-  "count": "6"
- },
- {
-  "file": "v1/chip/color/category/reliability/count-6.svg",
-  "width": 100,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "count-6",
-  "style": "color",
   "alt": "☼ Reliability (6)",
   "count": "6"
  },
@@ -5969,17 +5610,6 @@
   "count": "7"
  },
  {
-  "file": "v1/chip/color/category/reliability/count-7.svg",
-  "width": 99,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "count-7",
-  "style": "color",
-  "alt": "☼ Reliability (7)",
-  "count": "7"
- },
- {
   "file": "v1/chip/mono/category/reliability/count-8.svg",
   "width": 100,
   "height": 21,
@@ -5987,17 +5617,6 @@
   "key": "reliability",
   "form": "count-8",
   "style": "mono",
-  "alt": "☼ Reliability (8)",
-  "count": "8"
- },
- {
-  "file": "v1/chip/color/category/reliability/count-8.svg",
-  "width": 100,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "count-8",
-  "style": "color",
   "alt": "☼ Reliability (8)",
   "count": "8"
  },
@@ -6013,17 +5632,6 @@
   "count": "9"
  },
  {
-  "file": "v1/chip/color/category/reliability/count-9.svg",
-  "width": 100,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "count-9",
-  "style": "color",
-  "alt": "☼ Reliability (9)",
-  "count": "9"
- },
- {
   "file": "v1/chip/mono/category/reliability/count-10.svg",
   "width": 105,
   "height": 21,
@@ -6031,17 +5639,6 @@
   "key": "reliability",
   "form": "count-10",
   "style": "mono",
-  "alt": "☼ Reliability (10)",
-  "count": "10"
- },
- {
-  "file": "v1/chip/color/category/reliability/count-10.svg",
-  "width": 105,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "count-10",
-  "style": "color",
   "alt": "☼ Reliability (10)",
   "count": "10"
  },
@@ -6057,17 +5654,6 @@
   "count": "11"
  },
  {
-  "file": "v1/chip/color/category/reliability/count-11.svg",
-  "width": 102,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "count-11",
-  "style": "color",
-  "alt": "☼ Reliability (11)",
-  "count": "11"
- },
- {
   "file": "v1/chip/mono/category/reliability/count-12.svg",
   "width": 105,
   "height": 21,
@@ -6075,17 +5661,6 @@
   "key": "reliability",
   "form": "count-12",
   "style": "mono",
-  "alt": "☼ Reliability (12)",
-  "count": "12"
- },
- {
-  "file": "v1/chip/color/category/reliability/count-12.svg",
-  "width": 105,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "count-12",
-  "style": "color",
   "alt": "☼ Reliability (12)",
   "count": "12"
  },
@@ -6101,17 +5676,6 @@
   "count": "13"
  },
  {
-  "file": "v1/chip/color/category/reliability/count-13.svg",
-  "width": 105,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "count-13",
-  "style": "color",
-  "alt": "☼ Reliability (13)",
-  "count": "13"
- },
- {
   "file": "v1/chip/mono/category/reliability/count-14.svg",
   "width": 105,
   "height": 21,
@@ -6119,17 +5683,6 @@
   "key": "reliability",
   "form": "count-14",
   "style": "mono",
-  "alt": "☼ Reliability (14)",
-  "count": "14"
- },
- {
-  "file": "v1/chip/color/category/reliability/count-14.svg",
-  "width": 105,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "count-14",
-  "style": "color",
   "alt": "☼ Reliability (14)",
   "count": "14"
  },
@@ -6145,17 +5698,6 @@
   "count": "15"
  },
  {
-  "file": "v1/chip/color/category/reliability/count-15.svg",
-  "width": 105,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "count-15",
-  "style": "color",
-  "alt": "☼ Reliability (15)",
-  "count": "15"
- },
- {
   "file": "v1/chip/mono/category/reliability/count-16.svg",
   "width": 105,
   "height": 21,
@@ -6163,17 +5705,6 @@
   "key": "reliability",
   "form": "count-16",
   "style": "mono",
-  "alt": "☼ Reliability (16)",
-  "count": "16"
- },
- {
-  "file": "v1/chip/color/category/reliability/count-16.svg",
-  "width": 105,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "count-16",
-  "style": "color",
   "alt": "☼ Reliability (16)",
   "count": "16"
  },
@@ -6189,17 +5720,6 @@
   "count": "17"
  },
  {
-  "file": "v1/chip/color/category/reliability/count-17.svg",
-  "width": 104,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "count-17",
-  "style": "color",
-  "alt": "☼ Reliability (17)",
-  "count": "17"
- },
- {
   "file": "v1/chip/mono/category/reliability/count-18.svg",
   "width": 105,
   "height": 21,
@@ -6207,17 +5727,6 @@
   "key": "reliability",
   "form": "count-18",
   "style": "mono",
-  "alt": "☼ Reliability (18)",
-  "count": "18"
- },
- {
-  "file": "v1/chip/color/category/reliability/count-18.svg",
-  "width": 105,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "count-18",
-  "style": "color",
   "alt": "☼ Reliability (18)",
   "count": "18"
  },
@@ -6233,17 +5742,6 @@
   "count": "19"
  },
  {
-  "file": "v1/chip/color/category/reliability/count-19.svg",
-  "width": 105,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "count-19",
-  "style": "color",
-  "alt": "☼ Reliability (19)",
-  "count": "19"
- },
- {
   "file": "v1/chip/mono/category/reliability/count-20.svg",
   "width": 108,
   "height": 21,
@@ -6251,17 +5749,6 @@
   "key": "reliability",
   "form": "count-20",
   "style": "mono",
-  "alt": "☼ Reliability (20)",
-  "count": "20"
- },
- {
-  "file": "v1/chip/color/category/reliability/count-20.svg",
-  "width": 108,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "count-20",
-  "style": "color",
   "alt": "☼ Reliability (20)",
   "count": "20"
  },
@@ -6277,17 +5764,6 @@
   "count": "20+"
  },
  {
-  "file": "v1/chip/color/category/reliability/count-20plus.svg",
-  "width": 115,
-  "height": 21,
-  "family": "category",
-  "key": "reliability",
-  "form": "count-20plus",
-  "style": "color",
-  "alt": "☼ Reliability (20+)",
-  "count": "20+"
- },
- {
   "file": "v1/chip/mono/category/security/label.svg",
   "width": 75,
   "height": 21,
@@ -6295,16 +5771,6 @@
   "key": "security",
   "form": "label",
   "style": "mono",
-  "alt": "⛨ Security"
- },
- {
-  "file": "v1/chip/color/category/security/label.svg",
-  "width": 75,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "label",
-  "style": "color",
   "alt": "⛨ Security"
  },
  {
@@ -6318,16 +5784,6 @@
   "alt": "⛨"
  },
  {
-  "file": "v1/chip/color/category/security/icon.svg",
-  "width": 26,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "icon",
-  "style": "color",
-  "alt": "⛨"
- },
- {
   "file": "v1/chip/mono/category/security/count-0.svg",
   "width": 93,
   "height": 21,
@@ -6335,17 +5791,6 @@
   "key": "security",
   "form": "count-0",
   "style": "mono",
-  "alt": "⛨ Security (0)",
-  "count": "0"
- },
- {
-  "file": "v1/chip/color/category/security/count-0.svg",
-  "width": 93,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "count-0",
-  "style": "color",
   "alt": "⛨ Security (0)",
   "count": "0"
  },
@@ -6361,17 +5806,6 @@
   "count": "1"
  },
  {
-  "file": "v1/chip/color/category/security/count-1.svg",
-  "width": 91,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "count-1",
-  "style": "color",
-  "alt": "⛨ Security (1)",
-  "count": "1"
- },
- {
   "file": "v1/chip/mono/category/security/count-2.svg",
   "width": 93,
   "height": 21,
@@ -6379,17 +5813,6 @@
   "key": "security",
   "form": "count-2",
   "style": "mono",
-  "alt": "⛨ Security (2)",
-  "count": "2"
- },
- {
-  "file": "v1/chip/color/category/security/count-2.svg",
-  "width": 93,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "count-2",
-  "style": "color",
   "alt": "⛨ Security (2)",
   "count": "2"
  },
@@ -6405,17 +5828,6 @@
   "count": "3"
  },
  {
-  "file": "v1/chip/color/category/security/count-3.svg",
-  "width": 93,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "count-3",
-  "style": "color",
-  "alt": "⛨ Security (3)",
-  "count": "3"
- },
- {
   "file": "v1/chip/mono/category/security/count-4.svg",
   "width": 93,
   "height": 21,
@@ -6423,17 +5835,6 @@
   "key": "security",
   "form": "count-4",
   "style": "mono",
-  "alt": "⛨ Security (4)",
-  "count": "4"
- },
- {
-  "file": "v1/chip/color/category/security/count-4.svg",
-  "width": 93,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "count-4",
-  "style": "color",
   "alt": "⛨ Security (4)",
   "count": "4"
  },
@@ -6449,17 +5850,6 @@
   "count": "5"
  },
  {
-  "file": "v1/chip/color/category/security/count-5.svg",
-  "width": 93,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "count-5",
-  "style": "color",
-  "alt": "⛨ Security (5)",
-  "count": "5"
- },
- {
   "file": "v1/chip/mono/category/security/count-6.svg",
   "width": 93,
   "height": 21,
@@ -6467,17 +5857,6 @@
   "key": "security",
   "form": "count-6",
   "style": "mono",
-  "alt": "⛨ Security (6)",
-  "count": "6"
- },
- {
-  "file": "v1/chip/color/category/security/count-6.svg",
-  "width": 93,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "count-6",
-  "style": "color",
   "alt": "⛨ Security (6)",
   "count": "6"
  },
@@ -6493,17 +5872,6 @@
   "count": "7"
  },
  {
-  "file": "v1/chip/color/category/security/count-7.svg",
-  "width": 92,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "count-7",
-  "style": "color",
-  "alt": "⛨ Security (7)",
-  "count": "7"
- },
- {
   "file": "v1/chip/mono/category/security/count-8.svg",
   "width": 93,
   "height": 21,
@@ -6511,17 +5879,6 @@
   "key": "security",
   "form": "count-8",
   "style": "mono",
-  "alt": "⛨ Security (8)",
-  "count": "8"
- },
- {
-  "file": "v1/chip/color/category/security/count-8.svg",
-  "width": 93,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "count-8",
-  "style": "color",
   "alt": "⛨ Security (8)",
   "count": "8"
  },
@@ -6537,17 +5894,6 @@
   "count": "9"
  },
  {
-  "file": "v1/chip/color/category/security/count-9.svg",
-  "width": 93,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "count-9",
-  "style": "color",
-  "alt": "⛨ Security (9)",
-  "count": "9"
- },
- {
   "file": "v1/chip/mono/category/security/count-10.svg",
   "width": 98,
   "height": 21,
@@ -6555,17 +5901,6 @@
   "key": "security",
   "form": "count-10",
   "style": "mono",
-  "alt": "⛨ Security (10)",
-  "count": "10"
- },
- {
-  "file": "v1/chip/color/category/security/count-10.svg",
-  "width": 98,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "count-10",
-  "style": "color",
   "alt": "⛨ Security (10)",
   "count": "10"
  },
@@ -6581,17 +5916,6 @@
   "count": "11"
  },
  {
-  "file": "v1/chip/color/category/security/count-11.svg",
-  "width": 96,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "count-11",
-  "style": "color",
-  "alt": "⛨ Security (11)",
-  "count": "11"
- },
- {
   "file": "v1/chip/mono/category/security/count-12.svg",
   "width": 98,
   "height": 21,
@@ -6599,17 +5923,6 @@
   "key": "security",
   "form": "count-12",
   "style": "mono",
-  "alt": "⛨ Security (12)",
-  "count": "12"
- },
- {
-  "file": "v1/chip/color/category/security/count-12.svg",
-  "width": 98,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "count-12",
-  "style": "color",
   "alt": "⛨ Security (12)",
   "count": "12"
  },
@@ -6625,17 +5938,6 @@
   "count": "13"
  },
  {
-  "file": "v1/chip/color/category/security/count-13.svg",
-  "width": 98,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "count-13",
-  "style": "color",
-  "alt": "⛨ Security (13)",
-  "count": "13"
- },
- {
   "file": "v1/chip/mono/category/security/count-14.svg",
   "width": 98,
   "height": 21,
@@ -6643,17 +5945,6 @@
   "key": "security",
   "form": "count-14",
   "style": "mono",
-  "alt": "⛨ Security (14)",
-  "count": "14"
- },
- {
-  "file": "v1/chip/color/category/security/count-14.svg",
-  "width": 98,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "count-14",
-  "style": "color",
   "alt": "⛨ Security (14)",
   "count": "14"
  },
@@ -6669,17 +5960,6 @@
   "count": "15"
  },
  {
-  "file": "v1/chip/color/category/security/count-15.svg",
-  "width": 98,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "count-15",
-  "style": "color",
-  "alt": "⛨ Security (15)",
-  "count": "15"
- },
- {
   "file": "v1/chip/mono/category/security/count-16.svg",
   "width": 98,
   "height": 21,
@@ -6687,17 +5967,6 @@
   "key": "security",
   "form": "count-16",
   "style": "mono",
-  "alt": "⛨ Security (16)",
-  "count": "16"
- },
- {
-  "file": "v1/chip/color/category/security/count-16.svg",
-  "width": 98,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "count-16",
-  "style": "color",
   "alt": "⛨ Security (16)",
   "count": "16"
  },
@@ -6713,17 +5982,6 @@
   "count": "17"
  },
  {
-  "file": "v1/chip/color/category/security/count-17.svg",
-  "width": 97,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "count-17",
-  "style": "color",
-  "alt": "⛨ Security (17)",
-  "count": "17"
- },
- {
   "file": "v1/chip/mono/category/security/count-18.svg",
   "width": 98,
   "height": 21,
@@ -6731,17 +5989,6 @@
   "key": "security",
   "form": "count-18",
   "style": "mono",
-  "alt": "⛨ Security (18)",
-  "count": "18"
- },
- {
-  "file": "v1/chip/color/category/security/count-18.svg",
-  "width": 98,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "count-18",
-  "style": "color",
   "alt": "⛨ Security (18)",
   "count": "18"
  },
@@ -6757,17 +6004,6 @@
   "count": "19"
  },
  {
-  "file": "v1/chip/color/category/security/count-19.svg",
-  "width": 98,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "count-19",
-  "style": "color",
-  "alt": "⛨ Security (19)",
-  "count": "19"
- },
- {
   "file": "v1/chip/mono/category/security/count-20.svg",
   "width": 101,
   "height": 21,
@@ -6775,17 +6011,6 @@
   "key": "security",
   "form": "count-20",
   "style": "mono",
-  "alt": "⛨ Security (20)",
-  "count": "20"
- },
- {
-  "file": "v1/chip/color/category/security/count-20.svg",
-  "width": 101,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "count-20",
-  "style": "color",
   "alt": "⛨ Security (20)",
   "count": "20"
  },
@@ -6801,17 +6026,6 @@
   "count": "20+"
  },
  {
-  "file": "v1/chip/color/category/security/count-20plus.svg",
-  "width": 108,
-  "height": 21,
-  "family": "category",
-  "key": "security",
-  "form": "count-20plus",
-  "style": "color",
-  "alt": "⛨ Security (20+)",
-  "count": "20+"
- },
- {
   "file": "v1/chip/mono/category/quality/label.svg",
   "width": 68,
   "height": 21,
@@ -6819,16 +6033,6 @@
   "key": "quality",
   "form": "label",
   "style": "mono",
-  "alt": "✧ Quality"
- },
- {
-  "file": "v1/chip/color/category/quality/label.svg",
-  "width": 68,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "label",
-  "style": "color",
   "alt": "✧ Quality"
  },
  {
@@ -6842,16 +6046,6 @@
   "alt": "✧"
  },
  {
-  "file": "v1/chip/color/category/quality/icon.svg",
-  "width": 26,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "icon",
-  "style": "color",
-  "alt": "✧"
- },
- {
   "file": "v1/chip/mono/category/quality/count-0.svg",
   "width": 86,
   "height": 21,
@@ -6859,17 +6053,6 @@
   "key": "quality",
   "form": "count-0",
   "style": "mono",
-  "alt": "✧ Quality (0)",
-  "count": "0"
- },
- {
-  "file": "v1/chip/color/category/quality/count-0.svg",
-  "width": 86,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "count-0",
-  "style": "color",
   "alt": "✧ Quality (0)",
   "count": "0"
  },
@@ -6885,17 +6068,6 @@
   "count": "1"
  },
  {
-  "file": "v1/chip/color/category/quality/count-1.svg",
-  "width": 84,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "count-1",
-  "style": "color",
-  "alt": "✧ Quality (1)",
-  "count": "1"
- },
- {
   "file": "v1/chip/mono/category/quality/count-2.svg",
   "width": 86,
   "height": 21,
@@ -6903,17 +6075,6 @@
   "key": "quality",
   "form": "count-2",
   "style": "mono",
-  "alt": "✧ Quality (2)",
-  "count": "2"
- },
- {
-  "file": "v1/chip/color/category/quality/count-2.svg",
-  "width": 86,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "count-2",
-  "style": "color",
   "alt": "✧ Quality (2)",
   "count": "2"
  },
@@ -6929,17 +6090,6 @@
   "count": "3"
  },
  {
-  "file": "v1/chip/color/category/quality/count-3.svg",
-  "width": 86,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "count-3",
-  "style": "color",
-  "alt": "✧ Quality (3)",
-  "count": "3"
- },
- {
   "file": "v1/chip/mono/category/quality/count-4.svg",
   "width": 87,
   "height": 21,
@@ -6947,17 +6097,6 @@
   "key": "quality",
   "form": "count-4",
   "style": "mono",
-  "alt": "✧ Quality (4)",
-  "count": "4"
- },
- {
-  "file": "v1/chip/color/category/quality/count-4.svg",
-  "width": 87,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "count-4",
-  "style": "color",
   "alt": "✧ Quality (4)",
   "count": "4"
  },
@@ -6973,17 +6112,6 @@
   "count": "5"
  },
  {
-  "file": "v1/chip/color/category/quality/count-5.svg",
-  "width": 86,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "count-5",
-  "style": "color",
-  "alt": "✧ Quality (5)",
-  "count": "5"
- },
- {
   "file": "v1/chip/mono/category/quality/count-6.svg",
   "width": 86,
   "height": 21,
@@ -6991,17 +6119,6 @@
   "key": "quality",
   "form": "count-6",
   "style": "mono",
-  "alt": "✧ Quality (6)",
-  "count": "6"
- },
- {
-  "file": "v1/chip/color/category/quality/count-6.svg",
-  "width": 86,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "count-6",
-  "style": "color",
   "alt": "✧ Quality (6)",
   "count": "6"
  },
@@ -7017,17 +6134,6 @@
   "count": "7"
  },
  {
-  "file": "v1/chip/color/category/quality/count-7.svg",
-  "width": 85,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "count-7",
-  "style": "color",
-  "alt": "✧ Quality (7)",
-  "count": "7"
- },
- {
   "file": "v1/chip/mono/category/quality/count-8.svg",
   "width": 86,
   "height": 21,
@@ -7035,17 +6141,6 @@
   "key": "quality",
   "form": "count-8",
   "style": "mono",
-  "alt": "✧ Quality (8)",
-  "count": "8"
- },
- {
-  "file": "v1/chip/color/category/quality/count-8.svg",
-  "width": 86,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "count-8",
-  "style": "color",
   "alt": "✧ Quality (8)",
   "count": "8"
  },
@@ -7061,17 +6156,6 @@
   "count": "9"
  },
  {
-  "file": "v1/chip/color/category/quality/count-9.svg",
-  "width": 86,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "count-9",
-  "style": "color",
-  "alt": "✧ Quality (9)",
-  "count": "9"
- },
- {
   "file": "v1/chip/mono/category/quality/count-10.svg",
   "width": 91,
   "height": 21,
@@ -7079,17 +6163,6 @@
   "key": "quality",
   "form": "count-10",
   "style": "mono",
-  "alt": "✧ Quality (10)",
-  "count": "10"
- },
- {
-  "file": "v1/chip/color/category/quality/count-10.svg",
-  "width": 91,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "count-10",
-  "style": "color",
   "alt": "✧ Quality (10)",
   "count": "10"
  },
@@ -7105,17 +6178,6 @@
   "count": "11"
  },
  {
-  "file": "v1/chip/color/category/quality/count-11.svg",
-  "width": 89,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "count-11",
-  "style": "color",
-  "alt": "✧ Quality (11)",
-  "count": "11"
- },
- {
   "file": "v1/chip/mono/category/quality/count-12.svg",
   "width": 91,
   "height": 21,
@@ -7123,17 +6185,6 @@
   "key": "quality",
   "form": "count-12",
   "style": "mono",
-  "alt": "✧ Quality (12)",
-  "count": "12"
- },
- {
-  "file": "v1/chip/color/category/quality/count-12.svg",
-  "width": 91,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "count-12",
-  "style": "color",
   "alt": "✧ Quality (12)",
   "count": "12"
  },
@@ -7149,17 +6200,6 @@
   "count": "13"
  },
  {
-  "file": "v1/chip/color/category/quality/count-13.svg",
-  "width": 91,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "count-13",
-  "style": "color",
-  "alt": "✧ Quality (13)",
-  "count": "13"
- },
- {
   "file": "v1/chip/mono/category/quality/count-14.svg",
   "width": 91,
   "height": 21,
@@ -7167,17 +6207,6 @@
   "key": "quality",
   "form": "count-14",
   "style": "mono",
-  "alt": "✧ Quality (14)",
-  "count": "14"
- },
- {
-  "file": "v1/chip/color/category/quality/count-14.svg",
-  "width": 91,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "count-14",
-  "style": "color",
   "alt": "✧ Quality (14)",
   "count": "14"
  },
@@ -7193,17 +6222,6 @@
   "count": "15"
  },
  {
-  "file": "v1/chip/color/category/quality/count-15.svg",
-  "width": 91,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "count-15",
-  "style": "color",
-  "alt": "✧ Quality (15)",
-  "count": "15"
- },
- {
   "file": "v1/chip/mono/category/quality/count-16.svg",
   "width": 91,
   "height": 21,
@@ -7211,17 +6229,6 @@
   "key": "quality",
   "form": "count-16",
   "style": "mono",
-  "alt": "✧ Quality (16)",
-  "count": "16"
- },
- {
-  "file": "v1/chip/color/category/quality/count-16.svg",
-  "width": 91,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "count-16",
-  "style": "color",
   "alt": "✧ Quality (16)",
   "count": "16"
  },
@@ -7237,17 +6244,6 @@
   "count": "17"
  },
  {
-  "file": "v1/chip/color/category/quality/count-17.svg",
-  "width": 90,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "count-17",
-  "style": "color",
-  "alt": "✧ Quality (17)",
-  "count": "17"
- },
- {
   "file": "v1/chip/mono/category/quality/count-18.svg",
   "width": 91,
   "height": 21,
@@ -7255,17 +6251,6 @@
   "key": "quality",
   "form": "count-18",
   "style": "mono",
-  "alt": "✧ Quality (18)",
-  "count": "18"
- },
- {
-  "file": "v1/chip/color/category/quality/count-18.svg",
-  "width": 91,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "count-18",
-  "style": "color",
   "alt": "✧ Quality (18)",
   "count": "18"
  },
@@ -7281,17 +6266,6 @@
   "count": "19"
  },
  {
-  "file": "v1/chip/color/category/quality/count-19.svg",
-  "width": 91,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "count-19",
-  "style": "color",
-  "alt": "✧ Quality (19)",
-  "count": "19"
- },
- {
   "file": "v1/chip/mono/category/quality/count-20.svg",
   "width": 94,
   "height": 21,
@@ -7299,17 +6273,6 @@
   "key": "quality",
   "form": "count-20",
   "style": "mono",
-  "alt": "✧ Quality (20)",
-  "count": "20"
- },
- {
-  "file": "v1/chip/color/category/quality/count-20.svg",
-  "width": 94,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "count-20",
-  "style": "color",
   "alt": "✧ Quality (20)",
   "count": "20"
  },
@@ -7325,17 +6288,6 @@
   "count": "20+"
  },
  {
-  "file": "v1/chip/color/category/quality/count-20plus.svg",
-  "width": 101,
-  "height": 21,
-  "family": "category",
-  "key": "quality",
-  "form": "count-20plus",
-  "style": "color",
-  "alt": "✧ Quality (20+)",
-  "count": "20+"
- },
- {
   "file": "v1/chip/mono/category/maintainability/label.svg",
   "width": 108,
   "height": 21,
@@ -7343,16 +6295,6 @@
   "key": "maintainability",
   "form": "label",
   "style": "mono",
-  "alt": "⚙ Maintainability"
- },
- {
-  "file": "v1/chip/color/category/maintainability/label.svg",
-  "width": 108,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "label",
-  "style": "color",
   "alt": "⚙ Maintainability"
  },
  {
@@ -7366,16 +6308,6 @@
   "alt": "⚙"
  },
  {
-  "file": "v1/chip/color/category/maintainability/icon.svg",
-  "width": 26,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "icon",
-  "style": "color",
-  "alt": "⚙"
- },
- {
   "file": "v1/chip/mono/category/maintainability/count-0.svg",
   "width": 127,
   "height": 21,
@@ -7383,17 +6315,6 @@
   "key": "maintainability",
   "form": "count-0",
   "style": "mono",
-  "alt": "⚙ Maintainability (0)",
-  "count": "0"
- },
- {
-  "file": "v1/chip/color/category/maintainability/count-0.svg",
-  "width": 127,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "count-0",
-  "style": "color",
   "alt": "⚙ Maintainability (0)",
   "count": "0"
  },
@@ -7409,17 +6330,6 @@
   "count": "1"
  },
  {
-  "file": "v1/chip/color/category/maintainability/count-1.svg",
-  "width": 124,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "count-1",
-  "style": "color",
-  "alt": "⚙ Maintainability (1)",
-  "count": "1"
- },
- {
   "file": "v1/chip/mono/category/maintainability/count-2.svg",
   "width": 126,
   "height": 21,
@@ -7427,17 +6337,6 @@
   "key": "maintainability",
   "form": "count-2",
   "style": "mono",
-  "alt": "⚙ Maintainability (2)",
-  "count": "2"
- },
- {
-  "file": "v1/chip/color/category/maintainability/count-2.svg",
-  "width": 126,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "count-2",
-  "style": "color",
   "alt": "⚙ Maintainability (2)",
   "count": "2"
  },
@@ -7453,17 +6352,6 @@
   "count": "3"
  },
  {
-  "file": "v1/chip/color/category/maintainability/count-3.svg",
-  "width": 127,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "count-3",
-  "style": "color",
-  "alt": "⚙ Maintainability (3)",
-  "count": "3"
- },
- {
   "file": "v1/chip/mono/category/maintainability/count-4.svg",
   "width": 127,
   "height": 21,
@@ -7471,17 +6359,6 @@
   "key": "maintainability",
   "form": "count-4",
   "style": "mono",
-  "alt": "⚙ Maintainability (4)",
-  "count": "4"
- },
- {
-  "file": "v1/chip/color/category/maintainability/count-4.svg",
-  "width": 127,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "count-4",
-  "style": "color",
   "alt": "⚙ Maintainability (4)",
   "count": "4"
  },
@@ -7497,17 +6374,6 @@
   "count": "5"
  },
  {
-  "file": "v1/chip/color/category/maintainability/count-5.svg",
-  "width": 127,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "count-5",
-  "style": "color",
-  "alt": "⚙ Maintainability (5)",
-  "count": "5"
- },
- {
   "file": "v1/chip/mono/category/maintainability/count-6.svg",
   "width": 127,
   "height": 21,
@@ -7515,17 +6381,6 @@
   "key": "maintainability",
   "form": "count-6",
   "style": "mono",
-  "alt": "⚙ Maintainability (6)",
-  "count": "6"
- },
- {
-  "file": "v1/chip/color/category/maintainability/count-6.svg",
-  "width": 127,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "count-6",
-  "style": "color",
   "alt": "⚙ Maintainability (6)",
   "count": "6"
  },
@@ -7541,17 +6396,6 @@
   "count": "7"
  },
  {
-  "file": "v1/chip/color/category/maintainability/count-7.svg",
-  "width": 126,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "count-7",
-  "style": "color",
-  "alt": "⚙ Maintainability (7)",
-  "count": "7"
- },
- {
   "file": "v1/chip/mono/category/maintainability/count-8.svg",
   "width": 127,
   "height": 21,
@@ -7559,17 +6403,6 @@
   "key": "maintainability",
   "form": "count-8",
   "style": "mono",
-  "alt": "⚙ Maintainability (8)",
-  "count": "8"
- },
- {
-  "file": "v1/chip/color/category/maintainability/count-8.svg",
-  "width": 127,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "count-8",
-  "style": "color",
   "alt": "⚙ Maintainability (8)",
   "count": "8"
  },
@@ -7585,17 +6418,6 @@
   "count": "9"
  },
  {
-  "file": "v1/chip/color/category/maintainability/count-9.svg",
-  "width": 127,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "count-9",
-  "style": "color",
-  "alt": "⚙ Maintainability (9)",
-  "count": "9"
- },
- {
   "file": "v1/chip/mono/category/maintainability/count-10.svg",
   "width": 132,
   "height": 21,
@@ -7603,17 +6425,6 @@
   "key": "maintainability",
   "form": "count-10",
   "style": "mono",
-  "alt": "⚙ Maintainability (10)",
-  "count": "10"
- },
- {
-  "file": "v1/chip/color/category/maintainability/count-10.svg",
-  "width": 132,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "count-10",
-  "style": "color",
   "alt": "⚙ Maintainability (10)",
   "count": "10"
  },
@@ -7629,17 +6440,6 @@
   "count": "11"
  },
  {
-  "file": "v1/chip/color/category/maintainability/count-11.svg",
-  "width": 129,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "count-11",
-  "style": "color",
-  "alt": "⚙ Maintainability (11)",
-  "count": "11"
- },
- {
   "file": "v1/chip/mono/category/maintainability/count-12.svg",
   "width": 131,
   "height": 21,
@@ -7647,17 +6447,6 @@
   "key": "maintainability",
   "form": "count-12",
   "style": "mono",
-  "alt": "⚙ Maintainability (12)",
-  "count": "12"
- },
- {
-  "file": "v1/chip/color/category/maintainability/count-12.svg",
-  "width": 131,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "count-12",
-  "style": "color",
   "alt": "⚙ Maintainability (12)",
   "count": "12"
  },
@@ -7673,17 +6462,6 @@
   "count": "13"
  },
  {
-  "file": "v1/chip/color/category/maintainability/count-13.svg",
-  "width": 131,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "count-13",
-  "style": "color",
-  "alt": "⚙ Maintainability (13)",
-  "count": "13"
- },
- {
   "file": "v1/chip/mono/category/maintainability/count-14.svg",
   "width": 132,
   "height": 21,
@@ -7691,17 +6469,6 @@
   "key": "maintainability",
   "form": "count-14",
   "style": "mono",
-  "alt": "⚙ Maintainability (14)",
-  "count": "14"
- },
- {
-  "file": "v1/chip/color/category/maintainability/count-14.svg",
-  "width": 132,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "count-14",
-  "style": "color",
   "alt": "⚙ Maintainability (14)",
   "count": "14"
  },
@@ -7717,17 +6484,6 @@
   "count": "15"
  },
  {
-  "file": "v1/chip/color/category/maintainability/count-15.svg",
-  "width": 131,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "count-15",
-  "style": "color",
-  "alt": "⚙ Maintainability (15)",
-  "count": "15"
- },
- {
   "file": "v1/chip/mono/category/maintainability/count-16.svg",
   "width": 132,
   "height": 21,
@@ -7735,17 +6491,6 @@
   "key": "maintainability",
   "form": "count-16",
   "style": "mono",
-  "alt": "⚙ Maintainability (16)",
-  "count": "16"
- },
- {
-  "file": "v1/chip/color/category/maintainability/count-16.svg",
-  "width": 132,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "count-16",
-  "style": "color",
   "alt": "⚙ Maintainability (16)",
   "count": "16"
  },
@@ -7761,17 +6506,6 @@
   "count": "17"
  },
  {
-  "file": "v1/chip/color/category/maintainability/count-17.svg",
-  "width": 131,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "count-17",
-  "style": "color",
-  "alt": "⚙ Maintainability (17)",
-  "count": "17"
- },
- {
   "file": "v1/chip/mono/category/maintainability/count-18.svg",
   "width": 132,
   "height": 21,
@@ -7779,17 +6513,6 @@
   "key": "maintainability",
   "form": "count-18",
   "style": "mono",
-  "alt": "⚙ Maintainability (18)",
-  "count": "18"
- },
- {
-  "file": "v1/chip/color/category/maintainability/count-18.svg",
-  "width": 132,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "count-18",
-  "style": "color",
   "alt": "⚙ Maintainability (18)",
   "count": "18"
  },
@@ -7805,17 +6528,6 @@
   "count": "19"
  },
  {
-  "file": "v1/chip/color/category/maintainability/count-19.svg",
-  "width": 132,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "count-19",
-  "style": "color",
-  "alt": "⚙ Maintainability (19)",
-  "count": "19"
- },
- {
   "file": "v1/chip/mono/category/maintainability/count-20.svg",
   "width": 134,
   "height": 21,
@@ -7823,17 +6535,6 @@
   "key": "maintainability",
   "form": "count-20",
   "style": "mono",
-  "alt": "⚙ Maintainability (20)",
-  "count": "20"
- },
- {
-  "file": "v1/chip/color/category/maintainability/count-20.svg",
-  "width": 134,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "count-20",
-  "style": "color",
   "alt": "⚙ Maintainability (20)",
   "count": "20"
  },
@@ -7849,17 +6550,6 @@
   "count": "20+"
  },
  {
-  "file": "v1/chip/color/category/maintainability/count-20plus.svg",
-  "width": 142,
-  "height": 21,
-  "family": "category",
-  "key": "maintainability",
-  "form": "count-20plus",
-  "style": "color",
-  "alt": "⚙ Maintainability (20+)",
-  "count": "20+"
- },
- {
   "file": "v1/chip/mono/category/performance/label.svg",
   "width": 100,
   "height": 21,
@@ -7867,16 +6557,6 @@
   "key": "performance",
   "form": "label",
   "style": "mono",
-  "alt": "➹ Performance"
- },
- {
-  "file": "v1/chip/color/category/performance/label.svg",
-  "width": 100,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "label",
-  "style": "color",
   "alt": "➹ Performance"
  },
  {
@@ -7890,16 +6570,6 @@
   "alt": "➹"
  },
  {
-  "file": "v1/chip/color/category/performance/icon.svg",
-  "width": 26,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "icon",
-  "style": "color",
-  "alt": "➹"
- },
- {
   "file": "v1/chip/mono/category/performance/count-0.svg",
   "width": 119,
   "height": 21,
@@ -7907,17 +6577,6 @@
   "key": "performance",
   "form": "count-0",
   "style": "mono",
-  "alt": "➹ Performance (0)",
-  "count": "0"
- },
- {
-  "file": "v1/chip/color/category/performance/count-0.svg",
-  "width": 119,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "count-0",
-  "style": "color",
   "alt": "➹ Performance (0)",
   "count": "0"
  },
@@ -7933,17 +6592,6 @@
   "count": "1"
  },
  {
-  "file": "v1/chip/color/category/performance/count-1.svg",
-  "width": 116,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "count-1",
-  "style": "color",
-  "alt": "➹ Performance (1)",
-  "count": "1"
- },
- {
   "file": "v1/chip/mono/category/performance/count-2.svg",
   "width": 119,
   "height": 21,
@@ -7951,17 +6599,6 @@
   "key": "performance",
   "form": "count-2",
   "style": "mono",
-  "alt": "➹ Performance (2)",
-  "count": "2"
- },
- {
-  "file": "v1/chip/color/category/performance/count-2.svg",
-  "width": 119,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "count-2",
-  "style": "color",
   "alt": "➹ Performance (2)",
   "count": "2"
  },
@@ -7977,17 +6614,6 @@
   "count": "3"
  },
  {
-  "file": "v1/chip/color/category/performance/count-3.svg",
-  "width": 119,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "count-3",
-  "style": "color",
-  "alt": "➹ Performance (3)",
-  "count": "3"
- },
- {
   "file": "v1/chip/mono/category/performance/count-4.svg",
   "width": 119,
   "height": 21,
@@ -7995,17 +6621,6 @@
   "key": "performance",
   "form": "count-4",
   "style": "mono",
-  "alt": "➹ Performance (4)",
-  "count": "4"
- },
- {
-  "file": "v1/chip/color/category/performance/count-4.svg",
-  "width": 119,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "count-4",
-  "style": "color",
   "alt": "➹ Performance (4)",
   "count": "4"
  },
@@ -8021,17 +6636,6 @@
   "count": "5"
  },
  {
-  "file": "v1/chip/color/category/performance/count-5.svg",
-  "width": 119,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "count-5",
-  "style": "color",
-  "alt": "➹ Performance (5)",
-  "count": "5"
- },
- {
   "file": "v1/chip/mono/category/performance/count-6.svg",
   "width": 119,
   "height": 21,
@@ -8039,17 +6643,6 @@
   "key": "performance",
   "form": "count-6",
   "style": "mono",
-  "alt": "➹ Performance (6)",
-  "count": "6"
- },
- {
-  "file": "v1/chip/color/category/performance/count-6.svg",
-  "width": 119,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "count-6",
-  "style": "color",
   "alt": "➹ Performance (6)",
   "count": "6"
  },
@@ -8065,17 +6658,6 @@
   "count": "7"
  },
  {
-  "file": "v1/chip/color/category/performance/count-7.svg",
-  "width": 118,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "count-7",
-  "style": "color",
-  "alt": "➹ Performance (7)",
-  "count": "7"
- },
- {
   "file": "v1/chip/mono/category/performance/count-8.svg",
   "width": 119,
   "height": 21,
@@ -8083,17 +6665,6 @@
   "key": "performance",
   "form": "count-8",
   "style": "mono",
-  "alt": "➹ Performance (8)",
-  "count": "8"
- },
- {
-  "file": "v1/chip/color/category/performance/count-8.svg",
-  "width": 119,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "count-8",
-  "style": "color",
   "alt": "➹ Performance (8)",
   "count": "8"
  },
@@ -8109,17 +6680,6 @@
   "count": "9"
  },
  {
-  "file": "v1/chip/color/category/performance/count-9.svg",
-  "width": 119,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "count-9",
-  "style": "color",
-  "alt": "➹ Performance (9)",
-  "count": "9"
- },
- {
   "file": "v1/chip/mono/category/performance/count-10.svg",
   "width": 124,
   "height": 21,
@@ -8127,17 +6687,6 @@
   "key": "performance",
   "form": "count-10",
   "style": "mono",
-  "alt": "➹ Performance (10)",
-  "count": "10"
- },
- {
-  "file": "v1/chip/color/category/performance/count-10.svg",
-  "width": 124,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "count-10",
-  "style": "color",
   "alt": "➹ Performance (10)",
   "count": "10"
  },
@@ -8153,17 +6702,6 @@
   "count": "11"
  },
  {
-  "file": "v1/chip/color/category/performance/count-11.svg",
-  "width": 121,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "count-11",
-  "style": "color",
-  "alt": "➹ Performance (11)",
-  "count": "11"
- },
- {
   "file": "v1/chip/mono/category/performance/count-12.svg",
   "width": 123,
   "height": 21,
@@ -8171,17 +6709,6 @@
   "key": "performance",
   "form": "count-12",
   "style": "mono",
-  "alt": "➹ Performance (12)",
-  "count": "12"
- },
- {
-  "file": "v1/chip/color/category/performance/count-12.svg",
-  "width": 123,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "count-12",
-  "style": "color",
   "alt": "➹ Performance (12)",
   "count": "12"
  },
@@ -8197,17 +6724,6 @@
   "count": "13"
  },
  {
-  "file": "v1/chip/color/category/performance/count-13.svg",
-  "width": 124,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "count-13",
-  "style": "color",
-  "alt": "➹ Performance (13)",
-  "count": "13"
- },
- {
   "file": "v1/chip/mono/category/performance/count-14.svg",
   "width": 124,
   "height": 21,
@@ -8215,17 +6731,6 @@
   "key": "performance",
   "form": "count-14",
   "style": "mono",
-  "alt": "➹ Performance (14)",
-  "count": "14"
- },
- {
-  "file": "v1/chip/color/category/performance/count-14.svg",
-  "width": 124,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "count-14",
-  "style": "color",
   "alt": "➹ Performance (14)",
   "count": "14"
  },
@@ -8241,17 +6746,6 @@
   "count": "15"
  },
  {
-  "file": "v1/chip/color/category/performance/count-15.svg",
-  "width": 124,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "count-15",
-  "style": "color",
-  "alt": "➹ Performance (15)",
-  "count": "15"
- },
- {
   "file": "v1/chip/mono/category/performance/count-16.svg",
   "width": 124,
   "height": 21,
@@ -8259,17 +6753,6 @@
   "key": "performance",
   "form": "count-16",
   "style": "mono",
-  "alt": "➹ Performance (16)",
-  "count": "16"
- },
- {
-  "file": "v1/chip/color/category/performance/count-16.svg",
-  "width": 124,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "count-16",
-  "style": "color",
   "alt": "➹ Performance (16)",
   "count": "16"
  },
@@ -8285,17 +6768,6 @@
   "count": "17"
  },
  {
-  "file": "v1/chip/color/category/performance/count-17.svg",
-  "width": 123,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "count-17",
-  "style": "color",
-  "alt": "➹ Performance (17)",
-  "count": "17"
- },
- {
   "file": "v1/chip/mono/category/performance/count-18.svg",
   "width": 124,
   "height": 21,
@@ -8303,17 +6775,6 @@
   "key": "performance",
   "form": "count-18",
   "style": "mono",
-  "alt": "➹ Performance (18)",
-  "count": "18"
- },
- {
-  "file": "v1/chip/color/category/performance/count-18.svg",
-  "width": 124,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "count-18",
-  "style": "color",
   "alt": "➹ Performance (18)",
   "count": "18"
  },
@@ -8329,17 +6790,6 @@
   "count": "19"
  },
  {
-  "file": "v1/chip/color/category/performance/count-19.svg",
-  "width": 124,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "count-19",
-  "style": "color",
-  "alt": "➹ Performance (19)",
-  "count": "19"
- },
- {
   "file": "v1/chip/mono/category/performance/count-20.svg",
   "width": 126,
   "height": 21,
@@ -8347,17 +6797,6 @@
   "key": "performance",
   "form": "count-20",
   "style": "mono",
-  "alt": "➹ Performance (20)",
-  "count": "20"
- },
- {
-  "file": "v1/chip/color/category/performance/count-20.svg",
-  "width": 126,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "count-20",
-  "style": "color",
   "alt": "➹ Performance (20)",
   "count": "20"
  },
@@ -8373,17 +6812,6 @@
   "count": "20+"
  },
  {
-  "file": "v1/chip/color/category/performance/count-20plus.svg",
-  "width": 134,
-  "height": 21,
-  "family": "category",
-  "key": "performance",
-  "form": "count-20plus",
-  "style": "color",
-  "alt": "➹ Performance (20+)",
-  "count": "20+"
- },
- {
   "file": "v1/chip/mono/category/observability/label.svg",
   "width": 101,
   "height": 21,
@@ -8391,16 +6819,6 @@
   "key": "observability",
   "form": "label",
   "style": "mono",
-  "alt": "◔ Observability"
- },
- {
-  "file": "v1/chip/color/category/observability/label.svg",
-  "width": 101,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "label",
-  "style": "color",
   "alt": "◔ Observability"
  },
  {
@@ -8414,16 +6832,6 @@
   "alt": "◔"
  },
  {
-  "file": "v1/chip/color/category/observability/icon.svg",
-  "width": 26,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "icon",
-  "style": "color",
-  "alt": "◔"
- },
- {
   "file": "v1/chip/mono/category/observability/count-0.svg",
   "width": 120,
   "height": 21,
@@ -8431,17 +6839,6 @@
   "key": "observability",
   "form": "count-0",
   "style": "mono",
-  "alt": "◔ Observability (0)",
-  "count": "0"
- },
- {
-  "file": "v1/chip/color/category/observability/count-0.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "count-0",
-  "style": "color",
   "alt": "◔ Observability (0)",
   "count": "0"
  },
@@ -8457,17 +6854,6 @@
   "count": "1"
  },
  {
-  "file": "v1/chip/color/category/observability/count-1.svg",
-  "width": 117,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "count-1",
-  "style": "color",
-  "alt": "◔ Observability (1)",
-  "count": "1"
- },
- {
   "file": "v1/chip/mono/category/observability/count-2.svg",
   "width": 120,
   "height": 21,
@@ -8475,17 +6861,6 @@
   "key": "observability",
   "form": "count-2",
   "style": "mono",
-  "alt": "◔ Observability (2)",
-  "count": "2"
- },
- {
-  "file": "v1/chip/color/category/observability/count-2.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "count-2",
-  "style": "color",
   "alt": "◔ Observability (2)",
   "count": "2"
  },
@@ -8501,17 +6876,6 @@
   "count": "3"
  },
  {
-  "file": "v1/chip/color/category/observability/count-3.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "count-3",
-  "style": "color",
-  "alt": "◔ Observability (3)",
-  "count": "3"
- },
- {
   "file": "v1/chip/mono/category/observability/count-4.svg",
   "width": 120,
   "height": 21,
@@ -8519,17 +6883,6 @@
   "key": "observability",
   "form": "count-4",
   "style": "mono",
-  "alt": "◔ Observability (4)",
-  "count": "4"
- },
- {
-  "file": "v1/chip/color/category/observability/count-4.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "count-4",
-  "style": "color",
   "alt": "◔ Observability (4)",
   "count": "4"
  },
@@ -8545,17 +6898,6 @@
   "count": "5"
  },
  {
-  "file": "v1/chip/color/category/observability/count-5.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "count-5",
-  "style": "color",
-  "alt": "◔ Observability (5)",
-  "count": "5"
- },
- {
   "file": "v1/chip/mono/category/observability/count-6.svg",
   "width": 120,
   "height": 21,
@@ -8563,17 +6905,6 @@
   "key": "observability",
   "form": "count-6",
   "style": "mono",
-  "alt": "◔ Observability (6)",
-  "count": "6"
- },
- {
-  "file": "v1/chip/color/category/observability/count-6.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "count-6",
-  "style": "color",
   "alt": "◔ Observability (6)",
   "count": "6"
  },
@@ -8589,17 +6920,6 @@
   "count": "7"
  },
  {
-  "file": "v1/chip/color/category/observability/count-7.svg",
-  "width": 119,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "count-7",
-  "style": "color",
-  "alt": "◔ Observability (7)",
-  "count": "7"
- },
- {
   "file": "v1/chip/mono/category/observability/count-8.svg",
   "width": 120,
   "height": 21,
@@ -8607,17 +6927,6 @@
   "key": "observability",
   "form": "count-8",
   "style": "mono",
-  "alt": "◔ Observability (8)",
-  "count": "8"
- },
- {
-  "file": "v1/chip/color/category/observability/count-8.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "count-8",
-  "style": "color",
   "alt": "◔ Observability (8)",
   "count": "8"
  },
@@ -8633,17 +6942,6 @@
   "count": "9"
  },
  {
-  "file": "v1/chip/color/category/observability/count-9.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "count-9",
-  "style": "color",
-  "alt": "◔ Observability (9)",
-  "count": "9"
- },
- {
   "file": "v1/chip/mono/category/observability/count-10.svg",
   "width": 125,
   "height": 21,
@@ -8651,17 +6949,6 @@
   "key": "observability",
   "form": "count-10",
   "style": "mono",
-  "alt": "◔ Observability (10)",
-  "count": "10"
- },
- {
-  "file": "v1/chip/color/category/observability/count-10.svg",
-  "width": 125,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "count-10",
-  "style": "color",
   "alt": "◔ Observability (10)",
   "count": "10"
  },
@@ -8677,17 +6964,6 @@
   "count": "11"
  },
  {
-  "file": "v1/chip/color/category/observability/count-11.svg",
-  "width": 122,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "count-11",
-  "style": "color",
-  "alt": "◔ Observability (11)",
-  "count": "11"
- },
- {
   "file": "v1/chip/mono/category/observability/count-12.svg",
   "width": 125,
   "height": 21,
@@ -8695,17 +6971,6 @@
   "key": "observability",
   "form": "count-12",
   "style": "mono",
-  "alt": "◔ Observability (12)",
-  "count": "12"
- },
- {
-  "file": "v1/chip/color/category/observability/count-12.svg",
-  "width": 125,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "count-12",
-  "style": "color",
   "alt": "◔ Observability (12)",
   "count": "12"
  },
@@ -8721,17 +6986,6 @@
   "count": "13"
  },
  {
-  "file": "v1/chip/color/category/observability/count-13.svg",
-  "width": 125,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "count-13",
-  "style": "color",
-  "alt": "◔ Observability (13)",
-  "count": "13"
- },
- {
   "file": "v1/chip/mono/category/observability/count-14.svg",
   "width": 125,
   "height": 21,
@@ -8739,17 +6993,6 @@
   "key": "observability",
   "form": "count-14",
   "style": "mono",
-  "alt": "◔ Observability (14)",
-  "count": "14"
- },
- {
-  "file": "v1/chip/color/category/observability/count-14.svg",
-  "width": 125,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "count-14",
-  "style": "color",
   "alt": "◔ Observability (14)",
   "count": "14"
  },
@@ -8765,17 +7008,6 @@
   "count": "15"
  },
  {
-  "file": "v1/chip/color/category/observability/count-15.svg",
-  "width": 125,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "count-15",
-  "style": "color",
-  "alt": "◔ Observability (15)",
-  "count": "15"
- },
- {
   "file": "v1/chip/mono/category/observability/count-16.svg",
   "width": 125,
   "height": 21,
@@ -8783,17 +7015,6 @@
   "key": "observability",
   "form": "count-16",
   "style": "mono",
-  "alt": "◔ Observability (16)",
-  "count": "16"
- },
- {
-  "file": "v1/chip/color/category/observability/count-16.svg",
-  "width": 125,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "count-16",
-  "style": "color",
   "alt": "◔ Observability (16)",
   "count": "16"
  },
@@ -8809,17 +7030,6 @@
   "count": "17"
  },
  {
-  "file": "v1/chip/color/category/observability/count-17.svg",
-  "width": 124,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "count-17",
-  "style": "color",
-  "alt": "◔ Observability (17)",
-  "count": "17"
- },
- {
   "file": "v1/chip/mono/category/observability/count-18.svg",
   "width": 125,
   "height": 21,
@@ -8827,17 +7037,6 @@
   "key": "observability",
   "form": "count-18",
   "style": "mono",
-  "alt": "◔ Observability (18)",
-  "count": "18"
- },
- {
-  "file": "v1/chip/color/category/observability/count-18.svg",
-  "width": 125,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "count-18",
-  "style": "color",
   "alt": "◔ Observability (18)",
   "count": "18"
  },
@@ -8853,17 +7052,6 @@
   "count": "19"
  },
  {
-  "file": "v1/chip/color/category/observability/count-19.svg",
-  "width": 125,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "count-19",
-  "style": "color",
-  "alt": "◔ Observability (19)",
-  "count": "19"
- },
- {
   "file": "v1/chip/mono/category/observability/count-20.svg",
   "width": 127,
   "height": 21,
@@ -8871,17 +7059,6 @@
   "key": "observability",
   "form": "count-20",
   "style": "mono",
-  "alt": "◔ Observability (20)",
-  "count": "20"
- },
- {
-  "file": "v1/chip/color/category/observability/count-20.svg",
-  "width": 127,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "count-20",
-  "style": "color",
   "alt": "◔ Observability (20)",
   "count": "20"
  },
@@ -8897,17 +7074,6 @@
   "count": "20+"
  },
  {
-  "file": "v1/chip/color/category/observability/count-20plus.svg",
-  "width": 135,
-  "height": 21,
-  "family": "category",
-  "key": "observability",
-  "form": "count-20plus",
-  "style": "color",
-  "alt": "◔ Observability (20+)",
-  "count": "20+"
- },
- {
   "file": "v1/chip/mono/category/compliance/label.svg",
   "width": 95,
   "height": 21,
@@ -8915,16 +7081,6 @@
   "key": "compliance",
   "form": "label",
   "style": "mono",
-  "alt": "§ Compliance"
- },
- {
-  "file": "v1/chip/color/category/compliance/label.svg",
-  "width": 95,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "label",
-  "style": "color",
   "alt": "§ Compliance"
  },
  {
@@ -8938,16 +7094,6 @@
   "alt": "§"
  },
  {
-  "file": "v1/chip/color/category/compliance/icon.svg",
-  "width": 26,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "icon",
-  "style": "color",
-  "alt": "§"
- },
- {
   "file": "v1/chip/mono/category/compliance/count-0.svg",
   "width": 113,
   "height": 21,
@@ -8955,17 +7101,6 @@
   "key": "compliance",
   "form": "count-0",
   "style": "mono",
-  "alt": "§ Compliance (0)",
-  "count": "0"
- },
- {
-  "file": "v1/chip/color/category/compliance/count-0.svg",
-  "width": 113,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "count-0",
-  "style": "color",
   "alt": "§ Compliance (0)",
   "count": "0"
  },
@@ -8981,17 +7116,6 @@
   "count": "1"
  },
  {
-  "file": "v1/chip/color/category/compliance/count-1.svg",
-  "width": 110,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "count-1",
-  "style": "color",
-  "alt": "§ Compliance (1)",
-  "count": "1"
- },
- {
   "file": "v1/chip/mono/category/compliance/count-2.svg",
   "width": 113,
   "height": 21,
@@ -8999,17 +7123,6 @@
   "key": "compliance",
   "form": "count-2",
   "style": "mono",
-  "alt": "§ Compliance (2)",
-  "count": "2"
- },
- {
-  "file": "v1/chip/color/category/compliance/count-2.svg",
-  "width": 113,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "count-2",
-  "style": "color",
   "alt": "§ Compliance (2)",
   "count": "2"
  },
@@ -9025,17 +7138,6 @@
   "count": "3"
  },
  {
-  "file": "v1/chip/color/category/compliance/count-3.svg",
-  "width": 113,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "count-3",
-  "style": "color",
-  "alt": "§ Compliance (3)",
-  "count": "3"
- },
- {
   "file": "v1/chip/mono/category/compliance/count-4.svg",
   "width": 113,
   "height": 21,
@@ -9043,17 +7145,6 @@
   "key": "compliance",
   "form": "count-4",
   "style": "mono",
-  "alt": "§ Compliance (4)",
-  "count": "4"
- },
- {
-  "file": "v1/chip/color/category/compliance/count-4.svg",
-  "width": 113,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "count-4",
-  "style": "color",
   "alt": "§ Compliance (4)",
   "count": "4"
  },
@@ -9069,17 +7160,6 @@
   "count": "5"
  },
  {
-  "file": "v1/chip/color/category/compliance/count-5.svg",
-  "width": 113,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "count-5",
-  "style": "color",
-  "alt": "§ Compliance (5)",
-  "count": "5"
- },
- {
   "file": "v1/chip/mono/category/compliance/count-6.svg",
   "width": 113,
   "height": 21,
@@ -9087,17 +7167,6 @@
   "key": "compliance",
   "form": "count-6",
   "style": "mono",
-  "alt": "§ Compliance (6)",
-  "count": "6"
- },
- {
-  "file": "v1/chip/color/category/compliance/count-6.svg",
-  "width": 113,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "count-6",
-  "style": "color",
   "alt": "§ Compliance (6)",
   "count": "6"
  },
@@ -9113,17 +7182,6 @@
   "count": "7"
  },
  {
-  "file": "v1/chip/color/category/compliance/count-7.svg",
-  "width": 112,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "count-7",
-  "style": "color",
-  "alt": "§ Compliance (7)",
-  "count": "7"
- },
- {
   "file": "v1/chip/mono/category/compliance/count-8.svg",
   "width": 113,
   "height": 21,
@@ -9131,17 +7189,6 @@
   "key": "compliance",
   "form": "count-8",
   "style": "mono",
-  "alt": "§ Compliance (8)",
-  "count": "8"
- },
- {
-  "file": "v1/chip/color/category/compliance/count-8.svg",
-  "width": 113,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "count-8",
-  "style": "color",
   "alt": "§ Compliance (8)",
   "count": "8"
  },
@@ -9157,17 +7204,6 @@
   "count": "9"
  },
  {
-  "file": "v1/chip/color/category/compliance/count-9.svg",
-  "width": 113,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "count-9",
-  "style": "color",
-  "alt": "§ Compliance (9)",
-  "count": "9"
- },
- {
   "file": "v1/chip/mono/category/compliance/count-10.svg",
   "width": 118,
   "height": 21,
@@ -9175,17 +7211,6 @@
   "key": "compliance",
   "form": "count-10",
   "style": "mono",
-  "alt": "§ Compliance (10)",
-  "count": "10"
- },
- {
-  "file": "v1/chip/color/category/compliance/count-10.svg",
-  "width": 118,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "count-10",
-  "style": "color",
   "alt": "§ Compliance (10)",
   "count": "10"
  },
@@ -9201,17 +7226,6 @@
   "count": "11"
  },
  {
-  "file": "v1/chip/color/category/compliance/count-11.svg",
-  "width": 115,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "count-11",
-  "style": "color",
-  "alt": "§ Compliance (11)",
-  "count": "11"
- },
- {
   "file": "v1/chip/mono/category/compliance/count-12.svg",
   "width": 118,
   "height": 21,
@@ -9219,17 +7233,6 @@
   "key": "compliance",
   "form": "count-12",
   "style": "mono",
-  "alt": "§ Compliance (12)",
-  "count": "12"
- },
- {
-  "file": "v1/chip/color/category/compliance/count-12.svg",
-  "width": 118,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "count-12",
-  "style": "color",
   "alt": "§ Compliance (12)",
   "count": "12"
  },
@@ -9245,17 +7248,6 @@
   "count": "13"
  },
  {
-  "file": "v1/chip/color/category/compliance/count-13.svg",
-  "width": 118,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "count-13",
-  "style": "color",
-  "alt": "§ Compliance (13)",
-  "count": "13"
- },
- {
   "file": "v1/chip/mono/category/compliance/count-14.svg",
   "width": 118,
   "height": 21,
@@ -9263,17 +7255,6 @@
   "key": "compliance",
   "form": "count-14",
   "style": "mono",
-  "alt": "§ Compliance (14)",
-  "count": "14"
- },
- {
-  "file": "v1/chip/color/category/compliance/count-14.svg",
-  "width": 118,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "count-14",
-  "style": "color",
   "alt": "§ Compliance (14)",
   "count": "14"
  },
@@ -9289,17 +7270,6 @@
   "count": "15"
  },
  {
-  "file": "v1/chip/color/category/compliance/count-15.svg",
-  "width": 118,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "count-15",
-  "style": "color",
-  "alt": "§ Compliance (15)",
-  "count": "15"
- },
- {
   "file": "v1/chip/mono/category/compliance/count-16.svg",
   "width": 118,
   "height": 21,
@@ -9307,17 +7277,6 @@
   "key": "compliance",
   "form": "count-16",
   "style": "mono",
-  "alt": "§ Compliance (16)",
-  "count": "16"
- },
- {
-  "file": "v1/chip/color/category/compliance/count-16.svg",
-  "width": 118,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "count-16",
-  "style": "color",
   "alt": "§ Compliance (16)",
   "count": "16"
  },
@@ -9333,17 +7292,6 @@
   "count": "17"
  },
  {
-  "file": "v1/chip/color/category/compliance/count-17.svg",
-  "width": 117,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "count-17",
-  "style": "color",
-  "alt": "§ Compliance (17)",
-  "count": "17"
- },
- {
   "file": "v1/chip/mono/category/compliance/count-18.svg",
   "width": 118,
   "height": 21,
@@ -9351,17 +7299,6 @@
   "key": "compliance",
   "form": "count-18",
   "style": "mono",
-  "alt": "§ Compliance (18)",
-  "count": "18"
- },
- {
-  "file": "v1/chip/color/category/compliance/count-18.svg",
-  "width": 118,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "count-18",
-  "style": "color",
   "alt": "§ Compliance (18)",
   "count": "18"
  },
@@ -9377,17 +7314,6 @@
   "count": "19"
  },
  {
-  "file": "v1/chip/color/category/compliance/count-19.svg",
-  "width": 118,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "count-19",
-  "style": "color",
-  "alt": "§ Compliance (19)",
-  "count": "19"
- },
- {
   "file": "v1/chip/mono/category/compliance/count-20.svg",
   "width": 120,
   "height": 21,
@@ -9395,17 +7321,6 @@
   "key": "compliance",
   "form": "count-20",
   "style": "mono",
-  "alt": "§ Compliance (20)",
-  "count": "20"
- },
- {
-  "file": "v1/chip/color/category/compliance/count-20.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "count-20",
-  "style": "color",
   "alt": "§ Compliance (20)",
   "count": "20"
  },
@@ -9421,17 +7336,6 @@
   "count": "20+"
  },
  {
-  "file": "v1/chip/color/category/compliance/count-20plus.svg",
-  "width": 128,
-  "height": 21,
-  "family": "category",
-  "key": "compliance",
-  "form": "count-20plus",
-  "style": "color",
-  "alt": "§ Compliance (20+)",
-  "count": "20+"
- },
- {
   "file": "v1/chip/mono/category/design/label.svg",
   "width": 68,
   "height": 21,
@@ -9439,16 +7343,6 @@
   "key": "design",
   "form": "label",
   "style": "mono",
-  "alt": "❖ Design"
- },
- {
-  "file": "v1/chip/color/category/design/label.svg",
-  "width": 68,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "label",
-  "style": "color",
   "alt": "❖ Design"
  },
  {
@@ -9462,16 +7356,6 @@
   "alt": "❖"
  },
  {
-  "file": "v1/chip/color/category/design/icon.svg",
-  "width": 26,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "icon",
-  "style": "color",
-  "alt": "❖"
- },
- {
   "file": "v1/chip/mono/category/design/count-0.svg",
   "width": 86,
   "height": 21,
@@ -9479,17 +7363,6 @@
   "key": "design",
   "form": "count-0",
   "style": "mono",
-  "alt": "❖ Design (0)",
-  "count": "0"
- },
- {
-  "file": "v1/chip/color/category/design/count-0.svg",
-  "width": 86,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "count-0",
-  "style": "color",
   "alt": "❖ Design (0)",
   "count": "0"
  },
@@ -9505,17 +7378,6 @@
   "count": "1"
  },
  {
-  "file": "v1/chip/color/category/design/count-1.svg",
-  "width": 84,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "count-1",
-  "style": "color",
-  "alt": "❖ Design (1)",
-  "count": "1"
- },
- {
   "file": "v1/chip/mono/category/design/count-2.svg",
   "width": 86,
   "height": 21,
@@ -9523,17 +7385,6 @@
   "key": "design",
   "form": "count-2",
   "style": "mono",
-  "alt": "❖ Design (2)",
-  "count": "2"
- },
- {
-  "file": "v1/chip/color/category/design/count-2.svg",
-  "width": 86,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "count-2",
-  "style": "color",
   "alt": "❖ Design (2)",
   "count": "2"
  },
@@ -9549,17 +7400,6 @@
   "count": "3"
  },
  {
-  "file": "v1/chip/color/category/design/count-3.svg",
-  "width": 86,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "count-3",
-  "style": "color",
-  "alt": "❖ Design (3)",
-  "count": "3"
- },
- {
   "file": "v1/chip/mono/category/design/count-4.svg",
   "width": 86,
   "height": 21,
@@ -9567,17 +7407,6 @@
   "key": "design",
   "form": "count-4",
   "style": "mono",
-  "alt": "❖ Design (4)",
-  "count": "4"
- },
- {
-  "file": "v1/chip/color/category/design/count-4.svg",
-  "width": 86,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "count-4",
-  "style": "color",
   "alt": "❖ Design (4)",
   "count": "4"
  },
@@ -9593,17 +7422,6 @@
   "count": "5"
  },
  {
-  "file": "v1/chip/color/category/design/count-5.svg",
-  "width": 86,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "count-5",
-  "style": "color",
-  "alt": "❖ Design (5)",
-  "count": "5"
- },
- {
   "file": "v1/chip/mono/category/design/count-6.svg",
   "width": 86,
   "height": 21,
@@ -9611,17 +7429,6 @@
   "key": "design",
   "form": "count-6",
   "style": "mono",
-  "alt": "❖ Design (6)",
-  "count": "6"
- },
- {
-  "file": "v1/chip/color/category/design/count-6.svg",
-  "width": 86,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "count-6",
-  "style": "color",
   "alt": "❖ Design (6)",
   "count": "6"
  },
@@ -9637,17 +7444,6 @@
   "count": "7"
  },
  {
-  "file": "v1/chip/color/category/design/count-7.svg",
-  "width": 85,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "count-7",
-  "style": "color",
-  "alt": "❖ Design (7)",
-  "count": "7"
- },
- {
   "file": "v1/chip/mono/category/design/count-8.svg",
   "width": 86,
   "height": 21,
@@ -9655,17 +7451,6 @@
   "key": "design",
   "form": "count-8",
   "style": "mono",
-  "alt": "❖ Design (8)",
-  "count": "8"
- },
- {
-  "file": "v1/chip/color/category/design/count-8.svg",
-  "width": 86,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "count-8",
-  "style": "color",
   "alt": "❖ Design (8)",
   "count": "8"
  },
@@ -9681,17 +7466,6 @@
   "count": "9"
  },
  {
-  "file": "v1/chip/color/category/design/count-9.svg",
-  "width": 86,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "count-9",
-  "style": "color",
-  "alt": "❖ Design (9)",
-  "count": "9"
- },
- {
   "file": "v1/chip/mono/category/design/count-10.svg",
   "width": 91,
   "height": 21,
@@ -9699,17 +7473,6 @@
   "key": "design",
   "form": "count-10",
   "style": "mono",
-  "alt": "❖ Design (10)",
-  "count": "10"
- },
- {
-  "file": "v1/chip/color/category/design/count-10.svg",
-  "width": 91,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "count-10",
-  "style": "color",
   "alt": "❖ Design (10)",
   "count": "10"
  },
@@ -9725,17 +7488,6 @@
   "count": "11"
  },
  {
-  "file": "v1/chip/color/category/design/count-11.svg",
-  "width": 88,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "count-11",
-  "style": "color",
-  "alt": "❖ Design (11)",
-  "count": "11"
- },
- {
   "file": "v1/chip/mono/category/design/count-12.svg",
   "width": 91,
   "height": 21,
@@ -9743,17 +7495,6 @@
   "key": "design",
   "form": "count-12",
   "style": "mono",
-  "alt": "❖ Design (12)",
-  "count": "12"
- },
- {
-  "file": "v1/chip/color/category/design/count-12.svg",
-  "width": 91,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "count-12",
-  "style": "color",
   "alt": "❖ Design (12)",
   "count": "12"
  },
@@ -9769,17 +7510,6 @@
   "count": "13"
  },
  {
-  "file": "v1/chip/color/category/design/count-13.svg",
-  "width": 91,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "count-13",
-  "style": "color",
-  "alt": "❖ Design (13)",
-  "count": "13"
- },
- {
   "file": "v1/chip/mono/category/design/count-14.svg",
   "width": 91,
   "height": 21,
@@ -9787,17 +7517,6 @@
   "key": "design",
   "form": "count-14",
   "style": "mono",
-  "alt": "❖ Design (14)",
-  "count": "14"
- },
- {
-  "file": "v1/chip/color/category/design/count-14.svg",
-  "width": 91,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "count-14",
-  "style": "color",
   "alt": "❖ Design (14)",
   "count": "14"
  },
@@ -9813,17 +7532,6 @@
   "count": "15"
  },
  {
-  "file": "v1/chip/color/category/design/count-15.svg",
-  "width": 91,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "count-15",
-  "style": "color",
-  "alt": "❖ Design (15)",
-  "count": "15"
- },
- {
   "file": "v1/chip/mono/category/design/count-16.svg",
   "width": 91,
   "height": 21,
@@ -9831,17 +7539,6 @@
   "key": "design",
   "form": "count-16",
   "style": "mono",
-  "alt": "❖ Design (16)",
-  "count": "16"
- },
- {
-  "file": "v1/chip/color/category/design/count-16.svg",
-  "width": 91,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "count-16",
-  "style": "color",
   "alt": "❖ Design (16)",
   "count": "16"
  },
@@ -9857,17 +7554,6 @@
   "count": "17"
  },
  {
-  "file": "v1/chip/color/category/design/count-17.svg",
-  "width": 90,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "count-17",
-  "style": "color",
-  "alt": "❖ Design (17)",
-  "count": "17"
- },
- {
   "file": "v1/chip/mono/category/design/count-18.svg",
   "width": 91,
   "height": 21,
@@ -9875,17 +7561,6 @@
   "key": "design",
   "form": "count-18",
   "style": "mono",
-  "alt": "❖ Design (18)",
-  "count": "18"
- },
- {
-  "file": "v1/chip/color/category/design/count-18.svg",
-  "width": 91,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "count-18",
-  "style": "color",
   "alt": "❖ Design (18)",
   "count": "18"
  },
@@ -9901,17 +7576,6 @@
   "count": "19"
  },
  {
-  "file": "v1/chip/color/category/design/count-19.svg",
-  "width": 91,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "count-19",
-  "style": "color",
-  "alt": "❖ Design (19)",
-  "count": "19"
- },
- {
   "file": "v1/chip/mono/category/design/count-20.svg",
   "width": 93,
   "height": 21,
@@ -9919,17 +7583,6 @@
   "key": "design",
   "form": "count-20",
   "style": "mono",
-  "alt": "❖ Design (20)",
-  "count": "20"
- },
- {
-  "file": "v1/chip/color/category/design/count-20.svg",
-  "width": 93,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "count-20",
-  "style": "color",
   "alt": "❖ Design (20)",
   "count": "20"
  },
@@ -9945,17 +7598,6 @@
   "count": "20+"
  },
  {
-  "file": "v1/chip/color/category/design/count-20plus.svg",
-  "width": 101,
-  "height": 21,
-  "family": "category",
-  "key": "design",
-  "form": "count-20plus",
-  "style": "color",
-  "alt": "❖ Design (20+)",
-  "count": "20+"
- },
- {
   "file": "v1/chip/mono/category/architecture/label.svg",
   "width": 97,
   "height": 21,
@@ -9963,16 +7605,6 @@
   "key": "architecture",
   "form": "label",
   "style": "mono",
-  "alt": "⌂ Architecture"
- },
- {
-  "file": "v1/chip/color/category/architecture/label.svg",
-  "width": 97,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "label",
-  "style": "color",
   "alt": "⌂ Architecture"
  },
  {
@@ -9986,16 +7618,6 @@
   "alt": "⌂"
  },
  {
-  "file": "v1/chip/color/category/architecture/icon.svg",
-  "width": 26,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "icon",
-  "style": "color",
-  "alt": "⌂"
- },
- {
   "file": "v1/chip/mono/category/architecture/count-0.svg",
   "width": 116,
   "height": 21,
@@ -10003,17 +7625,6 @@
   "key": "architecture",
   "form": "count-0",
   "style": "mono",
-  "alt": "⌂ Architecture (0)",
-  "count": "0"
- },
- {
-  "file": "v1/chip/color/category/architecture/count-0.svg",
-  "width": 116,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "count-0",
-  "style": "color",
   "alt": "⌂ Architecture (0)",
   "count": "0"
  },
@@ -10029,17 +7640,6 @@
   "count": "1"
  },
  {
-  "file": "v1/chip/color/category/architecture/count-1.svg",
-  "width": 113,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "count-1",
-  "style": "color",
-  "alt": "⌂ Architecture (1)",
-  "count": "1"
- },
- {
   "file": "v1/chip/mono/category/architecture/count-2.svg",
   "width": 115,
   "height": 21,
@@ -10047,17 +7647,6 @@
   "key": "architecture",
   "form": "count-2",
   "style": "mono",
-  "alt": "⌂ Architecture (2)",
-  "count": "2"
- },
- {
-  "file": "v1/chip/color/category/architecture/count-2.svg",
-  "width": 115,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "count-2",
-  "style": "color",
   "alt": "⌂ Architecture (2)",
   "count": "2"
  },
@@ -10073,17 +7662,6 @@
   "count": "3"
  },
  {
-  "file": "v1/chip/color/category/architecture/count-3.svg",
-  "width": 115,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "count-3",
-  "style": "color",
-  "alt": "⌂ Architecture (3)",
-  "count": "3"
- },
- {
   "file": "v1/chip/mono/category/architecture/count-4.svg",
   "width": 116,
   "height": 21,
@@ -10091,17 +7669,6 @@
   "key": "architecture",
   "form": "count-4",
   "style": "mono",
-  "alt": "⌂ Architecture (4)",
-  "count": "4"
- },
- {
-  "file": "v1/chip/color/category/architecture/count-4.svg",
-  "width": 116,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "count-4",
-  "style": "color",
   "alt": "⌂ Architecture (4)",
   "count": "4"
  },
@@ -10117,17 +7684,6 @@
   "count": "5"
  },
  {
-  "file": "v1/chip/color/category/architecture/count-5.svg",
-  "width": 115,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "count-5",
-  "style": "color",
-  "alt": "⌂ Architecture (5)",
-  "count": "5"
- },
- {
   "file": "v1/chip/mono/category/architecture/count-6.svg",
   "width": 115,
   "height": 21,
@@ -10135,17 +7691,6 @@
   "key": "architecture",
   "form": "count-6",
   "style": "mono",
-  "alt": "⌂ Architecture (6)",
-  "count": "6"
- },
- {
-  "file": "v1/chip/color/category/architecture/count-6.svg",
-  "width": 115,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "count-6",
-  "style": "color",
   "alt": "⌂ Architecture (6)",
   "count": "6"
  },
@@ -10161,17 +7706,6 @@
   "count": "7"
  },
  {
-  "file": "v1/chip/color/category/architecture/count-7.svg",
-  "width": 115,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "count-7",
-  "style": "color",
-  "alt": "⌂ Architecture (7)",
-  "count": "7"
- },
- {
   "file": "v1/chip/mono/category/architecture/count-8.svg",
   "width": 115,
   "height": 21,
@@ -10179,17 +7713,6 @@
   "key": "architecture",
   "form": "count-8",
   "style": "mono",
-  "alt": "⌂ Architecture (8)",
-  "count": "8"
- },
- {
-  "file": "v1/chip/color/category/architecture/count-8.svg",
-  "width": 115,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "count-8",
-  "style": "color",
   "alt": "⌂ Architecture (8)",
   "count": "8"
  },
@@ -10205,17 +7728,6 @@
   "count": "9"
  },
  {
-  "file": "v1/chip/color/category/architecture/count-9.svg",
-  "width": 115,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "count-9",
-  "style": "color",
-  "alt": "⌂ Architecture (9)",
-  "count": "9"
- },
- {
   "file": "v1/chip/mono/category/architecture/count-10.svg",
   "width": 121,
   "height": 21,
@@ -10223,17 +7735,6 @@
   "key": "architecture",
   "form": "count-10",
   "style": "mono",
-  "alt": "⌂ Architecture (10)",
-  "count": "10"
- },
- {
-  "file": "v1/chip/color/category/architecture/count-10.svg",
-  "width": 121,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "count-10",
-  "style": "color",
   "alt": "⌂ Architecture (10)",
   "count": "10"
  },
@@ -10249,17 +7750,6 @@
   "count": "11"
  },
  {
-  "file": "v1/chip/color/category/architecture/count-11.svg",
-  "width": 118,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "count-11",
-  "style": "color",
-  "alt": "⌂ Architecture (11)",
-  "count": "11"
- },
- {
   "file": "v1/chip/mono/category/architecture/count-12.svg",
   "width": 120,
   "height": 21,
@@ -10267,17 +7757,6 @@
   "key": "architecture",
   "form": "count-12",
   "style": "mono",
-  "alt": "⌂ Architecture (12)",
-  "count": "12"
- },
- {
-  "file": "v1/chip/color/category/architecture/count-12.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "count-12",
-  "style": "color",
   "alt": "⌂ Architecture (12)",
   "count": "12"
  },
@@ -10293,17 +7772,6 @@
   "count": "13"
  },
  {
-  "file": "v1/chip/color/category/architecture/count-13.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "count-13",
-  "style": "color",
-  "alt": "⌂ Architecture (13)",
-  "count": "13"
- },
- {
   "file": "v1/chip/mono/category/architecture/count-14.svg",
   "width": 121,
   "height": 21,
@@ -10311,17 +7779,6 @@
   "key": "architecture",
   "form": "count-14",
   "style": "mono",
-  "alt": "⌂ Architecture (14)",
-  "count": "14"
- },
- {
-  "file": "v1/chip/color/category/architecture/count-14.svg",
-  "width": 121,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "count-14",
-  "style": "color",
   "alt": "⌂ Architecture (14)",
   "count": "14"
  },
@@ -10337,17 +7794,6 @@
   "count": "15"
  },
  {
-  "file": "v1/chip/color/category/architecture/count-15.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "count-15",
-  "style": "color",
-  "alt": "⌂ Architecture (15)",
-  "count": "15"
- },
- {
   "file": "v1/chip/mono/category/architecture/count-16.svg",
   "width": 120,
   "height": 21,
@@ -10355,17 +7801,6 @@
   "key": "architecture",
   "form": "count-16",
   "style": "mono",
-  "alt": "⌂ Architecture (16)",
-  "count": "16"
- },
- {
-  "file": "v1/chip/color/category/architecture/count-16.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "count-16",
-  "style": "color",
   "alt": "⌂ Architecture (16)",
   "count": "16"
  },
@@ -10381,17 +7816,6 @@
   "count": "17"
  },
  {
-  "file": "v1/chip/color/category/architecture/count-17.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "count-17",
-  "style": "color",
-  "alt": "⌂ Architecture (17)",
-  "count": "17"
- },
- {
   "file": "v1/chip/mono/category/architecture/count-18.svg",
   "width": 120,
   "height": 21,
@@ -10399,17 +7823,6 @@
   "key": "architecture",
   "form": "count-18",
   "style": "mono",
-  "alt": "⌂ Architecture (18)",
-  "count": "18"
- },
- {
-  "file": "v1/chip/color/category/architecture/count-18.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "count-18",
-  "style": "color",
   "alt": "⌂ Architecture (18)",
   "count": "18"
  },
@@ -10425,17 +7838,6 @@
   "count": "19"
  },
  {
-  "file": "v1/chip/color/category/architecture/count-19.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "count-19",
-  "style": "color",
-  "alt": "⌂ Architecture (19)",
-  "count": "19"
- },
- {
   "file": "v1/chip/mono/category/architecture/count-20.svg",
   "width": 123,
   "height": 21,
@@ -10443,17 +7845,6 @@
   "key": "architecture",
   "form": "count-20",
   "style": "mono",
-  "alt": "⌂ Architecture (20)",
-  "count": "20"
- },
- {
-  "file": "v1/chip/color/category/architecture/count-20.svg",
-  "width": 123,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "count-20",
-  "style": "color",
   "alt": "⌂ Architecture (20)",
   "count": "20"
  },
@@ -10469,17 +7860,6 @@
   "count": "20+"
  },
  {
-  "file": "v1/chip/color/category/architecture/count-20plus.svg",
-  "width": 131,
-  "height": 21,
-  "family": "category",
-  "key": "architecture",
-  "form": "count-20plus",
-  "style": "color",
-  "alt": "⌂ Architecture (20+)",
-  "count": "20+"
- },
- {
   "file": "v1/chip/mono/category/accessibility/label.svg",
   "width": 98,
   "height": 21,
@@ -10487,16 +7867,6 @@
   "key": "accessibility",
   "form": "label",
   "style": "mono",
-  "alt": "☑ Accessibility"
- },
- {
-  "file": "v1/chip/color/category/accessibility/label.svg",
-  "width": 98,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "label",
-  "style": "color",
   "alt": "☑ Accessibility"
  },
  {
@@ -10510,16 +7880,6 @@
   "alt": "☑"
  },
  {
-  "file": "v1/chip/color/category/accessibility/icon.svg",
-  "width": 26,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "icon",
-  "style": "color",
-  "alt": "☑"
- },
- {
   "file": "v1/chip/mono/category/accessibility/count-0.svg",
   "width": 117,
   "height": 21,
@@ -10527,17 +7887,6 @@
   "key": "accessibility",
   "form": "count-0",
   "style": "mono",
-  "alt": "☑ Accessibility (0)",
-  "count": "0"
- },
- {
-  "file": "v1/chip/color/category/accessibility/count-0.svg",
-  "width": 117,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "count-0",
-  "style": "color",
   "alt": "☑ Accessibility (0)",
   "count": "0"
  },
@@ -10553,17 +7902,6 @@
   "count": "1"
  },
  {
-  "file": "v1/chip/color/category/accessibility/count-1.svg",
-  "width": 114,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "count-1",
-  "style": "color",
-  "alt": "☑ Accessibility (1)",
-  "count": "1"
- },
- {
   "file": "v1/chip/mono/category/accessibility/count-2.svg",
   "width": 116,
   "height": 21,
@@ -10571,17 +7909,6 @@
   "key": "accessibility",
   "form": "count-2",
   "style": "mono",
-  "alt": "☑ Accessibility (2)",
-  "count": "2"
- },
- {
-  "file": "v1/chip/color/category/accessibility/count-2.svg",
-  "width": 116,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "count-2",
-  "style": "color",
   "alt": "☑ Accessibility (2)",
   "count": "2"
  },
@@ -10597,17 +7924,6 @@
   "count": "3"
  },
  {
-  "file": "v1/chip/color/category/accessibility/count-3.svg",
-  "width": 117,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "count-3",
-  "style": "color",
-  "alt": "☑ Accessibility (3)",
-  "count": "3"
- },
- {
   "file": "v1/chip/mono/category/accessibility/count-4.svg",
   "width": 117,
   "height": 21,
@@ -10615,17 +7931,6 @@
   "key": "accessibility",
   "form": "count-4",
   "style": "mono",
-  "alt": "☑ Accessibility (4)",
-  "count": "4"
- },
- {
-  "file": "v1/chip/color/category/accessibility/count-4.svg",
-  "width": 117,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "count-4",
-  "style": "color",
   "alt": "☑ Accessibility (4)",
   "count": "4"
  },
@@ -10641,17 +7946,6 @@
   "count": "5"
  },
  {
-  "file": "v1/chip/color/category/accessibility/count-5.svg",
-  "width": 117,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "count-5",
-  "style": "color",
-  "alt": "☑ Accessibility (5)",
-  "count": "5"
- },
- {
   "file": "v1/chip/mono/category/accessibility/count-6.svg",
   "width": 117,
   "height": 21,
@@ -10659,17 +7953,6 @@
   "key": "accessibility",
   "form": "count-6",
   "style": "mono",
-  "alt": "☑ Accessibility (6)",
-  "count": "6"
- },
- {
-  "file": "v1/chip/color/category/accessibility/count-6.svg",
-  "width": 117,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "count-6",
-  "style": "color",
   "alt": "☑ Accessibility (6)",
   "count": "6"
  },
@@ -10685,17 +7968,6 @@
   "count": "7"
  },
  {
-  "file": "v1/chip/color/category/accessibility/count-7.svg",
-  "width": 116,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "count-7",
-  "style": "color",
-  "alt": "☑ Accessibility (7)",
-  "count": "7"
- },
- {
   "file": "v1/chip/mono/category/accessibility/count-8.svg",
   "width": 117,
   "height": 21,
@@ -10703,17 +7975,6 @@
   "key": "accessibility",
   "form": "count-8",
   "style": "mono",
-  "alt": "☑ Accessibility (8)",
-  "count": "8"
- },
- {
-  "file": "v1/chip/color/category/accessibility/count-8.svg",
-  "width": 117,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "count-8",
-  "style": "color",
   "alt": "☑ Accessibility (8)",
   "count": "8"
  },
@@ -10729,17 +7990,6 @@
   "count": "9"
  },
  {
-  "file": "v1/chip/color/category/accessibility/count-9.svg",
-  "width": 117,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "count-9",
-  "style": "color",
-  "alt": "☑ Accessibility (9)",
-  "count": "9"
- },
- {
   "file": "v1/chip/mono/category/accessibility/count-10.svg",
   "width": 122,
   "height": 21,
@@ -10747,17 +7997,6 @@
   "key": "accessibility",
   "form": "count-10",
   "style": "mono",
-  "alt": "☑ Accessibility (10)",
-  "count": "10"
- },
- {
-  "file": "v1/chip/color/category/accessibility/count-10.svg",
-  "width": 122,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "count-10",
-  "style": "color",
   "alt": "☑ Accessibility (10)",
   "count": "10"
  },
@@ -10773,17 +8012,6 @@
   "count": "11"
  },
  {
-  "file": "v1/chip/color/category/accessibility/count-11.svg",
-  "width": 119,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "count-11",
-  "style": "color",
-  "alt": "☑ Accessibility (11)",
-  "count": "11"
- },
- {
   "file": "v1/chip/mono/category/accessibility/count-12.svg",
   "width": 121,
   "height": 21,
@@ -10791,17 +8019,6 @@
   "key": "accessibility",
   "form": "count-12",
   "style": "mono",
-  "alt": "☑ Accessibility (12)",
-  "count": "12"
- },
- {
-  "file": "v1/chip/color/category/accessibility/count-12.svg",
-  "width": 121,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "count-12",
-  "style": "color",
   "alt": "☑ Accessibility (12)",
   "count": "12"
  },
@@ -10817,17 +8034,6 @@
   "count": "13"
  },
  {
-  "file": "v1/chip/color/category/accessibility/count-13.svg",
-  "width": 122,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "count-13",
-  "style": "color",
-  "alt": "☑ Accessibility (13)",
-  "count": "13"
- },
- {
   "file": "v1/chip/mono/category/accessibility/count-14.svg",
   "width": 122,
   "height": 21,
@@ -10835,17 +8041,6 @@
   "key": "accessibility",
   "form": "count-14",
   "style": "mono",
-  "alt": "☑ Accessibility (14)",
-  "count": "14"
- },
- {
-  "file": "v1/chip/color/category/accessibility/count-14.svg",
-  "width": 122,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "count-14",
-  "style": "color",
   "alt": "☑ Accessibility (14)",
   "count": "14"
  },
@@ -10861,17 +8056,6 @@
   "count": "15"
  },
  {
-  "file": "v1/chip/color/category/accessibility/count-15.svg",
-  "width": 121,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "count-15",
-  "style": "color",
-  "alt": "☑ Accessibility (15)",
-  "count": "15"
- },
- {
   "file": "v1/chip/mono/category/accessibility/count-16.svg",
   "width": 122,
   "height": 21,
@@ -10879,17 +8063,6 @@
   "key": "accessibility",
   "form": "count-16",
   "style": "mono",
-  "alt": "☑ Accessibility (16)",
-  "count": "16"
- },
- {
-  "file": "v1/chip/color/category/accessibility/count-16.svg",
-  "width": 122,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "count-16",
-  "style": "color",
   "alt": "☑ Accessibility (16)",
   "count": "16"
  },
@@ -10905,17 +8078,6 @@
   "count": "17"
  },
  {
-  "file": "v1/chip/color/category/accessibility/count-17.svg",
-  "width": 121,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "count-17",
-  "style": "color",
-  "alt": "☑ Accessibility (17)",
-  "count": "17"
- },
- {
   "file": "v1/chip/mono/category/accessibility/count-18.svg",
   "width": 122,
   "height": 21,
@@ -10923,17 +8085,6 @@
   "key": "accessibility",
   "form": "count-18",
   "style": "mono",
-  "alt": "☑ Accessibility (18)",
-  "count": "18"
- },
- {
-  "file": "v1/chip/color/category/accessibility/count-18.svg",
-  "width": 122,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "count-18",
-  "style": "color",
   "alt": "☑ Accessibility (18)",
   "count": "18"
  },
@@ -10949,17 +8100,6 @@
   "count": "19"
  },
  {
-  "file": "v1/chip/color/category/accessibility/count-19.svg",
-  "width": 122,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "count-19",
-  "style": "color",
-  "alt": "☑ Accessibility (19)",
-  "count": "19"
- },
- {
   "file": "v1/chip/mono/category/accessibility/count-20.svg",
   "width": 124,
   "height": 21,
@@ -10967,17 +8107,6 @@
   "key": "accessibility",
   "form": "count-20",
   "style": "mono",
-  "alt": "☑ Accessibility (20)",
-  "count": "20"
- },
- {
-  "file": "v1/chip/color/category/accessibility/count-20.svg",
-  "width": 124,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "count-20",
-  "style": "color",
   "alt": "☑ Accessibility (20)",
   "count": "20"
  },
@@ -10993,17 +8122,6 @@
   "count": "20+"
  },
  {
-  "file": "v1/chip/color/category/accessibility/count-20plus.svg",
-  "width": 132,
-  "height": 21,
-  "family": "category",
-  "key": "accessibility",
-  "form": "count-20plus",
-  "style": "color",
-  "alt": "☑ Accessibility (20+)",
-  "count": "20+"
- },
- {
   "file": "v1/chip/mono/category/testability/label.svg",
   "width": 86,
   "height": 21,
@@ -11011,16 +8129,6 @@
   "key": "testability",
   "form": "label",
   "style": "mono",
-  "alt": "▣ Testability"
- },
- {
-  "file": "v1/chip/color/category/testability/label.svg",
-  "width": 86,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "label",
-  "style": "color",
   "alt": "▣ Testability"
  },
  {
@@ -11034,16 +8142,6 @@
   "alt": "▣"
  },
  {
-  "file": "v1/chip/color/category/testability/icon.svg",
-  "width": 26,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "icon",
-  "style": "color",
-  "alt": "▣"
- },
- {
   "file": "v1/chip/mono/category/testability/count-0.svg",
   "width": 105,
   "height": 21,
@@ -11051,17 +8149,6 @@
   "key": "testability",
   "form": "count-0",
   "style": "mono",
-  "alt": "▣ Testability (0)",
-  "count": "0"
- },
- {
-  "file": "v1/chip/color/category/testability/count-0.svg",
-  "width": 105,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "count-0",
-  "style": "color",
   "alt": "▣ Testability (0)",
   "count": "0"
  },
@@ -11077,17 +8164,6 @@
   "count": "1"
  },
  {
-  "file": "v1/chip/color/category/testability/count-1.svg",
-  "width": 102,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "count-1",
-  "style": "color",
-  "alt": "▣ Testability (1)",
-  "count": "1"
- },
- {
   "file": "v1/chip/mono/category/testability/count-2.svg",
   "width": 104,
   "height": 21,
@@ -11095,17 +8171,6 @@
   "key": "testability",
   "form": "count-2",
   "style": "mono",
-  "alt": "▣ Testability (2)",
-  "count": "2"
- },
- {
-  "file": "v1/chip/color/category/testability/count-2.svg",
-  "width": 104,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "count-2",
-  "style": "color",
   "alt": "▣ Testability (2)",
   "count": "2"
  },
@@ -11121,17 +8186,6 @@
   "count": "3"
  },
  {
-  "file": "v1/chip/color/category/testability/count-3.svg",
-  "width": 104,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "count-3",
-  "style": "color",
-  "alt": "▣ Testability (3)",
-  "count": "3"
- },
- {
   "file": "v1/chip/mono/category/testability/count-4.svg",
   "width": 105,
   "height": 21,
@@ -11139,17 +8193,6 @@
   "key": "testability",
   "form": "count-4",
   "style": "mono",
-  "alt": "▣ Testability (4)",
-  "count": "4"
- },
- {
-  "file": "v1/chip/color/category/testability/count-4.svg",
-  "width": 105,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "count-4",
-  "style": "color",
   "alt": "▣ Testability (4)",
   "count": "4"
  },
@@ -11165,17 +8208,6 @@
   "count": "5"
  },
  {
-  "file": "v1/chip/color/category/testability/count-5.svg",
-  "width": 104,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "count-5",
-  "style": "color",
-  "alt": "▣ Testability (5)",
-  "count": "5"
- },
- {
   "file": "v1/chip/mono/category/testability/count-6.svg",
   "width": 104,
   "height": 21,
@@ -11183,17 +8215,6 @@
   "key": "testability",
   "form": "count-6",
   "style": "mono",
-  "alt": "▣ Testability (6)",
-  "count": "6"
- },
- {
-  "file": "v1/chip/color/category/testability/count-6.svg",
-  "width": 104,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "count-6",
-  "style": "color",
   "alt": "▣ Testability (6)",
   "count": "6"
  },
@@ -11209,17 +8230,6 @@
   "count": "7"
  },
  {
-  "file": "v1/chip/color/category/testability/count-7.svg",
-  "width": 104,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "count-7",
-  "style": "color",
-  "alt": "▣ Testability (7)",
-  "count": "7"
- },
- {
   "file": "v1/chip/mono/category/testability/count-8.svg",
   "width": 104,
   "height": 21,
@@ -11227,17 +8237,6 @@
   "key": "testability",
   "form": "count-8",
   "style": "mono",
-  "alt": "▣ Testability (8)",
-  "count": "8"
- },
- {
-  "file": "v1/chip/color/category/testability/count-8.svg",
-  "width": 104,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "count-8",
-  "style": "color",
   "alt": "▣ Testability (8)",
   "count": "8"
  },
@@ -11253,17 +8252,6 @@
   "count": "9"
  },
  {
-  "file": "v1/chip/color/category/testability/count-9.svg",
-  "width": 104,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "count-9",
-  "style": "color",
-  "alt": "▣ Testability (9)",
-  "count": "9"
- },
- {
   "file": "v1/chip/mono/category/testability/count-10.svg",
   "width": 109,
   "height": 21,
@@ -11271,17 +8259,6 @@
   "key": "testability",
   "form": "count-10",
   "style": "mono",
-  "alt": "▣ Testability (10)",
-  "count": "10"
- },
- {
-  "file": "v1/chip/color/category/testability/count-10.svg",
-  "width": 109,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "count-10",
-  "style": "color",
   "alt": "▣ Testability (10)",
   "count": "10"
  },
@@ -11297,17 +8274,6 @@
   "count": "11"
  },
  {
-  "file": "v1/chip/color/category/testability/count-11.svg",
-  "width": 107,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "count-11",
-  "style": "color",
-  "alt": "▣ Testability (11)",
-  "count": "11"
- },
- {
   "file": "v1/chip/mono/category/testability/count-12.svg",
   "width": 109,
   "height": 21,
@@ -11315,17 +8281,6 @@
   "key": "testability",
   "form": "count-12",
   "style": "mono",
-  "alt": "▣ Testability (12)",
-  "count": "12"
- },
- {
-  "file": "v1/chip/color/category/testability/count-12.svg",
-  "width": 109,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "count-12",
-  "style": "color",
   "alt": "▣ Testability (12)",
   "count": "12"
  },
@@ -11341,17 +8296,6 @@
   "count": "13"
  },
  {
-  "file": "v1/chip/color/category/testability/count-13.svg",
-  "width": 109,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "count-13",
-  "style": "color",
-  "alt": "▣ Testability (13)",
-  "count": "13"
- },
- {
   "file": "v1/chip/mono/category/testability/count-14.svg",
   "width": 110,
   "height": 21,
@@ -11359,17 +8303,6 @@
   "key": "testability",
   "form": "count-14",
   "style": "mono",
-  "alt": "▣ Testability (14)",
-  "count": "14"
- },
- {
-  "file": "v1/chip/color/category/testability/count-14.svg",
-  "width": 110,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "count-14",
-  "style": "color",
   "alt": "▣ Testability (14)",
   "count": "14"
  },
@@ -11385,17 +8318,6 @@
   "count": "15"
  },
  {
-  "file": "v1/chip/color/category/testability/count-15.svg",
-  "width": 109,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "count-15",
-  "style": "color",
-  "alt": "▣ Testability (15)",
-  "count": "15"
- },
- {
   "file": "v1/chip/mono/category/testability/count-16.svg",
   "width": 109,
   "height": 21,
@@ -11403,17 +8325,6 @@
   "key": "testability",
   "form": "count-16",
   "style": "mono",
-  "alt": "▣ Testability (16)",
-  "count": "16"
- },
- {
-  "file": "v1/chip/color/category/testability/count-16.svg",
-  "width": 109,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "count-16",
-  "style": "color",
   "alt": "▣ Testability (16)",
   "count": "16"
  },
@@ -11429,17 +8340,6 @@
   "count": "17"
  },
  {
-  "file": "v1/chip/color/category/testability/count-17.svg",
-  "width": 109,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "count-17",
-  "style": "color",
-  "alt": "▣ Testability (17)",
-  "count": "17"
- },
- {
   "file": "v1/chip/mono/category/testability/count-18.svg",
   "width": 109,
   "height": 21,
@@ -11447,17 +8347,6 @@
   "key": "testability",
   "form": "count-18",
   "style": "mono",
-  "alt": "▣ Testability (18)",
-  "count": "18"
- },
- {
-  "file": "v1/chip/color/category/testability/count-18.svg",
-  "width": 109,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "count-18",
-  "style": "color",
   "alt": "▣ Testability (18)",
   "count": "18"
  },
@@ -11473,17 +8362,6 @@
   "count": "19"
  },
  {
-  "file": "v1/chip/color/category/testability/count-19.svg",
-  "width": 109,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "count-19",
-  "style": "color",
-  "alt": "▣ Testability (19)",
-  "count": "19"
- },
- {
   "file": "v1/chip/mono/category/testability/count-20.svg",
   "width": 112,
   "height": 21,
@@ -11491,17 +8369,6 @@
   "key": "testability",
   "form": "count-20",
   "style": "mono",
-  "alt": "▣ Testability (20)",
-  "count": "20"
- },
- {
-  "file": "v1/chip/color/category/testability/count-20.svg",
-  "width": 112,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "count-20",
-  "style": "color",
   "alt": "▣ Testability (20)",
   "count": "20"
  },
@@ -11517,17 +8384,6 @@
   "count": "20+"
  },
  {
-  "file": "v1/chip/color/category/testability/count-20plus.svg",
-  "width": 120,
-  "height": 21,
-  "family": "category",
-  "key": "testability",
-  "form": "count-20plus",
-  "style": "color",
-  "alt": "▣ Testability (20+)",
-  "count": "20+"
- },
- {
   "file": "v1/chip/mono/category/documentation/label.svg",
   "width": 113,
   "height": 21,
@@ -11535,16 +8391,6 @@
   "key": "documentation",
   "form": "label",
   "style": "mono",
-  "alt": "¶ Documentation"
- },
- {
-  "file": "v1/chip/color/category/documentation/label.svg",
-  "width": 113,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "label",
-  "style": "color",
   "alt": "¶ Documentation"
  },
  {
@@ -11558,16 +8404,6 @@
   "alt": "¶"
  },
  {
-  "file": "v1/chip/color/category/documentation/icon.svg",
-  "width": 26,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "icon",
-  "style": "color",
-  "alt": "¶"
- },
- {
   "file": "v1/chip/mono/category/documentation/count-0.svg",
   "width": 131,
   "height": 21,
@@ -11575,17 +8411,6 @@
   "key": "documentation",
   "form": "count-0",
   "style": "mono",
-  "alt": "¶ Documentation (0)",
-  "count": "0"
- },
- {
-  "file": "v1/chip/color/category/documentation/count-0.svg",
-  "width": 131,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "count-0",
-  "style": "color",
   "alt": "¶ Documentation (0)",
   "count": "0"
  },
@@ -11601,17 +8426,6 @@
   "count": "1"
  },
  {
-  "file": "v1/chip/color/category/documentation/count-1.svg",
-  "width": 128,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "count-1",
-  "style": "color",
-  "alt": "¶ Documentation (1)",
-  "count": "1"
- },
- {
   "file": "v1/chip/mono/category/documentation/count-2.svg",
   "width": 131,
   "height": 21,
@@ -11619,17 +8433,6 @@
   "key": "documentation",
   "form": "count-2",
   "style": "mono",
-  "alt": "¶ Documentation (2)",
-  "count": "2"
- },
- {
-  "file": "v1/chip/color/category/documentation/count-2.svg",
-  "width": 131,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "count-2",
-  "style": "color",
   "alt": "¶ Documentation (2)",
   "count": "2"
  },
@@ -11645,17 +8448,6 @@
   "count": "3"
  },
  {
-  "file": "v1/chip/color/category/documentation/count-3.svg",
-  "width": 131,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "count-3",
-  "style": "color",
-  "alt": "¶ Documentation (3)",
-  "count": "3"
- },
- {
   "file": "v1/chip/mono/category/documentation/count-4.svg",
   "width": 131,
   "height": 21,
@@ -11663,17 +8455,6 @@
   "key": "documentation",
   "form": "count-4",
   "style": "mono",
-  "alt": "¶ Documentation (4)",
-  "count": "4"
- },
- {
-  "file": "v1/chip/color/category/documentation/count-4.svg",
-  "width": 131,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "count-4",
-  "style": "color",
   "alt": "¶ Documentation (4)",
   "count": "4"
  },
@@ -11689,17 +8470,6 @@
   "count": "5"
  },
  {
-  "file": "v1/chip/color/category/documentation/count-5.svg",
-  "width": 131,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "count-5",
-  "style": "color",
-  "alt": "¶ Documentation (5)",
-  "count": "5"
- },
- {
   "file": "v1/chip/mono/category/documentation/count-6.svg",
   "width": 131,
   "height": 21,
@@ -11707,17 +8477,6 @@
   "key": "documentation",
   "form": "count-6",
   "style": "mono",
-  "alt": "¶ Documentation (6)",
-  "count": "6"
- },
- {
-  "file": "v1/chip/color/category/documentation/count-6.svg",
-  "width": 131,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "count-6",
-  "style": "color",
   "alt": "¶ Documentation (6)",
   "count": "6"
  },
@@ -11733,17 +8492,6 @@
   "count": "7"
  },
  {
-  "file": "v1/chip/color/category/documentation/count-7.svg",
-  "width": 130,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "count-7",
-  "style": "color",
-  "alt": "¶ Documentation (7)",
-  "count": "7"
- },
- {
   "file": "v1/chip/mono/category/documentation/count-8.svg",
   "width": 131,
   "height": 21,
@@ -11751,17 +8499,6 @@
   "key": "documentation",
   "form": "count-8",
   "style": "mono",
-  "alt": "¶ Documentation (8)",
-  "count": "8"
- },
- {
-  "file": "v1/chip/color/category/documentation/count-8.svg",
-  "width": 131,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "count-8",
-  "style": "color",
   "alt": "¶ Documentation (8)",
   "count": "8"
  },
@@ -11777,17 +8514,6 @@
   "count": "9"
  },
  {
-  "file": "v1/chip/color/category/documentation/count-9.svg",
-  "width": 131,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "count-9",
-  "style": "color",
-  "alt": "¶ Documentation (9)",
-  "count": "9"
- },
- {
   "file": "v1/chip/mono/category/documentation/count-10.svg",
   "width": 136,
   "height": 21,
@@ -11795,17 +8521,6 @@
   "key": "documentation",
   "form": "count-10",
   "style": "mono",
-  "alt": "¶ Documentation (10)",
-  "count": "10"
- },
- {
-  "file": "v1/chip/color/category/documentation/count-10.svg",
-  "width": 136,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "count-10",
-  "style": "color",
   "alt": "¶ Documentation (10)",
   "count": "10"
  },
@@ -11821,17 +8536,6 @@
   "count": "11"
  },
  {
-  "file": "v1/chip/color/category/documentation/count-11.svg",
-  "width": 133,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "count-11",
-  "style": "color",
-  "alt": "¶ Documentation (11)",
-  "count": "11"
- },
- {
   "file": "v1/chip/mono/category/documentation/count-12.svg",
   "width": 136,
   "height": 21,
@@ -11839,17 +8543,6 @@
   "key": "documentation",
   "form": "count-12",
   "style": "mono",
-  "alt": "¶ Documentation (12)",
-  "count": "12"
- },
- {
-  "file": "v1/chip/color/category/documentation/count-12.svg",
-  "width": 136,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "count-12",
-  "style": "color",
   "alt": "¶ Documentation (12)",
   "count": "12"
  },
@@ -11865,17 +8558,6 @@
   "count": "13"
  },
  {
-  "file": "v1/chip/color/category/documentation/count-13.svg",
-  "width": 136,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "count-13",
-  "style": "color",
-  "alt": "¶ Documentation (13)",
-  "count": "13"
- },
- {
   "file": "v1/chip/mono/category/documentation/count-14.svg",
   "width": 136,
   "height": 21,
@@ -11883,17 +8565,6 @@
   "key": "documentation",
   "form": "count-14",
   "style": "mono",
-  "alt": "¶ Documentation (14)",
-  "count": "14"
- },
- {
-  "file": "v1/chip/color/category/documentation/count-14.svg",
-  "width": 136,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "count-14",
-  "style": "color",
   "alt": "¶ Documentation (14)",
   "count": "14"
  },
@@ -11909,17 +8580,6 @@
   "count": "15"
  },
  {
-  "file": "v1/chip/color/category/documentation/count-15.svg",
-  "width": 136,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "count-15",
-  "style": "color",
-  "alt": "¶ Documentation (15)",
-  "count": "15"
- },
- {
   "file": "v1/chip/mono/category/documentation/count-16.svg",
   "width": 136,
   "height": 21,
@@ -11927,17 +8587,6 @@
   "key": "documentation",
   "form": "count-16",
   "style": "mono",
-  "alt": "¶ Documentation (16)",
-  "count": "16"
- },
- {
-  "file": "v1/chip/color/category/documentation/count-16.svg",
-  "width": 136,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "count-16",
-  "style": "color",
   "alt": "¶ Documentation (16)",
   "count": "16"
  },
@@ -11953,17 +8602,6 @@
   "count": "17"
  },
  {
-  "file": "v1/chip/color/category/documentation/count-17.svg",
-  "width": 135,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "count-17",
-  "style": "color",
-  "alt": "¶ Documentation (17)",
-  "count": "17"
- },
- {
   "file": "v1/chip/mono/category/documentation/count-18.svg",
   "width": 136,
   "height": 21,
@@ -11971,17 +8609,6 @@
   "key": "documentation",
   "form": "count-18",
   "style": "mono",
-  "alt": "¶ Documentation (18)",
-  "count": "18"
- },
- {
-  "file": "v1/chip/color/category/documentation/count-18.svg",
-  "width": 136,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "count-18",
-  "style": "color",
   "alt": "¶ Documentation (18)",
   "count": "18"
  },
@@ -11997,17 +8624,6 @@
   "count": "19"
  },
  {
-  "file": "v1/chip/color/category/documentation/count-19.svg",
-  "width": 136,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "count-19",
-  "style": "color",
-  "alt": "¶ Documentation (19)",
-  "count": "19"
- },
- {
   "file": "v1/chip/mono/category/documentation/count-20.svg",
   "width": 138,
   "height": 21,
@@ -12015,17 +8631,6 @@
   "key": "documentation",
   "form": "count-20",
   "style": "mono",
-  "alt": "¶ Documentation (20)",
-  "count": "20"
- },
- {
-  "file": "v1/chip/color/category/documentation/count-20.svg",
-  "width": 138,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "count-20",
-  "style": "color",
   "alt": "¶ Documentation (20)",
   "count": "20"
  },
@@ -12041,17 +8646,6 @@
   "count": "20+"
  },
  {
-  "file": "v1/chip/color/category/documentation/count-20plus.svg",
-  "width": 146,
-  "height": 21,
-  "family": "category",
-  "key": "documentation",
-  "form": "count-20plus",
-  "style": "color",
-  "alt": "¶ Documentation (20+)",
-  "count": "20+"
- },
- {
   "file": "v1/chip/mono/category/other/label.svg",
   "width": 60,
   "height": 21,
@@ -12059,16 +8653,6 @@
   "key": "other",
   "form": "label",
   "style": "mono",
-  "alt": "✨️ Other"
- },
- {
-  "file": "v1/chip/color/category/other/label.svg",
-  "width": 60,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "label",
-  "style": "color",
   "alt": "✨️ Other"
  },
  {
@@ -12082,16 +8666,6 @@
   "alt": "✨️"
  },
  {
-  "file": "v1/chip/color/category/other/icon.svg",
-  "width": 26,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "icon",
-  "style": "color",
-  "alt": "✨️"
- },
- {
   "file": "v1/chip/mono/category/other/count-0.svg",
   "width": 79,
   "height": 21,
@@ -12099,17 +8673,6 @@
   "key": "other",
   "form": "count-0",
   "style": "mono",
-  "alt": "✨️ Other (0)",
-  "count": "0"
- },
- {
-  "file": "v1/chip/color/category/other/count-0.svg",
-  "width": 79,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "count-0",
-  "style": "color",
   "alt": "✨️ Other (0)",
   "count": "0"
  },
@@ -12125,17 +8688,6 @@
   "count": "1"
  },
  {
-  "file": "v1/chip/color/category/other/count-1.svg",
-  "width": 76,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "count-1",
-  "style": "color",
-  "alt": "✨️ Other (1)",
-  "count": "1"
- },
- {
   "file": "v1/chip/mono/category/other/count-2.svg",
   "width": 79,
   "height": 21,
@@ -12143,17 +8695,6 @@
   "key": "other",
   "form": "count-2",
   "style": "mono",
-  "alt": "✨️ Other (2)",
-  "count": "2"
- },
- {
-  "file": "v1/chip/color/category/other/count-2.svg",
-  "width": 79,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "count-2",
-  "style": "color",
   "alt": "✨️ Other (2)",
   "count": "2"
  },
@@ -12169,17 +8710,6 @@
   "count": "3"
  },
  {
-  "file": "v1/chip/color/category/other/count-3.svg",
-  "width": 79,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "count-3",
-  "style": "color",
-  "alt": "✨️ Other (3)",
-  "count": "3"
- },
- {
   "file": "v1/chip/mono/category/other/count-4.svg",
   "width": 79,
   "height": 21,
@@ -12187,17 +8717,6 @@
   "key": "other",
   "form": "count-4",
   "style": "mono",
-  "alt": "✨️ Other (4)",
-  "count": "4"
- },
- {
-  "file": "v1/chip/color/category/other/count-4.svg",
-  "width": 79,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "count-4",
-  "style": "color",
   "alt": "✨️ Other (4)",
   "count": "4"
  },
@@ -12213,17 +8732,6 @@
   "count": "5"
  },
  {
-  "file": "v1/chip/color/category/other/count-5.svg",
-  "width": 79,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "count-5",
-  "style": "color",
-  "alt": "✨️ Other (5)",
-  "count": "5"
- },
- {
   "file": "v1/chip/mono/category/other/count-6.svg",
   "width": 79,
   "height": 21,
@@ -12231,17 +8739,6 @@
   "key": "other",
   "form": "count-6",
   "style": "mono",
-  "alt": "✨️ Other (6)",
-  "count": "6"
- },
- {
-  "file": "v1/chip/color/category/other/count-6.svg",
-  "width": 79,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "count-6",
-  "style": "color",
   "alt": "✨️ Other (6)",
   "count": "6"
  },
@@ -12257,17 +8754,6 @@
   "count": "7"
  },
  {
-  "file": "v1/chip/color/category/other/count-7.svg",
-  "width": 78,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "count-7",
-  "style": "color",
-  "alt": "✨️ Other (7)",
-  "count": "7"
- },
- {
   "file": "v1/chip/mono/category/other/count-8.svg",
   "width": 79,
   "height": 21,
@@ -12275,17 +8761,6 @@
   "key": "other",
   "form": "count-8",
   "style": "mono",
-  "alt": "✨️ Other (8)",
-  "count": "8"
- },
- {
-  "file": "v1/chip/color/category/other/count-8.svg",
-  "width": 79,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "count-8",
-  "style": "color",
   "alt": "✨️ Other (8)",
   "count": "8"
  },
@@ -12301,17 +8776,6 @@
   "count": "9"
  },
  {
-  "file": "v1/chip/color/category/other/count-9.svg",
-  "width": 79,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "count-9",
-  "style": "color",
-  "alt": "✨️ Other (9)",
-  "count": "9"
- },
- {
   "file": "v1/chip/mono/category/other/count-10.svg",
   "width": 84,
   "height": 21,
@@ -12319,17 +8783,6 @@
   "key": "other",
   "form": "count-10",
   "style": "mono",
-  "alt": "✨️ Other (10)",
-  "count": "10"
- },
- {
-  "file": "v1/chip/color/category/other/count-10.svg",
-  "width": 84,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "count-10",
-  "style": "color",
   "alt": "✨️ Other (10)",
   "count": "10"
  },
@@ -12345,17 +8798,6 @@
   "count": "11"
  },
  {
-  "file": "v1/chip/color/category/other/count-11.svg",
-  "width": 81,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "count-11",
-  "style": "color",
-  "alt": "✨️ Other (11)",
-  "count": "11"
- },
- {
   "file": "v1/chip/mono/category/other/count-12.svg",
   "width": 83,
   "height": 21,
@@ -12363,17 +8805,6 @@
   "key": "other",
   "form": "count-12",
   "style": "mono",
-  "alt": "✨️ Other (12)",
-  "count": "12"
- },
- {
-  "file": "v1/chip/color/category/other/count-12.svg",
-  "width": 83,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "count-12",
-  "style": "color",
   "alt": "✨️ Other (12)",
   "count": "12"
  },
@@ -12389,17 +8820,6 @@
   "count": "13"
  },
  {
-  "file": "v1/chip/color/category/other/count-13.svg",
-  "width": 84,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "count-13",
-  "style": "color",
-  "alt": "✨️ Other (13)",
-  "count": "13"
- },
- {
   "file": "v1/chip/mono/category/other/count-14.svg",
   "width": 84,
   "height": 21,
@@ -12407,17 +8827,6 @@
   "key": "other",
   "form": "count-14",
   "style": "mono",
-  "alt": "✨️ Other (14)",
-  "count": "14"
- },
- {
-  "file": "v1/chip/color/category/other/count-14.svg",
-  "width": 84,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "count-14",
-  "style": "color",
   "alt": "✨️ Other (14)",
   "count": "14"
  },
@@ -12433,17 +8842,6 @@
   "count": "15"
  },
  {
-  "file": "v1/chip/color/category/other/count-15.svg",
-  "width": 83,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "count-15",
-  "style": "color",
-  "alt": "✨️ Other (15)",
-  "count": "15"
- },
- {
   "file": "v1/chip/mono/category/other/count-16.svg",
   "width": 84,
   "height": 21,
@@ -12451,17 +8849,6 @@
   "key": "other",
   "form": "count-16",
   "style": "mono",
-  "alt": "✨️ Other (16)",
-  "count": "16"
- },
- {
-  "file": "v1/chip/color/category/other/count-16.svg",
-  "width": 84,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "count-16",
-  "style": "color",
   "alt": "✨️ Other (16)",
   "count": "16"
  },
@@ -12477,17 +8864,6 @@
   "count": "17"
  },
  {
-  "file": "v1/chip/color/category/other/count-17.svg",
-  "width": 83,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "count-17",
-  "style": "color",
-  "alt": "✨️ Other (17)",
-  "count": "17"
- },
- {
   "file": "v1/chip/mono/category/other/count-18.svg",
   "width": 84,
   "height": 21,
@@ -12495,17 +8871,6 @@
   "key": "other",
   "form": "count-18",
   "style": "mono",
-  "alt": "✨️ Other (18)",
-  "count": "18"
- },
- {
-  "file": "v1/chip/color/category/other/count-18.svg",
-  "width": 84,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "count-18",
-  "style": "color",
   "alt": "✨️ Other (18)",
   "count": "18"
  },
@@ -12521,17 +8886,6 @@
   "count": "19"
  },
  {
-  "file": "v1/chip/color/category/other/count-19.svg",
-  "width": 84,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "count-19",
-  "style": "color",
-  "alt": "✨️ Other (19)",
-  "count": "19"
- },
- {
   "file": "v1/chip/mono/category/other/count-20.svg",
   "width": 86,
   "height": 21,
@@ -12543,17 +8897,6 @@
   "count": "20"
  },
  {
-  "file": "v1/chip/color/category/other/count-20.svg",
-  "width": 86,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "count-20",
-  "style": "color",
-  "alt": "✨️ Other (20)",
-  "count": "20"
- },
- {
   "file": "v1/chip/mono/category/other/count-20plus.svg",
   "width": 94,
   "height": 21,
@@ -12561,17 +8904,6 @@
   "key": "other",
   "form": "count-20plus",
   "style": "mono",
-  "alt": "✨️ Other (20+)",
-  "count": "20+"
- },
- {
-  "file": "v1/chip/color/category/other/count-20plus.svg",
-  "width": 94,
-  "height": 21,
-  "family": "category",
-  "key": "other",
-  "form": "count-20plus",
-  "style": "color",
   "alt": "✨️ Other (20+)",
   "count": "20+"
  },
@@ -20206,16 +16538,6 @@
   "alt": "●●● Strong"
  },
  {
-  "file": "v1/chip/color/relevance/strong/label.svg",
-  "width": 66,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "label",
-  "style": "color",
-  "alt": "●●● Strong"
- },
- {
   "file": "v1/chip/mono/relevance/strong/icon.svg",
   "width": 26,
   "height": 21,
@@ -20226,16 +16548,6 @@
   "alt": "●●●"
  },
  {
-  "file": "v1/chip/color/relevance/strong/icon.svg",
-  "width": 26,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "icon",
-  "style": "color",
-  "alt": "●●●"
- },
- {
   "file": "v1/chip/mono/relevance/strong/count-0.svg",
   "width": 85,
   "height": 21,
@@ -20243,17 +16555,6 @@
   "key": "strong",
   "form": "count-0",
   "style": "mono",
-  "alt": "●●● Strong (0)",
-  "count": "0"
- },
- {
-  "file": "v1/chip/color/relevance/strong/count-0.svg",
-  "width": 85,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "count-0",
-  "style": "color",
   "alt": "●●● Strong (0)",
   "count": "0"
  },
@@ -20269,17 +16570,6 @@
   "count": "1"
  },
  {
-  "file": "v1/chip/color/relevance/strong/count-1.svg",
-  "width": 82,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "count-1",
-  "style": "color",
-  "alt": "●●● Strong (1)",
-  "count": "1"
- },
- {
   "file": "v1/chip/mono/relevance/strong/count-2.svg",
   "width": 84,
   "height": 21,
@@ -20287,17 +16577,6 @@
   "key": "strong",
   "form": "count-2",
   "style": "mono",
-  "alt": "●●● Strong (2)",
-  "count": "2"
- },
- {
-  "file": "v1/chip/color/relevance/strong/count-2.svg",
-  "width": 84,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "count-2",
-  "style": "color",
   "alt": "●●● Strong (2)",
   "count": "2"
  },
@@ -20313,17 +16592,6 @@
   "count": "3"
  },
  {
-  "file": "v1/chip/color/relevance/strong/count-3.svg",
-  "width": 85,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "count-3",
-  "style": "color",
-  "alt": "●●● Strong (3)",
-  "count": "3"
- },
- {
   "file": "v1/chip/mono/relevance/strong/count-4.svg",
   "width": 85,
   "height": 21,
@@ -20331,17 +16599,6 @@
   "key": "strong",
   "form": "count-4",
   "style": "mono",
-  "alt": "●●● Strong (4)",
-  "count": "4"
- },
- {
-  "file": "v1/chip/color/relevance/strong/count-4.svg",
-  "width": 85,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "count-4",
-  "style": "color",
   "alt": "●●● Strong (4)",
   "count": "4"
  },
@@ -20357,17 +16614,6 @@
   "count": "5"
  },
  {
-  "file": "v1/chip/color/relevance/strong/count-5.svg",
-  "width": 84,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "count-5",
-  "style": "color",
-  "alt": "●●● Strong (5)",
-  "count": "5"
- },
- {
   "file": "v1/chip/mono/relevance/strong/count-6.svg",
   "width": 85,
   "height": 21,
@@ -20375,17 +16621,6 @@
   "key": "strong",
   "form": "count-6",
   "style": "mono",
-  "alt": "●●● Strong (6)",
-  "count": "6"
- },
- {
-  "file": "v1/chip/color/relevance/strong/count-6.svg",
-  "width": 85,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "count-6",
-  "style": "color",
   "alt": "●●● Strong (6)",
   "count": "6"
  },
@@ -20401,17 +16636,6 @@
   "count": "7"
  },
  {
-  "file": "v1/chip/color/relevance/strong/count-7.svg",
-  "width": 84,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "count-7",
-  "style": "color",
-  "alt": "●●● Strong (7)",
-  "count": "7"
- },
- {
   "file": "v1/chip/mono/relevance/strong/count-8.svg",
   "width": 85,
   "height": 21,
@@ -20419,17 +16643,6 @@
   "key": "strong",
   "form": "count-8",
   "style": "mono",
-  "alt": "●●● Strong (8)",
-  "count": "8"
- },
- {
-  "file": "v1/chip/color/relevance/strong/count-8.svg",
-  "width": 85,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "count-8",
-  "style": "color",
   "alt": "●●● Strong (8)",
   "count": "8"
  },
@@ -20445,17 +16658,6 @@
   "count": "9"
  },
  {
-  "file": "v1/chip/color/relevance/strong/count-9.svg",
-  "width": 85,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "count-9",
-  "style": "color",
-  "alt": "●●● Strong (9)",
-  "count": "9"
- },
- {
   "file": "v1/chip/mono/relevance/strong/count-10.svg",
   "width": 90,
   "height": 21,
@@ -20463,17 +16665,6 @@
   "key": "strong",
   "form": "count-10",
   "style": "mono",
-  "alt": "●●● Strong (10)",
-  "count": "10"
- },
- {
-  "file": "v1/chip/color/relevance/strong/count-10.svg",
-  "width": 90,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "count-10",
-  "style": "color",
   "alt": "●●● Strong (10)",
   "count": "10"
  },
@@ -20489,17 +16680,6 @@
   "count": "11"
  },
  {
-  "file": "v1/chip/color/relevance/strong/count-11.svg",
-  "width": 87,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "count-11",
-  "style": "color",
-  "alt": "●●● Strong (11)",
-  "count": "11"
- },
- {
   "file": "v1/chip/mono/relevance/strong/count-12.svg",
   "width": 89,
   "height": 21,
@@ -20507,17 +16687,6 @@
   "key": "strong",
   "form": "count-12",
   "style": "mono",
-  "alt": "●●● Strong (12)",
-  "count": "12"
- },
- {
-  "file": "v1/chip/color/relevance/strong/count-12.svg",
-  "width": 89,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "count-12",
-  "style": "color",
   "alt": "●●● Strong (12)",
   "count": "12"
  },
@@ -20533,17 +16702,6 @@
   "count": "13"
  },
  {
-  "file": "v1/chip/color/relevance/strong/count-13.svg",
-  "width": 89,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "count-13",
-  "style": "color",
-  "alt": "●●● Strong (13)",
-  "count": "13"
- },
- {
   "file": "v1/chip/mono/relevance/strong/count-14.svg",
   "width": 90,
   "height": 21,
@@ -20551,17 +16709,6 @@
   "key": "strong",
   "form": "count-14",
   "style": "mono",
-  "alt": "●●● Strong (14)",
-  "count": "14"
- },
- {
-  "file": "v1/chip/color/relevance/strong/count-14.svg",
-  "width": 90,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "count-14",
-  "style": "color",
   "alt": "●●● Strong (14)",
   "count": "14"
  },
@@ -20577,17 +16724,6 @@
   "count": "15"
  },
  {
-  "file": "v1/chip/color/relevance/strong/count-15.svg",
-  "width": 89,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "count-15",
-  "style": "color",
-  "alt": "●●● Strong (15)",
-  "count": "15"
- },
- {
   "file": "v1/chip/mono/relevance/strong/count-16.svg",
   "width": 89,
   "height": 21,
@@ -20595,17 +16731,6 @@
   "key": "strong",
   "form": "count-16",
   "style": "mono",
-  "alt": "●●● Strong (16)",
-  "count": "16"
- },
- {
-  "file": "v1/chip/color/relevance/strong/count-16.svg",
-  "width": 89,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "count-16",
-  "style": "color",
   "alt": "●●● Strong (16)",
   "count": "16"
  },
@@ -20621,17 +16746,6 @@
   "count": "17"
  },
  {
-  "file": "v1/chip/color/relevance/strong/count-17.svg",
-  "width": 89,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "count-17",
-  "style": "color",
-  "alt": "●●● Strong (17)",
-  "count": "17"
- },
- {
   "file": "v1/chip/mono/relevance/strong/count-18.svg",
   "width": 89,
   "height": 21,
@@ -20639,17 +16753,6 @@
   "key": "strong",
   "form": "count-18",
   "style": "mono",
-  "alt": "●●● Strong (18)",
-  "count": "18"
- },
- {
-  "file": "v1/chip/color/relevance/strong/count-18.svg",
-  "width": 89,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "count-18",
-  "style": "color",
   "alt": "●●● Strong (18)",
   "count": "18"
  },
@@ -20665,17 +16768,6 @@
   "count": "19"
  },
  {
-  "file": "v1/chip/color/relevance/strong/count-19.svg",
-  "width": 89,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "count-19",
-  "style": "color",
-  "alt": "●●● Strong (19)",
-  "count": "19"
- },
- {
   "file": "v1/chip/mono/relevance/strong/count-20.svg",
   "width": 92,
   "height": 21,
@@ -20683,17 +16775,6 @@
   "key": "strong",
   "form": "count-20",
   "style": "mono",
-  "alt": "●●● Strong (20)",
-  "count": "20"
- },
- {
-  "file": "v1/chip/color/relevance/strong/count-20.svg",
-  "width": 92,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "count-20",
-  "style": "color",
   "alt": "●●● Strong (20)",
   "count": "20"
  },
@@ -20709,17 +16790,6 @@
   "count": "20+"
  },
  {
-  "file": "v1/chip/color/relevance/strong/count-20plus.svg",
-  "width": 100,
-  "height": 21,
-  "family": "relevance",
-  "key": "strong",
-  "form": "count-20plus",
-  "style": "color",
-  "alt": "●●● Strong (20+)",
-  "count": "20+"
- },
- {
   "file": "v1/chip/mono/relevance/moderate/label.svg",
   "width": 82,
   "height": 21,
@@ -20727,16 +16797,6 @@
   "key": "moderate",
   "form": "label",
   "style": "mono",
-  "alt": "●● Moderate"
- },
- {
-  "file": "v1/chip/color/relevance/moderate/label.svg",
-  "width": 82,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "label",
-  "style": "color",
   "alt": "●● Moderate"
  },
  {
@@ -20750,16 +16810,6 @@
   "alt": "●●"
  },
  {
-  "file": "v1/chip/color/relevance/moderate/icon.svg",
-  "width": 26,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "icon",
-  "style": "color",
-  "alt": "●●"
- },
- {
   "file": "v1/chip/mono/relevance/moderate/count-0.svg",
   "width": 101,
   "height": 21,
@@ -20767,17 +16817,6 @@
   "key": "moderate",
   "form": "count-0",
   "style": "mono",
-  "alt": "●● Moderate (0)",
-  "count": "0"
- },
- {
-  "file": "v1/chip/color/relevance/moderate/count-0.svg",
-  "width": 101,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "count-0",
-  "style": "color",
   "alt": "●● Moderate (0)",
   "count": "0"
  },
@@ -20793,17 +16832,6 @@
   "count": "1"
  },
  {
-  "file": "v1/chip/color/relevance/moderate/count-1.svg",
-  "width": 98,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "count-1",
-  "style": "color",
-  "alt": "●● Moderate (1)",
-  "count": "1"
- },
- {
   "file": "v1/chip/mono/relevance/moderate/count-2.svg",
   "width": 100,
   "height": 21,
@@ -20811,17 +16839,6 @@
   "key": "moderate",
   "form": "count-2",
   "style": "mono",
-  "alt": "●● Moderate (2)",
-  "count": "2"
- },
- {
-  "file": "v1/chip/color/relevance/moderate/count-2.svg",
-  "width": 100,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "count-2",
-  "style": "color",
   "alt": "●● Moderate (2)",
   "count": "2"
  },
@@ -20837,17 +16854,6 @@
   "count": "3"
  },
  {
-  "file": "v1/chip/color/relevance/moderate/count-3.svg",
-  "width": 101,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "count-3",
-  "style": "color",
-  "alt": "●● Moderate (3)",
-  "count": "3"
- },
- {
   "file": "v1/chip/mono/relevance/moderate/count-4.svg",
   "width": 101,
   "height": 21,
@@ -20855,17 +16861,6 @@
   "key": "moderate",
   "form": "count-4",
   "style": "mono",
-  "alt": "●● Moderate (4)",
-  "count": "4"
- },
- {
-  "file": "v1/chip/color/relevance/moderate/count-4.svg",
-  "width": 101,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "count-4",
-  "style": "color",
   "alt": "●● Moderate (4)",
   "count": "4"
  },
@@ -20881,17 +16876,6 @@
   "count": "5"
  },
  {
-  "file": "v1/chip/color/relevance/moderate/count-5.svg",
-  "width": 101,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "count-5",
-  "style": "color",
-  "alt": "●● Moderate (5)",
-  "count": "5"
- },
- {
   "file": "v1/chip/mono/relevance/moderate/count-6.svg",
   "width": 101,
   "height": 21,
@@ -20899,17 +16883,6 @@
   "key": "moderate",
   "form": "count-6",
   "style": "mono",
-  "alt": "●● Moderate (6)",
-  "count": "6"
- },
- {
-  "file": "v1/chip/color/relevance/moderate/count-6.svg",
-  "width": 101,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "count-6",
-  "style": "color",
   "alt": "●● Moderate (6)",
   "count": "6"
  },
@@ -20925,17 +16898,6 @@
   "count": "7"
  },
  {
-  "file": "v1/chip/color/relevance/moderate/count-7.svg",
-  "width": 100,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "count-7",
-  "style": "color",
-  "alt": "●● Moderate (7)",
-  "count": "7"
- },
- {
   "file": "v1/chip/mono/relevance/moderate/count-8.svg",
   "width": 101,
   "height": 21,
@@ -20943,17 +16905,6 @@
   "key": "moderate",
   "form": "count-8",
   "style": "mono",
-  "alt": "●● Moderate (8)",
-  "count": "8"
- },
- {
-  "file": "v1/chip/color/relevance/moderate/count-8.svg",
-  "width": 101,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "count-8",
-  "style": "color",
   "alt": "●● Moderate (8)",
   "count": "8"
  },
@@ -20969,17 +16920,6 @@
   "count": "9"
  },
  {
-  "file": "v1/chip/color/relevance/moderate/count-9.svg",
-  "width": 101,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "count-9",
-  "style": "color",
-  "alt": "●● Moderate (9)",
-  "count": "9"
- },
- {
   "file": "v1/chip/mono/relevance/moderate/count-10.svg",
   "width": 106,
   "height": 21,
@@ -20987,17 +16927,6 @@
   "key": "moderate",
   "form": "count-10",
   "style": "mono",
-  "alt": "●● Moderate (10)",
-  "count": "10"
- },
- {
-  "file": "v1/chip/color/relevance/moderate/count-10.svg",
-  "width": 106,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "count-10",
-  "style": "color",
   "alt": "●● Moderate (10)",
   "count": "10"
  },
@@ -21013,17 +16942,6 @@
   "count": "11"
  },
  {
-  "file": "v1/chip/color/relevance/moderate/count-11.svg",
-  "width": 103,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "count-11",
-  "style": "color",
-  "alt": "●● Moderate (11)",
-  "count": "11"
- },
- {
   "file": "v1/chip/mono/relevance/moderate/count-12.svg",
   "width": 105,
   "height": 21,
@@ -21031,17 +16949,6 @@
   "key": "moderate",
   "form": "count-12",
   "style": "mono",
-  "alt": "●● Moderate (12)",
-  "count": "12"
- },
- {
-  "file": "v1/chip/color/relevance/moderate/count-12.svg",
-  "width": 105,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "count-12",
-  "style": "color",
   "alt": "●● Moderate (12)",
   "count": "12"
  },
@@ -21057,17 +16964,6 @@
   "count": "13"
  },
  {
-  "file": "v1/chip/color/relevance/moderate/count-13.svg",
-  "width": 105,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "count-13",
-  "style": "color",
-  "alt": "●● Moderate (13)",
-  "count": "13"
- },
- {
   "file": "v1/chip/mono/relevance/moderate/count-14.svg",
   "width": 106,
   "height": 21,
@@ -21075,17 +16971,6 @@
   "key": "moderate",
   "form": "count-14",
   "style": "mono",
-  "alt": "●● Moderate (14)",
-  "count": "14"
- },
- {
-  "file": "v1/chip/color/relevance/moderate/count-14.svg",
-  "width": 106,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "count-14",
-  "style": "color",
   "alt": "●● Moderate (14)",
   "count": "14"
  },
@@ -21101,17 +16986,6 @@
   "count": "15"
  },
  {
-  "file": "v1/chip/color/relevance/moderate/count-15.svg",
-  "width": 105,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "count-15",
-  "style": "color",
-  "alt": "●● Moderate (15)",
-  "count": "15"
- },
- {
   "file": "v1/chip/mono/relevance/moderate/count-16.svg",
   "width": 106,
   "height": 21,
@@ -21119,17 +16993,6 @@
   "key": "moderate",
   "form": "count-16",
   "style": "mono",
-  "alt": "●● Moderate (16)",
-  "count": "16"
- },
- {
-  "file": "v1/chip/color/relevance/moderate/count-16.svg",
-  "width": 106,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "count-16",
-  "style": "color",
   "alt": "●● Moderate (16)",
   "count": "16"
  },
@@ -21145,17 +17008,6 @@
   "count": "17"
  },
  {
-  "file": "v1/chip/color/relevance/moderate/count-17.svg",
-  "width": 105,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "count-17",
-  "style": "color",
-  "alt": "●● Moderate (17)",
-  "count": "17"
- },
- {
   "file": "v1/chip/mono/relevance/moderate/count-18.svg",
   "width": 106,
   "height": 21,
@@ -21163,17 +17015,6 @@
   "key": "moderate",
   "form": "count-18",
   "style": "mono",
-  "alt": "●● Moderate (18)",
-  "count": "18"
- },
- {
-  "file": "v1/chip/color/relevance/moderate/count-18.svg",
-  "width": 106,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "count-18",
-  "style": "color",
   "alt": "●● Moderate (18)",
   "count": "18"
  },
@@ -21189,17 +17030,6 @@
   "count": "19"
  },
  {
-  "file": "v1/chip/color/relevance/moderate/count-19.svg",
-  "width": 106,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "count-19",
-  "style": "color",
-  "alt": "●● Moderate (19)",
-  "count": "19"
- },
- {
   "file": "v1/chip/mono/relevance/moderate/count-20.svg",
   "width": 108,
   "height": 21,
@@ -21207,17 +17037,6 @@
   "key": "moderate",
   "form": "count-20",
   "style": "mono",
-  "alt": "●● Moderate (20)",
-  "count": "20"
- },
- {
-  "file": "v1/chip/color/relevance/moderate/count-20.svg",
-  "width": 108,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "count-20",
-  "style": "color",
   "alt": "●● Moderate (20)",
   "count": "20"
  },
@@ -21233,17 +17052,6 @@
   "count": "20+"
  },
  {
-  "file": "v1/chip/color/relevance/moderate/count-20plus.svg",
-  "width": 116,
-  "height": 21,
-  "family": "relevance",
-  "key": "moderate",
-  "form": "count-20plus",
-  "style": "color",
-  "alt": "●● Moderate (20+)",
-  "count": "20+"
- },
- {
   "file": "v1/chip/mono/relevance/weak/label.svg",
   "width": 61,
   "height": 21,
@@ -21251,16 +17059,6 @@
   "key": "weak",
   "form": "label",
   "style": "mono",
-  "alt": "● Weak"
- },
- {
-  "file": "v1/chip/color/relevance/weak/label.svg",
-  "width": 61,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "label",
-  "style": "color",
   "alt": "● Weak"
  },
  {
@@ -21274,16 +17072,6 @@
   "alt": "●"
  },
  {
-  "file": "v1/chip/color/relevance/weak/icon.svg",
-  "width": 26,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "icon",
-  "style": "color",
-  "alt": "●"
- },
- {
   "file": "v1/chip/mono/relevance/weak/count-0.svg",
   "width": 79,
   "height": 21,
@@ -21291,17 +17079,6 @@
   "key": "weak",
   "form": "count-0",
   "style": "mono",
-  "alt": "● Weak (0)",
-  "count": "0"
- },
- {
-  "file": "v1/chip/color/relevance/weak/count-0.svg",
-  "width": 79,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "count-0",
-  "style": "color",
   "alt": "● Weak (0)",
   "count": "0"
  },
@@ -21317,17 +17094,6 @@
   "count": "1"
  },
  {
-  "file": "v1/chip/color/relevance/weak/count-1.svg",
-  "width": 77,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "count-1",
-  "style": "color",
-  "alt": "● Weak (1)",
-  "count": "1"
- },
- {
   "file": "v1/chip/mono/relevance/weak/count-2.svg",
   "width": 79,
   "height": 21,
@@ -21335,17 +17101,6 @@
   "key": "weak",
   "form": "count-2",
   "style": "mono",
-  "alt": "● Weak (2)",
-  "count": "2"
- },
- {
-  "file": "v1/chip/color/relevance/weak/count-2.svg",
-  "width": 79,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "count-2",
-  "style": "color",
   "alt": "● Weak (2)",
   "count": "2"
  },
@@ -21361,17 +17116,6 @@
   "count": "3"
  },
  {
-  "file": "v1/chip/color/relevance/weak/count-3.svg",
-  "width": 79,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "count-3",
-  "style": "color",
-  "alt": "● Weak (3)",
-  "count": "3"
- },
- {
   "file": "v1/chip/mono/relevance/weak/count-4.svg",
   "width": 79,
   "height": 21,
@@ -21379,17 +17123,6 @@
   "key": "weak",
   "form": "count-4",
   "style": "mono",
-  "alt": "● Weak (4)",
-  "count": "4"
- },
- {
-  "file": "v1/chip/color/relevance/weak/count-4.svg",
-  "width": 79,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "count-4",
-  "style": "color",
   "alt": "● Weak (4)",
   "count": "4"
  },
@@ -21405,17 +17138,6 @@
   "count": "5"
  },
  {
-  "file": "v1/chip/color/relevance/weak/count-5.svg",
-  "width": 79,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "count-5",
-  "style": "color",
-  "alt": "● Weak (5)",
-  "count": "5"
- },
- {
   "file": "v1/chip/mono/relevance/weak/count-6.svg",
   "width": 79,
   "height": 21,
@@ -21423,17 +17145,6 @@
   "key": "weak",
   "form": "count-6",
   "style": "mono",
-  "alt": "● Weak (6)",
-  "count": "6"
- },
- {
-  "file": "v1/chip/color/relevance/weak/count-6.svg",
-  "width": 79,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "count-6",
-  "style": "color",
   "alt": "● Weak (6)",
   "count": "6"
  },
@@ -21449,17 +17160,6 @@
   "count": "7"
  },
  {
-  "file": "v1/chip/color/relevance/weak/count-7.svg",
-  "width": 78,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "count-7",
-  "style": "color",
-  "alt": "● Weak (7)",
-  "count": "7"
- },
- {
   "file": "v1/chip/mono/relevance/weak/count-8.svg",
   "width": 79,
   "height": 21,
@@ -21467,17 +17167,6 @@
   "key": "weak",
   "form": "count-8",
   "style": "mono",
-  "alt": "● Weak (8)",
-  "count": "8"
- },
- {
-  "file": "v1/chip/color/relevance/weak/count-8.svg",
-  "width": 79,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "count-8",
-  "style": "color",
   "alt": "● Weak (8)",
   "count": "8"
  },
@@ -21493,17 +17182,6 @@
   "count": "9"
  },
  {
-  "file": "v1/chip/color/relevance/weak/count-9.svg",
-  "width": 79,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "count-9",
-  "style": "color",
-  "alt": "● Weak (9)",
-  "count": "9"
- },
- {
   "file": "v1/chip/mono/relevance/weak/count-10.svg",
   "width": 84,
   "height": 21,
@@ -21511,17 +17189,6 @@
   "key": "weak",
   "form": "count-10",
   "style": "mono",
-  "alt": "● Weak (10)",
-  "count": "10"
- },
- {
-  "file": "v1/chip/color/relevance/weak/count-10.svg",
-  "width": 84,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "count-10",
-  "style": "color",
   "alt": "● Weak (10)",
   "count": "10"
  },
@@ -21537,17 +17204,6 @@
   "count": "11"
  },
  {
-  "file": "v1/chip/color/relevance/weak/count-11.svg",
-  "width": 82,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "count-11",
-  "style": "color",
-  "alt": "● Weak (11)",
-  "count": "11"
- },
- {
   "file": "v1/chip/mono/relevance/weak/count-12.svg",
   "width": 84,
   "height": 21,
@@ -21555,17 +17211,6 @@
   "key": "weak",
   "form": "count-12",
   "style": "mono",
-  "alt": "● Weak (12)",
-  "count": "12"
- },
- {
-  "file": "v1/chip/color/relevance/weak/count-12.svg",
-  "width": 84,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "count-12",
-  "style": "color",
   "alt": "● Weak (12)",
   "count": "12"
  },
@@ -21581,17 +17226,6 @@
   "count": "13"
  },
  {
-  "file": "v1/chip/color/relevance/weak/count-13.svg",
-  "width": 84,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "count-13",
-  "style": "color",
-  "alt": "● Weak (13)",
-  "count": "13"
- },
- {
   "file": "v1/chip/mono/relevance/weak/count-14.svg",
   "width": 84,
   "height": 21,
@@ -21599,17 +17233,6 @@
   "key": "weak",
   "form": "count-14",
   "style": "mono",
-  "alt": "● Weak (14)",
-  "count": "14"
- },
- {
-  "file": "v1/chip/color/relevance/weak/count-14.svg",
-  "width": 84,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "count-14",
-  "style": "color",
   "alt": "● Weak (14)",
   "count": "14"
  },
@@ -21625,17 +17248,6 @@
   "count": "15"
  },
  {
-  "file": "v1/chip/color/relevance/weak/count-15.svg",
-  "width": 84,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "count-15",
-  "style": "color",
-  "alt": "● Weak (15)",
-  "count": "15"
- },
- {
   "file": "v1/chip/mono/relevance/weak/count-16.svg",
   "width": 84,
   "height": 21,
@@ -21643,17 +17255,6 @@
   "key": "weak",
   "form": "count-16",
   "style": "mono",
-  "alt": "● Weak (16)",
-  "count": "16"
- },
- {
-  "file": "v1/chip/color/relevance/weak/count-16.svg",
-  "width": 84,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "count-16",
-  "style": "color",
   "alt": "● Weak (16)",
   "count": "16"
  },
@@ -21669,17 +17270,6 @@
   "count": "17"
  },
  {
-  "file": "v1/chip/color/relevance/weak/count-17.svg",
-  "width": 83,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "count-17",
-  "style": "color",
-  "alt": "● Weak (17)",
-  "count": "17"
- },
- {
   "file": "v1/chip/mono/relevance/weak/count-18.svg",
   "width": 84,
   "height": 21,
@@ -21687,17 +17277,6 @@
   "key": "weak",
   "form": "count-18",
   "style": "mono",
-  "alt": "● Weak (18)",
-  "count": "18"
- },
- {
-  "file": "v1/chip/color/relevance/weak/count-18.svg",
-  "width": 84,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "count-18",
-  "style": "color",
   "alt": "● Weak (18)",
   "count": "18"
  },
@@ -21713,17 +17292,6 @@
   "count": "19"
  },
  {
-  "file": "v1/chip/color/relevance/weak/count-19.svg",
-  "width": 84,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "count-19",
-  "style": "color",
-  "alt": "● Weak (19)",
-  "count": "19"
- },
- {
   "file": "v1/chip/mono/relevance/weak/count-20.svg",
   "width": 87,
   "height": 21,
@@ -21731,17 +17299,6 @@
   "key": "weak",
   "form": "count-20",
   "style": "mono",
-  "alt": "● Weak (20)",
-  "count": "20"
- },
- {
-  "file": "v1/chip/color/relevance/weak/count-20.svg",
-  "width": 87,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "count-20",
-  "style": "color",
   "alt": "● Weak (20)",
   "count": "20"
  },
@@ -21757,17 +17314,6 @@
   "count": "20+"
  },
  {
-  "file": "v1/chip/color/relevance/weak/count-20plus.svg",
-  "width": 94,
-  "height": 21,
-  "family": "relevance",
-  "key": "weak",
-  "form": "count-20plus",
-  "style": "color",
-  "alt": "● Weak (20+)",
-  "count": "20+"
- },
- {
   "file": "v1/chip/mono/status/resolved/label.svg",
   "width": 80,
   "height": 21,
@@ -21775,16 +17321,6 @@
   "key": "resolved",
   "form": "label",
   "style": "mono",
-  "alt": "✓ Resolved"
- },
- {
-  "file": "v1/chip/color/status/resolved/label.svg",
-  "width": 80,
-  "height": 21,
-  "family": "status",
-  "key": "resolved",
-  "form": "label",
-  "style": "color",
   "alt": "✓ Resolved"
  },
  {
@@ -21798,16 +17334,6 @@
   "alt": "✓"
  },
  {
-  "file": "v1/chip/color/status/resolved/icon.svg",
-  "width": 26,
-  "height": 21,
-  "family": "status",
-  "key": "resolved",
-  "form": "icon",
-  "style": "color",
-  "alt": "✓"
- },
- {
   "file": "v1/chip/mono/status/resolved/text.svg",
   "width": 64,
   "height": 21,
@@ -21815,16 +17341,6 @@
   "key": "resolved",
   "form": "text",
   "style": "mono",
-  "alt": "Resolved"
- },
- {
-  "file": "v1/chip/color/status/resolved/text.svg",
-  "width": 64,
-  "height": 21,
-  "family": "status",
-  "key": "resolved",
-  "form": "text",
-  "style": "color",
   "alt": "Resolved"
  },
  {
@@ -21838,16 +17354,6 @@
   "alt": "✗ Dismissed"
  },
  {
-  "file": "v1/chip/color/status/dismissed/label.svg",
-  "width": 86,
-  "height": 21,
-  "family": "status",
-  "key": "dismissed",
-  "form": "label",
-  "style": "color",
-  "alt": "✗ Dismissed"
- },
- {
   "file": "v1/chip/mono/status/dismissed/icon.svg",
   "width": 26,
   "height": 21,
@@ -21855,16 +17361,6 @@
   "key": "dismissed",
   "form": "icon",
   "style": "mono",
-  "alt": "✗"
- },
- {
-  "file": "v1/chip/color/status/dismissed/icon.svg",
-  "width": 26,
-  "height": 21,
-  "family": "status",
-  "key": "dismissed",
-  "form": "icon",
-  "style": "color",
   "alt": "✗"
  },
  {
@@ -21878,16 +17374,6 @@
   "alt": "Dismissed"
  },
  {
-  "file": "v1/chip/color/status/dismissed/text.svg",
-  "width": 70,
-  "height": 21,
-  "family": "status",
-  "key": "dismissed",
-  "form": "text",
-  "style": "color",
-  "alt": "Dismissed"
- },
- {
   "file": "v1/chip/mono/status/outdated/label.svg",
   "width": 80,
   "height": 21,
@@ -21895,16 +17381,6 @@
   "key": "outdated",
   "form": "label",
   "style": "mono",
-  "alt": "⊘ Outdated"
- },
- {
-  "file": "v1/chip/color/status/outdated/label.svg",
-  "width": 80,
-  "height": 21,
-  "family": "status",
-  "key": "outdated",
-  "form": "label",
-  "style": "color",
   "alt": "⊘ Outdated"
  },
  {
@@ -21918,16 +17394,6 @@
   "alt": "⊘"
  },
  {
-  "file": "v1/chip/color/status/outdated/icon.svg",
-  "width": 26,
-  "height": 21,
-  "family": "status",
-  "key": "outdated",
-  "form": "icon",
-  "style": "color",
-  "alt": "⊘"
- },
- {
   "file": "v1/chip/mono/status/outdated/text.svg",
   "width": 64,
   "height": 21,
@@ -21935,16 +17401,6 @@
   "key": "outdated",
   "form": "text",
   "style": "mono",
-  "alt": "Outdated"
- },
- {
-  "file": "v1/chip/color/status/outdated/text.svg",
-  "width": 64,
-  "height": 21,
-  "family": "status",
-  "key": "outdated",
-  "form": "text",
-  "style": "color",
   "alt": "Outdated"
  },
  {
@@ -21958,16 +17414,6 @@
   "alt": "⭐ New"
  },
  {
-  "file": "v1/chip/color/flag/new/label.svg",
-  "width": 55,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "label",
-  "style": "color",
-  "alt": "⭐ New"
- },
- {
   "file": "v1/chip/mono/flag/new/icon.svg",
   "width": 26,
   "height": 21,
@@ -21978,16 +17424,6 @@
   "alt": "⭐"
  },
  {
-  "file": "v1/chip/color/flag/new/icon.svg",
-  "width": 26,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "icon",
-  "style": "color",
-  "alt": "⭐"
- },
- {
   "file": "v1/chip/mono/flag/new/count-0.svg",
   "width": 73,
   "height": 21,
@@ -21995,17 +17431,6 @@
   "key": "new",
   "form": "count-0",
   "style": "mono",
-  "alt": "⭐ New (0)",
-  "count": "0"
- },
- {
-  "file": "v1/chip/color/flag/new/count-0.svg",
-  "width": 73,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "count-0",
-  "style": "color",
   "alt": "⭐ New (0)",
   "count": "0"
  },
@@ -22021,17 +17446,6 @@
   "count": "1"
  },
  {
-  "file": "v1/chip/color/flag/new/count-1.svg",
-  "width": 71,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "count-1",
-  "style": "color",
-  "alt": "⭐ New (1)",
-  "count": "1"
- },
- {
   "file": "v1/chip/mono/flag/new/count-2.svg",
   "width": 73,
   "height": 21,
@@ -22039,17 +17453,6 @@
   "key": "new",
   "form": "count-2",
   "style": "mono",
-  "alt": "⭐ New (2)",
-  "count": "2"
- },
- {
-  "file": "v1/chip/color/flag/new/count-2.svg",
-  "width": 73,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "count-2",
-  "style": "color",
   "alt": "⭐ New (2)",
   "count": "2"
  },
@@ -22065,17 +17468,6 @@
   "count": "3"
  },
  {
-  "file": "v1/chip/color/flag/new/count-3.svg",
-  "width": 73,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "count-3",
-  "style": "color",
-  "alt": "⭐ New (3)",
-  "count": "3"
- },
- {
   "file": "v1/chip/mono/flag/new/count-4.svg",
   "width": 73,
   "height": 21,
@@ -22083,17 +17475,6 @@
   "key": "new",
   "form": "count-4",
   "style": "mono",
-  "alt": "⭐ New (4)",
-  "count": "4"
- },
- {
-  "file": "v1/chip/color/flag/new/count-4.svg",
-  "width": 73,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "count-4",
-  "style": "color",
   "alt": "⭐ New (4)",
   "count": "4"
  },
@@ -22109,17 +17490,6 @@
   "count": "5"
  },
  {
-  "file": "v1/chip/color/flag/new/count-5.svg",
-  "width": 73,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "count-5",
-  "style": "color",
-  "alt": "⭐ New (5)",
-  "count": "5"
- },
- {
   "file": "v1/chip/mono/flag/new/count-6.svg",
   "width": 73,
   "height": 21,
@@ -22127,17 +17497,6 @@
   "key": "new",
   "form": "count-6",
   "style": "mono",
-  "alt": "⭐ New (6)",
-  "count": "6"
- },
- {
-  "file": "v1/chip/color/flag/new/count-6.svg",
-  "width": 73,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "count-6",
-  "style": "color",
   "alt": "⭐ New (6)",
   "count": "6"
  },
@@ -22153,17 +17512,6 @@
   "count": "7"
  },
  {
-  "file": "v1/chip/color/flag/new/count-7.svg",
-  "width": 72,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "count-7",
-  "style": "color",
-  "alt": "⭐ New (7)",
-  "count": "7"
- },
- {
   "file": "v1/chip/mono/flag/new/count-8.svg",
   "width": 73,
   "height": 21,
@@ -22171,17 +17519,6 @@
   "key": "new",
   "form": "count-8",
   "style": "mono",
-  "alt": "⭐ New (8)",
-  "count": "8"
- },
- {
-  "file": "v1/chip/color/flag/new/count-8.svg",
-  "width": 73,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "count-8",
-  "style": "color",
   "alt": "⭐ New (8)",
   "count": "8"
  },
@@ -22197,17 +17534,6 @@
   "count": "9"
  },
  {
-  "file": "v1/chip/color/flag/new/count-9.svg",
-  "width": 73,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "count-9",
-  "style": "color",
-  "alt": "⭐ New (9)",
-  "count": "9"
- },
- {
   "file": "v1/chip/mono/flag/new/count-10.svg",
   "width": 78,
   "height": 21,
@@ -22215,17 +17541,6 @@
   "key": "new",
   "form": "count-10",
   "style": "mono",
-  "alt": "⭐ New (10)",
-  "count": "10"
- },
- {
-  "file": "v1/chip/color/flag/new/count-10.svg",
-  "width": 78,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "count-10",
-  "style": "color",
   "alt": "⭐ New (10)",
   "count": "10"
  },
@@ -22241,17 +17556,6 @@
   "count": "11"
  },
  {
-  "file": "v1/chip/color/flag/new/count-11.svg",
-  "width": 76,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "count-11",
-  "style": "color",
-  "alt": "⭐ New (11)",
-  "count": "11"
- },
- {
   "file": "v1/chip/mono/flag/new/count-12.svg",
   "width": 78,
   "height": 21,
@@ -22259,17 +17563,6 @@
   "key": "new",
   "form": "count-12",
   "style": "mono",
-  "alt": "⭐ New (12)",
-  "count": "12"
- },
- {
-  "file": "v1/chip/color/flag/new/count-12.svg",
-  "width": 78,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "count-12",
-  "style": "color",
   "alt": "⭐ New (12)",
   "count": "12"
  },
@@ -22285,17 +17578,6 @@
   "count": "13"
  },
  {
-  "file": "v1/chip/color/flag/new/count-13.svg",
-  "width": 78,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "count-13",
-  "style": "color",
-  "alt": "⭐ New (13)",
-  "count": "13"
- },
- {
   "file": "v1/chip/mono/flag/new/count-14.svg",
   "width": 78,
   "height": 21,
@@ -22303,17 +17585,6 @@
   "key": "new",
   "form": "count-14",
   "style": "mono",
-  "alt": "⭐ New (14)",
-  "count": "14"
- },
- {
-  "file": "v1/chip/color/flag/new/count-14.svg",
-  "width": 78,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "count-14",
-  "style": "color",
   "alt": "⭐ New (14)",
   "count": "14"
  },
@@ -22329,17 +17600,6 @@
   "count": "15"
  },
  {
-  "file": "v1/chip/color/flag/new/count-15.svg",
-  "width": 78,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "count-15",
-  "style": "color",
-  "alt": "⭐ New (15)",
-  "count": "15"
- },
- {
   "file": "v1/chip/mono/flag/new/count-16.svg",
   "width": 78,
   "height": 21,
@@ -22347,17 +17607,6 @@
   "key": "new",
   "form": "count-16",
   "style": "mono",
-  "alt": "⭐ New (16)",
-  "count": "16"
- },
- {
-  "file": "v1/chip/color/flag/new/count-16.svg",
-  "width": 78,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "count-16",
-  "style": "color",
   "alt": "⭐ New (16)",
   "count": "16"
  },
@@ -22373,17 +17622,6 @@
   "count": "17"
  },
  {
-  "file": "v1/chip/color/flag/new/count-17.svg",
-  "width": 77,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "count-17",
-  "style": "color",
-  "alt": "⭐ New (17)",
-  "count": "17"
- },
- {
   "file": "v1/chip/mono/flag/new/count-18.svg",
   "width": 78,
   "height": 21,
@@ -22391,17 +17629,6 @@
   "key": "new",
   "form": "count-18",
   "style": "mono",
-  "alt": "⭐ New (18)",
-  "count": "18"
- },
- {
-  "file": "v1/chip/color/flag/new/count-18.svg",
-  "width": 78,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "count-18",
-  "style": "color",
   "alt": "⭐ New (18)",
   "count": "18"
  },
@@ -22417,17 +17644,6 @@
   "count": "19"
  },
  {
-  "file": "v1/chip/color/flag/new/count-19.svg",
-  "width": 78,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "count-19",
-  "style": "color",
-  "alt": "⭐ New (19)",
-  "count": "19"
- },
- {
   "file": "v1/chip/mono/flag/new/count-20.svg",
   "width": 81,
   "height": 21,
@@ -22435,17 +17651,6 @@
   "key": "new",
   "form": "count-20",
   "style": "mono",
-  "alt": "⭐ New (20)",
-  "count": "20"
- },
- {
-  "file": "v1/chip/color/flag/new/count-20.svg",
-  "width": 81,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "count-20",
-  "style": "color",
   "alt": "⭐ New (20)",
   "count": "20"
  },
@@ -22461,17 +17666,6 @@
   "count": "20+"
  },
  {
-  "file": "v1/chip/color/flag/new/count-20plus.svg",
-  "width": 88,
-  "height": 21,
-  "family": "flag",
-  "key": "new",
-  "form": "count-20plus",
-  "style": "color",
-  "alt": "⭐ New (20+)",
-  "count": "20+"
- },
- {
   "file": "v1/chip/mono/flag/shift-left/label.svg",
   "width": 76,
   "height": 21,
@@ -22479,16 +17673,6 @@
   "key": "shift-left",
   "form": "label",
   "style": "mono",
-  "alt": "👈 Shift left"
- },
- {
-  "file": "v1/chip/color/flag/shift-left/label.svg",
-  "width": 76,
-  "height": 21,
-  "family": "flag",
-  "key": "shift-left",
-  "form": "label",
-  "style": "color",
   "alt": "👈 Shift left"
  },
  {
@@ -22502,16 +17686,6 @@
   "alt": "👈"
  },
  {
-  "file": "v1/chip/color/flag/shift-left/icon.svg",
-  "width": 26,
-  "height": 21,
-  "family": "flag",
-  "key": "shift-left",
-  "form": "icon",
-  "style": "color",
-  "alt": "👈"
- },
- {
   "file": "v1/chip/mono/mode/fast/label.svg",
   "width": 53,
   "height": 21,
@@ -22519,16 +17693,6 @@
   "key": "fast",
   "form": "label",
   "style": "mono",
-  "alt": "🚀 Fast"
- },
- {
-  "file": "v1/chip/color/mode/fast/label.svg",
-  "width": 53,
-  "height": 21,
-  "family": "mode",
-  "key": "fast",
-  "form": "label",
-  "style": "color",
   "alt": "🚀 Fast"
  },
  {
@@ -22542,16 +17706,6 @@
   "alt": "⚖️ Balanced"
  },
  {
-  "file": "v1/chip/color/mode/balanced/label.svg",
-  "width": 80,
-  "height": 21,
-  "family": "mode",
-  "key": "balanced",
-  "form": "label",
-  "style": "color",
-  "alt": "⚖️ Balanced"
- },
- {
   "file": "v1/chip/mono/mode/deep/label.svg",
   "width": 59,
   "height": 21,
@@ -22559,16 +17713,6 @@
   "key": "deep",
   "form": "label",
   "style": "mono",
-  "alt": "🧠 Deep"
- },
- {
-  "file": "v1/chip/color/mode/deep/label.svg",
-  "width": 59,
-  "height": 21,
-  "family": "mode",
-  "key": "deep",
-  "form": "label",
-  "style": "color",
   "alt": "🧠 Deep"
  },
  {
@@ -22582,16 +17726,6 @@
   "alt": "⏭️ Skipped"
  },
  {
-  "file": "v1/chip/color/mode/skipped/label.svg",
-  "width": 74,
-  "height": 21,
-  "family": "mode",
-  "key": "skipped",
-  "form": "label",
-  "style": "color",
-  "alt": "⏭️ Skipped"
- },
- {
   "file": "v1/chip/mono/mode/auto/label.svg",
   "width": 55,
   "height": 21,
@@ -22599,16 +17733,6 @@
   "key": "auto",
   "form": "label",
   "style": "mono",
-  "alt": "Auto:"
- },
- {
-  "file": "v1/chip/color/mode/auto/label.svg",
-  "width": 55,
-  "height": 21,
-  "family": "mode",
-  "key": "auto",
-  "form": "label",
-  "style": "color",
   "alt": "Auto:"
  },
  {
@@ -22622,16 +17746,6 @@
   "alt": "Dismiss ↗"
  },
  {
-  "file": "v1/chip/color/link/dismiss/label.svg",
-  "width": 72,
-  "height": 21,
-  "family": "link",
-  "key": "dismiss",
-  "form": "label",
-  "style": "color",
-  "alt": "Dismiss ↗"
- },
- {
   "file": "v1/chip/mono/link/view/label.svg",
   "width": 57,
   "height": 21,
@@ -22639,16 +17753,6 @@
   "key": "view",
   "form": "label",
   "style": "mono",
-  "alt": "View ↗"
- },
- {
-  "file": "v1/chip/color/link/view/label.svg",
-  "width": 57,
-  "height": 21,
-  "family": "link",
-  "key": "view",
-  "form": "label",
-  "style": "color",
   "alt": "View ↗"
  },
  {
@@ -22662,16 +17766,6 @@
   "alt": "🐞 Bug fix"
  },
  {
-  "file": "v1/chip/color/pr-type/bug-fix/label.svg",
-  "width": 68,
-  "height": 21,
-  "family": "pr-type",
-  "key": "bug-fix",
-  "form": "label",
-  "style": "color",
-  "alt": "🐞 Bug fix"
- },
- {
   "file": "v1/chip/mono/pr-type/tests/label.svg",
   "width": 60,
   "height": 21,
@@ -22679,16 +17773,6 @@
   "key": "tests",
   "form": "label",
   "style": "mono",
-  "alt": "🧪 Tests"
- },
- {
-  "file": "v1/chip/color/pr-type/tests/label.svg",
-  "width": 60,
-  "height": 21,
-  "family": "pr-type",
-  "key": "tests",
-  "form": "label",
-  "style": "color",
   "alt": "🧪 Tests"
  },
  {
@@ -22702,16 +17786,6 @@
   "alt": "✨ Enhancement"
  },
  {
-  "file": "v1/chip/color/pr-type/enhancement/label.svg",
-  "width": 104,
-  "height": 21,
-  "family": "pr-type",
-  "key": "enhancement",
-  "form": "label",
-  "style": "color",
-  "alt": "✨ Enhancement"
- },
- {
   "file": "v1/chip/mono/pr-type/documentation/label.svg",
   "width": 113,
   "height": 21,
@@ -22719,16 +17793,6 @@
   "key": "documentation",
   "form": "label",
   "style": "mono",
-  "alt": "📝 Documentation"
- },
- {
-  "file": "v1/chip/color/pr-type/documentation/label.svg",
-  "width": 113,
-  "height": 21,
-  "family": "pr-type",
-  "key": "documentation",
-  "form": "label",
-  "style": "color",
   "alt": "📝 Documentation"
  },
  {
@@ -22742,16 +17806,6 @@
   "alt": "⚙️ Configuration changes"
  },
  {
-  "file": "v1/chip/color/pr-type/configuration-changes/label.svg",
-  "width": 154,
-  "height": 21,
-  "family": "pr-type",
-  "key": "configuration-changes",
-  "form": "label",
-  "style": "color",
-  "alt": "⚙️ Configuration changes"
- },
- {
   "file": "v1/chip/mono/pr-type/refactor/label.svg",
   "width": 76,
   "height": 21,
@@ -22759,16 +17813,6 @@
   "key": "refactor",
   "form": "label",
   "style": "mono",
-  "alt": "Refactor"
- },
- {
-  "file": "v1/chip/color/pr-type/refactor/label.svg",
-  "width": 76,
-  "height": 21,
-  "family": "pr-type",
-  "key": "refactor",
-  "form": "label",
-  "style": "color",
   "alt": "Refactor"
  },
  {
@@ -22782,16 +17826,6 @@
   "alt": "Other"
  },
  {
-  "file": "v1/chip/color/pr-type/other/label.svg",
-  "width": 60,
-  "height": 21,
-  "family": "pr-type",
-  "key": "other",
-  "form": "label",
-  "style": "color",
-  "alt": "Other"
- },
- {
   "file": "v1/chip/mono/review-time/under-5/label.svg",
   "width": 139,
   "height": 21,
@@ -22799,16 +17833,6 @@
   "key": "under-5",
   "form": "label",
   "style": "mono",
-  "alt": "🕐 Less than 5 minutes"
- },
- {
-  "file": "v1/chip/color/review-time/under-5/label.svg",
-  "width": 139,
-  "height": 21,
-  "family": "review-time",
-  "key": "under-5",
-  "form": "label",
-  "style": "color",
   "alt": "🕐 Less than 5 minutes"
  },
  {
@@ -22822,16 +17846,6 @@
   "alt": "🕐 Less than 10 minutes"
  },
  {
-  "file": "v1/chip/color/review-time/under-10/label.svg",
-  "width": 144,
-  "height": 21,
-  "family": "review-time",
-  "key": "under-10",
-  "form": "label",
-  "style": "color",
-  "alt": "🕐 Less than 10 minutes"
- },
- {
   "file": "v1/chip/mono/review-time/10-20/label.svg",
   "width": 108,
   "height": 21,
@@ -22839,16 +17853,6 @@
   "key": "10-20",
   "form": "label",
   "style": "mono",
-  "alt": "🕐 10-20 Minutes"
- },
- {
-  "file": "v1/chip/color/review-time/10-20/label.svg",
-  "width": 108,
-  "height": 21,
-  "family": "review-time",
-  "key": "10-20",
-  "form": "label",
-  "style": "color",
   "alt": "🕐 10-20 Minutes"
  },
  {
@@ -22862,16 +17866,6 @@
   "alt": "🕐 20-40 Minutes"
  },
  {
-  "file": "v1/chip/color/review-time/20-40/label.svg",
-  "width": 111,
-  "height": 21,
-  "family": "review-time",
-  "key": "20-40",
-  "form": "label",
-  "style": "color",
-  "alt": "🕐 20-40 Minutes"
- },
- {
   "file": "v1/chip/mono/review-time/over-40/label.svg",
   "width": 99,
   "height": 21,
@@ -22879,16 +17873,6 @@
   "key": "over-40",
   "form": "label",
   "style": "mono",
-  "alt": "🕐 40+ Minutes"
- },
- {
-  "file": "v1/chip/color/review-time/over-40/label.svg",
-  "width": 99,
-  "height": 21,
-  "family": "review-time",
-  "key": "over-40",
-  "form": "label",
-  "style": "color",
   "alt": "🕐 40+ Minutes"
  },
  {
@@ -22902,16 +17886,6 @@
   "alt": "🟥🟥🟥 High risk"
  },
  {
-  "file": "v1/chip/color/risk/high/label.svg",
-  "width": 78,
-  "height": 21,
-  "family": "risk",
-  "key": "high",
-  "form": "label",
-  "style": "color",
-  "alt": "🟥🟥🟥 High risk"
- },
- {
   "file": "v1/chip/mono/risk-level/high/label.svg",
   "width": 55,
   "height": 21,
@@ -22919,16 +17893,6 @@
   "key": "high",
   "form": "label",
   "style": "mono",
-  "alt": "🔴 High"
- },
- {
-  "file": "v1/chip/color/risk-level/high/label.svg",
-  "width": 55,
-  "height": 21,
-  "family": "risk-level",
-  "key": "high",
-  "form": "label",
-  "style": "color",
   "alt": "🔴 High"
  },
  {
@@ -22942,16 +17906,6 @@
   "alt": "🟨🟨⬜ Medium risk"
  },
  {
-  "file": "v1/chip/color/risk/medium/label.svg",
-  "width": 97,
-  "height": 21,
-  "family": "risk",
-  "key": "medium",
-  "form": "label",
-  "style": "color",
-  "alt": "🟨🟨⬜ Medium risk"
- },
- {
   "file": "v1/chip/mono/risk-level/medium/label.svg",
   "width": 74,
   "height": 21,
@@ -22959,16 +17913,6 @@
   "key": "medium",
   "form": "label",
   "style": "mono",
-  "alt": "🟡 Medium"
- },
- {
-  "file": "v1/chip/color/risk-level/medium/label.svg",
-  "width": 74,
-  "height": 21,
-  "family": "risk-level",
-  "key": "medium",
-  "form": "label",
-  "style": "color",
   "alt": "🟡 Medium"
  },
  {
@@ -22982,16 +17926,6 @@
   "alt": "🟩⬜⬜ Low risk"
  },
  {
-  "file": "v1/chip/color/risk/low/label.svg",
-  "width": 76,
-  "height": 21,
-  "family": "risk",
-  "key": "low",
-  "form": "label",
-  "style": "color",
-  "alt": "🟩⬜⬜ Low risk"
- },
- {
   "file": "v1/chip/mono/risk-level/low/label.svg",
   "width": 53,
   "height": 21,
@@ -22999,16 +17933,6 @@
   "key": "low",
   "form": "label",
   "style": "mono",
-  "alt": "🟢 Low"
- },
- {
-  "file": "v1/chip/color/risk-level/low/label.svg",
-  "width": 53,
-  "height": 21,
-  "family": "risk-level",
-  "key": "low",
-  "form": "label",
-  "style": "color",
   "alt": "🟢 Low"
  },
  {
@@ -23022,16 +17946,6 @@
   "alt": "⬜⬜⬜ Risk unavailable"
  },
  {
-  "file": "v1/chip/color/risk/unavailable/label.svg",
-  "width": 117,
-  "height": 21,
-  "family": "risk",
-  "key": "unavailable",
-  "form": "label",
-  "style": "color",
-  "alt": "⬜⬜⬜ Risk unavailable"
- },
- {
   "file": "v1/chip/mono/risk-level/not-assessed/label.svg",
   "width": 104,
   "height": 21,
@@ -23042,16 +17956,6 @@
   "alt": "⚪ Not assessed"
  },
  {
-  "file": "v1/chip/color/risk-level/not-assessed/label.svg",
-  "width": 104,
-  "height": 21,
-  "family": "risk-level",
-  "key": "not-assessed",
-  "form": "label",
-  "style": "color",
-  "alt": "⚪ Not assessed"
- },
- {
   "file": "v1/chip/mono/risk-blast-radius/capabilities/count-0.svg",
   "width": 112,
   "height": 21,
@@ -23059,17 +17963,6 @@
   "key": "capabilities",
   "form": "count-0",
   "style": "mono",
-  "alt": "💥 Capabilities (0)",
-  "count": "0"
- },
- {
-  "file": "v1/chip/color/risk-blast-radius/capabilities/count-0.svg",
-  "width": 112,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "capabilities",
-  "form": "count-0",
-  "style": "color",
   "alt": "💥 Capabilities (0)",
   "count": "0"
  },
@@ -23085,17 +17978,6 @@
   "count": "1"
  },
  {
-  "file": "v1/chip/color/risk-blast-radius/capabilities/count-1.svg",
-  "width": 109,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "capabilities",
-  "form": "count-1",
-  "style": "color",
-  "alt": "💥 Capabilities (1)",
-  "count": "1"
- },
- {
   "file": "v1/chip/mono/risk-blast-radius/capabilities/count-2.svg",
   "width": 111,
   "height": 21,
@@ -23103,17 +17985,6 @@
   "key": "capabilities",
   "form": "count-2",
   "style": "mono",
-  "alt": "💥 Capabilities (2)",
-  "count": "2"
- },
- {
-  "file": "v1/chip/color/risk-blast-radius/capabilities/count-2.svg",
-  "width": 111,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "capabilities",
-  "form": "count-2",
-  "style": "color",
   "alt": "💥 Capabilities (2)",
   "count": "2"
  },
@@ -23129,17 +18000,6 @@
   "count": "3"
  },
  {
-  "file": "v1/chip/color/risk-blast-radius/capabilities/count-3.svg",
-  "width": 111,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "capabilities",
-  "form": "count-3",
-  "style": "color",
-  "alt": "💥 Capabilities (3)",
-  "count": "3"
- },
- {
   "file": "v1/chip/mono/risk-blast-radius/capabilities/count-4.svg",
   "width": 112,
   "height": 21,
@@ -23147,17 +18007,6 @@
   "key": "capabilities",
   "form": "count-4",
   "style": "mono",
-  "alt": "💥 Capabilities (4)",
-  "count": "4"
- },
- {
-  "file": "v1/chip/color/risk-blast-radius/capabilities/count-4.svg",
-  "width": 112,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "capabilities",
-  "form": "count-4",
-  "style": "color",
   "alt": "💥 Capabilities (4)",
   "count": "4"
  },
@@ -23173,17 +18022,6 @@
   "count": "5"
  },
  {
-  "file": "v1/chip/color/risk-blast-radius/capabilities/count-5.svg",
-  "width": 111,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "capabilities",
-  "form": "count-5",
-  "style": "color",
-  "alt": "💥 Capabilities (5)",
-  "count": "5"
- },
- {
   "file": "v1/chip/mono/risk-blast-radius/capabilities/count-6.svg",
   "width": 111,
   "height": 21,
@@ -23191,17 +18029,6 @@
   "key": "capabilities",
   "form": "count-6",
   "style": "mono",
-  "alt": "💥 Capabilities (6)",
-  "count": "6"
- },
- {
-  "file": "v1/chip/color/risk-blast-radius/capabilities/count-6.svg",
-  "width": 111,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "capabilities",
-  "form": "count-6",
-  "style": "color",
   "alt": "💥 Capabilities (6)",
   "count": "6"
  },
@@ -23217,17 +18044,6 @@
   "count": "7"
  },
  {
-  "file": "v1/chip/color/risk-blast-radius/capabilities/count-7.svg",
-  "width": 111,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "capabilities",
-  "form": "count-7",
-  "style": "color",
-  "alt": "💥 Capabilities (7)",
-  "count": "7"
- },
- {
   "file": "v1/chip/mono/risk-blast-radius/capabilities/count-8.svg",
   "width": 111,
   "height": 21,
@@ -23235,17 +18051,6 @@
   "key": "capabilities",
   "form": "count-8",
   "style": "mono",
-  "alt": "💥 Capabilities (8)",
-  "count": "8"
- },
- {
-  "file": "v1/chip/color/risk-blast-radius/capabilities/count-8.svg",
-  "width": 111,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "capabilities",
-  "form": "count-8",
-  "style": "color",
   "alt": "💥 Capabilities (8)",
   "count": "8"
  },
@@ -23261,17 +18066,6 @@
   "count": "9"
  },
  {
-  "file": "v1/chip/color/risk-blast-radius/capabilities/count-9.svg",
-  "width": 111,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "capabilities",
-  "form": "count-9",
-  "style": "color",
-  "alt": "💥 Capabilities (9)",
-  "count": "9"
- },
- {
   "file": "v1/chip/mono/risk-blast-radius/capabilities/count-10.svg",
   "width": 117,
   "height": 21,
@@ -23279,17 +18073,6 @@
   "key": "capabilities",
   "form": "count-10",
   "style": "mono",
-  "alt": "💥 Capabilities (10)",
-  "count": "10"
- },
- {
-  "file": "v1/chip/color/risk-blast-radius/capabilities/count-10.svg",
-  "width": 117,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "capabilities",
-  "form": "count-10",
-  "style": "color",
   "alt": "💥 Capabilities (10)",
   "count": "10"
  },
@@ -23305,17 +18088,6 @@
   "count": "11"
  },
  {
-  "file": "v1/chip/color/risk-blast-radius/capabilities/count-11.svg",
-  "width": 114,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "capabilities",
-  "form": "count-11",
-  "style": "color",
-  "alt": "💥 Capabilities (11)",
-  "count": "11"
- },
- {
   "file": "v1/chip/mono/risk-blast-radius/capabilities/count-12.svg",
   "width": 116,
   "height": 21,
@@ -23323,17 +18095,6 @@
   "key": "capabilities",
   "form": "count-12",
   "style": "mono",
-  "alt": "💥 Capabilities (12)",
-  "count": "12"
- },
- {
-  "file": "v1/chip/color/risk-blast-radius/capabilities/count-12.svg",
-  "width": 116,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "capabilities",
-  "form": "count-12",
-  "style": "color",
   "alt": "💥 Capabilities (12)",
   "count": "12"
  },
@@ -23349,17 +18110,6 @@
   "count": "13"
  },
  {
-  "file": "v1/chip/color/risk-blast-radius/capabilities/count-13.svg",
-  "width": 116,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "capabilities",
-  "form": "count-13",
-  "style": "color",
-  "alt": "💥 Capabilities (13)",
-  "count": "13"
- },
- {
   "file": "v1/chip/mono/risk-blast-radius/capabilities/count-14.svg",
   "width": 117,
   "height": 21,
@@ -23367,17 +18117,6 @@
   "key": "capabilities",
   "form": "count-14",
   "style": "mono",
-  "alt": "💥 Capabilities (14)",
-  "count": "14"
- },
- {
-  "file": "v1/chip/color/risk-blast-radius/capabilities/count-14.svg",
-  "width": 117,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "capabilities",
-  "form": "count-14",
-  "style": "color",
   "alt": "💥 Capabilities (14)",
   "count": "14"
  },
@@ -23393,17 +18132,6 @@
   "count": "15"
  },
  {
-  "file": "v1/chip/color/risk-blast-radius/capabilities/count-15.svg",
-  "width": 116,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "capabilities",
-  "form": "count-15",
-  "style": "color",
-  "alt": "💥 Capabilities (15)",
-  "count": "15"
- },
- {
   "file": "v1/chip/mono/risk-blast-radius/capabilities/count-16.svg",
   "width": 116,
   "height": 21,
@@ -23411,17 +18139,6 @@
   "key": "capabilities",
   "form": "count-16",
   "style": "mono",
-  "alt": "💥 Capabilities (16)",
-  "count": "16"
- },
- {
-  "file": "v1/chip/color/risk-blast-radius/capabilities/count-16.svg",
-  "width": 116,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "capabilities",
-  "form": "count-16",
-  "style": "color",
   "alt": "💥 Capabilities (16)",
   "count": "16"
  },
@@ -23437,17 +18154,6 @@
   "count": "17"
  },
  {
-  "file": "v1/chip/color/risk-blast-radius/capabilities/count-17.svg",
-  "width": 116,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "capabilities",
-  "form": "count-17",
-  "style": "color",
-  "alt": "💥 Capabilities (17)",
-  "count": "17"
- },
- {
   "file": "v1/chip/mono/risk-blast-radius/capabilities/count-18.svg",
   "width": 116,
   "height": 21,
@@ -23455,17 +18161,6 @@
   "key": "capabilities",
   "form": "count-18",
   "style": "mono",
-  "alt": "💥 Capabilities (18)",
-  "count": "18"
- },
- {
-  "file": "v1/chip/color/risk-blast-radius/capabilities/count-18.svg",
-  "width": 116,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "capabilities",
-  "form": "count-18",
-  "style": "color",
   "alt": "💥 Capabilities (18)",
   "count": "18"
  },
@@ -23481,17 +18176,6 @@
   "count": "19"
  },
  {
-  "file": "v1/chip/color/risk-blast-radius/capabilities/count-19.svg",
-  "width": 116,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "capabilities",
-  "form": "count-19",
-  "style": "color",
-  "alt": "💥 Capabilities (19)",
-  "count": "19"
- },
- {
   "file": "v1/chip/mono/risk-blast-radius/capabilities/count-20.svg",
   "width": 119,
   "height": 21,
@@ -23499,17 +18183,6 @@
   "key": "capabilities",
   "form": "count-20",
   "style": "mono",
-  "alt": "💥 Capabilities (20)",
-  "count": "20"
- },
- {
-  "file": "v1/chip/color/risk-blast-radius/capabilities/count-20.svg",
-  "width": 119,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "capabilities",
-  "form": "count-20",
-  "style": "color",
   "alt": "💥 Capabilities (20)",
   "count": "20"
  },
@@ -23525,17 +18198,6 @@
   "count": "20+"
  },
  {
-  "file": "v1/chip/color/risk-blast-radius/capabilities/count-20plus.svg",
-  "width": 127,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "capabilities",
-  "form": "count-20plus",
-  "style": "color",
-  "alt": "💥 Capabilities (20+)",
-  "count": "20+"
- },
- {
   "file": "v1/chip/mono/risk-blast-radius/assessed-behavior/label.svg",
   "width": 133,
   "height": 21,
@@ -23543,16 +18205,6 @@
   "key": "assessed-behavior",
   "form": "label",
   "style": "mono",
-  "alt": "💥 Assessed behavior"
- },
- {
-  "file": "v1/chip/color/risk-blast-radius/assessed-behavior/label.svg",
-  "width": 133,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "assessed-behavior",
-  "form": "label",
-  "style": "color",
   "alt": "💥 Assessed behavior"
  },
  {
@@ -23566,16 +18218,6 @@
   "alt": "💥 Not assessed"
  },
  {
-  "file": "v1/chip/color/risk-blast-radius/not-assessed/label.svg",
-  "width": 104,
-  "height": 21,
-  "family": "risk-blast-radius",
-  "key": "not-assessed",
-  "form": "label",
-  "style": "color",
-  "alt": "💥 Not assessed"
- },
- {
   "file": "v1/chip/mono/risk-complexity/straightforward/label.svg",
   "width": 115,
   "height": 21,
@@ -23583,16 +18225,6 @@
   "key": "straightforward",
   "form": "label",
   "style": "mono",
-  "alt": "🧩 Straightforward"
- },
- {
-  "file": "v1/chip/color/risk-complexity/straightforward/label.svg",
-  "width": 115,
-  "height": 21,
-  "family": "risk-complexity",
-  "key": "straightforward",
-  "form": "label",
-  "style": "color",
   "alt": "🧩 Straightforward"
  },
  {
@@ -23606,16 +18238,6 @@
   "alt": "🧩 Interacting branches"
  },
  {
-  "file": "v1/chip/color/risk-complexity/interacting-branches/label.svg",
-  "width": 142,
-  "height": 21,
-  "family": "risk-complexity",
-  "key": "interacting-branches",
-  "form": "label",
-  "style": "color",
-  "alt": "🧩 Interacting branches"
- },
- {
   "file": "v1/chip/mono/risk-complexity/data-transformation/label.svg",
   "width": 138,
   "height": 21,
@@ -23623,16 +18245,6 @@
   "key": "data-transformation",
   "form": "label",
   "style": "mono",
-  "alt": "🧩 Data transformation"
- },
- {
-  "file": "v1/chip/color/risk-complexity/data-transformation/label.svg",
-  "width": 138,
-  "height": 21,
-  "family": "risk-complexity",
-  "key": "data-transformation",
-  "form": "label",
-  "style": "color",
   "alt": "🧩 Data transformation"
  },
  {
@@ -23646,16 +18258,6 @@
   "alt": "🧩 Compatibility cases"
  },
  {
-  "file": "v1/chip/color/risk-complexity/compatibility-cases/label.svg",
-  "width": 136,
-  "height": 21,
-  "family": "risk-complexity",
-  "key": "compatibility-cases",
-  "form": "label",
-  "style": "color",
-  "alt": "🧩 Compatibility cases"
- },
- {
   "file": "v1/chip/mono/risk-complexity/coordinated-invariants/label.svg",
   "width": 153,
   "height": 21,
@@ -23663,16 +18265,6 @@
   "key": "coordinated-invariants",
   "form": "label",
   "style": "mono",
-  "alt": "🧩 Coordinated invariants"
- },
- {
-  "file": "v1/chip/color/risk-complexity/coordinated-invariants/label.svg",
-  "width": 153,
-  "height": 21,
-  "family": "risk-complexity",
-  "key": "coordinated-invariants",
-  "form": "label",
-  "style": "color",
   "alt": "🧩 Coordinated invariants"
  },
  {
@@ -23686,16 +18278,6 @@
   "alt": "🧩 Concurrent ordering"
  },
  {
-  "file": "v1/chip/color/risk-complexity/concurrent-ordering/label.svg",
-  "width": 141,
-  "height": 21,
-  "family": "risk-complexity",
-  "key": "concurrent-ordering",
-  "form": "label",
-  "style": "color",
-  "alt": "🧩 Concurrent ordering"
- },
- {
   "file": "v1/chip/mono/risk-complexity/subtle-algorithm/label.svg",
   "width": 119,
   "height": 21,
@@ -23703,16 +18285,6 @@
   "key": "subtle-algorithm",
   "form": "label",
   "style": "mono",
-  "alt": "🧩 Subtle algorithm"
- },
- {
-  "file": "v1/chip/color/risk-complexity/subtle-algorithm/label.svg",
-  "width": 119,
-  "height": 21,
-  "family": "risk-complexity",
-  "key": "subtle-algorithm",
-  "form": "label",
-  "style": "color",
   "alt": "🧩 Subtle algorithm"
  },
  {
@@ -23726,16 +18298,6 @@
   "alt": "🧩 State transitions"
  },
  {
-  "file": "v1/chip/color/risk-complexity/state-transitions/label.svg",
-  "width": 118,
-  "height": 21,
-  "family": "risk-complexity",
-  "key": "state-transitions",
-  "form": "label",
-  "style": "color",
-  "alt": "🧩 State transitions"
- },
- {
   "file": "v1/chip/mono/risk-complexity/multiple-interactions/label.svg",
   "width": 140,
   "height": 21,
@@ -23743,16 +18305,6 @@
   "key": "multiple-interactions",
   "form": "label",
   "style": "mono",
-  "alt": "🧩 Multiple interactions"
- },
- {
-  "file": "v1/chip/color/risk-complexity/multiple-interactions/label.svg",
-  "width": 140,
-  "height": 21,
-  "family": "risk-complexity",
-  "key": "multiple-interactions",
-  "form": "label",
-  "style": "color",
   "alt": "🧩 Multiple interactions"
  },
  {
@@ -23766,16 +18318,6 @@
   "alt": "🧩 Assessed behavior"
  },
  {
-  "file": "v1/chip/color/risk-complexity/assessed-behavior/label.svg",
-  "width": 133,
-  "height": 21,
-  "family": "risk-complexity",
-  "key": "assessed-behavior",
-  "form": "label",
-  "style": "color",
-  "alt": "🧩 Assessed behavior"
- },
- {
   "file": "v1/chip/mono/risk-complexity/not-assessed/label.svg",
   "width": 104,
   "height": 21,
@@ -23783,16 +18325,6 @@
   "key": "not-assessed",
   "form": "label",
   "style": "mono",
-  "alt": "🧩 Not assessed"
- },
- {
-  "file": "v1/chip/color/risk-complexity/not-assessed/label.svg",
-  "width": 104,
-  "height": 21,
-  "family": "risk-complexity",
-  "key": "not-assessed",
-  "form": "label",
-  "style": "color",
   "alt": "🧩 Not assessed"
  },
  {
@@ -23806,16 +18338,6 @@
   "alt": "🩹 Cosmetic"
  },
  {
-  "file": "v1/chip/color/risk-damage/cosmetic/label.svg",
-  "width": 81,
-  "height": 21,
-  "family": "risk-damage",
-  "key": "cosmetic",
-  "form": "label",
-  "style": "color",
-  "alt": "🩹 Cosmetic"
- },
- {
   "file": "v1/chip/mono/risk-damage/reversible/label.svg",
   "width": 87,
   "height": 21,
@@ -23823,16 +18345,6 @@
   "key": "reversible",
   "form": "label",
   "style": "mono",
-  "alt": "🩹 Reversible"
- },
- {
-  "file": "v1/chip/color/risk-damage/reversible/label.svg",
-  "width": 87,
-  "height": 21,
-  "family": "risk-damage",
-  "key": "reversible",
-  "form": "label",
-  "style": "color",
   "alt": "🩹 Reversible"
  },
  {
@@ -23846,16 +18358,6 @@
   "alt": "🩹 Recoverable"
  },
  {
-  "file": "v1/chip/color/risk-damage/recoverable/label.svg",
-  "width": 98,
-  "height": 21,
-  "family": "risk-damage",
-  "key": "recoverable",
-  "form": "label",
-  "style": "color",
-  "alt": "🩹 Recoverable"
- },
- {
   "file": "v1/chip/mono/risk-damage/incorrect-results/label.svg",
   "width": 119,
   "height": 21,
@@ -23863,16 +18365,6 @@
   "key": "incorrect-results",
   "form": "label",
   "style": "mono",
-  "alt": "🩹 Incorrect results"
- },
- {
-  "file": "v1/chip/color/risk-damage/incorrect-results/label.svg",
-  "width": 119,
-  "height": 21,
-  "family": "risk-damage",
-  "key": "incorrect-results",
-  "form": "label",
-  "style": "color",
   "alt": "🩹 Incorrect results"
  },
  {
@@ -23886,16 +18378,6 @@
   "alt": "🩹 Temporary loss"
  },
  {
-  "file": "v1/chip/color/risk-damage/temporary-loss/label.svg",
-  "width": 115,
-  "height": 21,
-  "family": "risk-damage",
-  "key": "temporary-loss",
-  "form": "label",
-  "style": "color",
-  "alt": "🩹 Temporary loss"
- },
- {
   "file": "v1/chip/mono/risk-damage/confidentiality/label.svg",
   "width": 108,
   "height": 21,
@@ -23903,16 +18385,6 @@
   "key": "confidentiality",
   "form": "label",
   "style": "mono",
-  "alt": "🩹 Confidentiality"
- },
- {
-  "file": "v1/chip/color/risk-damage/confidentiality/label.svg",
-  "width": 108,
-  "height": 21,
-  "family": "risk-damage",
-  "key": "confidentiality",
-  "form": "label",
-  "style": "color",
   "alt": "🩹 Confidentiality"
  },
  {
@@ -23926,16 +18398,6 @@
   "alt": "🩹 Integrity"
  },
  {
-  "file": "v1/chip/color/risk-damage/integrity/label.svg",
-  "width": 75,
-  "height": 21,
-  "family": "risk-damage",
-  "key": "integrity",
-  "form": "label",
-  "style": "color",
-  "alt": "🩹 Integrity"
- },
- {
   "file": "v1/chip/mono/risk-damage/financial-error/label.svg",
   "width": 108,
   "height": 21,
@@ -23943,16 +18405,6 @@
   "key": "financial-error",
   "form": "label",
   "style": "mono",
-  "alt": "🩹 Financial error"
- },
- {
-  "file": "v1/chip/color/risk-damage/financial-error/label.svg",
-  "width": 108,
-  "height": 21,
-  "family": "risk-damage",
-  "key": "financial-error",
-  "form": "label",
-  "style": "color",
   "alt": "🩹 Financial error"
  },
  {
@@ -23966,16 +18418,6 @@
   "alt": "🩹 Data loss"
  },
  {
-  "file": "v1/chip/color/risk-damage/data-loss/label.svg",
-  "width": 80,
-  "height": 21,
-  "family": "risk-damage",
-  "key": "data-loss",
-  "form": "label",
-  "style": "color",
-  "alt": "🩹 Data loss"
- },
- {
   "file": "v1/chip/mono/risk-damage/critical-loss/label.svg",
   "width": 93,
   "height": 21,
@@ -23983,16 +18425,6 @@
   "key": "critical-loss",
   "form": "label",
   "style": "mono",
-  "alt": "🩹 Critical loss"
- },
- {
-  "file": "v1/chip/color/risk-damage/critical-loss/label.svg",
-  "width": 93,
-  "height": 21,
-  "family": "risk-damage",
-  "key": "critical-loss",
-  "form": "label",
-  "style": "color",
   "alt": "🩹 Critical loss"
  },
  {
@@ -24006,16 +18438,6 @@
   "alt": "🩹 Assessed behavior"
  },
  {
-  "file": "v1/chip/color/risk-damage/assessed-behavior/label.svg",
-  "width": 133,
-  "height": 21,
-  "family": "risk-damage",
-  "key": "assessed-behavior",
-  "form": "label",
-  "style": "color",
-  "alt": "🩹 Assessed behavior"
- },
- {
   "file": "v1/chip/mono/risk-damage/not-assessed/label.svg",
   "width": 104,
   "height": 21,
@@ -24023,16 +18445,6 @@
   "key": "not-assessed",
   "form": "label",
   "style": "mono",
-  "alt": "🩹 Not assessed"
- },
- {
-  "file": "v1/chip/color/risk-damage/not-assessed/label.svg",
-  "width": 104,
-  "height": 21,
-  "family": "risk-damage",
-  "key": "not-assessed",
-  "form": "label",
-  "style": "color",
   "alt": "🩹 Not assessed"
  },
  {
