@@ -22533,7 +22533,7 @@
  },
  {
   "file": "v1/chip/mono/mode/auto-fast/label.svg",
-  "width": 85,
+  "width": 68,
   "height": 21,
   "family": "mode",
   "key": "auto-fast",
@@ -22543,7 +22543,7 @@
  },
  {
   "file": "v1/chip/color/mode/auto-fast/label.svg",
-  "width": 85,
+  "width": 68,
   "height": 21,
   "family": "mode",
   "key": "auto-fast",
@@ -22573,7 +22573,7 @@
  },
  {
   "file": "v1/chip/mono/mode/auto-balanced/label.svg",
-  "width": 112,
+  "width": 95,
   "height": 21,
   "family": "mode",
   "key": "auto-balanced",
@@ -22583,7 +22583,7 @@
  },
  {
   "file": "v1/chip/color/mode/auto-balanced/label.svg",
-  "width": 112,
+  "width": 95,
   "height": 21,
   "family": "mode",
   "key": "auto-balanced",
@@ -22613,7 +22613,7 @@
  },
  {
   "file": "v1/chip/mono/mode/auto-deep/label.svg",
-  "width": 91,
+  "width": 74,
   "height": 21,
   "family": "mode",
   "key": "auto-deep",
@@ -22623,7 +22623,7 @@
  },
  {
   "file": "v1/chip/color/mode/auto-deep/label.svg",
-  "width": 91,
+  "width": 74,
   "height": 21,
   "family": "mode",
   "key": "auto-deep",
@@ -22653,7 +22653,7 @@
  },
  {
   "file": "v1/chip/mono/mode/auto-skipped/label.svg",
-  "width": 106,
+  "width": 89,
   "height": 21,
   "family": "mode",
   "key": "auto-skipped",
@@ -22663,7 +22663,7 @@
  },
  {
   "file": "v1/chip/color/mode/auto-skipped/label.svg",
-  "width": 106,
+  "width": 89,
   "height": 21,
   "family": "mode",
   "key": "auto-skipped",
