@@ -17666,24 +17666,24 @@
   "count": "20+"
  },
  {
-  "file": "v1/chip/mono/flag/shift-left/label.svg",
-  "width": 76,
+  "file": "v1/chip/mono/flag/local-find/label.svg",
+  "width": 83,
   "height": 21,
   "family": "flag",
-  "key": "shift-left",
+  "key": "local-find",
   "form": "label",
   "style": "mono",
-  "alt": "👈 Shift left"
+  "alt": "💻 Local find"
  },
  {
-  "file": "v1/chip/mono/flag/shift-left/icon.svg",
+  "file": "v1/chip/mono/flag/local-find/icon.svg",
   "width": 26,
   "height": 21,
   "family": "flag",
-  "key": "shift-left",
+  "key": "local-find",
   "form": "icon",
   "style": "mono",
-  "alt": "👈"
+  "alt": "💻"
  },
  {
   "file": "v1/chip/mono/mode/fast/label.svg",
