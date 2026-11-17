@@ -31,7 +31,7 @@ PALETTES = {
             "circle-check": "#2fd0a5", "circle-x": "#ff4d4f", "triangle-alert": "#ffd21f", "sparkles": "#ffd21f",
             "laptop": "#ffb020", "rocket": "#ff4d4f", "scale": "#ffb020", "file-text": "#4da3ff",
             "flask-conical": "#2fd0a5", "trending-up": "#9b8cff", "settings": "#c3c3c3", "refresh-cw": "#3fc8e4",
-            "clock": "#7ab8f5", "bomb": "#ff8a2a", "puzzle": "#9b8cff", "bandage": "#ff6fb5",
+            "clock": "#7ab8f5", "bomb": "#ff8a2a", "waypoints": "#9b8cff", "flame": "#ff6fb5",
         },
         "risk": {"high": "#ff4d4f", "medium": "#ffd21f", "low": "#2fd0a5"},
     },
@@ -47,7 +47,7 @@ PALETTES = {
             "circle-check": "#0f8a66", "circle-x": "#dc2626", "triangle-alert": "#b7791f", "sparkles": "#b7791f",
             "laptop": "#b7791f", "rocket": "#dc2626", "scale": "#b7791f", "file-text": "#0b6bdf",
             "flask-conical": "#0f8a66", "trending-up": "#6741d9", "settings": "#57606a", "refresh-cw": "#0e8a92",
-            "clock": "#3b6ea5", "bomb": "#d9480f", "puzzle": "#6741d9", "bandage": "#d6247f",
+            "clock": "#3b6ea5", "bomb": "#d9480f", "waypoints": "#6741d9", "flame": "#d6247f",
         },
         "risk": {"high": "#dc2626", "medium": "#b7791f", "low": "#0f8a66"},
     },
@@ -58,7 +58,7 @@ def _tint(icon: str, style: str, pal: dict) -> str:
     kind, _, arg = icon.partition(":")
     if style != "color" or kind == "rel":
         return pal["icon"]
-    if kind in ("risk", "dot"):
+    if kind == "risk":
         return pal["risk"].get(arg, pal["icon"])
     return pal["sev"][int(arg)] if kind == "sev" else pal["tints"].get(icon, pal["icon"])
 
@@ -134,13 +134,6 @@ def risk_meter(level: str, x: float, solid: str) -> str:
                    f'{"" if i < RISK_SEGMENTS.get(level, 0) else " opacity=\"0.3\""}/>' for i, bx in enumerate([0, 4.35, 8.7]))
 
 
-def level_dot(level: str, x: float, solid: str) -> str:
-    """Risk factor level: a solid dot, or a ring when the factor was not assessed."""
-    if level in RISK_SEGMENTS:
-        return f'<circle cx="{_num(x + 6)}" cy="10" r="4" {solid}/>'
-    return f'<circle cx="{_num(x + 6)}" cy="10" r="3.25" fill="none" {solid.replace("fill=", "stroke=").replace('class="b"', 'class="i"')} stroke-width="1.5"/>'
-
-
 def _icon(icon: str | None, x: float, paint: dict) -> str:
     if not icon:
         return ""
@@ -151,8 +144,6 @@ def _icon(icon: str | None, x: float, paint: dict) -> str:
         return relevance_dots(int(arg), x, paint["solid"])
     if kind == "risk":
         return risk_meter(arg, x, paint["solid"])
-    if kind == "dot":
-        return level_dot(arg, x, paint["solid"])
     return lucide(icon, x, paint["stroke"])
 
 

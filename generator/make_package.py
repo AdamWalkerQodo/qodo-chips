@@ -39,8 +39,8 @@ RISK_COMPLEXITY = ["Straightforward", "Interacting branches", "Data transformati
                    "Concurrent ordering", "Subtle algorithm", "State transitions", "Multiple interactions"]
 RISK_DAMAGE = ["Cosmetic", "Reversible", "Recoverable", "Incorrect results", "Temporary loss", "Confidentiality", "Integrity",
                "Financial error", "Data loss", "Critical loss"]
-RISK_FACTORS = [("complexity", "puzzle", "🧩", RISK_COMPLEXITY), ("damage", "bandage", "🩹", RISK_DAMAGE)]
-COLOR_FAMILIES = {"type", "source", "risk", "risk-level"}   # every other chip exists in mono only; severity chips use the group badge colourings instead
+RISK_FACTORS = [("complexity", "waypoints", "🧩", RISK_COMPLEXITY), ("damage", "flame", "🩹", RISK_DAMAGE)]
+COLOR_FAMILIES = {"type", "source", "risk"}   # every other chip exists in mono only; severity chips use the group badge colourings instead
 TERMS = {"legacy": ["Action required", "Review recommended", "Optional"], "high-medium-low": ["High", "Medium", "Low"],
          "critical-warning-informational": ["Critical", "Warning", "Informational"],
          "required-recommended-optional": ["Required", "Recommended", "Optional"], "p0-p1-p2": ["P0", "P1", "P2"]}
@@ -127,9 +127,9 @@ def main() -> None:
         label_chip("review-time", key, "clock", label, f"🕐 {label}", "🕐", variants=("",))
     for key, label, bars, dot in RISK_LEVELS:
         label_chip("risk", key, f"risk:{key}", f"{label} risk", f"{bars} {label} risk", bars, variants=("",))
-        label_chip("risk-level", key, f"dot:{key}", label, f"{dot} {label}", dot, variants=("",))
+        label_chip("risk-level", key, f"risk:{key}", label, f"{dot} {label}", dot, variants=("",))
     label_chip("risk", "unavailable", "risk:none", "Risk unavailable", "⬜⬜⬜ Risk unavailable", "⬜⬜⬜", variants=("",))
-    label_chip("risk-level", "not-assessed", "dot:none", "Not assessed", "⚪ Not assessed", "⚪", variants=("",))
+    label_chip("risk-level", "not-assessed", "risk:none", "Not assessed", "⚪ Not assessed", "⚪", variants=("",))
     counters("risk-blast-radius", "capabilities", "bomb", "Capabilities", "💥 Capabilities")
     for factor, icon, emoji, labels in [("blast-radius", "bomb", "💥", [])] + RISK_FACTORS:
         for label in [*labels, "Assessed behavior", "Not assessed"]:

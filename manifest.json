@@ -33056,16 +33056,6 @@
   "alt": "🔴 High"
  },
  {
-  "file": "v1/chip/color/risk-level/high/label.svg",
-  "width": 55,
-  "height": 21,
-  "family": "risk-level",
-  "key": "high",
-  "form": "label",
-  "style": "color",
-  "alt": "🔴 High"
- },
- {
   "file": "v1/chip/mono/risk/medium/label.svg",
   "width": 97,
   "height": 21,
@@ -33093,16 +33083,6 @@
   "key": "medium",
   "form": "label",
   "style": "mono",
-  "alt": "🟡 Medium"
- },
- {
-  "file": "v1/chip/color/risk-level/medium/label.svg",
-  "width": 74,
-  "height": 21,
-  "family": "risk-level",
-  "key": "medium",
-  "form": "label",
-  "style": "color",
   "alt": "🟡 Medium"
  },
  {
@@ -33136,16 +33116,6 @@
   "alt": "🟢 Low"
  },
  {
-  "file": "v1/chip/color/risk-level/low/label.svg",
-  "width": 53,
-  "height": 21,
-  "family": "risk-level",
-  "key": "low",
-  "form": "label",
-  "style": "color",
-  "alt": "🟢 Low"
- },
- {
   "file": "v1/chip/mono/risk/unavailable/label.svg",
   "width": 117,
   "height": 21,
@@ -33173,16 +33143,6 @@
   "key": "not-assessed",
   "form": "label",
   "style": "mono",
-  "alt": "⚪ Not assessed"
- },
- {
-  "file": "v1/chip/color/risk-level/not-assessed/label.svg",
-  "width": 104,
-  "height": 21,
-  "family": "risk-level",
-  "key": "not-assessed",
-  "form": "label",
-  "style": "color",
   "alt": "⚪ Not assessed"
  },
  {
