@@ -167,11 +167,8 @@ def chip(icon: str | None, label: str | None, count: str | None = None, style: s
     """A label chip; `count` adds a divided number cell. `theme` is dark, light or auto. Returns (svg body, width)."""
     paint, pad, x, body = _paint(theme, style, icon), 7, 7, ""
     if icon:
-        names = icon.split("+")   # "a+b" draws two icons side by side
-        for name in names:
-            body += _icon(name, x, paint)
-            x += 12 + 3
-        x -= 3
+        body += _icon(icon, x, paint)
+        x += 12
     if label:
         x += 4 if icon else 0
         d, w = text_path(label, 11.5, x)

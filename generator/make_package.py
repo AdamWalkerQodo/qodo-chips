@@ -101,7 +101,7 @@ def main() -> None:
     label_chip("flag", "shift-left", "arrow-big-left", "Shift left", "👈 Shift left", "👈")
     for key, label, icon, emoji in MODES:
         label_chip("mode", key, icon, label, f"{emoji} {label}", emoji, variants=("",))
-        label_chip("mode", f"auto-{key}", f"wand-sparkles+{icon}", label, f"Auto: {emoji} {label}", emoji, variants=("",))
+    label_chip("mode", "auto", "wand-sparkles", "Auto", "Auto:", "Auto:", variants=("",))   # sits before the chosen mode's chip
     label_chip("link", "dismiss", "x", "Dismiss", "Dismiss ↗", "Dismiss", variants=("",))
     label_chip("link", "view", "external-link", "View", "View ↗", "View", variants=("",))
     for key, label, icon, emoji in PR_TYPES:

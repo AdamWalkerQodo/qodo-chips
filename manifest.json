@@ -22532,26 +22532,6 @@
   "alt": "🚀 Fast"
  },
  {
-  "file": "v1/chip/mono/mode/auto-fast/label.svg",
-  "width": 68,
-  "height": 21,
-  "family": "mode",
-  "key": "auto-fast",
-  "form": "label",
-  "style": "mono",
-  "alt": "Auto: 🚀 Fast"
- },
- {
-  "file": "v1/chip/color/mode/auto-fast/label.svg",
-  "width": 68,
-  "height": 21,
-  "family": "mode",
-  "key": "auto-fast",
-  "form": "label",
-  "style": "color",
-  "alt": "Auto: 🚀 Fast"
- },
- {
   "file": "v1/chip/mono/mode/balanced/label.svg",
   "width": 80,
   "height": 21,
@@ -22570,26 +22550,6 @@
   "form": "label",
   "style": "color",
   "alt": "⚖️ Balanced"
- },
- {
-  "file": "v1/chip/mono/mode/auto-balanced/label.svg",
-  "width": 95,
-  "height": 21,
-  "family": "mode",
-  "key": "auto-balanced",
-  "form": "label",
-  "style": "mono",
-  "alt": "Auto: ⚖️ Balanced"
- },
- {
-  "file": "v1/chip/color/mode/auto-balanced/label.svg",
-  "width": 95,
-  "height": 21,
-  "family": "mode",
-  "key": "auto-balanced",
-  "form": "label",
-  "style": "color",
-  "alt": "Auto: ⚖️ Balanced"
  },
  {
   "file": "v1/chip/mono/mode/deep/label.svg",
@@ -22612,26 +22572,6 @@
   "alt": "🧠 Deep"
  },
  {
-  "file": "v1/chip/mono/mode/auto-deep/label.svg",
-  "width": 74,
-  "height": 21,
-  "family": "mode",
-  "key": "auto-deep",
-  "form": "label",
-  "style": "mono",
-  "alt": "Auto: 🧠 Deep"
- },
- {
-  "file": "v1/chip/color/mode/auto-deep/label.svg",
-  "width": 74,
-  "height": 21,
-  "family": "mode",
-  "key": "auto-deep",
-  "form": "label",
-  "style": "color",
-  "alt": "Auto: 🧠 Deep"
- },
- {
   "file": "v1/chip/mono/mode/skipped/label.svg",
   "width": 74,
   "height": 21,
@@ -22652,24 +22592,24 @@
   "alt": "⏭️ Skipped"
  },
  {
-  "file": "v1/chip/mono/mode/auto-skipped/label.svg",
-  "width": 89,
+  "file": "v1/chip/mono/mode/auto/label.svg",
+  "width": 55,
   "height": 21,
   "family": "mode",
-  "key": "auto-skipped",
+  "key": "auto",
   "form": "label",
   "style": "mono",
-  "alt": "Auto: ⏭️ Skipped"
+  "alt": "Auto:"
  },
  {
-  "file": "v1/chip/color/mode/auto-skipped/label.svg",
-  "width": 89,
+  "file": "v1/chip/color/mode/auto/label.svg",
+  "width": 55,
   "height": 21,
   "family": "mode",
-  "key": "auto-skipped",
+  "key": "auto",
   "form": "label",
   "style": "color",
-  "alt": "Auto: ⏭️ Skipped"
+  "alt": "Auto:"
  },
  {
   "file": "v1/chip/mono/link/dismiss/label.svg",
