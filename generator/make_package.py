@@ -10,7 +10,7 @@ import json
 import shutil
 from pathlib import Path
 
-from chips import CHIP_TOP_PAD, H, _svg, chip, pill
+from chips import BUTTON_H, CHIP_TOP_PAD, H, _svg, button, chip, dotted_divider, pill
 
 ROOT = Path(__file__).parent.parent   # repository root
 OUT = ROOT
@@ -129,6 +129,21 @@ def main() -> None:
             label_chip(f"risk-{factor}", label.lower().replace(" ", "-"), icon, label, f"{emoji} {label}", emoji, variants=("",))
     for key, icon, alt in [("loaded", "circle-check", "✅"), ("error", "circle-x", "❌"), ("skipped", "triangle-alert", "⚠️"), ("superseded", "circle-minus", "⊖")]:
         label_chip("source", key, icon, "", alt, alt, variants=("icon",))
+
+    # Merge verdict section of the PR description: verdict badges, placeholder buttons and the dotted divider.
+    for key, label, color, icon in [("not-safe", "Not safe to merge", SCALE[0], "circle-x"), ("consider", "Consider merging", "#b7791f", "triangle-alert"),
+                                    ("safe", "Safe to merge", "#0f8a66", "circle-check")]:
+        body, w = pill(label, color, icon)
+        save(f"verdict/{key}", body, w, family="verdict", key=key, alt=label)
+    for key, label, icon, primary in [("view-in-qodo", "View in Qodo", "external-link", True), ("rerun-review", "Rerun review", "refresh-cw", False)]:
+        body, w = button(label, icon, primary)
+        target = OUT / "v1" / "button" / f"{key}.svg"
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{BUTTON_H}" viewBox="0 0 {w} {BUTTON_H}">{body}</svg>')
+        manifest.append({"file": f"v1/button/{key}.svg", "width": w, "height": BUTTON_H, "family": "button", "key": key, "alt": label})
+    (OUT / "v1" / "divider").mkdir(parents=True, exist_ok=True)
+    (OUT / "v1" / "divider" / "dotted.svg").write_text(dotted_divider())
+    manifest.append({"file": "v1/divider/dotted.svg", "width": 1200, "height": 6, "family": "divider", "key": "dotted", "alt": ""})
 
     # Group pills. alt for severity keeps the keywords the comment parsers look for.
     groups = [("finding-type", key, plural, icon, plural) for key, _, plural, icon, _ in TYPES]

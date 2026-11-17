@@ -206,3 +206,27 @@ def pill(label: str | None, color: str, icon: str | None = None, count: str | No
         x += w
     width = round(x + 8)
     return f'<rect width="{width}" height="{H}" rx="4" fill="{color}"/>' + body, width
+
+
+BUTTON_H = 28
+
+
+def button(label: str, icon: str, primary: bool = False) -> tuple[str, float]:
+    """A button image, 28px tall: brand fill when primary, else the chip's neutral fill that follows the page theme."""
+    paint = _paint("auto", "mono", None)
+    if primary:
+        paint = {"frame": 'fill="#634fd1"', "text": 'fill="#ffffff"', "stroke": 'stroke="#ffffff"', "css": ""}
+    shapes = "".join(f"<{tag} {_attrs(a)}/>" for tag, a in ICONS[icon])
+    body = (f'<g transform="translate(10 7.5) scale({_num(13 / 24)})" fill="none" {paint["stroke"]} stroke-width="2" '
+            f'stroke-linecap="round" stroke-linejoin="round">{shapes}</g>')
+    d, w = text_path(label, 12.5, 29, "SemiBold", BUTTON_H)
+    body += f'<path d="{d}" {paint["text"]}/>'
+    width = round(29 + w + 12)
+    return paint["css"] + f'<rect width="{width}" height="{BUTTON_H}" rx="6" {paint["frame"]}/>' + body, width
+
+
+def dotted_divider(width: int = 1200) -> str:
+    """A full-width dotted line that follows the page theme."""
+    dots = "".join(f'<circle cx="{x}" cy="3" r="1.2"/>' for x in range(3, width, 8))
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="6" viewBox="0 0 {width} 6">'
+            f'<style>g{{fill:#c3c3c3}}@media (prefers-color-scheme:dark){{g{{fill:#5a5a5a}}}}</style><g>{dots}</g></svg>')

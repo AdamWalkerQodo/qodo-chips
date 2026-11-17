@@ -33678,6 +33678,54 @@
   "alt": "⊖"
  },
  {
+  "file": "v1/verdict/not-safe.svg",
+  "width": 138,
+  "height": 20,
+  "family": "verdict",
+  "key": "not-safe",
+  "alt": "Not safe to merge"
+ },
+ {
+  "file": "v1/verdict/consider.svg",
+  "width": 138,
+  "height": 20,
+  "family": "verdict",
+  "key": "consider",
+  "alt": "Consider merging"
+ },
+ {
+  "file": "v1/verdict/safe.svg",
+  "width": 115,
+  "height": 20,
+  "family": "verdict",
+  "key": "safe",
+  "alt": "Safe to merge"
+ },
+ {
+  "file": "v1/button/view-in-qodo.svg",
+  "width": 121,
+  "height": 28,
+  "family": "button",
+  "key": "view-in-qodo",
+  "alt": "View in Qodo"
+ },
+ {
+  "file": "v1/button/rerun-review.svg",
+  "width": 121,
+  "height": 28,
+  "family": "button",
+  "key": "rerun-review",
+  "alt": "Rerun review"
+ },
+ {
+  "file": "v1/divider/dotted.svg",
+  "width": 1200,
+  "height": 6,
+  "family": "divider",
+  "key": "dotted",
+  "alt": ""
+ },
+ {
   "file": "v1/pill/finding-type/bugs/brand.svg",
   "width": 45,
   "height": 20,
