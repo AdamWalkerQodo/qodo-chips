@@ -204,17 +204,24 @@ BUTTON_H = 28
 
 
 def button(label: str, icon: str, primary: bool = False) -> tuple[str, float]:
-    """A button image, 28px tall: brand fill when primary, else the chip's neutral fill that follows the page theme."""
-    paint = _paint("auto", "mono", None)
+    """A button image, 28px tall: brand fill with white ink when primary, else an outline with no fill that follows the page theme."""
     if primary:
-        paint = {"frame": 'fill="#634fd1"', "text": 'fill="#ffffff"', "stroke": 'stroke="#ffffff"', "css": ""}
+        css, frame_w = "", f'fill="#634fd1"'
+        frame = lambda w: f'<rect width="{w}" height="{BUTTON_H}" rx="6" {frame_w}/>'  # noqa: E731
+        ink_fill, ink_stroke = 'fill="#ffffff"', 'stroke="#ffffff"'
+    else:
+        light, dark = PALETTES["light"], PALETTES["dark"]
+        css = (f'<style>.o{{stroke:{light["divider"]}}}.t{{fill:{light["text"]}}}.i{{stroke:{light["icon"]}}}'
+               f'@media (prefers-color-scheme:dark){{.o{{stroke:{dark["divider"]}}}.t{{fill:{dark["text"]}}}.i{{stroke:{dark["icon"]}}}}}</style>')
+        frame = lambda w: f'<rect x="0.5" y="0.5" width="{w - 1}" height="{BUTTON_H - 1}" rx="5.5" fill="none" class="o"/>'  # noqa: E731
+        ink_fill, ink_stroke = 'class="t"', 'class="i"'
     shapes = "".join(f"<{tag} {_attrs(a)}/>" for tag, a in ICONS[icon])
-    body = (f'<g transform="translate(10 7.5) scale({_num(13 / 24)})" fill="none" {paint["stroke"]} stroke-width="2" '
+    body = (f'<g transform="translate(10 7.5) scale({_num(13 / 24)})" fill="none" {ink_stroke} stroke-width="2" '
             f'stroke-linecap="round" stroke-linejoin="round">{shapes}</g>')
     d, w = text_path(label, 12.5, 29, "SemiBold", BUTTON_H)
-    body += f'<path d="{d}" {paint["text"]}/>'
+    body += f'<path d="{d}" {ink_fill}/>'
     width = round(29 + w + 12)
-    return paint["css"] + f'<rect width="{width}" height="{BUTTON_H}" rx="6" {paint["frame"]}/>' + body, width
+    return css + frame(width) + body, width
 
 
 def dotted_divider(width: int = 1200) -> str:
