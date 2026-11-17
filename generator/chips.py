@@ -231,24 +231,43 @@ def dotted_divider(width: int = 1200) -> str:
             f'<style>g{{fill:#c3c3c3}}@media (prefers-color-scheme:dark){{g{{fill:#5a5a5a}}}}</style><g>{dots}</g></svg>')
 
 
-BANNER_H = 58
-BANNER_TONES = {   # light (fill, text, icon), dark (fill, text, icon): a faint tint, near-black or near-white text, a toned icon
+CARD_H = 68
+CARD_GAP = 8   # every metric card starts with this much empty space, so cards placed edge to edge look separated
+SUGGESTION_TONES = {   # light (fill, text, icon), dark (fill, text, icon): a faint tint, near-black or near-white text, a toned icon
     "not-safe": (("#fdeceb", "#5f1410", "#c5281f"), ("#3a1c1c", "#ffe9e6", "#ff8379")),
     "consider": (("#fff4dc", "#4a3200", "#a66b00"), ("#33290f", "#fff3d6", "#f0b840")),
     "safe": (("#e6f6ee", "#0b3d2e", "#12805d"), ("#12301f", "#e2f8ec", "#5fd69f")),
 }
+VALUE_INKS = {"red": ("#c5281f", "#ff8379"), "amber": ("#a66b00", "#f0b840"), "green": ("#12805d", "#5fd69f"), "neutral": ("#1f2328", "#f0f6fc")}
 
 
-def banner(label: str, detail: str, icon: str, tone: str) -> str:
-    """A full-width banner, 58px tall, with a label and a smaller detail line under it. It has no viewBox and a
-    100% width, so the fill stretches to the width the page gives the image while the content stays at its drawn size."""
-    (light_fill, light_text, light_icon), (dark_fill, dark_text, dark_icon) = BANNER_TONES[tone]
+def _card_icon(icon: str, x: float, y: float, size: float) -> str:
+    shapes = "".join(f"<{tag} {_attrs(a)}/>" for tag, a in ICONS[icon])
+    return (f'<g transform="translate({_num(x)} {_num(y)}) scale({_num(size / 24)})" fill="none" class="i" stroke-width="2" '
+            f'stroke-linecap="round" stroke-linejoin="round">{shapes}</g>')
+
+
+def suggestion_card(label: str, detail: str, icon: str, tone: str) -> str:
+    """The merge suggestion card: a faint tint with a label and its reason. Like every card it has no viewBox and a
+    100% width, so the fill stretches to the width the page gives the image while the content keeps its drawn size."""
+    (light_fill, light_text, light_icon), (dark_fill, dark_text, dark_icon) = SUGGESTION_TONES[tone]
     css = (f"<style>.f{{fill:{light_fill}}}.t{{fill:{light_text}}}.i{{stroke:{light_icon}}}"
            f"@media (prefers-color-scheme:dark){{.f{{fill:{dark_fill}}}.t{{fill:{dark_text}}}.i{{stroke:{dark_icon}}}}}</style>")
-    shapes = "".join(f"<{tag} {_attrs(a)}/>" for tag, a in ICONS[icon])
-    title, _ = text_path(label, 15, 44, "SemiBold", BANNER_H)
-    sub, _ = text_path(detail, 12.5, 44, "Regular", BANNER_H)
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{BANNER_H}">{css}'
-            f'<rect width="100%" height="{BANNER_H}" rx="8" class="f"/>'
-            f'<g transform="translate(14 {(BANNER_H - 20) / 2}) scale({_num(20 / 24)})" fill="none" class="i" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">{shapes}</g>'
+    title, _ = text_path(label, 15, 42, "SemiBold", CARD_H)
+    sub, _ = text_path(detail, 12, 42, "Regular", CARD_H)
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{CARD_H}">{css}<rect width="100%" height="{CARD_H}" rx="8" class="f"/>'
+            f'{_card_icon(icon, 14, (CARD_H - 20) / 2, 20)}'
             f'<path d="{title}" class="t" transform="translate(0 -9.5)"/><path d="{sub}" class="t" transform="translate(0 10)"/></svg>')
+
+
+def metric_card(label: str, value: str, icon: str, tone: str = "neutral") -> str:
+    """A metric card: a small label over one large value. It starts with CARD_GAP of empty space."""
+    light_ink, dark_ink = VALUE_INKS[tone]
+    css = (f"<style>.f{{x:{CARD_GAP}px;width:calc(100% - {CARD_GAP}px);fill:#f3f4f6}}.l{{fill:#59636e}}.v{{fill:{light_ink}}}.i{{stroke:#59636e}}"
+           f"@media (prefers-color-scheme:dark){{.f{{fill:#1c2128}}.l{{fill:#9198a1}}.v{{fill:{dark_ink}}}.i{{stroke:#9198a1}}}}</style>")
+    left = CARD_GAP + 14
+    name, _ = text_path(label, 11.5, left + 20, "Regular", CARD_H)
+    number, _ = text_path(value, 20, left, "SemiBold", CARD_H)
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{CARD_H}">{css}<rect width="100%" height="{CARD_H}" rx="8" class="f"/>'
+            f'{_card_icon(icon, left, 11.5, 14)}'
+            f'<path d="{name}" class="l" transform="translate(0 -15.5)"/><path d="{number}" class="v" transform="translate(0 10)"/></svg>')

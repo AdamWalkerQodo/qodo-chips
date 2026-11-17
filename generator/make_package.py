@@ -10,7 +10,7 @@ import json
 import shutil
 from pathlib import Path
 
-from chips import BANNER_H, BUTTON_H, CHIP_TOP_PAD, H, PALETTES, _svg, _tint, banner, button, chip, dotted_divider, pill
+from chips import BUTTON_H, CARD_H, CHIP_TOP_PAD, H, PALETTES, _svg, _tint, button, chip, dotted_divider, metric_card, pill, suggestion_card
 
 ROOT = Path(__file__).parent.parent   # repository root
 OUT = ROOT
@@ -40,8 +40,8 @@ RISK_COMPLEXITY = ["Straightforward", "Interacting branches", "Data transformati
 RISK_DAMAGE = ["Cosmetic", "Reversible", "Recoverable", "Incorrect results", "Temporary loss", "Confidentiality", "Integrity",
                "Financial error", "Data loss", "Critical loss"]
 RISK_FACTORS = [("complexity", "waypoints", "🧩", RISK_COMPLEXITY), ("damage", "flame", "🩹", RISK_DAMAGE)]
-# Merge suggestion banners: (tone, reason key, label, detail line, icon). The engine picks one by verdict and main reason.
-VERDICT_BANNERS = [
+# Merge suggestion cards: (tone, reason key, label, detail line, icon). The engine picks one by suggestion and main reason.
+SUGGESTIONS = [
     ("not-safe", "high-findings", "Not ready for merging", "High severity findings not addressed", "circle-x"),
     ("not-safe", "high-risk-findings", "Not ready for merging", "High merge risk, with findings not addressed", "circle-x"),
     ("consider", "medium-findings", "Needs a closer look before merging", "Medium severity findings not addressed", "triangle-alert"),
@@ -148,11 +148,23 @@ def main() -> None:
         label_chip("source", key, icon, "", alt, alt, variants=("icon",))
 
     # Merge verdict section of the PR description: verdict badges, placeholder buttons and the dotted divider.
-    (OUT / "v1" / "verdict").mkdir(parents=True, exist_ok=True)
-    for tone, reason, label, detail, icon in VERDICT_BANNERS:
-        (OUT / "v1" / "verdict" / f"banner-{tone}-{reason}.svg").write_text(banner(label, detail, icon, tone))
-        manifest.append({"file": f"v1/verdict/banner-{tone}-{reason}.svg", "width": "100%", "height": BANNER_H, "family": "verdict",
-                         "key": f"{tone}-{reason}", "alt": f"{label}: {detail}"})
+    # Cards of the Qodo suggestion row: the merge suggestion with its reason, then one card per metric.
+    def card(path: str, svg: str, alt: str) -> None:
+        target = OUT / "v1" / "card" / f"{path}.svg"
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(svg)
+        manifest.append({"file": f"v1/card/{path}.svg", "width": "100%", "height": CARD_H, "family": "card", "key": path, "alt": alt})
+
+    for tone, reason, label, detail, icon in SUGGESTIONS:
+        card(f"suggestion/{tone}-{reason}", suggestion_card(label, detail, icon, tone), f"{label}: {detail}")
+    for count in COUNTS:
+        form = f"count-{count.replace('+', 'plus')}"
+        for tone in ("red", "amber", "neutral"):
+            card(f"open-findings/{tone}/{form}", metric_card("Open findings", count, "clipboard-check", tone), f"Open findings: {count}")
+        for tone in ("amber", "neutral"):
+            card(f"blocking-rules/{tone}/{form}", metric_card("Blocking rules", count, "shield-plus", tone), f"Blocking rules: {count}")
+    for level, value, tone in [("high", "High", "red"), ("medium", "Medium", "amber"), ("low", "Low", "green"), ("unavailable", "Unknown", "neutral")]:
+        card(f"merge-risk/{level}", metric_card("Merge risk", value, "triangle-alert", tone), f"Merge risk: {value}")
     (OUT / "v1" / "title").mkdir(parents=True, exist_ok=True)
     shutil.copy(Path(__file__).parent / "assets" / "qodo-logo.svg", OUT / "v1" / "title" / "qodo-logo.svg")
     manifest.append({"file": "v1/title/qodo-logo.svg", "width": 135, "height": 46, "family": "title", "key": "qodo-logo", "alt": "Qodo"})

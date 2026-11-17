@@ -66,7 +66,10 @@ v1/
       count-0.svg … count-20.svg, count-20plus.svg
   pill/{grouping}/{key}/
       {coloring}.svg, {coloring}-icon.svg
-  verdict/banner-{tone}-{reason}.svg   merge suggestion banner with its reason, full width, 58px tall
+  card/suggestion/{tone}-{reason}.svg            merge suggestion card with its reason, 68px tall
+  card/open-findings/{tone}/count-{n}.svg        metric cards: one value each; they stretch to the width given
+  card/merge-risk/{level}.svg
+  card/blocking-rules/{tone}/count-{n}.svg
   title/qodo-logo.svg                  the Qodo logo (mark and name), used as a section title
   button/{view-in-qodo|finding-summary|pr-overview}.svg    button images, 28px tall
   divider/dotted.svg                        full-width dotted line
