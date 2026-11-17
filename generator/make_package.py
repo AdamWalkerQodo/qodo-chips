@@ -40,7 +40,7 @@ RISK_COMPLEXITY = ["Straightforward", "Interacting branches", "Data transformati
 RISK_DAMAGE = ["Cosmetic", "Reversible", "Recoverable", "Incorrect results", "Temporary loss", "Confidentiality", "Integrity",
                "Financial error", "Data loss", "Critical loss"]
 RISK_FACTORS = [("complexity", "puzzle", "🧩", RISK_COMPLEXITY), ("damage", "bandage", "🩹", RISK_DAMAGE)]
-COLOR_FAMILIES = {"type", "source"}   # every other chip exists in mono only; severity chips use the group badge colourings instead
+COLOR_FAMILIES = {"type", "source", "risk", "risk-level"}   # every other chip exists in mono only; severity chips use the group badge colourings instead
 TERMS = {"legacy": ["Action required", "Review recommended", "Optional"], "high-medium-low": ["High", "Medium", "Low"],
          "critical-warning-informational": ["Critical", "Warning", "Informational"],
          "required-recommended-optional": ["Required", "Recommended", "Optional"], "p0-p1-p2": ["P0", "P1", "P2"]}

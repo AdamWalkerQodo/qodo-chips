@@ -34,10 +34,11 @@ In a comment:
 
 ## Colour
 
-Colour is used sparingly. Icons are grey, with three exceptions:
+Colour is used sparingly. Icons are grey, with these exceptions:
 
 - Finding type chips and their counters are always coloured.
 - Source status icons are always coloured.
+- Merge risk chips (overall risk and factor level) are always coloured: red, amber or green by level.
 - Severity chips look like the group badge: a solid pill in the badge's colouring (`brand`, `scale` or `grayscale`). Files ending in `-icon` add the bars icon, for when the group badge shows its icon.
 
 ## Light and dark
@@ -73,7 +74,7 @@ manifest.json                    every file with its width and alt text
 
 | Part | Values |
 |---|---|
-| `style` | `mono` (grey icon) for every chip except severity; `color` (coloured icon) only for `type` and `source`; `brand`, `scale`, `grayscale` for `severity` |
+| `style` | `mono` (grey icon) for every chip except severity; `color` (coloured icon) only for `type`, `source`, `risk` and `risk-level`; `brand`, `scale`, `grayscale` for `severity` |
 | `family` | Review comments: `type`, `category`, `severity`, `relevance`, `status`, `flag`, `mode`, `link`, `source`. PR description: `pr-type`, `review-time`. Merge risk: `risk`, `risk-level`, `risk-blast-radius`, `risk-complexity`, `risk-damage` |
 | `key` | the chip, for example `bugs`, `correctness`, `resolved`, `new`. Severity keys are `{level}/{wording}`, for example `action-required/p0-p1-p2` |
 | `grouping` | `finding-type`, `finding-category`, `action-level`, `relevance` |
