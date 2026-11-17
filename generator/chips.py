@@ -203,25 +203,17 @@ def pill(label: str | None, color: str, icon: str | None = None, count: str | No
 BUTTON_H = 28
 
 
-QODO_MARK = re.search(r"<svg[^>]*>(.*)</svg>", (HERE / "assets/qodo-anteater.svg").read_text(), re.S).group(1)
-
-
 def button(label: str, icon: str, primary: bool = False) -> tuple[str, float]:
-    """A button image, 28px tall: brand fill when primary, else the chip's neutral fill that follows the page theme.
-
-    The icon "qodo" is the Qodo anteater mark, in its own colours."""
+    """A button image, 28px tall: brand fill when primary, else the chip's neutral fill that follows the page theme."""
     paint = _paint("auto", "mono", None)
     if primary:
         paint = {"frame": 'fill="#634fd1"', "text": 'fill="#ffffff"', "stroke": 'stroke="#ffffff"', "css": ""}
-    if icon == "qodo":
-        body, x = f'<g transform="translate(7 4.5) scale({_num(19 / 32)})" fill="none">{QODO_MARK}</g>', 32
-    else:
-        shapes = "".join(f"<{tag} {_attrs(a)}/>" for tag, a in ICONS[icon])
-        body, x = (f'<g transform="translate(10 7.5) scale({_num(13 / 24)})" fill="none" {paint["stroke"]} stroke-width="2" '
-                   f'stroke-linecap="round" stroke-linejoin="round">{shapes}</g>'), 29
-    d, w = text_path(label, 12.5, x, "SemiBold", BUTTON_H)
+    shapes = "".join(f"<{tag} {_attrs(a)}/>" for tag, a in ICONS[icon])
+    body = (f'<g transform="translate(10 7.5) scale({_num(13 / 24)})" fill="none" {paint["stroke"]} stroke-width="2" '
+            f'stroke-linecap="round" stroke-linejoin="round">{shapes}</g>')
+    d, w = text_path(label, 12.5, 29, "SemiBold", BUTTON_H)
     body += f'<path d="{d}" {paint["text"]}/>'
-    width = round(x + w + 12)
+    width = round(29 + w + 12)
     return paint["css"] + f'<rect width="{width}" height="{BUTTON_H}" rx="6" {paint["frame"]}/>' + body, width
 
 
@@ -233,34 +225,23 @@ def dotted_divider(width: int = 1200) -> str:
 
 
 BANNER_H = 58
-BANNER_TONES = {   # (light fill, light ink, dark fill, dark ink): a faint tint with readable ink, not a solid colour
-    "not-safe": ("#fdeceb", "#b3261e", "#3a1c1c", "#ff938a"),
-    "consider": ("#fff4dc", "#8a5a00", "#33290f", "#f0c060"),
-    "safe": ("#e6f6ee", "#0f6b4f", "#12301f", "#6fdca8"),
+BANNER_TONES = {   # light (fill, text, icon), dark (fill, text, icon): a faint tint, near-black or near-white text, a toned icon
+    "not-safe": (("#fdeceb", "#5f1410", "#c5281f"), ("#3a1c1c", "#ffe9e6", "#ff8379")),
+    "consider": (("#fff4dc", "#4a3200", "#a66b00"), ("#33290f", "#fff3d6", "#f0b840")),
+    "safe": (("#e6f6ee", "#0b3d2e", "#12805d"), ("#12301f", "#e2f8ec", "#5fd69f")),
 }
 
 
 def banner(label: str, detail: str, icon: str, tone: str) -> str:
     """A full-width banner, 58px tall, with a label and a smaller detail line under it. It has no viewBox and a
     100% width, so the fill stretches to the width the page gives the image while the content stays at its drawn size."""
-    light_fill, light_ink, dark_fill, dark_ink = BANNER_TONES[tone]
-    css = (f"<style>.f{{fill:{light_fill}}}.t{{fill:{light_ink}}}.i{{stroke:{light_ink}}}"
-           f"@media (prefers-color-scheme:dark){{.f{{fill:{dark_fill}}}.t{{fill:{dark_ink}}}.i{{stroke:{dark_ink}}}}}</style>")
+    (light_fill, light_text, light_icon), (dark_fill, dark_text, dark_icon) = BANNER_TONES[tone]
+    css = (f"<style>.f{{fill:{light_fill}}}.t{{fill:{light_text}}}.i{{stroke:{light_icon}}}"
+           f"@media (prefers-color-scheme:dark){{.f{{fill:{dark_fill}}}.t{{fill:{dark_text}}}.i{{stroke:{dark_icon}}}}}</style>")
     shapes = "".join(f"<{tag} {_attrs(a)}/>" for tag, a in ICONS[icon])
     title, _ = text_path(label, 15, 44, "SemiBold", BANNER_H)
     sub, _ = text_path(detail, 12.5, 44, "Regular", BANNER_H)
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{BANNER_H}">{css}'
             f'<rect width="100%" height="{BANNER_H}" rx="8" class="f"/>'
             f'<g transform="translate(14 {(BANNER_H - 20) / 2}) scale({_num(20 / 24)})" fill="none" class="i" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">{shapes}</g>'
-            f'<path d="{title}" class="t" transform="translate(0 -9.5)"/><path d="{sub}" class="t" opacity="0.85" transform="translate(0 10)"/></svg>')
-
-
-TITLE_H = 28
-
-
-def title(text: str) -> tuple[str, float]:
-    """A section title drawn as an image (17.5px semibold, like a comment's h3), so it can float left of a button row."""
-    d, w = text_path(text, 17.5, 0, "SemiBold", TITLE_H)
-    width = round(w + 1)
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{TITLE_H}" viewBox="0 0 {width} {TITLE_H}">'
-            f'<style>path{{fill:#1f2328}}@media (prefers-color-scheme:dark){{path{{fill:#f0f6fc}}}}</style><path d="{d}"/></svg>'), width
+            f'<path d="{title}" class="t" transform="translate(0 -9.5)"/><path d="{sub}" class="t" transform="translate(0 10)"/></svg>')

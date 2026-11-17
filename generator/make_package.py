@@ -10,7 +10,7 @@ import json
 import shutil
 from pathlib import Path
 
-from chips import BANNER_H, BUTTON_H, CHIP_TOP_PAD, H, PALETTES, _svg, _tint, banner, button, chip, dotted_divider, pill, title
+from chips import BANNER_H, BUTTON_H, CHIP_TOP_PAD, H, PALETTES, _svg, _tint, banner, button, chip, dotted_divider, pill
 
 ROOT = Path(__file__).parent.parent   # repository root
 OUT = ROOT
@@ -154,11 +154,10 @@ def main() -> None:
         manifest.append({"file": f"v1/verdict/banner-{tone}-{reason}.svg", "width": "100%", "height": BANNER_H, "family": "verdict",
                          "key": f"{tone}-{reason}", "alt": f"{label}: {detail}"})
     (OUT / "v1" / "title").mkdir(parents=True, exist_ok=True)
-    body, w = title("Qodo suggestion")
-    (OUT / "v1" / "title" / "qodo-suggestion.svg").write_text(body)
-    manifest.append({"file": "v1/title/qodo-suggestion.svg", "width": w, "height": 28, "family": "title", "key": "qodo-suggestion", "alt": "Qodo suggestion"})
-    for key, label, icon, primary in [("view-in-qodo", "View in Qodo", "qodo", True),
-                                     ("finding-summary", "Finding summary", "clipboard-check", False), ("pr-overview", "PR overview", "file-text", False)]:
+    shutil.copy(Path(__file__).parent / "assets" / "qodo-logo.svg", OUT / "v1" / "title" / "qodo-logo.svg")
+    manifest.append({"file": "v1/title/qodo-logo.svg", "width": 135, "height": 46, "family": "title", "key": "qodo-logo", "alt": "Qodo"})
+    for key, label, icon, primary in [("view-in-qodo", "View in Qodo", "external-link", True),
+                                     ("finding-summary", "Finding summary", "clipboard-check", False), ("pr-overview", "PR overview", "git-pull-request", False)]:
         body, w = button(label, icon, primary)
         target = OUT / "v1" / "button" / f"{key}.svg"
         target.parent.mkdir(parents=True, exist_ok=True)

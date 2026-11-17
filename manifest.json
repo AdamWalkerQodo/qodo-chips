@@ -33774,16 +33774,16 @@
   "alt": "Looks ready for merging: No high or medium severity findings open"
  },
  {
-  "file": "v1/title/qodo-suggestion.svg",
-  "width": 145,
-  "height": 28,
+  "file": "v1/title/qodo-logo.svg",
+  "width": 135,
+  "height": 46,
   "family": "title",
-  "key": "qodo-suggestion",
-  "alt": "Qodo suggestion"
+  "key": "qodo-logo",
+  "alt": "Qodo"
  },
  {
   "file": "v1/button/view-in-qodo.svg",
-  "width": 124,
+  "width": 121,
   "height": 28,
   "family": "button",
   "key": "view-in-qodo",

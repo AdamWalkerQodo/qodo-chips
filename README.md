@@ -67,7 +67,7 @@ v1/
   pill/{grouping}/{key}/
       {coloring}.svg, {coloring}-icon.svg
   verdict/banner-{tone}-{reason}.svg   merge suggestion banner with its reason, full width, 58px tall
-  title/qodo-suggestion.svg            section title as an image
+  title/qodo-logo.svg                  the Qodo logo (mark and name), used as a section title
   button/{view-in-qodo|finding-summary|pr-overview}.svg    button images, 28px tall
   divider/dotted.svg                        full-width dotted line
 manifest.json                    every file with its width and alt text
