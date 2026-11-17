@@ -186,13 +186,23 @@ def chip(icon: str | None, label: str | None, count: str | None = None, style: s
     return paint["css"] + frame + body, width
 
 
-def pill(label: str, color: str, icon: str | None = None) -> tuple[str, float]:
-    """A group pill: solid colour, white semibold label. Same on light and dark pages."""
+def pill(label: str | None, color: str, icon: str | None = None, count: str | None = None) -> tuple[str, float]:
+    """A group pill: solid colour, white semibold label, optional icon and counter cell. Same on light and dark pages."""
     x, body = 8, ""
     if icon:
         body += _icon(icon, x, {"stroke": 'stroke="#ffffff"', "solid": 'fill="#ffffff"'})
-        x += 12 + 6
-    d, w = text_path(label, 12, x, "SemiBold")
-    body += f'<path d="{d}" fill="#ffffff"/>'
-    width = round(x + w + 8)
+        x += 12
+    if label:
+        x += 6 if icon else 0
+        d, w = text_path(label, 12, x, "SemiBold")
+        body += f'<path d="{d}" fill="#ffffff"/>'
+        x += w
+    if count is not None:
+        x += 6
+        body += f'<rect x="{_num(x)}" y="4" width="1" height="12" fill="#ffffff" opacity="0.5"/>'
+        x += 7
+        d, w = text_path(count, 12, x, "SemiBold")
+        body += f'<path d="{d}" fill="#ffffff"/>'
+        x += w
+    width = round(x + 8)
     return f'<rect width="{width}" height="{H}" rx="4" fill="{color}"/>' + body, width

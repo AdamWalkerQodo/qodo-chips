@@ -40,7 +40,7 @@ RISK_COMPLEXITY = ["Straightforward", "Interacting branches", "Data transformati
 RISK_DAMAGE = ["Cosmetic", "Reversible", "Recoverable", "Incorrect results", "Temporary loss", "Confidentiality", "Integrity",
                "Financial error", "Data loss", "Critical loss"]
 RISK_FACTORS = [("complexity", "puzzle", "🧩", RISK_COMPLEXITY), ("damage", "bandage", "🩹", RISK_DAMAGE)]
-COLOR_FAMILIES = {"type", "source", "severity"}   # every other chip exists in mono only; severity colour is used with colour-scale group badges
+COLOR_FAMILIES = {"type", "source"}   # every other chip exists in mono only; severity chips use the group badge colourings instead
 TERMS = {"legacy": ["Action required", "Review recommended", "Optional"], "high-medium-low": ["High", "Medium", "Low"],
          "critical-warning-informational": ["Critical", "Warning", "Informational"],
          "required-recommended-optional": ["Required", "Recommended", "Optional"], "p0-p1-p2": ["P0", "P1", "P2"]}
@@ -72,6 +72,13 @@ def label_chip(family: str, key: str, icon: str | None, label: str, alt: str, al
                  alt=f"{text} ({count})" if count else text, **({"count": count} if count else {}))
 
 
+def severity_chip(coloring: str, color: str, key: str, form: str, label: str | None, icon: str | None, count: str | None, alt: str) -> None:
+    """Severity chips look like the group badge: a solid pill in the badge's colouring, in place of the mono/color styles."""
+    body, w = pill(label, color, icon, count)
+    save(f"chip/{coloring}/severity/{key}/{form}", body, w, CHIP_TOP_PAD, family="severity", key=key, form=form, style=coloring, alt=alt,
+         **({"count": count} if count else {}))
+
+
 def counters(family: str, key: str, icon: str, label: str, alt: str) -> None:
     for count in COUNTS:
         label_chip(family, key, icon, label, alt, alt, variants=("",), count=count)
@@ -86,10 +93,14 @@ def main() -> None:
         label_chip("category", key, icon, label, f"{symbol} {label}", symbol)
         counters("category", key, icon, label, f"{symbol} {label}")
     for i, (level, emoji) in enumerate(LEVELS):
-        label_chip("severity", level, f"sev:{i}", "", emoji, emoji, variants=("icon",))
-        for term, words in TERMS.items():
-            label_chip("severity", f"{level}/{term}", f"sev:{i}", words[i], f"{emoji} {words[i]}", emoji, variants=("",))
-            counters("severity", f"{level}/{term}", f"sev:{i}", words[i], f"{emoji} {words[i]}")
+        for coloring, color in [("brand", BRAND), ("grayscale", GRAY), ("scale", SCALE[i])]:
+            severity_chip(coloring, color, level, "icon", None, f"sev:{i}", None, emoji)
+            for term, words in TERMS.items():
+                for icon, suffix in [(None, ""), (f"sev:{i}", "-icon")]:
+                    severity_chip(coloring, color, f"{level}/{term}", f"label{suffix}", words[i], icon, None, f"{emoji} {words[i]}")
+                    for count in COUNTS:
+                        severity_chip(coloring, color, f"{level}/{term}", f"count-{count.replace('+', 'plus')}{suffix}", words[i], icon, count,
+                                      f"{emoji} {words[i]} ({count})")
     for key, label, n, circles in RELEVANCE:
         label_chip("relevance", key, f"rel:{n}", label, f"{circles} {label}", circles)
         counters("relevance", key, f"rel:{n}", label, f"{circles} {label}")

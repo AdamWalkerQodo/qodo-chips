@@ -5,7 +5,7 @@ Image chips for Qodo's code review comments on GitHub, GitLab and Azure DevOps: 
 <p>
 <img src="v1/chip/color/type/bugs/count-3.svg" height="21" align="top" alt="Bugs (3)">
 <img src="v1/chip/color/type/rule-violations/count-12.svg" height="21" align="top" alt="Rule violations (12)">
-<img src="v1/chip/color/severity/action-required/legacy/label.svg" height="21" align="top" alt="Action required">
+<img src="v1/chip/scale/severity/action-required/legacy/label.svg" height="21" align="top" alt="Action required">
 <img src="v1/chip/mono/category/correctness/label.svg" height="21" align="top" alt="Correctness">
 <img src="v1/chip/mono/status/resolved/label.svg" height="21" align="top" alt="Resolved">
 <img src="v1/chip/mono/type/bugs/label.svg" height="21" align="top" alt="Bug">
@@ -38,7 +38,7 @@ Colour is used sparingly. Icons are grey, with three exceptions:
 
 - Finding type chips and their counters are always coloured.
 - Source status icons are always coloured.
-- Severity chips are coloured only when the group badges use the colour scale; otherwise they are grey.
+- Severity chips look like the group badge: a solid pill in the badge's colouring (`brand`, `scale` or `grayscale`). Files ending in `-icon` add the bars icon, for when the group badge shows its icon.
 
 ## Light and dark
 
@@ -70,7 +70,7 @@ manifest.json                    every file with its width and alt text
 
 | Part | Values |
 |---|---|
-| `style` | `mono` (grey icon) for every chip; `color` (coloured icon) only for `type`, `source` and `severity` |
+| `style` | `mono` (grey icon) for every chip except severity; `color` (coloured icon) only for `type` and `source`; `brand`, `scale`, `grayscale` for `severity` |
 | `family` | Review comments: `type`, `category`, `severity`, `relevance`, `status`, `flag`, `mode`, `link`, `source`. PR description: `pr-type`, `review-time`. Merge risk: `risk`, `risk-level`, `risk-blast-radius`, `risk-complexity`, `risk-damage` |
 | `key` | the chip, for example `bugs`, `correctness`, `resolved`, `new`. Severity keys are `{level}/{wording}`, for example `action-required/p0-p1-p2` |
 | `grouping` | `finding-type`, `finding-category`, `action-level`, `relevance` |
@@ -83,7 +83,8 @@ Examples:
 ```
 v1/chip/color/type/bugs/label.svg
 v1/chip/color/type/bugs/count-3.svg
-v1/chip/mono/severity/action-required/p0-p1-p2/label.svg
+v1/chip/scale/severity/action-required/p0-p1-p2/label.svg
+v1/chip/brand/severity/action-required/p0-p1-p2/count-3-icon.svg
 v1/pill/finding-type/bugs/brand-icon.svg
 ```
 
