@@ -29,6 +29,17 @@ CATEGORIES = [("correctness", "Correctness", "menu", "≡"), ("reliability", "Re
               ("architecture", "Architecture", "triangle", "⌂"), ("accessibility", "Accessibility", "square-check", "☑"), ("testability", "Testability", "square-dot", "▣"),
               ("documentation", "Documentation", "file-text", "¶"), ("other", "Other", "circle-ellipsis", "✨️")]
 LEVELS = [("action-required", "🔴"), ("remediation-recommended", "🟠"), ("informational", "🟡")]
+PR_TYPES = [("bug-fix", "Bug fix", "bug", "🐞"), ("tests", "Tests", "flask-conical", "🧪"), ("enhancement", "Enhancement", "trending-up", "✨"),
+            ("documentation", "Documentation", "file-text", "📝"), ("configuration-changes", "Configuration changes", "settings", "⚙️"),
+            ("refactor", "Refactor", "refresh-cw", ""), ("other", "Other", "circle-ellipsis", "")]
+REVIEW_TIMES = [("under-5", "Less than 5 minutes"), ("under-10", "Less than 10 minutes"), ("10-20", "10-20 Minutes"),
+                ("20-40", "20-40 Minutes"), ("over-40", "40+ Minutes")]
+RISK_LEVELS = [("high", "High", "🟥🟥🟥", "🔴"), ("medium", "Medium", "🟨🟨⬜", "🟡"), ("low", "Low", "🟩⬜⬜", "🟢")]
+RISK_COMPLEXITY = ["Straightforward", "Interacting branches", "Data transformation", "Compatibility cases", "Coordinated invariants",
+                   "Concurrent ordering", "Subtle algorithm", "State transitions", "Multiple interactions"]
+RISK_DAMAGE = ["Cosmetic", "Reversible", "Recoverable", "Incorrect results", "Temporary loss", "Confidentiality", "Integrity",
+               "Financial error", "Data loss", "Critical loss"]
+RISK_FACTORS = [("complexity", "puzzle", "🧩", RISK_COMPLEXITY), ("damage", "bandage", "🩹", RISK_DAMAGE)]
 GREY_ICON_FAMILIES = {"link", "mode"}   # buttons and review modes keep a grey icon in the color style too
 TERMS = {"legacy": ["Action required", "Review recommended", "Optional"], "high-medium-low": ["High", "Medium", "Low"],
          "critical-warning-informational": ["Critical", "Warning", "Informational"],
@@ -93,6 +104,19 @@ def main() -> None:
         label_chip("mode", f"auto-{key}", icon, f"Auto: {label}", f"Auto: {emoji} {label}", emoji, variants=("",))
     label_chip("link", "dismiss", "x", "Dismiss", "Dismiss ↗", "Dismiss", variants=("",))
     label_chip("link", "view", "external-link", "View", "View ↗", "View", variants=("",))
+    for key, label, icon, emoji in PR_TYPES:
+        label_chip("pr-type", key, icon, label, f"{emoji} {label}".strip(), emoji or label, variants=("",))
+    for key, label in REVIEW_TIMES:
+        label_chip("review-time", key, "clock", label, f"🕐 {label}", "🕐", variants=("",))
+    for key, label, bars, dot in RISK_LEVELS:
+        label_chip("risk", key, f"risk:{key}", f"{label} risk", f"{bars} {label} risk", bars, variants=("",))
+        label_chip("risk-level", key, f"dot:{key}", label, f"{dot} {label}", dot, variants=("",))
+    label_chip("risk", "unavailable", "risk:none", "Risk unavailable", "⬜⬜⬜ Risk unavailable", "⬜⬜⬜", variants=("",))
+    label_chip("risk-level", "not-assessed", "dot:none", "Not assessed", "⚪ Not assessed", "⚪", variants=("",))
+    counters("risk-blast-radius", "capabilities", "bomb", "Capabilities", "💥 Capabilities")
+    for factor, icon, emoji, labels in [("blast-radius", "bomb", "💥", [])] + RISK_FACTORS:
+        for label in [*labels, "Assessed behavior", "Not assessed"]:
+            label_chip(f"risk-{factor}", label.lower().replace(" ", "-"), icon, label, f"{emoji} {label}", emoji, variants=("",))
     for key, icon, alt in [("loaded", "circle-check", "✅"), ("error", "circle-x", "❌"), ("skipped", "triangle-alert", "⚠️"), ("superseded", "circle-minus", "⊖")]:
         label_chip("source", key, icon, "", alt, alt, variants=("icon",))
 

@@ -62,13 +62,13 @@ manifest.json                    every file with its width and alt text
 
 | Part | Values |
 |---|---|
-| `style` | `mono` (grey icon), `color` (coloured icon) |
-| `family` | `type`, `category`, `severity`, `relevance`, `status`, `flag`, `mode`, `link`, `source` |
+| `style` | `mono` (grey icon), `color` (coloured icon). `mode` and `link` chips have a grey icon in both |
+| `family` | Review comments: `type`, `category`, `severity`, `relevance`, `status`, `flag`, `mode`, `link`, `source`. PR description: `pr-type`, `review-time`. Merge risk: `risk`, `risk-level`, `risk-blast-radius`, `risk-complexity`, `risk-damage` |
 | `key` | the chip, for example `bugs`, `correctness`, `resolved`, `new`. Severity keys are `{level}/{wording}`, for example `action-required/p0-p1-p2` |
 | `grouping` | `finding-type`, `finding-category`, `action-level`, `relevance` |
 | `coloring` | `brand`, `grayscale`, and `scale` for `action-level` |
 
-Counters exist for `type`, `category`, `severity`, `relevance` and `flag/new`. Counts above 20 use `count-20plus.svg`.
+Counters exist for `type`, `category`, `severity`, `relevance`, `flag/new` and `risk-blast-radius/capabilities`. Counts above 20 use `count-20plus.svg`.
 
 Examples:
 

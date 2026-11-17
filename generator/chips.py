@@ -30,7 +30,10 @@ PALETTES = {
             "square-check": "#4da3ff", "square-dot": "#9b8cff", "check": "#2fd0a5", "x": "#ff4d4f",
             "circle-check": "#2fd0a5", "circle-x": "#ff4d4f", "triangle-alert": "#ffd21f", "sparkles": "#ffd21f",
             "arrow-big-left": "#ffb020", "rocket": "#ff4d4f", "scale": "#ffb020", "file-text": "#4da3ff",
+            "flask-conical": "#2fd0a5", "trending-up": "#9b8cff", "settings": "#c3c3c3", "refresh-cw": "#3fc8e4",
+            "clock": "#7ab8f5", "bomb": "#ff8a2a", "puzzle": "#9b8cff", "bandage": "#ff6fb5",
         },
+        "risk": {"high": "#ff4d4f", "medium": "#ffd21f", "low": "#2fd0a5"},
     },
     "light": {
         "fill": "#f4f4f4", "text": "#1c1c1c", "icon": "#3d3d3d", "divider": "#c3c3c3",
@@ -43,7 +46,10 @@ PALETTES = {
             "square-check": "#0b6bdf", "square-dot": "#6741d9", "check": "#0f8a66", "x": "#dc2626",
             "circle-check": "#0f8a66", "circle-x": "#dc2626", "triangle-alert": "#b7791f", "sparkles": "#b7791f",
             "arrow-big-left": "#b7791f", "rocket": "#dc2626", "scale": "#b7791f", "file-text": "#0b6bdf",
+            "flask-conical": "#0f8a66", "trending-up": "#6741d9", "settings": "#57606a", "refresh-cw": "#0e8a92",
+            "clock": "#3b6ea5", "bomb": "#d9480f", "puzzle": "#6741d9", "bandage": "#d6247f",
         },
+        "risk": {"high": "#dc2626", "medium": "#b7791f", "low": "#0f8a66"},
     },
 }
 
@@ -52,6 +58,8 @@ def _tint(icon: str, style: str, pal: dict) -> str:
     kind, _, arg = icon.partition(":")
     if style != "color" or kind == "rel":
         return pal["icon"]
+    if kind in ("risk", "dot"):
+        return pal["risk"].get(arg, pal["icon"])
     return pal["sev"][int(arg)] if kind == "sev" else pal["tints"].get(icon, pal["icon"])
 
 
@@ -117,6 +125,22 @@ def relevance_dots(n: int, x: float, solid: str) -> str:
                    for i, cx in enumerate([2, 6, 10]))
 
 
+RISK_SEGMENTS = {"high": 3, "medium": 2, "low": 1}
+
+
+def risk_meter(level: str, x: float, solid: str) -> str:
+    """Overall merge risk: three blocks in a row, filled left to right (3 high, 2 medium, 1 low, 0 unavailable)."""
+    return "".join(f'<rect x="{_num(x + bx)}" y="7" width="3.3" height="6" rx="1.2" {solid}'
+                   f'{"" if i < RISK_SEGMENTS.get(level, 0) else " opacity=\"0.3\""}/>' for i, bx in enumerate([0, 4.35, 8.7]))
+
+
+def level_dot(level: str, x: float, solid: str) -> str:
+    """Risk factor level: a solid dot, or a ring when the factor was not assessed."""
+    if level in RISK_SEGMENTS:
+        return f'<circle cx="{_num(x + 6)}" cy="10" r="4" {solid}/>'
+    return f'<circle cx="{_num(x + 6)}" cy="10" r="3.25" fill="none" {solid.replace("fill=", "stroke=").replace('class="b"', 'class="i"')} stroke-width="1.5"/>'
+
+
 def _icon(icon: str | None, x: float, paint: dict) -> str:
     if not icon:
         return ""
@@ -125,6 +149,10 @@ def _icon(icon: str | None, x: float, paint: dict) -> str:
         return severity_bars(int(arg), x, paint["solid"])
     if kind == "rel":
         return relevance_dots(int(arg), x, paint["solid"])
+    if kind == "risk":
+        return risk_meter(arg, x, paint["solid"])
+    if kind == "dot":
+        return level_dot(arg, x, paint["solid"])
     return lucide(icon, x, paint["stroke"])
 
 
