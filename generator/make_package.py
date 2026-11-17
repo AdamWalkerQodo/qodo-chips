@@ -10,7 +10,7 @@ import json
 import shutil
 from pathlib import Path
 
-from chips import PALETTES, _tint, BUTTON_H, CHIP_TOP_PAD, H, _svg, button, chip, dotted_divider, pill
+from chips import BANNER_H, BUTTON_H, CHIP_TOP_PAD, H, PALETTES, _svg, _tint, banner, button, chip, dotted_divider, pill
 
 ROOT = Path(__file__).parent.parent   # repository root
 OUT = ROOT
@@ -138,11 +138,12 @@ def main() -> None:
         label_chip("source", key, icon, "", alt, alt, variants=("icon",))
 
     # Merge verdict section of the PR description: verdict badges, placeholder buttons and the dotted divider.
-    for key, label, color, icon in [("not-safe", "Not safe to merge", SCALE[0], "circle-x"), ("consider", "Consider merging", "#b7791f", "triangle-alert"),
-                                    ("safe", "Safe to merge", "#0f8a66", "circle-check")]:
-        body, w = pill(label, color, icon)
-        save(f"verdict/{key}", body, w, family="verdict", key=key, alt=label)
-    for key, label, icon, primary in [("view-in-qodo", "View in Qodo", "qodo", True), ("rerun-review", "Rerun review", "refresh-cw", False),
+    (OUT / "v1" / "verdict").mkdir(parents=True, exist_ok=True)
+    for key, label, icon in [("not-safe", "Not safe to merge", "circle-x"), ("consider", "Consider merging", "triangle-alert"),
+                             ("safe", "Safe to merge", "circle-check")]:
+        (OUT / "v1" / "verdict" / f"banner-{key}.svg").write_text(banner(label, icon, key))
+        manifest.append({"file": f"v1/verdict/banner-{key}.svg", "width": "100%", "height": BANNER_H, "family": "verdict", "key": key, "alt": label})
+    for key, label, icon, primary in [("view-in-qodo", "View in Qodo", "qodo", True),
                                      ("finding-summary", "Finding summary", "clipboard-check", False), ("pr-overview", "PR overview", "file-text", False)]:
         body, w = button(label, icon, primary)
         target = OUT / "v1" / "button" / f"{key}.svg"

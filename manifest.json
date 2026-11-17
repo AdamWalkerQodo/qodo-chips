@@ -33718,25 +33718,25 @@
   "alt": "⊖"
  },
  {
-  "file": "v1/verdict/not-safe.svg",
-  "width": 138,
-  "height": 20,
+  "file": "v1/verdict/banner-not-safe.svg",
+  "width": "100%",
+  "height": 44,
   "family": "verdict",
   "key": "not-safe",
   "alt": "Not safe to merge"
  },
  {
-  "file": "v1/verdict/consider.svg",
-  "width": 138,
-  "height": 20,
+  "file": "v1/verdict/banner-consider.svg",
+  "width": "100%",
+  "height": 44,
   "family": "verdict",
   "key": "consider",
   "alt": "Consider merging"
  },
  {
-  "file": "v1/verdict/safe.svg",
-  "width": 115,
-  "height": 20,
+  "file": "v1/verdict/banner-safe.svg",
+  "width": "100%",
+  "height": 44,
   "family": "verdict",
   "key": "safe",
   "alt": "Safe to merge"
@@ -33748,14 +33748,6 @@
   "family": "button",
   "key": "view-in-qodo",
   "alt": "View in Qodo"
- },
- {
-  "file": "v1/button/rerun-review.svg",
-  "width": 121,
-  "height": 28,
-  "family": "button",
-  "key": "rerun-review",
-  "alt": "Rerun review"
  },
  {
   "file": "v1/button/finding-summary.svg",

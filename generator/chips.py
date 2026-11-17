@@ -230,3 +230,25 @@ def dotted_divider(width: int = 1200) -> str:
     dots = "".join(f'<circle cx="{x}" cy="3" r="1.2"/>' for x in range(3, width, 8))
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="6" viewBox="0 0 {width} 6">'
             f'<style>g{{fill:#c3c3c3}}@media (prefers-color-scheme:dark){{g{{fill:#5a5a5a}}}}</style><g>{dots}</g></svg>')
+
+
+BANNER_H = 44
+BANNER_TONES = {   # (light fill, light ink, dark fill, dark ink): a faint tint with readable ink, not a solid colour
+    "not-safe": ("#fdeceb", "#b3261e", "#3a1c1c", "#ff938a"),
+    "consider": ("#fff4dc", "#8a5a00", "#33290f", "#f0c060"),
+    "safe": ("#e6f6ee", "#0f6b4f", "#12301f", "#6fdca8"),
+}
+
+
+def banner(label: str, icon: str, tone: str) -> str:
+    """A full-width banner, 44px tall. It has no viewBox and a 100% width, so the fill stretches to the
+    width the page gives the image while the icon and label stay at their drawn size on the left."""
+    light_fill, light_ink, dark_fill, dark_ink = BANNER_TONES[tone]
+    css = (f"<style>.f{{fill:{light_fill}}}.t{{fill:{light_ink}}}.i{{stroke:{light_ink}}}"
+           f"@media (prefers-color-scheme:dark){{.f{{fill:{dark_fill}}}.t{{fill:{dark_ink}}}.i{{stroke:{dark_ink}}}}}</style>")
+    shapes = "".join(f"<{tag} {_attrs(a)}/>" for tag, a in ICONS[icon])
+    d, _ = text_path(label, 15, 42, "SemiBold", BANNER_H)
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{BANNER_H}">{css}'
+            f'<rect width="100%" height="{BANNER_H}" rx="8" class="f"/>'
+            f'<g transform="translate(14 13) scale(0.75)" fill="none" class="i" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">{shapes}</g>'
+            f'<path d="{d}" class="t"/></svg>')
