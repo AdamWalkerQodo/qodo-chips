@@ -29,7 +29,7 @@ CATEGORIES = [("correctness", "Correctness", "menu", "≡"), ("reliability", "Re
               ("architecture", "Architecture", "triangle", "⌂"), ("accessibility", "Accessibility", "square-check", "☑"), ("testability", "Testability", "square-dot", "▣"),
               ("documentation", "Documentation", "file-text", "¶"), ("other", "Other", "circle-ellipsis", "✨️")]
 LEVELS = [("action-required", "🔴"), ("remediation-recommended", "🟠"), ("informational", "🟡")]
-GREY_ICON_FAMILIES = {"link"}   # Dismiss and View are buttons, so their icon stays grey in the color style too
+GREY_ICON_FAMILIES = {"link", "mode"}   # buttons and review modes keep a grey icon in the color style too
 TERMS = {"legacy": ["Action required", "Review recommended", "Optional"], "high-medium-low": ["High", "Medium", "Low"],
          "critical-warning-informational": ["Critical", "Warning", "Informational"],
          "required-recommended-optional": ["Required", "Recommended", "Optional"], "p0-p1-p2": ["P0", "P1", "P2"]}
