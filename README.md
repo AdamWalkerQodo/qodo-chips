@@ -67,7 +67,7 @@ v1/
   pill/{grouping}/{key}/
       {coloring}.svg, {coloring}-icon.svg
   verdict/{not-safe|consider|safe}.svg      merge verdict badge
-  button/{view-in-qodo|rerun-review}.svg    button images, 28px tall
+  button/{view-in-qodo|rerun-review|finding-summary|pr-overview}.svg    button images, 28px tall
   divider/dotted.svg                        full-width dotted line
 manifest.json                    every file with its width and alt text
 ```

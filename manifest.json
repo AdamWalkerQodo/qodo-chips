@@ -33758,6 +33758,22 @@
   "alt": "Rerun review"
  },
  {
+  "file": "v1/button/finding-summary.svg",
+  "width": 145,
+  "height": 28,
+  "family": "button",
+  "key": "finding-summary",
+  "alt": "Finding summary"
+ },
+ {
+  "file": "v1/button/pr-overview.svg",
+  "width": 116,
+  "height": 28,
+  "family": "button",
+  "key": "pr-overview",
+  "alt": "PR overview"
+ },
+ {
   "file": "v1/divider/dotted.svg",
   "width": 1200,
   "height": 6,

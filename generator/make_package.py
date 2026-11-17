@@ -142,7 +142,8 @@ def main() -> None:
                                     ("safe", "Safe to merge", "#0f8a66", "circle-check")]:
         body, w = pill(label, color, icon)
         save(f"verdict/{key}", body, w, family="verdict", key=key, alt=label)
-    for key, label, icon, primary in [("view-in-qodo", "View in Qodo", "external-link", True), ("rerun-review", "Rerun review", "refresh-cw", False)]:
+    for key, label, icon, primary in [("view-in-qodo", "View in Qodo", "external-link", True), ("rerun-review", "Rerun review", "refresh-cw", False),
+                                     ("finding-summary", "Finding summary", "clipboard-check", False), ("pr-overview", "PR overview", "file-text", False)]:
         body, w = button(label, icon, primary)
         target = OUT / "v1" / "button" / f"{key}.svg"
         target.parent.mkdir(parents=True, exist_ok=True)
