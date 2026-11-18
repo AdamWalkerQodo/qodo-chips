@@ -34917,7 +34917,7 @@
  },
  {
   "file": "v1/divider/dotted.svg",
-  "width": 1200,
+  "width": "100%",
   "height": 6,
   "family": "divider",
   "key": "dotted",

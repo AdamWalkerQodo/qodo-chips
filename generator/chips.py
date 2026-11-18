@@ -224,11 +224,13 @@ def button(label: str, icon: str, primary: bool = False) -> tuple[str, float]:
     return css + frame(width) + body, width
 
 
-def dotted_divider(width: int = 1200) -> str:
-    """A full-width dotted line that follows the page theme."""
-    dots = "".join(f'<circle cx="{x}" cy="3" r="1.2"/>' for x in range(3, width, 8))
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="6" viewBox="0 0 {width} 6">'
-            f'<style>g{{fill:#c3c3c3}}@media (prefers-color-scheme:dark){{g{{fill:#5a5a5a}}}}</style><g>{dots}</g></svg>')
+def dotted_divider() -> str:
+    """A full-width dotted line in a soft Qodo purple that follows the page theme. It has no viewBox and a 100% width,
+    so the dots repeat across whatever width the page gives the image instead of stretching."""
+    return ('<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="6">'
+            '<style>circle{fill:#634fd1;fill-opacity:.45}@media (prefers-color-scheme:dark){circle{fill:#9d8cff;fill-opacity:.5}}</style>'
+            '<defs><pattern id="d" width="7" height="6" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="3" r="1.1"/></pattern></defs>'
+            '<rect width="100%" height="6" fill="url(#d)"/></svg>')
 
 
 CARD_H = 68

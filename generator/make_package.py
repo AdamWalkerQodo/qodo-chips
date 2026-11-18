@@ -181,7 +181,7 @@ def main() -> None:
         manifest.append({"file": f"v1/button/{key}.svg", "width": w, "height": BUTTON_H, "family": "button", "key": key, "alt": label})
     (OUT / "v1" / "divider").mkdir(parents=True, exist_ok=True)
     (OUT / "v1" / "divider" / "dotted.svg").write_text(dotted_divider())
-    manifest.append({"file": "v1/divider/dotted.svg", "width": 1200, "height": 6, "family": "divider", "key": "dotted", "alt": ""})
+    manifest.append({"file": "v1/divider/dotted.svg", "width": "100%", "height": 6, "family": "divider", "key": "dotted", "alt": ""})
 
     # Group pills. alt for severity keeps the keywords the comment parsers look for.
     groups = [("finding-type", key, plural, icon, plural) for key, _, plural, icon, _ in TYPES]
