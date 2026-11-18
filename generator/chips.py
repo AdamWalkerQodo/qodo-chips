@@ -6,6 +6,7 @@ Styles: "mono" (grey icon) and "color" (icon tinted like today's emoji).
 from __future__ import annotations
 
 import json
+import math
 import re
 from functools import lru_cache
 from pathlib import Path
@@ -121,9 +122,15 @@ def severity_bars(level: int, x: float, solid: str) -> str:
     return out
 
 
-def relevance_dots(n: int, x: float, solid: str) -> str:
-    return "".join(f'<circle cx="{_num(x + cx)}" cy="10" r="1.7" {solid}{"" if i < n else " opacity=\"0.25\""}/>'
-                   for i, cx in enumerate([2, 6, 10]))
+def relevance_arcs(n: int, x: float, paint: dict) -> str:
+    """Signal-strength mark: a dot plus two arcs; 3 = both arcs, 2 = inner arc, 1 = dot only (the rest is faded)."""
+    cx, cy = x + 6, 15.2
+    out = f'<circle cx="{_num(cx)}" cy="{_num(cy - 0.6)}" r="1.3" {paint["solid"]}/>'
+    for i, r in enumerate([4.4, 8]):
+        dx, dy = r * math.sin(math.radians(42)), r * math.cos(math.radians(42))
+        out += (f'<path d="M{_num(cx - dx)} {_num(cy - dy)}A{r} {r} 0 0 1 {_num(cx + dx)} {_num(cy - dy)}" fill="none" {paint["stroke"]} '
+                f'stroke-width="1.7" stroke-linecap="round"{"" if i + 2 <= n else " opacity=\"0.3\""}/>')
+    return out
 
 
 RISK_SEGMENTS = {"high": 3, "medium": 2, "low": 1}
@@ -142,7 +149,7 @@ def _icon(icon: str | None, x: float, paint: dict) -> str:
     if kind == "sev":
         return severity_bars(int(arg), x, paint["solid"])
     if kind == "rel":
-        return relevance_dots(int(arg), x, paint["solid"])
+        return relevance_arcs(int(arg), x, paint)
     if kind == "risk":
         return risk_meter(arg, x, paint["solid"])
     return lucide(icon, x, paint["stroke"])
