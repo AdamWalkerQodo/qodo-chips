@@ -231,6 +231,18 @@ def button(label: str, icon: str, primary: bool = False) -> tuple[str, float]:
     return css + frame(width) + body, width
 
 
+def link_action(label: str, icon: str) -> tuple[str, float]:
+    """A minor action drawn as a link: a small icon and label in link blue, with no fill or outline. It keeps the
+    button height so it can stand where a button did, and ends with a little space before the next action."""
+    css = ('<style>.t{fill:#0969da}.i{stroke:#0969da}'
+           '@media (prefers-color-scheme:dark){.t{fill:#4493f8}.i{stroke:#4493f8}}</style>')
+    shapes = "".join(f"<{tag} {_attrs(a)}/>" for tag, a in ICONS[icon])
+    body = (f'<g transform="translate(0 8.5) scale({_num(11 / 24)})" fill="none" class="i" stroke-width="2" '
+            f'stroke-linecap="round" stroke-linejoin="round">{shapes}</g>')
+    d, w = text_path(label, 12, 15, "Regular", BUTTON_H)
+    return css + body + f'<path d="{d}" class="t"/>', round(15 + w + 10)
+
+
 def qodo_band(offset: int = 0, height: int | None = None) -> tuple[str, int]:
     """The band around Qodo's header row: a thin neutral line (white on dark pages, grey on light ones) that is
     Qodo purple at both ends, under the logo and under the primary button, with a faint glow below. It has no

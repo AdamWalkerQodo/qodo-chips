@@ -10,7 +10,7 @@ import json
 import shutil
 from pathlib import Path
 
-from chips import BUTTON_H, CARD_H, STAT_H, CHIP_TOP_PAD, H, PALETTES, _svg, _tint, button, chip, metric_card, pill, qodo_band, stat_segment, suggestion_card
+from chips import BUTTON_H, CARD_H, STAT_H, CHIP_TOP_PAD, H, PALETTES, _svg, _tint, button, chip, link_action, metric_card, pill, qodo_band, stat_segment, suggestion_card
 
 ROOT = Path(__file__).parent.parent   # repository root
 OUT = ROOT
@@ -181,8 +181,9 @@ def main() -> None:
     manifest.append({"file": "v1/title/qodo-logo.svg", "width": 135, "height": 46, "family": "title", "key": "qodo-logo", "alt": "Qodo"})
     for key, label, icon, primary in [("view-in-qodo", "View in Qodo", "external-link", True),
                                      ("finding-summary", "Finding summary", "clipboard-check", False), ("pr-overview", "PR overview", "git-pull-request", False),
-                                     ("dismiss", "Dismiss", "x", False), ("view", "View", "external-link", True)]:
-        body, w = button(label, icon, primary)
+                                     ("dismiss", "Dismiss", "x", None), ("view", "View", "external-link", None)]:
+        # Dismiss and View on a finding are minor actions, drawn as links; the rest are buttons.
+        body, w = link_action(label, icon) if primary is None else button(label, icon, primary)
         target = OUT / "v1" / "button" / f"{key}.svg"
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{BUTTON_H}" viewBox="0 0 {w} {BUTTON_H}">{body}</svg>')
