@@ -73,8 +73,7 @@ v1/
   stat/{open|resolved|dismissed}/count-{n}.svg   resolution strip segments, 24px tall, placed edge to edge
   title/qodo-logo.svg                  the Qodo logo (mark and name), used as a section title
   button/{view-in-qodo|finding-summary|pr-overview}.svg    button images, 28px tall
-  divider/qodo-band.svg                     band that opens Qodo's part of a PR description
-  divider/hairline.svg                      full-width 1px line
+  divider/qodo-band.svg                     purple band with a white shine, under Qodo's header row
 manifest.json                    every file with its width and alt text
 ```
 

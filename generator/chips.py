@@ -232,23 +232,16 @@ def button(label: str, icon: str, primary: bool = False) -> tuple[str, float]:
 
 
 def qodo_band() -> str:
-    """The band that opens Qodo's part of a PR description: a 2px line that runs from Qodo purple to grey, with a
-    soft glow of the same colours fading out under it. It has no viewBox and a 100% width, so it spans any width."""
+    """The band under Qodo's header row: a 2px line in Qodo purple with a white shine across its middle, end to end,
+    and a soft glow of the same colours fading out under it. It has no viewBox and a 100% width, so it spans any width."""
     return ('<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="14">'
-            '<style>.a{stop-color:#7968fa}.b{stop-color:#b9b0f7}.c{stop-color:#d0d7de}'
-            '@media (prefers-color-scheme:dark){.a{stop-color:#8f80ff}.b{stop-color:#5b5494}.c{stop-color:#30363d}}</style>'
-            '<defs><linearGradient id="h" x1="0" x2="1" y1="0" y2="0"><stop offset="0" class="a"/><stop offset=".35" class="b"/>'
-            '<stop offset="1" class="c"/></linearGradient>'
+            '<style>.a{stop-color:#7968fa}.b{stop-color:#f1eeff}@media (prefers-color-scheme:dark){.a{stop-color:#8474ff}.b{stop-color:#ffffff}}</style>'
+            '<defs><linearGradient id="h" x1="0" x2="1" y1="0" y2="0"><stop offset="0" class="a"/><stop offset=".3" class="a"/>'
+            '<stop offset=".5" class="b"/><stop offset=".7" class="a"/><stop offset="1" class="a"/></linearGradient>'
             '<linearGradient id="v" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".22"/>'
             '<stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>'
             '<mask id="m"><rect width="100%" height="14" fill="url(#v)"/></mask></defs>'
             '<rect width="100%" height="14" fill="url(#h)" mask="url(#m)"/><rect width="100%" height="2" fill="url(#h)"/></svg>')
-
-
-def hairline() -> str:
-    """A full-width 1px grey line that follows the page theme, used under the Qodo header row."""
-    return ('<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="1">'
-            '<style>rect{fill:#d0d7de}@media (prefers-color-scheme:dark){rect{fill:#30363d}}</style><rect width="100%" height="1"/></svg>')
 
 
 CARD_H = 68

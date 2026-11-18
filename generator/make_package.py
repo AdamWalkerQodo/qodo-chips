@@ -10,7 +10,7 @@ import json
 import shutil
 from pathlib import Path
 
-from chips import BUTTON_H, CARD_H, STAT_H, CHIP_TOP_PAD, H, PALETTES, _svg, _tint, button, chip, hairline, metric_card, pill, qodo_band, stat_segment, suggestion_card
+from chips import BUTTON_H, CARD_H, STAT_H, CHIP_TOP_PAD, H, PALETTES, _svg, _tint, button, chip, metric_card, pill, qodo_band, stat_segment, suggestion_card
 
 ROOT = Path(__file__).parent.parent   # repository root
 OUT = ROOT
@@ -189,7 +189,7 @@ def main() -> None:
         target.write_text(f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{BUTTON_H}" viewBox="0 0 {w} {BUTTON_H}">{body}</svg>')
         manifest.append({"file": f"v1/button/{key}.svg", "width": w, "height": BUTTON_H, "family": "button", "key": key, "alt": label})
     (OUT / "v1" / "divider").mkdir(parents=True, exist_ok=True)
-    for name, svg, height in [("qodo-band", qodo_band(), 14), ("hairline", hairline(), 1)]:
+    for name, svg, height in [("qodo-band", qodo_band(), 14)]:
         (OUT / "v1" / "divider" / f"{name}.svg").write_text(svg)
         manifest.append({"file": f"v1/divider/{name}.svg", "width": "100%", "height": height, "family": "divider", "key": name, "alt": ""})
 
