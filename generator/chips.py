@@ -225,10 +225,10 @@ def button(label: str, icon: str, primary: bool = False) -> tuple[str, float]:
 
 
 def dotted_divider() -> str:
-    """A full-width dotted line in a soft Qodo purple that follows the page theme. It has no viewBox and a 100% width,
+    """A full-width dotted line in a quiet grey that follows the page theme. It has no viewBox and a 100% width,
     so the dots repeat across whatever width the page gives the image instead of stretching."""
     return ('<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="6">'
-            '<style>circle{fill:#634fd1;fill-opacity:.45}@media (prefers-color-scheme:dark){circle{fill:#9d8cff;fill-opacity:.5}}</style>'
+            '<style>circle{fill:#afb8c1}@media (prefers-color-scheme:dark){circle{fill:#484f58}}</style>'
             '<defs><pattern id="d" width="7" height="6" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="3" r="1.1"/></pattern></defs>'
             '<rect width="100%" height="6" fill="url(#d)"/></svg>')
 
@@ -237,10 +237,10 @@ CARD_H = 68
 CARD_GAP = 8   # every metric card starts with this much empty space, so cards placed edge to edge look separated
 SUGGESTION_TONES = {   # light (fill, text, icon), dark (fill, text, icon): a faint tint, near-black or near-white text, a toned icon
     "not-safe": (("#fdeceb", "#5f1410", "#c5281f"), ("#3a1c1c", "#ffe9e6", "#ff8379")),
-    "consider": (("#fff4dc", "#4a3200", "#a66b00"), ("#33290f", "#fff3d6", "#f0b840")),
+    "consider": (("#fff8c5", "#4d3800", "#bf8700"), ("#383310", "#fff8d0", "#f2cc33")),
     "safe": (("#e6f6ee", "#0b3d2e", "#12805d"), ("#12301f", "#e2f8ec", "#5fd69f")),
 }
-VALUE_INKS = {"red": ("#c5281f", "#ff8379"), "amber": ("#a66b00", "#f0b840"), "green": ("#12805d", "#5fd69f"), "neutral": ("#1f2328", "#f0f6fc")}
+VALUE_INKS = {"red": ("#c5281f", "#ff8379"), "amber": ("#9a6700", "#f2cc33"), "green": ("#12805d", "#5fd69f"), "neutral": ("#1f2328", "#f0f6fc")}
 
 
 def _card_icon(icon: str, x: float, y: float, size: float) -> str:
