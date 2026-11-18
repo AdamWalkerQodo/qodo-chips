@@ -34874,6 +34874,14 @@
   "alt": ""
  },
  {
+  "file": "v1/divider/qodo-band-below.svg",
+  "width": "100%",
+  "height": 24,
+  "family": "divider",
+  "key": "qodo-band-below",
+  "alt": ""
+ },
+ {
   "file": "v1/pill/finding-type/bugs/brand.svg",
   "width": 45,
   "height": 20,

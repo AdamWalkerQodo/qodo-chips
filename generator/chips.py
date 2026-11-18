@@ -231,11 +231,14 @@ def button(label: str, icon: str, primary: bool = False) -> tuple[str, float]:
     return css + frame(width) + body, width
 
 
-def qodo_band() -> str:
+def qodo_band(offset: int = 0) -> tuple[str, int]:
     """The band around Qodo's header row: a thin neutral line (white on dark pages, grey on light ones) that is
     Qodo purple at both ends, under the logo and under the primary button, with a faint glow below. It has no
-    viewBox and a 100% width, so it spans any width; the right end is drawn in a nested svg anchored at 100%."""
-    return ('<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="14">'
+    viewBox and a 100% width, so it spans any width; the right end is drawn in a nested svg anchored at 100%.
+
+    `offset` is empty space above the line, for a band placed directly under a row. Returns (svg, height)."""
+    height = offset + 14
+    return ('<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="' + str(height) + '">'
             '<style>.n{fill:#c8cfd6}.p{stop-color:#7968fa}.g{stop-color:#8c959f}'
             '@media (prefers-color-scheme:dark){.n{fill:#e6edf3;fill-opacity:.6}.p{stop-color:#9384ff}.g{stop-color:#ffffff}}</style>'
             '<defs><linearGradient id="l" gradientUnits="userSpaceOnUse" x1="0" x2="190" y1="0" y2="0"><stop offset="0" class="p"/>'
@@ -244,9 +247,9 @@ def qodo_band() -> str:
             '<stop offset=".55" class="p"/><stop offset="1" class="p"/></linearGradient>'
             '<linearGradient id="v" x1="0" x2="0" y1="0" y2="1"><stop offset="0" class="g" stop-opacity=".1"/>'
             '<stop offset="1" class="g" stop-opacity="0"/></linearGradient></defs>'
-            '<rect width="100%" height="14" fill="url(#v)"/><rect width="100%" height="1.5" class="n"/>'
+            f'<g transform="translate(0 {offset})"><rect width="100%" height="14" fill="url(#v)"/><rect width="100%" height="1.5" class="n"/>'
             '<rect width="190" height="1.5" fill="url(#l)"/>'
-            '<svg x="100%" overflow="visible"><rect x="-200" width="200" height="1.5" fill="url(#r)"/></svg></svg>')
+            '<svg x="100%" overflow="visible"><rect x="-200" width="200" height="1.5" fill="url(#r)"/></svg></g></svg>'), height
 
 
 CARD_H = 68
