@@ -34922,12 +34922,12 @@
   "alt": "PR overview"
  },
  {
-  "file": "v1/button/native/qodo-suggestion.svg",
-  "width": 144,
+  "file": "v1/button/native/back-to-top.svg",
+  "width": 109,
   "height": 28,
   "family": "button",
-  "key": "native/qodo-suggestion",
-  "alt": "Qodo suggestion"
+  "key": "native/back-to-top",
+  "alt": "Back to top"
  },
  {
   "file": "v1/button/straight/view-in-qodo.svg",
@@ -34954,12 +34954,12 @@
   "alt": "PR overview"
  },
  {
-  "file": "v1/button/straight/qodo-suggestion.svg",
-  "width": 144,
+  "file": "v1/button/straight/back-to-top.svg",
+  "width": 109,
   "height": 28,
   "family": "button",
-  "key": "straight/qodo-suggestion",
-  "alt": "Qodo suggestion"
+  "key": "straight/back-to-top",
+  "alt": "Back to top"
  },
  {
   "file": "v1/divider/qodo-band-above.svg",
