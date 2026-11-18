@@ -48,7 +48,12 @@ SUGGESTIONS = [   # copy is kept short so it is not cut off when the card is nar
     ("consider", "security-findings", "Needs review", "Security findings", "triangle-alert"),
     ("consider", "high-risk", "Needs review", "High risk", "triangle-alert"),
     ("consider", "medium-risk", "Needs review", "Medium risk", "triangle-alert"),
+    ("consider", "open-findings", "Needs review", "Open findings", "triangle-alert"),
     ("safe", "clear", "Looks ready", "Nothing blocking", "circle-check"),
+    # When a merge workflow decided: its criteria were met, a blocking rule matched, or neither.
+    ("safe", "workflow-passed", "Looks ready", "Workflow passed", "circle-check"),
+    ("not-safe", "workflow-blocked", "Not ready", "Workflow blocked", "circle-x"),
+    ("consider", "workflow-not-met", "Needs review", "Workflow not met", "triangle-alert"),
 ]
 NOTES = [("copy-prompt", "Copy this prompt and use it to remediate the issue with your preferred AI generation tools"),
          ("past-prs", "Recommendations generated based on similar findings in past PRs")]

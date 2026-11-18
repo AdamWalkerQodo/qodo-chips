@@ -34426,12 +34426,44 @@
   "alt": "Needs review: Medium risk"
  },
  {
+  "file": "v1/card/suggestion/consider-open-findings.svg",
+  "width": "100%",
+  "height": 68,
+  "family": "card",
+  "key": "suggestion/consider-open-findings",
+  "alt": "Needs review: Open findings"
+ },
+ {
   "file": "v1/card/suggestion/safe-clear.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
   "key": "suggestion/safe-clear",
   "alt": "Looks ready: Nothing blocking"
+ },
+ {
+  "file": "v1/card/suggestion/safe-workflow-passed.svg",
+  "width": "100%",
+  "height": 68,
+  "family": "card",
+  "key": "suggestion/safe-workflow-passed",
+  "alt": "Looks ready: Workflow passed"
+ },
+ {
+  "file": "v1/card/suggestion/not-safe-workflow-blocked.svg",
+  "width": "100%",
+  "height": 68,
+  "family": "card",
+  "key": "suggestion/not-safe-workflow-blocked",
+  "alt": "Not ready: Workflow blocked"
+ },
+ {
+  "file": "v1/card/suggestion/consider-workflow-not-met.svg",
+  "width": "100%",
+  "height": 68,
+  "family": "card",
+  "key": "suggestion/consider-workflow-not-met",
+  "alt": "Needs review: Workflow not met"
  },
  {
   "file": "v1/card/open-findings/count-0.svg",
