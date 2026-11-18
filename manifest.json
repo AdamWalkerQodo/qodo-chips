@@ -34866,11 +34866,11 @@
   "alt": "View"
  },
  {
-  "file": "v1/divider/qodo-band.svg",
+  "file": "v1/divider/qodo-band-above.svg",
   "width": "100%",
-  "height": 14,
+  "height": 21,
   "family": "divider",
-  "key": "qodo-band",
+  "key": "qodo-band-above",
   "alt": ""
  },
  {
