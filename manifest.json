@@ -34278,6 +34278,26 @@
   "alt": "🩹 Not assessed"
  },
  {
+  "file": "v1/chip/mono/note/copy-prompt/label.svg",
+  "width": 518,
+  "height": 21,
+  "family": "note",
+  "key": "copy-prompt",
+  "form": "label",
+  "style": "mono",
+  "alt": "ⓘ Copy this prompt and use it to remediate the issue with your preferred AI generation tools"
+ },
+ {
+  "file": "v1/chip/mono/note/past-prs/label.svg",
+  "width": 392,
+  "height": 21,
+  "family": "note",
+  "key": "past-prs",
+  "form": "label",
+  "style": "mono",
+  "alt": "ⓘ Recommendations generated based on similar findings in past PRs"
+ },
+ {
   "file": "v1/chip/mono/source/loaded/icon.svg",
   "width": 26,
   "height": 21,

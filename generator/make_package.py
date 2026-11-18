@@ -50,6 +50,8 @@ SUGGESTIONS = [   # copy is kept short so it is not cut off when the card is nar
     ("consider", "medium-risk", "Needs review", "Medium risk", "triangle-alert"),
     ("safe", "clear", "Looks ready", "Nothing blocking", "circle-check"),
 ]
+NOTES = [("copy-prompt", "Copy this prompt and use it to remediate the issue with your preferred AI generation tools"),
+         ("past-prs", "Recommendations generated based on similar findings in past PRs")]
 COLOR_FAMILIES = {"type", "source", "risk"}   # every other chip exists in mono only; severity chips use the group badge colourings instead
 TERMS = {"legacy": ["Action required", "Review recommended", "Optional"], "high-medium-low": ["High", "Medium", "Low"],
          "critical-warning-informational": ["Critical", "Warning", "Informational"],
@@ -152,6 +154,8 @@ def main() -> None:
     for factor, icon, emoji, labels in [("blast-radius", "bomb", "💥", [])] + RISK_FACTORS:
         for label in [*labels, "Assessed behavior", "Not assessed"]:
             label_chip(f"risk-{factor}", label.lower().replace(" ", "-"), icon, label, f"{emoji} {label}", emoji, variants=("",))
+    for key, text in NOTES:
+        label_chip("note", key, "info", text, f"ⓘ {text}", "ⓘ", variants=("",))
     for key, icon, alt in [("loaded", "circle-check", "✅"), ("error", "circle-x", "❌"), ("skipped", "triangle-alert", "⚠️"), ("superseded", "circle-minus", "⊖")]:
         label_chip("source", key, icon, "", alt, alt, variants=("icon",))
 
