@@ -291,14 +291,15 @@ def suggestion_card(label: str, detail: str, icon: str, tone: str) -> str:
 
 
 def metric_card(label: str, value: str, icon: str) -> str:
-    """A metric card: a small label over one large value, in neutral ink only. It starts with CARD_GAP of empty space."""
-    css = (f"<style>.f{{width:calc(100% - {CARD_GAP}px);fill:#f3f4f6}}.l{{fill:#59636e}}.v{{fill:#1f2328}}.i{{stroke:#59636e}}"
-           "@media (prefers-color-scheme:dark){.f{fill:#1c2128}.l{fill:#9198a1}.v{fill:#f0f6fc}.i{stroke:#9198a1}}</style>")
+    """A metric card: a small label over one large value, in neutral ink, with a thin border and no fill, so it stays
+    quieter than the suggestion card. It starts with CARD_GAP of empty space."""
+    css = (f"<style>.f{{width:calc(100% - {CARD_GAP + 1}px);fill:none;stroke:#d0d7de}}.l{{fill:#59636e}}.v{{fill:#1f2328}}.i{{stroke:#59636e}}"
+           "@media (prefers-color-scheme:dark){.f{stroke:#30363d}.l{fill:#9198a1}.v{fill:#f0f6fc}.i{stroke:#9198a1}}</style>")
     left = CARD_GAP + 14
     name, _ = text_path(label, 11.5, left + 20, "Regular", CARD_H)
     number, _ = text_path(value, 20, left, "SemiBold", CARD_H)
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{CARD_H}">{css}'
-            f'<rect x="{CARD_GAP}" width="100%" height="{CARD_H}" class="f"/>'
+            f'<rect x="{CARD_GAP + 0.5}" y="0.5" width="100%" height="{CARD_H - 1}" class="f"/>'
             f'{_card_icon(icon, left, 11.5, 14)}'
             f'<path d="{name}" class="l" transform="translate(0 -15.5)"/><path d="{number}" class="v" transform="translate(0 10)"/></svg>')
 
