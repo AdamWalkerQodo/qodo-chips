@@ -210,17 +210,25 @@ def pill(label: str | None, color: str, icon: str | None = None, count: str | No
 BUTTON_H = 28
 
 
-def button(label: str, icon: str, primary: bool = False) -> tuple[str, float]:
-    """A button image, 28px tall: brand fill with white ink when primary, else an outline with no fill that follows the page theme."""
+def button(label: str, icon: str, primary: bool = False, style: str = "straight") -> tuple[str, float]:
+    """A button image, 28px tall, in one of two styles.
+
+    "native" looks like the git host's own small button: rounded corners, and for a secondary button a grey fill with
+    a thin border. "straight" has square corners, and a secondary button is an outline with no fill. In both, the
+    primary button is filled in Qodo purple with white ink."""
+    radius = 6 if style == "native" else 0
     if primary:
-        css, frame_w = "", f'fill="#634fd1"'
-        frame = lambda w: f'<rect width="{w}" height="{BUTTON_H}" {frame_w}/>'  # noqa: E731
+        css = ""
+        frame = lambda w: f'<rect width="{w}" height="{BUTTON_H}" rx="{radius}" fill="#634fd1"/>'  # noqa: E731
         ink_fill, ink_stroke = 'fill="#ffffff"', 'stroke="#ffffff"'
     else:
-        # Readable ink and a quiet outline, so the outlined buttons sit behind the primary one.
-        css = ('<style>.o{stroke:#d0d4d9}.t{fill:#24292f}.i{stroke:#57606a}'
-               '@media (prefers-color-scheme:dark){.o{stroke:#4b515a}.t{fill:#e6edf3}.i{stroke:#c9d1d9}}</style>')
-        frame = lambda w: f'<rect x="0.5" y="0.5" width="{w - 1}" height="{BUTTON_H - 1}" fill="none" class="o"/>'  # noqa: E731
+        if style == "native":
+            css = ('<style>.o{fill:#f6f8fa;stroke:#d1d9e0}.t{fill:#25292e}.i{stroke:#59636e}'
+                   '@media (prefers-color-scheme:dark){.o{fill:#212830;stroke:#3d444d}.t{fill:#f0f6fc}.i{stroke:#9198a1}}</style>')
+        else:
+            css = ('<style>.o{fill:none;stroke:#d0d4d9}.t{fill:#24292f}.i{stroke:#57606a}'
+                   '@media (prefers-color-scheme:dark){.o{stroke:#4b515a}.t{fill:#e6edf3}.i{stroke:#c9d1d9}}</style>')
+        frame = lambda w: f'<rect x="0.5" y="0.5" width="{w - 1}" height="{BUTTON_H - 1}" rx="{radius}" class="o"/>'  # noqa: E731
         ink_fill, ink_stroke = 'class="t"', 'class="i"'
     shapes = "".join(f"<{tag} {_attrs(a)}/>" for tag, a in ICONS[icon])
     body = (f'<g transform="translate(10 7.5) scale({_num(13 / 24)})" fill="none" {ink_stroke} stroke-width="2" '
