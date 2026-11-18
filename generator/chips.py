@@ -233,13 +233,13 @@ def button(label: str, icon: str, primary: bool = False) -> tuple[str, float]:
 
 def qodo_band() -> str:
     """The band under Qodo's header row: a thin line that is mostly neutral (white on dark pages, grey on light ones)
-    and turns Qodo purple towards its right end, with a faint glow of the same colours fading out under it. It has
+    and starts in Qodo purple under the logo, with a faint glow of the same colours fading out under it. It has
     no viewBox and a 100% width, so it spans any width."""
     return ('<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="14">'
             '<style>.n{stop-color:#c8cfd6}.p{stop-color:#7968fa}'
             '@media (prefers-color-scheme:dark){.n{stop-color:#e6edf3;stop-opacity:.6}.p{stop-color:#9384ff}}</style>'
-            '<defs><linearGradient id="h" x1="0" x2="1" y1="0" y2="0"><stop offset="0" class="n"/><stop offset=".62" class="n"/>'
-            '<stop offset=".9" class="p"/><stop offset="1" class="n"/></linearGradient>'
+            '<defs><linearGradient id="h" gradientUnits="userSpaceOnUse" x1="0" x2="190" y1="0" y2="0"><stop offset="0" class="p"/>'
+            '<stop offset=".4" class="p"/><stop offset="1" class="n"/></linearGradient>'
             '<linearGradient id="v" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/>'
             '<stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>'
             '<mask id="m"><rect width="100%" height="14" fill="url(#v)"/></mask></defs>'
