@@ -67,9 +67,9 @@ v1/
   pill/{grouping}/{key}/
       {coloring}.svg, {coloring}-icon.svg
   card/suggestion/{tone}-{reason}.svg            merge suggestion card with its reason, 68px tall
-  card/open-findings/{tone}/count-{n}.svg        metric cards: one value each; they stretch to the width given
+  card/open-findings/count-{n}.svg        metric cards: one value each; they stretch to the width given
   card/merge-risk/{level}.svg
-  card/blocking-rules/{tone}/count-{n}.svg
+  card/blocking-rules/count-{n}.svg
   stat/{open|resolved|dismissed}/count-{n}.svg   resolution strip segments, 24px tall, placed edge to edge
   title/qodo-logo.svg                  the Qodo logo (mark and name), used as a section title
   button/{view-in-qodo|finding-summary|pr-overview}.svg    button images, 28px tall

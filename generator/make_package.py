@@ -171,12 +171,10 @@ def main() -> None:
         card(f"suggestion/{tone}-{reason}", suggestion_card(label, detail, icon, tone), f"{label}: {detail}")
     for count in COUNTS:
         form = f"count-{count.replace('+', 'plus')}"
-        for tone in ("red", "amber", "neutral"):
-            card(f"open-findings/{tone}/{form}", metric_card("Open findings", count, "clipboard-check", tone), f"Open findings: {count}")
-        for tone in ("amber", "neutral"):
-            card(f"blocking-rules/{tone}/{form}", metric_card("Blocking rules", count, "shield-plus", tone), f"Blocking rules: {count}")
-    for level, value, tone in [("high", "High", "red"), ("medium", "Medium", "amber"), ("low", "Low", "green"), ("unavailable", "Unknown", "neutral")]:
-        card(f"merge-risk/{level}", metric_card("Merge risk", value, "triangle-alert", tone), f"Merge risk: {value}")
+        card(f"open-findings/{form}", metric_card("Open findings", count, "clipboard-check"), f"Open findings: {count}")
+        card(f"blocking-rules/{form}", metric_card("Blocking rules", count, "shield-plus"), f"Blocking rules: {count}")
+    for level, value in [("high", "High"), ("medium", "Medium"), ("low", "Low"), ("unavailable", "Unknown")]:
+        card(f"merge-risk/{level}", metric_card("Merge risk", value, "triangle-alert"), f"Merge risk: {value}")
     (OUT / "v1" / "title").mkdir(parents=True, exist_ok=True)
     shutil.copy(Path(__file__).parent / "assets" / "qodo-logo.svg", OUT / "v1" / "title" / "qodo-logo.svg")
     manifest.append({"file": "v1/title/qodo-logo.svg", "width": 135, "height": 46, "family": "title", "key": "qodo-logo", "alt": "Qodo"})

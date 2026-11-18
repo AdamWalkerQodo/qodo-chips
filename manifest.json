@@ -34434,883 +34434,355 @@
   "alt": "Looks ready: Nothing blocking"
  },
  {
-  "file": "v1/card/open-findings/red/count-0.svg",
+  "file": "v1/card/open-findings/count-0.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "open-findings/red/count-0",
+  "key": "open-findings/count-0",
   "alt": "Open findings: 0"
  },
  {
-  "file": "v1/card/open-findings/amber/count-0.svg",
+  "file": "v1/card/blocking-rules/count-0.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "open-findings/amber/count-0",
-  "alt": "Open findings: 0"
- },
- {
-  "file": "v1/card/open-findings/neutral/count-0.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/neutral/count-0",
-  "alt": "Open findings: 0"
- },
- {
-  "file": "v1/card/blocking-rules/amber/count-0.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "blocking-rules/amber/count-0",
+  "key": "blocking-rules/count-0",
   "alt": "Blocking rules: 0"
  },
  {
-  "file": "v1/card/blocking-rules/neutral/count-0.svg",
+  "file": "v1/card/open-findings/count-1.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "blocking-rules/neutral/count-0",
-  "alt": "Blocking rules: 0"
- },
- {
-  "file": "v1/card/open-findings/red/count-1.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/red/count-1",
+  "key": "open-findings/count-1",
   "alt": "Open findings: 1"
  },
  {
-  "file": "v1/card/open-findings/amber/count-1.svg",
+  "file": "v1/card/blocking-rules/count-1.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "open-findings/amber/count-1",
-  "alt": "Open findings: 1"
- },
- {
-  "file": "v1/card/open-findings/neutral/count-1.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/neutral/count-1",
-  "alt": "Open findings: 1"
- },
- {
-  "file": "v1/card/blocking-rules/amber/count-1.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "blocking-rules/amber/count-1",
+  "key": "blocking-rules/count-1",
   "alt": "Blocking rules: 1"
  },
  {
-  "file": "v1/card/blocking-rules/neutral/count-1.svg",
+  "file": "v1/card/open-findings/count-2.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "blocking-rules/neutral/count-1",
-  "alt": "Blocking rules: 1"
- },
- {
-  "file": "v1/card/open-findings/red/count-2.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/red/count-2",
+  "key": "open-findings/count-2",
   "alt": "Open findings: 2"
  },
  {
-  "file": "v1/card/open-findings/amber/count-2.svg",
+  "file": "v1/card/blocking-rules/count-2.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "open-findings/amber/count-2",
-  "alt": "Open findings: 2"
- },
- {
-  "file": "v1/card/open-findings/neutral/count-2.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/neutral/count-2",
-  "alt": "Open findings: 2"
- },
- {
-  "file": "v1/card/blocking-rules/amber/count-2.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "blocking-rules/amber/count-2",
+  "key": "blocking-rules/count-2",
   "alt": "Blocking rules: 2"
  },
  {
-  "file": "v1/card/blocking-rules/neutral/count-2.svg",
+  "file": "v1/card/open-findings/count-3.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "blocking-rules/neutral/count-2",
-  "alt": "Blocking rules: 2"
- },
- {
-  "file": "v1/card/open-findings/red/count-3.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/red/count-3",
+  "key": "open-findings/count-3",
   "alt": "Open findings: 3"
  },
  {
-  "file": "v1/card/open-findings/amber/count-3.svg",
+  "file": "v1/card/blocking-rules/count-3.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "open-findings/amber/count-3",
-  "alt": "Open findings: 3"
- },
- {
-  "file": "v1/card/open-findings/neutral/count-3.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/neutral/count-3",
-  "alt": "Open findings: 3"
- },
- {
-  "file": "v1/card/blocking-rules/amber/count-3.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "blocking-rules/amber/count-3",
+  "key": "blocking-rules/count-3",
   "alt": "Blocking rules: 3"
  },
  {
-  "file": "v1/card/blocking-rules/neutral/count-3.svg",
+  "file": "v1/card/open-findings/count-4.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "blocking-rules/neutral/count-3",
-  "alt": "Blocking rules: 3"
- },
- {
-  "file": "v1/card/open-findings/red/count-4.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/red/count-4",
+  "key": "open-findings/count-4",
   "alt": "Open findings: 4"
  },
  {
-  "file": "v1/card/open-findings/amber/count-4.svg",
+  "file": "v1/card/blocking-rules/count-4.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "open-findings/amber/count-4",
-  "alt": "Open findings: 4"
- },
- {
-  "file": "v1/card/open-findings/neutral/count-4.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/neutral/count-4",
-  "alt": "Open findings: 4"
- },
- {
-  "file": "v1/card/blocking-rules/amber/count-4.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "blocking-rules/amber/count-4",
+  "key": "blocking-rules/count-4",
   "alt": "Blocking rules: 4"
  },
  {
-  "file": "v1/card/blocking-rules/neutral/count-4.svg",
+  "file": "v1/card/open-findings/count-5.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "blocking-rules/neutral/count-4",
-  "alt": "Blocking rules: 4"
- },
- {
-  "file": "v1/card/open-findings/red/count-5.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/red/count-5",
+  "key": "open-findings/count-5",
   "alt": "Open findings: 5"
  },
  {
-  "file": "v1/card/open-findings/amber/count-5.svg",
+  "file": "v1/card/blocking-rules/count-5.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "open-findings/amber/count-5",
-  "alt": "Open findings: 5"
- },
- {
-  "file": "v1/card/open-findings/neutral/count-5.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/neutral/count-5",
-  "alt": "Open findings: 5"
- },
- {
-  "file": "v1/card/blocking-rules/amber/count-5.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "blocking-rules/amber/count-5",
+  "key": "blocking-rules/count-5",
   "alt": "Blocking rules: 5"
  },
  {
-  "file": "v1/card/blocking-rules/neutral/count-5.svg",
+  "file": "v1/card/open-findings/count-6.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "blocking-rules/neutral/count-5",
-  "alt": "Blocking rules: 5"
- },
- {
-  "file": "v1/card/open-findings/red/count-6.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/red/count-6",
+  "key": "open-findings/count-6",
   "alt": "Open findings: 6"
  },
  {
-  "file": "v1/card/open-findings/amber/count-6.svg",
+  "file": "v1/card/blocking-rules/count-6.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "open-findings/amber/count-6",
-  "alt": "Open findings: 6"
- },
- {
-  "file": "v1/card/open-findings/neutral/count-6.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/neutral/count-6",
-  "alt": "Open findings: 6"
- },
- {
-  "file": "v1/card/blocking-rules/amber/count-6.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "blocking-rules/amber/count-6",
+  "key": "blocking-rules/count-6",
   "alt": "Blocking rules: 6"
  },
  {
-  "file": "v1/card/blocking-rules/neutral/count-6.svg",
+  "file": "v1/card/open-findings/count-7.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "blocking-rules/neutral/count-6",
-  "alt": "Blocking rules: 6"
- },
- {
-  "file": "v1/card/open-findings/red/count-7.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/red/count-7",
+  "key": "open-findings/count-7",
   "alt": "Open findings: 7"
  },
  {
-  "file": "v1/card/open-findings/amber/count-7.svg",
+  "file": "v1/card/blocking-rules/count-7.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "open-findings/amber/count-7",
-  "alt": "Open findings: 7"
- },
- {
-  "file": "v1/card/open-findings/neutral/count-7.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/neutral/count-7",
-  "alt": "Open findings: 7"
- },
- {
-  "file": "v1/card/blocking-rules/amber/count-7.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "blocking-rules/amber/count-7",
+  "key": "blocking-rules/count-7",
   "alt": "Blocking rules: 7"
  },
  {
-  "file": "v1/card/blocking-rules/neutral/count-7.svg",
+  "file": "v1/card/open-findings/count-8.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "blocking-rules/neutral/count-7",
-  "alt": "Blocking rules: 7"
- },
- {
-  "file": "v1/card/open-findings/red/count-8.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/red/count-8",
+  "key": "open-findings/count-8",
   "alt": "Open findings: 8"
  },
  {
-  "file": "v1/card/open-findings/amber/count-8.svg",
+  "file": "v1/card/blocking-rules/count-8.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "open-findings/amber/count-8",
-  "alt": "Open findings: 8"
- },
- {
-  "file": "v1/card/open-findings/neutral/count-8.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/neutral/count-8",
-  "alt": "Open findings: 8"
- },
- {
-  "file": "v1/card/blocking-rules/amber/count-8.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "blocking-rules/amber/count-8",
+  "key": "blocking-rules/count-8",
   "alt": "Blocking rules: 8"
  },
  {
-  "file": "v1/card/blocking-rules/neutral/count-8.svg",
+  "file": "v1/card/open-findings/count-9.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "blocking-rules/neutral/count-8",
-  "alt": "Blocking rules: 8"
- },
- {
-  "file": "v1/card/open-findings/red/count-9.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/red/count-9",
+  "key": "open-findings/count-9",
   "alt": "Open findings: 9"
  },
  {
-  "file": "v1/card/open-findings/amber/count-9.svg",
+  "file": "v1/card/blocking-rules/count-9.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "open-findings/amber/count-9",
-  "alt": "Open findings: 9"
- },
- {
-  "file": "v1/card/open-findings/neutral/count-9.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/neutral/count-9",
-  "alt": "Open findings: 9"
- },
- {
-  "file": "v1/card/blocking-rules/amber/count-9.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "blocking-rules/amber/count-9",
+  "key": "blocking-rules/count-9",
   "alt": "Blocking rules: 9"
  },
  {
-  "file": "v1/card/blocking-rules/neutral/count-9.svg",
+  "file": "v1/card/open-findings/count-10.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "blocking-rules/neutral/count-9",
-  "alt": "Blocking rules: 9"
- },
- {
-  "file": "v1/card/open-findings/red/count-10.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/red/count-10",
+  "key": "open-findings/count-10",
   "alt": "Open findings: 10"
  },
  {
-  "file": "v1/card/open-findings/amber/count-10.svg",
+  "file": "v1/card/blocking-rules/count-10.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "open-findings/amber/count-10",
-  "alt": "Open findings: 10"
- },
- {
-  "file": "v1/card/open-findings/neutral/count-10.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/neutral/count-10",
-  "alt": "Open findings: 10"
- },
- {
-  "file": "v1/card/blocking-rules/amber/count-10.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "blocking-rules/amber/count-10",
+  "key": "blocking-rules/count-10",
   "alt": "Blocking rules: 10"
  },
  {
-  "file": "v1/card/blocking-rules/neutral/count-10.svg",
+  "file": "v1/card/open-findings/count-11.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "blocking-rules/neutral/count-10",
-  "alt": "Blocking rules: 10"
- },
- {
-  "file": "v1/card/open-findings/red/count-11.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/red/count-11",
+  "key": "open-findings/count-11",
   "alt": "Open findings: 11"
  },
  {
-  "file": "v1/card/open-findings/amber/count-11.svg",
+  "file": "v1/card/blocking-rules/count-11.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "open-findings/amber/count-11",
-  "alt": "Open findings: 11"
- },
- {
-  "file": "v1/card/open-findings/neutral/count-11.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/neutral/count-11",
-  "alt": "Open findings: 11"
- },
- {
-  "file": "v1/card/blocking-rules/amber/count-11.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "blocking-rules/amber/count-11",
+  "key": "blocking-rules/count-11",
   "alt": "Blocking rules: 11"
  },
  {
-  "file": "v1/card/blocking-rules/neutral/count-11.svg",
+  "file": "v1/card/open-findings/count-12.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "blocking-rules/neutral/count-11",
-  "alt": "Blocking rules: 11"
- },
- {
-  "file": "v1/card/open-findings/red/count-12.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/red/count-12",
+  "key": "open-findings/count-12",
   "alt": "Open findings: 12"
  },
  {
-  "file": "v1/card/open-findings/amber/count-12.svg",
+  "file": "v1/card/blocking-rules/count-12.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "open-findings/amber/count-12",
-  "alt": "Open findings: 12"
- },
- {
-  "file": "v1/card/open-findings/neutral/count-12.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/neutral/count-12",
-  "alt": "Open findings: 12"
- },
- {
-  "file": "v1/card/blocking-rules/amber/count-12.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "blocking-rules/amber/count-12",
+  "key": "blocking-rules/count-12",
   "alt": "Blocking rules: 12"
  },
  {
-  "file": "v1/card/blocking-rules/neutral/count-12.svg",
+  "file": "v1/card/open-findings/count-13.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "blocking-rules/neutral/count-12",
-  "alt": "Blocking rules: 12"
- },
- {
-  "file": "v1/card/open-findings/red/count-13.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/red/count-13",
+  "key": "open-findings/count-13",
   "alt": "Open findings: 13"
  },
  {
-  "file": "v1/card/open-findings/amber/count-13.svg",
+  "file": "v1/card/blocking-rules/count-13.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "open-findings/amber/count-13",
-  "alt": "Open findings: 13"
- },
- {
-  "file": "v1/card/open-findings/neutral/count-13.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/neutral/count-13",
-  "alt": "Open findings: 13"
- },
- {
-  "file": "v1/card/blocking-rules/amber/count-13.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "blocking-rules/amber/count-13",
+  "key": "blocking-rules/count-13",
   "alt": "Blocking rules: 13"
  },
  {
-  "file": "v1/card/blocking-rules/neutral/count-13.svg",
+  "file": "v1/card/open-findings/count-14.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "blocking-rules/neutral/count-13",
-  "alt": "Blocking rules: 13"
- },
- {
-  "file": "v1/card/open-findings/red/count-14.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/red/count-14",
+  "key": "open-findings/count-14",
   "alt": "Open findings: 14"
  },
  {
-  "file": "v1/card/open-findings/amber/count-14.svg",
+  "file": "v1/card/blocking-rules/count-14.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "open-findings/amber/count-14",
-  "alt": "Open findings: 14"
- },
- {
-  "file": "v1/card/open-findings/neutral/count-14.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/neutral/count-14",
-  "alt": "Open findings: 14"
- },
- {
-  "file": "v1/card/blocking-rules/amber/count-14.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "blocking-rules/amber/count-14",
+  "key": "blocking-rules/count-14",
   "alt": "Blocking rules: 14"
  },
  {
-  "file": "v1/card/blocking-rules/neutral/count-14.svg",
+  "file": "v1/card/open-findings/count-15.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "blocking-rules/neutral/count-14",
-  "alt": "Blocking rules: 14"
- },
- {
-  "file": "v1/card/open-findings/red/count-15.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/red/count-15",
+  "key": "open-findings/count-15",
   "alt": "Open findings: 15"
  },
  {
-  "file": "v1/card/open-findings/amber/count-15.svg",
+  "file": "v1/card/blocking-rules/count-15.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "open-findings/amber/count-15",
-  "alt": "Open findings: 15"
- },
- {
-  "file": "v1/card/open-findings/neutral/count-15.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/neutral/count-15",
-  "alt": "Open findings: 15"
- },
- {
-  "file": "v1/card/blocking-rules/amber/count-15.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "blocking-rules/amber/count-15",
+  "key": "blocking-rules/count-15",
   "alt": "Blocking rules: 15"
  },
  {
-  "file": "v1/card/blocking-rules/neutral/count-15.svg",
+  "file": "v1/card/open-findings/count-16.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "blocking-rules/neutral/count-15",
-  "alt": "Blocking rules: 15"
- },
- {
-  "file": "v1/card/open-findings/red/count-16.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/red/count-16",
+  "key": "open-findings/count-16",
   "alt": "Open findings: 16"
  },
  {
-  "file": "v1/card/open-findings/amber/count-16.svg",
+  "file": "v1/card/blocking-rules/count-16.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "open-findings/amber/count-16",
-  "alt": "Open findings: 16"
- },
- {
-  "file": "v1/card/open-findings/neutral/count-16.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/neutral/count-16",
-  "alt": "Open findings: 16"
- },
- {
-  "file": "v1/card/blocking-rules/amber/count-16.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "blocking-rules/amber/count-16",
+  "key": "blocking-rules/count-16",
   "alt": "Blocking rules: 16"
  },
  {
-  "file": "v1/card/blocking-rules/neutral/count-16.svg",
+  "file": "v1/card/open-findings/count-17.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "blocking-rules/neutral/count-16",
-  "alt": "Blocking rules: 16"
- },
- {
-  "file": "v1/card/open-findings/red/count-17.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/red/count-17",
+  "key": "open-findings/count-17",
   "alt": "Open findings: 17"
  },
  {
-  "file": "v1/card/open-findings/amber/count-17.svg",
+  "file": "v1/card/blocking-rules/count-17.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "open-findings/amber/count-17",
-  "alt": "Open findings: 17"
- },
- {
-  "file": "v1/card/open-findings/neutral/count-17.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/neutral/count-17",
-  "alt": "Open findings: 17"
- },
- {
-  "file": "v1/card/blocking-rules/amber/count-17.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "blocking-rules/amber/count-17",
+  "key": "blocking-rules/count-17",
   "alt": "Blocking rules: 17"
  },
  {
-  "file": "v1/card/blocking-rules/neutral/count-17.svg",
+  "file": "v1/card/open-findings/count-18.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "blocking-rules/neutral/count-17",
-  "alt": "Blocking rules: 17"
- },
- {
-  "file": "v1/card/open-findings/red/count-18.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/red/count-18",
+  "key": "open-findings/count-18",
   "alt": "Open findings: 18"
  },
  {
-  "file": "v1/card/open-findings/amber/count-18.svg",
+  "file": "v1/card/blocking-rules/count-18.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "open-findings/amber/count-18",
-  "alt": "Open findings: 18"
- },
- {
-  "file": "v1/card/open-findings/neutral/count-18.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/neutral/count-18",
-  "alt": "Open findings: 18"
- },
- {
-  "file": "v1/card/blocking-rules/amber/count-18.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "blocking-rules/amber/count-18",
+  "key": "blocking-rules/count-18",
   "alt": "Blocking rules: 18"
  },
  {
-  "file": "v1/card/blocking-rules/neutral/count-18.svg",
+  "file": "v1/card/open-findings/count-19.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "blocking-rules/neutral/count-18",
-  "alt": "Blocking rules: 18"
- },
- {
-  "file": "v1/card/open-findings/red/count-19.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/red/count-19",
+  "key": "open-findings/count-19",
   "alt": "Open findings: 19"
  },
  {
-  "file": "v1/card/open-findings/amber/count-19.svg",
+  "file": "v1/card/blocking-rules/count-19.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "open-findings/amber/count-19",
-  "alt": "Open findings: 19"
- },
- {
-  "file": "v1/card/open-findings/neutral/count-19.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/neutral/count-19",
-  "alt": "Open findings: 19"
- },
- {
-  "file": "v1/card/blocking-rules/amber/count-19.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "blocking-rules/amber/count-19",
+  "key": "blocking-rules/count-19",
   "alt": "Blocking rules: 19"
  },
  {
-  "file": "v1/card/blocking-rules/neutral/count-19.svg",
+  "file": "v1/card/open-findings/count-20.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "blocking-rules/neutral/count-19",
-  "alt": "Blocking rules: 19"
- },
- {
-  "file": "v1/card/open-findings/red/count-20.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/red/count-20",
+  "key": "open-findings/count-20",
   "alt": "Open findings: 20"
  },
  {
-  "file": "v1/card/open-findings/amber/count-20.svg",
+  "file": "v1/card/blocking-rules/count-20.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "open-findings/amber/count-20",
-  "alt": "Open findings: 20"
- },
- {
-  "file": "v1/card/open-findings/neutral/count-20.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/neutral/count-20",
-  "alt": "Open findings: 20"
- },
- {
-  "file": "v1/card/blocking-rules/amber/count-20.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "blocking-rules/amber/count-20",
+  "key": "blocking-rules/count-20",
   "alt": "Blocking rules: 20"
  },
  {
-  "file": "v1/card/blocking-rules/neutral/count-20.svg",
+  "file": "v1/card/open-findings/count-20plus.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "blocking-rules/neutral/count-20",
-  "alt": "Blocking rules: 20"
- },
- {
-  "file": "v1/card/open-findings/red/count-20plus.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/red/count-20plus",
+  "key": "open-findings/count-20plus",
   "alt": "Open findings: 20+"
  },
  {
-  "file": "v1/card/open-findings/amber/count-20plus.svg",
+  "file": "v1/card/blocking-rules/count-20plus.svg",
   "width": "100%",
   "height": 68,
   "family": "card",
-  "key": "open-findings/amber/count-20plus",
-  "alt": "Open findings: 20+"
- },
- {
-  "file": "v1/card/open-findings/neutral/count-20plus.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "open-findings/neutral/count-20plus",
-  "alt": "Open findings: 20+"
- },
- {
-  "file": "v1/card/blocking-rules/amber/count-20plus.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "blocking-rules/amber/count-20plus",
-  "alt": "Blocking rules: 20+"
- },
- {
-  "file": "v1/card/blocking-rules/neutral/count-20plus.svg",
-  "width": "100%",
-  "height": 68,
-  "family": "card",
-  "key": "blocking-rules/neutral/count-20plus",
+  "key": "blocking-rules/count-20plus",
   "alt": "Blocking rules: 20+"
  },
  {
