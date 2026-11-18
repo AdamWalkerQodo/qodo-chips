@@ -34851,7 +34851,7 @@
  },
  {
   "file": "v1/button/dismiss.svg",
-  "width": 69,
+  "width": 90,
   "height": 28,
   "family": "button",
   "key": "dismiss",
@@ -34859,7 +34859,7 @@
  },
  {
   "file": "v1/button/view.svg",
-  "width": 53,
+  "width": 73,
   "height": 28,
   "family": "button",
   "key": "view",

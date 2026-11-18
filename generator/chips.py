@@ -232,15 +232,18 @@ def button(label: str, icon: str, primary: bool = False) -> tuple[str, float]:
 
 
 def link_action(label: str, icon: str) -> tuple[str, float]:
-    """A minor action drawn as a link: a small icon and label in link blue, with no fill or outline. It keeps the
-    button height so it can stand where a button did, and ends with a little space before the next action."""
-    css = ('<style>.t{fill:#0969da}.i{stroke:#0969da}'
-           '@media (prefers-color-scheme:dark){.t{fill:#4493f8}.i{stroke:#4493f8}}</style>')
+    """A minor action on a finding, drawn like the git host's own small button: grey fill, thin border, rounded
+    corners, semibold label, in GitHub's light and dark colours. It ends with a little empty space, so two actions
+    placed side by side do not touch."""
+    css = ('<style>.f{fill:#f6f8fa;stroke:#d1d9e0}.t{fill:#25292e}.i{stroke:#59636e}'
+           '@media (prefers-color-scheme:dark){.f{fill:#212830;stroke:#3d444d}.t{fill:#f0f6fc}.i{stroke:#9198a1}}</style>')
     shapes = "".join(f"<{tag} {_attrs(a)}/>" for tag, a in ICONS[icon])
-    body = (f'<g transform="translate(0 8.5) scale({_num(11 / 24)})" fill="none" class="i" stroke-width="2" '
-            f'stroke-linecap="round" stroke-linejoin="round">{shapes}</g>')
-    d, w = text_path(label, 12, 15, "Regular", BUTTON_H)
-    return css + body + f'<path d="{d}" class="t"/>', round(15 + w + 10)
+    d, w = text_path(label, 12, 27, "SemiBold", BUTTON_H)
+    width = round(27 + w + 11)
+    body = (f'<rect x="0.5" y="0.5" width="{width - 1}" height="{BUTTON_H - 1}" rx="6" class="f"/>'
+            f'<g transform="translate(10 8) scale({_num(12 / 24)})" fill="none" class="i" stroke-width="2" '
+            f'stroke-linecap="round" stroke-linejoin="round">{shapes}</g><path d="{d}" class="t"/>')
+    return css + body, width + 6
 
 
 def qodo_band(offset: int = 0, height: int | None = None) -> tuple[str, int]:
