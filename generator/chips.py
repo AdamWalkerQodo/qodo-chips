@@ -214,13 +214,13 @@ def button(label: str, icon: str, primary: bool = False) -> tuple[str, float]:
     """A button image, 28px tall: brand fill with white ink when primary, else an outline with no fill that follows the page theme."""
     if primary:
         css, frame_w = "", f'fill="#634fd1"'
-        frame = lambda w: f'<rect width="{w}" height="{BUTTON_H}" rx="6" {frame_w}/>'  # noqa: E731
+        frame = lambda w: f'<rect width="{w}" height="{BUTTON_H}" {frame_w}/>'  # noqa: E731
         ink_fill, ink_stroke = 'fill="#ffffff"', 'stroke="#ffffff"'
     else:
-        # Muted ink and a quiet outline, so the outlined buttons sit behind the primary one.
-        css = ('<style>.o{stroke:#d0d4d9}.t{fill:#57606a}.i{stroke:#6e7781}'
-               '@media (prefers-color-scheme:dark){.o{stroke:#4b515a}.t{fill:#aab1ba}.i{stroke:#8b939c}}</style>')
-        frame = lambda w: f'<rect x="0.5" y="0.5" width="{w - 1}" height="{BUTTON_H - 1}" rx="5.5" fill="none" class="o"/>'  # noqa: E731
+        # Readable ink and a quiet outline, so the outlined buttons sit behind the primary one.
+        css = ('<style>.o{stroke:#d0d4d9}.t{fill:#24292f}.i{stroke:#57606a}'
+               '@media (prefers-color-scheme:dark){.o{stroke:#4b515a}.t{fill:#e6edf3}.i{stroke:#c9d1d9}}</style>')
+        frame = lambda w: f'<rect x="0.5" y="0.5" width="{w - 1}" height="{BUTTON_H - 1}" fill="none" class="o"/>'  # noqa: E731
         ink_fill, ink_stroke = 'class="t"', 'class="i"'
     shapes = "".join(f"<{tag} {_attrs(a)}/>" for tag, a in ICONS[icon])
     body = (f'<g transform="translate(10 7.5) scale({_num(13 / 24)})" fill="none" {ink_stroke} stroke-width="2" '
@@ -276,7 +276,7 @@ def suggestion_card(label: str, detail: str, icon: str, tone: str) -> str:
            f"@media (prefers-color-scheme:dark){{.f{{fill:{dark_fill}}}.t{{fill:{dark_text}}}.i{{stroke:{dark_icon}}}}}</style>")
     title, _ = text_path(label, 15, 42, "SemiBold", CARD_H)
     sub, _ = text_path(detail, 12, 42, "Regular", CARD_H)
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{CARD_H}">{css}<rect width="100%" height="{CARD_H}" rx="8" class="f"/>'
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{CARD_H}">{css}<rect width="100%" height="{CARD_H}" class="f"/>'
             f'{_card_icon(icon, 14, (CARD_H - 20) / 2, 20)}'
             f'<path d="{title}" class="t" transform="translate(0 -9.5)"/><path d="{sub}" class="t" transform="translate(0 10)"/></svg>')
 
@@ -289,7 +289,7 @@ def metric_card(label: str, value: str, icon: str) -> str:
     name, _ = text_path(label, 11.5, left + 20, "Regular", CARD_H)
     number, _ = text_path(value, 20, left, "SemiBold", CARD_H)
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{CARD_H}">{css}'
-            f'<rect x="{CARD_GAP}" width="100%" height="{CARD_H}" rx="8" class="f"/>'
+            f'<rect x="{CARD_GAP}" width="100%" height="{CARD_H}" class="f"/>'
             f'{_card_icon(icon, left, 11.5, 14)}'
             f'<path d="{name}" class="l" transform="translate(0 -15.5)"/><path d="{number}" class="v" transform="translate(0 10)"/></svg>')
 
