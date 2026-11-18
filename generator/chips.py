@@ -295,7 +295,9 @@ def suggestion_card(label: str, detail: str, icon: str, tone: str) -> str:
     sub, _ = text_path(detail, 12, 42, "Regular", CARD_H)
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{CARD_H}">{css}<rect width="100%" height="{CARD_H}" class="f"/>'
             f'{_card_icon(icon, 14, (CARD_H - 20) / 2, 20)}'
-            f'<path d="{title}" class="t" transform="translate(0 -9.5)"/><path d="{sub}" class="t" transform="translate(0 10)"/></svg>')
+            f'<path d="{title}" class="t" transform="translate(0 -9.5)"/><path d="{sub}" class="t" transform="translate(0 10)"/>'
+            # The card links out to the portal: a small external-link mark pinned to the top-right corner.
+            f'<svg x="100%" y="9" overflow="visible"><g transform="translate(-21 0)" opacity="0.7">{_card_icon("external-link", 0, 0, 12)}</g></svg></svg>')
 
 
 def metric_card(label: str, value: str, icon: str) -> str:

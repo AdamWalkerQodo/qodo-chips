@@ -44,16 +44,16 @@ RISK_FACTORS = [("complexity", "waypoints", "🧩", RISK_COMPLEXITY), ("damage",
 SUGGESTIONS = [   # copy is kept short so it is not cut off when the card is narrow
     ("not-safe", "high-findings", "Not ready", "High findings", "circle-x"),
     ("not-safe", "high-risk-findings", "Not ready", "High risk, findings", "circle-x"),
-    ("consider", "medium-findings", "Needs review", "Medium findings", "triangle-alert"),
-    ("consider", "security-findings", "Needs review", "Security findings", "triangle-alert"),
-    ("consider", "high-risk", "Needs review", "High risk", "triangle-alert"),
-    ("consider", "medium-risk", "Needs review", "Medium risk", "triangle-alert"),
-    ("consider", "open-findings", "Needs review", "Open findings", "triangle-alert"),
+    ("consider", "medium-findings", "Needs review", "Medium findings", "eye"),
+    ("consider", "security-findings", "Needs review", "Security findings", "eye"),
+    ("consider", "high-risk", "Needs review", "High risk", "eye"),
+    ("consider", "medium-risk", "Needs review", "Medium risk", "eye"),
+    ("consider", "open-findings", "Needs review", "Open findings", "eye"),
     ("safe", "clear", "Looks ready", "Nothing blocking", "circle-check"),
     # When a merge workflow decided: its criteria were met, a blocking rule matched, or neither.
     ("safe", "workflow-passed", "Looks ready", "Workflow passed", "circle-check"),
     ("not-safe", "workflow-blocked", "Not ready", "Workflow blocked", "circle-x"),
-    ("consider", "workflow-not-met", "Needs review", "Workflow not met", "triangle-alert"),
+    ("consider", "workflow-not-met", "Needs review", "Workflow not met", "eye"),
 ]
 NOTES = [("copy-prompt", "Copy this prompt and use it to remediate the issue with your preferred AI generation tools"),
          ("past-prs", "Recommendations generated based on similar findings in past PRs")]
