@@ -294,7 +294,7 @@ def metric_card(label: str, value: str, icon: str) -> str:
             f'<path d="{name}" class="l" transform="translate(0 -15.5)"/><path d="{number}" class="v" transform="translate(0 10)"/></svg>')
 
 
-STAT_H = 24
+STAT_H = 20   # same height as a chip, so the strip lines up when it follows chips on one row
 
 
 def stat_segment(label: str, count: str, position: str) -> tuple[str, float]:

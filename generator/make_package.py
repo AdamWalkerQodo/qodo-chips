@@ -125,15 +125,16 @@ def main() -> None:
         counters("relevance", key, f"rel:{n}", label, f"{circles} {label}")
     for key, label, icon, glyph in STATUS:
         label_chip("status", key, icon, label, f"{glyph} {label}", glyph, variants=("", "icon", "text"))
-    # Resolution strip above the findings: three outlined segments that sit edge to edge. Design still being iterated on.
+    # Resolution strip after the header counter chips: three outlined segments that sit edge to edge, drawn like a chip
+    # (20px plus one transparent row on top). Design still being iterated on.
     for key, label, position in [("open", "Open", "first"), ("resolved", "Resolved", "middle"), ("dismissed", "Dismissed", "last")]:
         for count in COUNTS:
             body, w = stat_segment(label, count, position)
             form = f"count-{count.replace('+', 'plus')}"
             target = OUT / "v1" / "stat" / key / f"{form}.svg"
             target.parent.mkdir(parents=True, exist_ok=True)
-            target.write_text(f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{STAT_H}" viewBox="0 0 {w} {STAT_H}">{body}</svg>')
-            manifest.append({"file": f"v1/stat/{key}/{form}.svg", "width": w, "height": STAT_H, "family": "stat", "key": key, "form": form,
+            target.write_text(_svg(w, body, CHIP_TOP_PAD))
+            manifest.append({"file": f"v1/stat/{key}/{form}.svg", "width": w, "height": STAT_H + CHIP_TOP_PAD, "family": "stat", "key": key, "form": form,
                              "count": count, "alt": f"{label}: {count}"})
     label_chip("flag", "new", "sparkles", "New", "⭐ New", "⭐")
     counters("flag", "new", "sparkles", "New", "⭐ New")
