@@ -33921,7 +33921,7 @@
   "height": 68,
   "family": "card",
   "key": "suggestion/not-safe-high-findings",
-  "alt": "Not ready for merging: High severity findings not addressed"
+  "alt": "Not ready: High findings"
  },
  {
   "file": "v1/card/suggestion/not-safe-high-risk-findings.svg",
@@ -33929,7 +33929,7 @@
   "height": 68,
   "family": "card",
   "key": "suggestion/not-safe-high-risk-findings",
-  "alt": "Not ready for merging: High merge risk, with findings not addressed"
+  "alt": "Not ready: High risk, findings"
  },
  {
   "file": "v1/card/suggestion/consider-medium-findings.svg",
@@ -33937,7 +33937,7 @@
   "height": 68,
   "family": "card",
   "key": "suggestion/consider-medium-findings",
-  "alt": "Needs a closer look before merging: Medium severity findings not addressed"
+  "alt": "Needs review: Medium findings"
  },
  {
   "file": "v1/card/suggestion/consider-security-findings.svg",
@@ -33945,7 +33945,7 @@
   "height": 68,
   "family": "card",
   "key": "suggestion/consider-security-findings",
-  "alt": "Needs a closer look before merging: Security findings not addressed"
+  "alt": "Needs review: Security findings"
  },
  {
   "file": "v1/card/suggestion/consider-high-risk.svg",
@@ -33953,7 +33953,7 @@
   "height": 68,
   "family": "card",
   "key": "suggestion/consider-high-risk",
-  "alt": "Needs a closer look before merging: Merge risk is high"
+  "alt": "Needs review: High risk"
  },
  {
   "file": "v1/card/suggestion/consider-medium-risk.svg",
@@ -33961,7 +33961,7 @@
   "height": 68,
   "family": "card",
   "key": "suggestion/consider-medium-risk",
-  "alt": "Needs a closer look before merging: Merge risk is medium"
+  "alt": "Needs review: Medium risk"
  },
  {
   "file": "v1/card/suggestion/safe-clear.svg",
@@ -33969,7 +33969,7 @@
   "height": 68,
   "family": "card",
   "key": "suggestion/safe-clear",
-  "alt": "Looks ready for merging: No high or medium severity findings open"
+  "alt": "Looks ready: Nothing blocking"
  },
  {
   "file": "v1/card/open-findings/red/count-0.svg",

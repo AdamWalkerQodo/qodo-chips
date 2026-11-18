@@ -41,14 +41,14 @@ RISK_DAMAGE = ["Cosmetic", "Reversible", "Recoverable", "Incorrect results", "Te
                "Financial error", "Data loss", "Critical loss"]
 RISK_FACTORS = [("complexity", "waypoints", "🧩", RISK_COMPLEXITY), ("damage", "flame", "🩹", RISK_DAMAGE)]
 # Merge suggestion cards: (tone, reason key, label, detail line, icon). The engine picks one by suggestion and main reason.
-SUGGESTIONS = [
-    ("not-safe", "high-findings", "Not ready for merging", "High severity findings not addressed", "circle-x"),
-    ("not-safe", "high-risk-findings", "Not ready for merging", "High merge risk, with findings not addressed", "circle-x"),
-    ("consider", "medium-findings", "Needs a closer look before merging", "Medium severity findings not addressed", "triangle-alert"),
-    ("consider", "security-findings", "Needs a closer look before merging", "Security findings not addressed", "triangle-alert"),
-    ("consider", "high-risk", "Needs a closer look before merging", "Merge risk is high", "triangle-alert"),
-    ("consider", "medium-risk", "Needs a closer look before merging", "Merge risk is medium", "triangle-alert"),
-    ("safe", "clear", "Looks ready for merging", "No high or medium severity findings open", "circle-check"),
+SUGGESTIONS = [   # copy is kept short so it is not cut off when the card is narrow
+    ("not-safe", "high-findings", "Not ready", "High findings", "circle-x"),
+    ("not-safe", "high-risk-findings", "Not ready", "High risk, findings", "circle-x"),
+    ("consider", "medium-findings", "Needs review", "Medium findings", "triangle-alert"),
+    ("consider", "security-findings", "Needs review", "Security findings", "triangle-alert"),
+    ("consider", "high-risk", "Needs review", "High risk", "triangle-alert"),
+    ("consider", "medium-risk", "Needs review", "Medium risk", "triangle-alert"),
+    ("safe", "clear", "Looks ready", "Nothing blocking", "circle-check"),
 ]
 COLOR_FAMILIES = {"type", "source", "risk"}   # every other chip exists in mono only; severity chips use the group badge colourings instead
 TERMS = {"legacy": ["Action required", "Review recommended", "Optional"], "high-medium-low": ["High", "Medium", "Low"],
