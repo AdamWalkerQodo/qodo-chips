@@ -123,9 +123,9 @@ def main() -> None:
         counters("relevance", key, f"rel:{n}", label, f"{circles} {label}")
     for key, label, icon, glyph in STATUS:
         label_chip("status", key, icon, label, f"{glyph} {label}", glyph, variants=("", "icon", "text"))
-    # Resolution counters next to a group badge. SAMPLE ONLY: counts 0 to 5, until the chip design is settled.
+    # Resolution counters next to a group badge. The chip design is still being iterated on.
     for key, label, icon, glyph in [("open", "Open", "circle-dot", "○"), ("resolved", "Resolved", "check", "✓"), ("dismissed", "Dismissed", "x", "✗")]:
-        for count in COUNTS[:6]:
+        for count in COUNTS:
             label_chip("resolution", key, icon, label, f"{glyph} {label}", f"{glyph} {label}", variants=("",), count=count)
     label_chip("flag", "new", "sparkles", "New", "⭐ New", "⭐")
     counters("flag", "new", "sparkles", "New", "⭐ New")
