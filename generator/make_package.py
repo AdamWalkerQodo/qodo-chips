@@ -139,8 +139,6 @@ def main() -> None:
     for key, label, icon, emoji in MODES:
         label_chip("mode", key, icon, label, f"{emoji} {label}", emoji, variants=("",))
     label_chip("mode", "auto", "wand-sparkles", "Auto", "Auto:", "Auto:", variants=("",))   # sits before the chosen mode's chip
-    label_chip("link", "dismiss", "x", "Dismiss", "Dismiss ↗", "Dismiss", variants=("",))
-    label_chip("link", "view", "external-link", "View", "View ↗", "View", variants=("",))
     for key, label, icon, emoji in PR_TYPES:
         label_chip("pr-type", key, icon, label, f"{emoji} {label}".strip(), emoji or label, variants=("",))
     for key, label in REVIEW_TIMES:
@@ -179,7 +177,8 @@ def main() -> None:
     shutil.copy(Path(__file__).parent / "assets" / "qodo-logo.svg", OUT / "v1" / "title" / "qodo-logo.svg")
     manifest.append({"file": "v1/title/qodo-logo.svg", "width": 135, "height": 46, "family": "title", "key": "qodo-logo", "alt": "Qodo"})
     for key, label, icon, primary in [("view-in-qodo", "View in Qodo", "external-link", True),
-                                     ("finding-summary", "Finding summary", "clipboard-check", False), ("pr-overview", "PR overview", "git-pull-request", False)]:
+                                     ("finding-summary", "Finding summary", "clipboard-check", False), ("pr-overview", "PR overview", "git-pull-request", False),
+                                     ("dismiss", "Dismiss", "x", False), ("view", "View", "external-link", False)]:
         body, w = button(label, icon, primary)
         target = OUT / "v1" / "button" / f"{key}.svg"
         target.parent.mkdir(parents=True, exist_ok=True)

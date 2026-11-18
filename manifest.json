@@ -33546,26 +33546,6 @@
   "alt": "Auto:"
  },
  {
-  "file": "v1/chip/mono/link/dismiss/label.svg",
-  "width": 72,
-  "height": 21,
-  "family": "link",
-  "key": "dismiss",
-  "form": "label",
-  "style": "mono",
-  "alt": "Dismiss ↗"
- },
- {
-  "file": "v1/chip/mono/link/view/label.svg",
-  "width": 57,
-  "height": 21,
-  "family": "link",
-  "key": "view",
-  "form": "label",
-  "style": "mono",
-  "alt": "View ↗"
- },
- {
   "file": "v1/chip/mono/pr-type/bug-fix/label.svg",
   "width": 68,
   "height": 21,
@@ -35376,6 +35356,22 @@
   "family": "button",
   "key": "pr-overview",
   "alt": "PR overview"
+ },
+ {
+  "file": "v1/button/dismiss.svg",
+  "width": 88,
+  "height": 28,
+  "family": "button",
+  "key": "dismiss",
+  "alt": "Dismiss"
+ },
+ {
+  "file": "v1/button/view.svg",
+  "width": 71,
+  "height": 28,
+  "family": "button",
+  "key": "view",
+  "alt": "View"
  },
  {
   "file": "v1/divider/dotted.svg",
