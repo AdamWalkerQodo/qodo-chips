@@ -232,16 +232,18 @@ def button(label: str, icon: str, primary: bool = False) -> tuple[str, float]:
 
 
 def qodo_band() -> str:
-    """The band under Qodo's header row: a 2px line in Qodo purple with a white shine across its middle, end to end,
-    and a soft glow of the same colours fading out under it. It has no viewBox and a 100% width, so it spans any width."""
+    """The band under Qodo's header row: a thin line that is mostly neutral (white on dark pages, grey on light ones)
+    and turns Qodo purple towards its right end, with a faint glow of the same colours fading out under it. It has
+    no viewBox and a 100% width, so it spans any width."""
     return ('<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="14">'
-            '<style>.a{stop-color:#7968fa}.b{stop-color:#f1eeff}@media (prefers-color-scheme:dark){.a{stop-color:#8474ff}.b{stop-color:#ffffff}}</style>'
-            '<defs><linearGradient id="h" x1="0" x2="1" y1="0" y2="0"><stop offset="0" class="a"/><stop offset=".3" class="a"/>'
-            '<stop offset=".5" class="b"/><stop offset=".7" class="a"/><stop offset="1" class="a"/></linearGradient>'
-            '<linearGradient id="v" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".22"/>'
+            '<style>.n{stop-color:#c8cfd6}.p{stop-color:#7968fa}'
+            '@media (prefers-color-scheme:dark){.n{stop-color:#e6edf3;stop-opacity:.6}.p{stop-color:#9384ff}}</style>'
+            '<defs><linearGradient id="h" x1="0" x2="1" y1="0" y2="0"><stop offset="0" class="n"/><stop offset=".62" class="n"/>'
+            '<stop offset=".9" class="p"/><stop offset="1" class="n"/></linearGradient>'
+            '<linearGradient id="v" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".12"/>'
             '<stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>'
             '<mask id="m"><rect width="100%" height="14" fill="url(#v)"/></mask></defs>'
-            '<rect width="100%" height="14" fill="url(#h)" mask="url(#m)"/><rect width="100%" height="2" fill="url(#h)"/></svg>')
+            '<rect width="100%" height="14" fill="url(#h)" mask="url(#m)"/><rect width="100%" height="1.5" fill="url(#h)"/></svg>')
 
 
 CARD_H = 68
