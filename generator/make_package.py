@@ -180,7 +180,7 @@ def main() -> None:
     manifest.append({"file": "v1/title/qodo-logo.svg", "width": 135, "height": 46, "family": "title", "key": "qodo-logo", "alt": "Qodo"})
     for key, label, icon, primary in [("view-in-qodo", "View in Qodo", "external-link", True),
                                      ("finding-summary", "Finding summary", "clipboard-check", False), ("pr-overview", "PR overview", "git-pull-request", False),
-                                     ("dismiss", "Dismiss", "x", False), ("view", "View", "external-link", False)]:
+                                     ("dismiss", "Dismiss", "x", False), ("view", "View", "external-link", True)]:
         body, w = button(label, icon, primary)
         target = OUT / "v1" / "button" / f"{key}.svg"
         target.parent.mkdir(parents=True, exist_ok=True)
