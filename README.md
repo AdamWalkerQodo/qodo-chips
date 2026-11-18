@@ -72,7 +72,8 @@ v1/
   card/blocking-rules/count-{n}.svg
   stat/{open|resolved|dismissed}/count-{n}.svg   resolution strip segments, 21px tall like chips, placed edge to edge
   title/qodo-logo.svg                  the Qodo logo (mark and name), used as a section title
-  button/{view-in-qodo|finding-summary|pr-overview}.svg    button images, 28px tall
+  button/{native|straight}/{view-in-qodo|finding-summary|pr-overview}.svg   Qodo suggestion buttons in both button styles, 28px tall
+  button/{key}.svg                          earlier, unstyled copies; Dismiss and View on findings
   divider/qodo-band-above.svg               thin line, purple at both ends, sitting just above Qodo's header row
   divider/qodo-band-below.svg               the same with space above the line, for under the row
 manifest.json                    every file with its width and alt text

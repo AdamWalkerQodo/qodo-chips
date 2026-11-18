@@ -188,6 +188,16 @@ def main() -> None:
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{BUTTON_H}" viewBox="0 0 {w} {BUTTON_H}">{body}</svg>')
         manifest.append({"file": f"v1/button/{key}.svg", "width": w, "height": BUTTON_H, "family": "button", "key": key, "alt": label})
+    # The Qodo suggestion's buttons in both button styles; the engine picks the folder from its button style setting.
+    for style in ("native", "straight"):
+        for key, label, icon, primary in [("view-in-qodo", "View in Qodo", "external-link", True),
+                                         ("finding-summary", "Finding summary", "clipboard-check", False),
+                                         ("pr-overview", "PR overview", "git-pull-request", False)]:
+            body, w = button(label, icon, primary, style)
+            target = OUT / "v1" / "button" / style / f"{key}.svg"
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_text(f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{BUTTON_H}" viewBox="0 0 {w} {BUTTON_H}">{body}</svg>')
+            manifest.append({"file": f"v1/button/{style}/{key}.svg", "width": w, "height": BUTTON_H, "family": "button", "key": f"{style}/{key}", "alt": label})
     (OUT / "v1" / "divider").mkdir(parents=True, exist_ok=True)
     for name, (svg, height) in [("qodo-band-above", qodo_band(offset=11, height=21)), ("qodo-band-below", qodo_band(offset=10, height=20))]:
         (OUT / "v1" / "divider" / f"{name}.svg").write_text(svg)

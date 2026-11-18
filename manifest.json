@@ -34866,6 +34866,54 @@
   "alt": "View"
  },
  {
+  "file": "v1/button/native/view-in-qodo.svg",
+  "width": 121,
+  "height": 28,
+  "family": "button",
+  "key": "native/view-in-qodo",
+  "alt": "View in Qodo"
+ },
+ {
+  "file": "v1/button/native/finding-summary.svg",
+  "width": 145,
+  "height": 28,
+  "family": "button",
+  "key": "native/finding-summary",
+  "alt": "Finding summary"
+ },
+ {
+  "file": "v1/button/native/pr-overview.svg",
+  "width": 116,
+  "height": 28,
+  "family": "button",
+  "key": "native/pr-overview",
+  "alt": "PR overview"
+ },
+ {
+  "file": "v1/button/straight/view-in-qodo.svg",
+  "width": 121,
+  "height": 28,
+  "family": "button",
+  "key": "straight/view-in-qodo",
+  "alt": "View in Qodo"
+ },
+ {
+  "file": "v1/button/straight/finding-summary.svg",
+  "width": 145,
+  "height": 28,
+  "family": "button",
+  "key": "straight/finding-summary",
+  "alt": "Finding summary"
+ },
+ {
+  "file": "v1/button/straight/pr-overview.svg",
+  "width": 116,
+  "height": 28,
+  "family": "button",
+  "key": "straight/pr-overview",
+  "alt": "PR overview"
+ },
+ {
   "file": "v1/divider/qodo-band-above.svg",
   "width": "100%",
   "height": 21,
