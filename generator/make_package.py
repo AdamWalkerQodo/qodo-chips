@@ -197,7 +197,8 @@ def main() -> None:
     for style in ("native", "straight"):
         for key, label, icon, primary in [("view-in-qodo", "View in Qodo", "external-link", True),
                                          ("finding-summary", "Finding summary", "clipboard-check", False),
-                                         ("pr-overview", "PR overview", "git-pull-request", False)]:
+                                         ("pr-overview", "PR overview", "git-pull-request", False),
+                                         ("qodo-suggestion", "Qodo suggestion", "arrow-up", False)]:
             body, w = button(label, icon, primary, style)
             target = OUT / "v1" / "button" / style / f"{key}.svg"
             target.parent.mkdir(parents=True, exist_ok=True)

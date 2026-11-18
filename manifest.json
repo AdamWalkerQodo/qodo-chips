@@ -34922,6 +34922,14 @@
   "alt": "PR overview"
  },
  {
+  "file": "v1/button/native/qodo-suggestion.svg",
+  "width": 144,
+  "height": 28,
+  "family": "button",
+  "key": "native/qodo-suggestion",
+  "alt": "Qodo suggestion"
+ },
+ {
   "file": "v1/button/straight/view-in-qodo.svg",
   "width": 121,
   "height": 28,
@@ -34944,6 +34952,14 @@
   "family": "button",
   "key": "straight/pr-overview",
   "alt": "PR overview"
+ },
+ {
+  "file": "v1/button/straight/qodo-suggestion.svg",
+  "width": 144,
+  "height": 28,
+  "family": "button",
+  "key": "straight/qodo-suggestion",
+  "alt": "Qodo suggestion"
  },
  {
   "file": "v1/divider/qodo-band-above.svg",
