@@ -248,10 +248,10 @@ def qodo_band() -> str:
 
 CARD_H = 68
 CARD_GAP = 8   # every metric card starts with this much empty space, so cards placed edge to edge look separated
-SUGGESTION_TONES = {   # (fill, text and icon): bright fills that read the same on light and dark pages
-    "not-safe": ("#e5484d", "#ffffff"),
-    "consider": ("#ffd43b", "#2b2100"),
-    "safe": ("#2fb573", "#ffffff"),
+SUGGESTION_TONES = {   # light (fill, text, icon), dark (fill, text, icon): a tint, near-black or near-white text, a toned icon
+    "not-safe": (("#fdeceb", "#5f1410", "#c5281f"), ("#3a1c1c", "#ffe9e6", "#ff8379")),
+    "consider": (("#fff8c5", "#4d3800", "#bf8700"), ("#4f4712", "#fff8d0", "#ffd84a")),
+    "safe": (("#e6f6ee", "#0b3d2e", "#12805d"), ("#12301f", "#e2f8ec", "#5fd69f")),
 }
 
 
@@ -262,10 +262,11 @@ def _card_icon(icon: str, x: float, y: float, size: float) -> str:
 
 
 def suggestion_card(label: str, detail: str, icon: str, tone: str) -> str:
-    """The merge suggestion card: a bright fill with a label and its reason. Like every card it has no viewBox and a
+    """The merge suggestion card: a tint with a label and its reason. Like every card it has no viewBox and a
     100% width, so the fill stretches to the width the page gives the image while the content keeps its drawn size."""
-    fill, ink = SUGGESTION_TONES[tone]
-    css = f"<style>.f{{fill:{fill}}}.t{{fill:{ink}}}.i{{stroke:{ink}}}</style>"
+    (light_fill, light_text, light_icon), (dark_fill, dark_text, dark_icon) = SUGGESTION_TONES[tone]
+    css = (f"<style>.f{{fill:{light_fill}}}.t{{fill:{light_text}}}.i{{stroke:{light_icon}}}"
+           f"@media (prefers-color-scheme:dark){{.f{{fill:{dark_fill}}}.t{{fill:{dark_text}}}.i{{stroke:{dark_icon}}}}}</style>")
     title, _ = text_path(label, 15, 42, "SemiBold", CARD_H)
     sub, _ = text_path(detail, 12, 42, "Regular", CARD_H)
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{CARD_H}">{css}<rect width="100%" height="{CARD_H}" rx="8" class="f"/>'
