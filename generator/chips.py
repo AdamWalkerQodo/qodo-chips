@@ -273,3 +273,26 @@ def metric_card(label: str, value: str, icon: str, tone: str = "neutral") -> str
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{CARD_H}">{css}<rect x="{CARD_GAP}" width="100%" height="{CARD_H}" rx="8" class="f"/>'
             f'{_card_icon(icon, left, 11.5, 14)}'
             f'<path d="{name}" class="l" transform="translate(0 -15.5)"/><path d="{number}" class="v" transform="translate(0 10)"/></svg>')
+
+
+STAT_H = 24
+
+
+def stat_segment(label: str, count: str, position: str) -> tuple[str, float]:
+    """One segment of the resolution strip: a muted label and a bold count inside an outline, with no fill.
+
+    Segments are placed edge to edge and read as one control: "first" has rounded left corners, "last" rounded right
+    corners, "middle" neither; every segment but the first starts with the divider line."""
+    css = ('<style>.o{stroke:#d0d4d9}.l{fill:#59636e}.n{fill:#1f2328}'
+           '@media (prefers-color-scheme:dark){.o{stroke:#4b515a}.l{fill:#9198a1}.n{fill:#f0f6fc}}</style>')
+    name, name_w = text_path(label, 11.5, 10, "Regular", STAT_H)
+    number, number_w = text_path(count, 11.5, 10 + name_w + 6, "SemiBold", STAT_H)
+    w = round(10 + name_w + 6 + number_w + 10)
+    top, bottom, r = 0.5, STAT_H - 0.5, 6
+    if position == "first":
+        outline = f"M{w} {top}H{r + 0.5}Q0.5 {top} 0.5 {top + r}V{bottom - r}Q0.5 {bottom} {r + 0.5} {bottom}H{w}"
+    elif position == "last":
+        outline = f"M0.5 {bottom}V{top}H{w - r - 0.5}Q{w - 0.5} {top} {w - 0.5} {top + r}V{bottom - r}Q{w - 0.5} {bottom} {w - r - 0.5} {bottom}H0.5"
+    else:
+        outline = f"M0.5 {bottom}V{top}H{w}M0.5 {bottom}H{w}"
+    return f'{css}<path d="{outline}" fill="none" class="o"/><path d="{name}" class="l"/><path d="{number}" class="n"/>', w
