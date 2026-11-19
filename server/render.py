@@ -11,8 +11,9 @@ from chips import CHIP_TOP_PAD, H, _num, lucide, text_path  # noqa: E402
 
 MONO = 'ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace'
 SANS = 'system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif'
-LIGHT = {"chip": "#f4f4f4", "ink": "#1c1c1c", "muted": "#6e7781", "card": "#f6f8fa", "line": "#d0d7de", "text": "#1f2328", "idbg": "#e3e6ea", "edge": "#d0d4d9"}
-DARK = {"chip": "#3d3d3d", "ink": "#f4f4f4", "muted": "#9aa2ab", "card": "#161b22", "line": "#30363d", "text": "#e6edf3", "idbg": "#343a43", "edge": "#4b515a"}
+LIGHT = {"chip": "#f4f4f4", "ink": "#1c1c1c", "muted": "#6e7781", "card": "#f6f8fa", "line": "#d0d7de", "text": "#1f2328", "idbg": "#e3e6ea", "edge": "#d0d4d9", "link": "#0969da"}
+DARK = {"chip": "#3d3d3d", "ink": "#f4f4f4", "muted": "#9aa2ab", "card": "#161b22", "line": "#30363d", "text": "#e6edf3", "idbg": "#343a43", "edge": "#4b515a", "link": "#4493f8"}
+LINK_ICONS = {"file": "file-text", "rule": "book-marked", "ticket": "clipboard-check", "web": "external-link", "pr": "git-pull-request"}
 TITLE_SIZE = 12.5
 IMAGE_HEIGHT = H + CHIP_TOP_PAD   # same box as the static chips, so titles and labels line up with them
 SECTION_ICONS = {"description": "text-align-start", "code": "code", "evidence": "search", "agent-prompt": "bot", "relevance": "info"}
@@ -68,6 +69,23 @@ def render_label(text: str, icon: str = "") -> str:
         body, x = lucide(SECTION_ICONS[icon], x, 'class="s"', 13), x + 13 + 6
     run, w = _run(text, x, "SemiBold", "t")
     return _chip_height_svg(round(x + w + 2), _css({"s": "stroke:{muted}", "t": "fill:{ink}"}) + body + run)
+
+
+def render_link(text: str, icon: str = "") -> str:
+    """A reference chip, e.g. a file path or a rule id: outlined, link-coloured icon and text. Wrap it in a link."""
+    x, body = 8.0, ""
+    if icon in LINK_ICONS:
+        body, x = lucide(LINK_ICONS[icon], x, 'class="s"', 12), x + 12 + 5
+    try:
+        d, w = text_path(text, 11.5, x)
+        run = f'<path d="{d}" class="t"/>'
+    except KeyError:
+        w = len(text) * 11.5 * 0.58
+        run = (f'<text x="{_num(x)}" y="{_num(H / 2 + 4.1)}" font-family=\'{SANS}\' font-size="11.5" textLength="{_num(w)}" '
+               f'lengthAdjust="spacingAndGlyphs" class="t">{escape(text)}</text>')
+    width = round(x + w + 9)
+    frame = f'<rect x="0.5" y="0.5" width="{width - 1}" height="{H - 1}" rx="5.5" fill="none" class="o"/>'
+    return _chip_height_svg(width, _css({"o": "stroke:{edge}", "s": "stroke:{link}", "t": "fill:{link}"}) + frame + body + run)
 
 
 def _words(paragraph: str, max_cols: int) -> list[tuple[str, bool, bool]]:
