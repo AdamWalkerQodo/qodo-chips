@@ -10,14 +10,16 @@ from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.transformPen import TransformPen
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "generator"))
-from chips import CHIP_TOP_PAD, H, _font, _num, lucide, text_path  # noqa: E402
+from chips import CHIP_TOP_PAD, ICONS, H, _font, _num, chip, lucide, pill, text_path  # noqa: E402
 
 MONO = 'ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace'
 SANS = 'system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif'
-LIGHT = {"chip": "#f4f4f4", "ink": "#1c1c1c", "muted": "#6e7781", "card": "#f6f8fa", "line": "#d0d7de", "text": "#1f2328", "idbg": "#e3e6ea", "edge": "#d0d4d9", "link": "#0969da"}
-DARK = {"chip": "#3d3d3d", "ink": "#f4f4f4", "muted": "#9aa2ab", "card": "#161b22", "line": "#30363d", "text": "#e6edf3", "idbg": "#343a43", "edge": "#4b515a", "link": "#4493f8"}
+LIGHT = {"bar": "#e9ecef", "chip": "#f4f4f4", "ink": "#1c1c1c", "muted": "#6e7781", "card": "#f6f8fa", "line": "#d0d7de", "text": "#1f2328", "idbg": "#e3e6ea", "edge": "#d0d4d9", "link": "#0969da"}
+DARK = {"bar": "#262b33", "chip": "#3d3d3d", "ink": "#f4f4f4", "muted": "#9aa2ab", "card": "#161b22", "line": "#30363d", "text": "#e6edf3", "idbg": "#343a43", "edge": "#4b515a", "link": "#4493f8"}
 LINK_ICONS = {"file": "file-text", "rule": "book-marked", "ticket": "clipboard-check", "web": "external-link", "pr": "git-pull-request"}
 TITLE_SIZE = 12.5
+BAR_HEIGHT, BAR_PAD, BAR_GAP = 32, 10, 5
+PILL_COLORS = {"red": "#ce2c31", "orange": "#e36209", "yellow": "#d4a72c", "brand": "#634fd1", "gray": "#3d3d3d"}
 IMAGE_HEIGHT = H + CHIP_TOP_PAD   # same box as the static chips, so titles and labels line up with them
 SECTION_ICONS = {"description": "text-align-start", "code": "code", "evidence": "search", "agent-prompt": "bot", "relevance": "info"}
 PROSE_SIZE, CARD_PAD, CARD_LINE = 13, 16, 22
@@ -55,25 +57,55 @@ def _chip_height_svg(width: float, body: str) -> str:
     return _svg(width, IMAGE_HEIGHT, f'<g transform="translate(0 {CHIP_TOP_PAD})">{body}</g>')
 
 
-def render_title(title: str, number: str = "") -> str:
-    """The finding title as an outlined chip the height of the static chips; `number` is drawn muted in front of it."""
-    x, body = 9.0, ""
+def _namespaced(body: str, suffix: str) -> str:
+    """Rename a chip's style classes, so several chips can share one SVG without their colours clashing."""
+    body = re.sub(r"\.([a-z])\{", lambda m: f".{m.group(1)}{suffix}{{", body)
+    return re.sub(r'class="([a-z])"', lambda m: f'class="{m.group(1)}{suffix}"', body)
+
+
+def _inner_chip(spec: str, index: int) -> tuple[str, float]:
+    """A chip drawn inside the title bar. spec: "pill|<colour>|<label>" or "chip|<icon>|<label>|<mono or color>"."""
+    kind, _, rest = spec.partition("|")
+    parts = rest.split("|")
+    if kind == "pill" and len(parts) == 2 and parts[0] in PILL_COLORS:
+        return pill(parts[1][:40], PILL_COLORS[parts[0]])
+    if kind == "chip" and len(parts) == 3 and parts[0] in ICONS and parts[2] in ("mono", "color"):
+        body, w = chip(parts[0], parts[1][:40], None, parts[2], "auto")
+        return _namespaced(body, f"x{index}"), w
+    raise ValueError(f"unknown chip: {spec}")
+
+
+def render_title(title: str, number: str = "", chips: list[str] | None = None, width: int = 0) -> str:
+    """The finding title as a filled bar with its chips inside, on the right. `width` 0 fits the content."""
+    inner = [_inner_chip(spec, index) for index, spec in enumerate(chips or [])]
+    chips_w = sum(w for _, w in inner) + BAR_GAP * len(inner)
+    x, body = float(BAR_PAD), ""
     if number:
         run, w = _run(f"{number}.", x, "Regular", "n")
         body, x = body + run, x + w + 5
+    room = width - x - chips_w - BAR_PAD - 8 if width else 10 ** 6
+    while len(title) > 4 and _run(title, x, "SemiBold", "t")[1] > room:
+        title = title[:-2].rstrip() + "…"
     run, w = _run(title, x, "SemiBold", "t")
-    width = round(x + w + 10)
-    frame = f'<rect x="0.5" y="0.5" width="{width - 1}" height="{H - 1}" rx="5.5" fill="none" class="o"/>'
-    return _chip_height_svg(width, _css({"o": "stroke:{edge}", "n": "fill:{muted}", "t": "fill:{ink}"}) + frame + body + run)
+    width = width or round(x + w + 8 + chips_w + BAR_PAD)
+    out = _css({"c": "fill:{bar}", "n": "fill:{muted}", "t": "fill:{ink}"}) + f'<rect width="{width}" height="{BAR_HEIGHT}" rx="8" class="c"/>'
+    out += f'<g transform="translate(0 {_num((BAR_HEIGHT - H) / 2)})">{body}{run}'
+    cursor = width - BAR_PAD - chips_w + BAR_GAP
+    for chip_body, chip_w in inner:
+        out += f'<g transform="translate({_num(cursor)} 0)">{chip_body}</g>'
+        cursor += chip_w + BAR_GAP
+    return _svg(width, BAR_HEIGHT, out + "</g>")
 
 
 def render_label(text: str, icon: str = "") -> str:
-    """A section label, e.g. Description: an icon and a word, no frame, the height of the static chips."""
-    x, body = 1.0, ""
+    """A section label, e.g. Description: an icon and a word on a filled chip, the height of the static chips."""
+    x, body = 8.0, ""
     if icon in SECTION_ICONS:
-        body, x = lucide(SECTION_ICONS[icon], x, 'class="s"', 13), x + 13 + 6
+        body, x = lucide(SECTION_ICONS[icon], x, 'class="s"', 12.5), x + 12.5 + 6
     run, w = _run(text, x, "SemiBold", "t")
-    return _chip_height_svg(round(x + w + 2), _css({"s": "stroke:{muted}", "t": "fill:{ink}"}) + body + run)
+    width = round(x + w + 10)
+    frame = f'<rect width="{width}" height="{H}" rx="6" class="c"/>'
+    return _chip_height_svg(width, _css({"c": "fill:{bar}", "s": "stroke:{muted}", "t": "fill:{ink}"}) + frame + body + run)
 
 
 def render_link(text: str, icon: str = "") -> str:

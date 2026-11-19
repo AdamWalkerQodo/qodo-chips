@@ -2,7 +2,7 @@
 
 Run:  uvicorn server.app:app --port 8095   (from the repository root)
 
-  GET /v1/title.svg?t=<title>&n=<number>
+  GET /v1/title.svg?t=<title>&n=<number>&w=<width>&c=<chip>&c=<chip>   chip: pill|<colour>|<label> or chip|<icon>|<label>|<mono or color>
   GET /v1/label.svg?t=<word>&i=<icon>
   GET /v1/link.svg?t=<text>&i=<icon>
   GET /v1/card.svg?t=<text>&w=<width>
@@ -54,8 +54,14 @@ def health() -> dict[str, str]:
 
 
 @app.get("/v1/title.svg")
-def title(t: str | None = None, z: str | None = None, n: str = Query("", max_length=6, pattern=r"^\d*$")) -> Response:
-    return _image(render_title(" ".join(_text(t, z, MAX_TITLE).split()), n))
+def title(
+    t: str | None = None, z: str | None = None, n: str = Query("", max_length=6, pattern=r"^\d*$"),
+    c: list[str] = Query([], max_length=8), w: int = Query(0, ge=0, le=1200),
+) -> Response:
+    try:
+        return _image(render_title(" ".join(_text(t, z, MAX_TITLE).split()), n, c, w))
+    except ValueError as error:
+        raise HTTPException(400, str(error)) from error
 
 
 @app.get("/v1/label.svg")
