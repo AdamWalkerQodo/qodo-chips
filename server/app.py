@@ -2,6 +2,7 @@
 
 Run:  uvicorn server.app:app --port 8095   (from the repository root)
 
+  GET /v1/title.svg?t=<title>&n=<number>&frame=0                      text only, no container
   GET /v1/title.svg?t=<title>&n=<number>&w=<width>&c=<chip>&c=<chip>   chip: pill|<colour>|<label> or chip|<icon>|<label>|<mono or color>
   GET /v1/label.svg?t=<word>&i=<icon>
   GET /v1/link.svg?t=<text>&i=<icon>&pt=<space above>
@@ -18,7 +19,7 @@ import zlib
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import Response
 
-from server.render import LINK_ICONS, SECTION_ICONS, render_card, render_label, render_link, render_note, render_title
+from server.render import LINK_ICONS, SECTION_ICONS, render_card, render_label, render_link, render_note, render_plain_title, render_title
 
 MAX_TITLE, MAX_TEXT = 300, 8000
 HEADERS = {
@@ -58,10 +59,13 @@ def health() -> dict[str, str]:
 @app.get("/v1/title.svg")
 def title(
     t: str | None = None, z: str | None = None, n: str = Query("", max_length=6, pattern=r"^\d*$"),
-    c: list[str] = Query([], max_length=8), w: int = Query(0, ge=0, le=1200),
+    c: list[str] = Query([], max_length=8), w: int = Query(0, ge=0, le=1200), frame: bool = True,
 ) -> Response:
+    text = " ".join(_text(t, z, MAX_TITLE).split())
+    if not frame:
+        return _image(render_plain_title(text, n))
     try:
-        return _image(render_title(" ".join(_text(t, z, MAX_TITLE).split()), n, c, w))
+        return _image(render_title(text, n, c, w))
     except ValueError as error:
         raise HTTPException(400, str(error)) from error
 

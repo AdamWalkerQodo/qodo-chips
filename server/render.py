@@ -81,6 +81,16 @@ def _inner_chip(spec: str, index: int) -> tuple[str, float]:
     raise ValueError(f"unknown chip: {spec}")
 
 
+def render_plain_title(title: str, number: str = "") -> str:
+    """The finding title as text only, no container: a muted number and the title, the height of the static chips."""
+    x, body = 1.0, ""
+    if number:
+        run, w = _run(f"{number}.", x, "Regular", "n", BAR_TITLE_SIZE)
+        body, x = run, x + w + 6
+    run, w = _run(title, x, "SemiBold", "t", BAR_TITLE_SIZE)
+    return _chip_height_svg(round(x + w + 2), _css({"n": "fill:{muted}", "t": "fill:{ink}"}) + body + run)
+
+
 def render_title(title: str, number: str = "", chips: list[str] | None = None, width: int = 0) -> str:
     """The finding title as a bordered bar with its chips inside, on the right. `width` 0 fits the content."""
     inner = [_inner_chip(spec, index) for index, spec in enumerate(chips or [])]

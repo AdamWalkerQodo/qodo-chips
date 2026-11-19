@@ -142,6 +142,7 @@ server/run_local.sh
 | Address | Draws |
 |---|---|
 | `/v1/title.svg?t={title}&n={number}&w={width}&c={chip}` | The title as a bordered bar, 36px tall with 4px of transparent space above and below. Each `c` adds a chip inside it, on the right: `pill\|{colour}\|{label}` or `chip\|{icon}\|{label}\|{mono or color}` |
+| `/v1/title.svg?t={title}&n={number}&frame=0` | The title as text only, no container, the height of the static chips |
 | `/v1/label.svg?t={word}&i={icon}` | A section label: icon and word. Icons: `description`, `code`, `evidence`, `agent-prompt`, `relevance` |
 | `/v1/link.svg?t={text}&i={icon}` | A reference chip to wrap in a link: file path, rule id, ticket. Icons: `file`, `rule`, `ticket`, `web`, `pr` |
 | `/v1/note.svg?t={text}` | A quiet one-line note: info icon and muted text |
