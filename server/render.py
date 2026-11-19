@@ -115,14 +115,14 @@ def render_title(title: str, number: str = "", chips: list[str] | None = None, w
 
 
 def render_label(text: str, icon: str = "") -> str:
-    """A section label, e.g. Description: an icon and a word on a filled chip, the height of the static chips."""
+    """A section label, e.g. Description: an icon and a word in a container with GitHub's header fill and border."""
     x, body = 8.0, ""
     if icon in SECTION_ICONS:
         body, x = lucide(SECTION_ICONS[icon], x, 'class="s"', 12.5), x + 12.5 + 6
     run, w = _run(text, x, "SemiBold", "t")
     width = round(x + w + 10)
-    frame = f'<rect width="{width}" height="{H}" rx="6" class="c"/>'
-    return _chip_height_svg(width, _css({"c": "fill:{soft}", "s": "stroke:{muted}", "t": "fill:{ink}"}) + frame + body + run)
+    frame = f'<rect x="0.5" y="0.5" width="{width - 1}" height="{H - 1}" rx="5.5" class="c"/>'
+    return _chip_height_svg(width, _css({"c": "fill:{bar};stroke:{line}", "s": "stroke:{muted}", "t": "fill:{ink}"}) + frame + body + run)
 
 
 def render_note(text: str, pad_top: int = 0) -> str:
