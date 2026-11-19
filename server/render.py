@@ -14,8 +14,9 @@ from chips import CHIP_TOP_PAD, ICONS, H, _font, _num, chip, lucide, pill, text_
 
 MONO = 'ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace'
 SANS = 'system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif'
-LIGHT = {"bar": "#f6f8fa", "soft": "#eaeef2", "inner": "#e4e8ec", "chip": "#f4f4f4", "ink": "#1c1c1c", "muted": "#6e7781", "card": "#f6f8fa", "line": "#d0d7de", "text": "#1f2328", "idbg": "#e3e6ea", "edge": "#d0d4d9", "link": "#0969da"}
-DARK = {"bar": "#21262d", "soft": "#21262d", "inner": "#30363d", "chip": "#3d3d3d", "ink": "#f4f4f4", "muted": "#9aa2ab", "card": "#161b22", "line": "#30363d", "text": "#e6edf3", "idbg": "#343a43", "edge": "#4b515a", "link": "#4493f8"}
+# Surfaces and inks are GitHub's own (comment header, code block, default text), so the images sit in the page like native parts.
+LIGHT = {"bar": "#f6f8fa", "soft": "#eff2f5", "inner": "#e4e8ec", "chip": "#f4f4f4", "ink": "#1f2328", "muted": "#59636e", "card": "#f6f8fa", "line": "#d1d9e0", "text": "#1f2328", "idbg": "#e6eaef", "edge": "#d1d9e0", "link": "#0969da"}
+DARK = {"bar": "#151b23", "soft": "#212830", "inner": "#2a313c", "chip": "#3d3d3d", "ink": "#f0f6fc", "muted": "#9198a1", "card": "#151b23", "line": "#3d444d", "text": "#f0f6fc", "idbg": "#2a313c", "edge": "#3d444d", "link": "#4493f8"}
 LINK_ICONS = {"file": "file-text", "rule": "book-marked", "ticket": "clipboard-check", "web": "external-link", "pr": "git-pull-request"}
 TITLE_SIZE = 12.5
 BAR_HEIGHT, BAR_PAD, BAR_GAP = 36, 12, 6
