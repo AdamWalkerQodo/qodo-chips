@@ -141,10 +141,13 @@ server/run_local.sh
 
 | Address | Draws |
 |---|---|
-| `/v1/title.svg?t={title}&n={number}&w={width}&c={chip}` | The title as a filled bar, 32px tall. Each `c` adds a chip inside it, on the right: `pill\|{colour}\|{label}` or `chip\|{icon}\|{label}\|{mono or color}` |
+| `/v1/title.svg?t={title}&n={number}&w={width}&c={chip}` | The title as a bordered bar, 36px tall with 4px of transparent space above and below. Each `c` adds a chip inside it, on the right: `pill\|{colour}\|{label}` or `chip\|{icon}\|{label}\|{mono or color}` |
 | `/v1/label.svg?t={word}&i={icon}` | A section label: icon and word. Icons: `description`, `code`, `evidence`, `agent-prompt`, `relevance` |
 | `/v1/link.svg?t={text}&i={icon}` | A reference chip to wrap in a link: file path, rule id, ticket. Icons: `file`, `rule`, `ticket`, `web`, `pr` |
+| `/v1/note.svg?t={text}` | A quiet one-line note: info icon and muted text |
 | `/v1/card.svg?t={text}&w={width}` | The text card, wrapped to `w` pixels (default 760) |
+
+`link`, `note` and `card` take `pt={pixels}`: transparent rows above the image. A comment cannot carry CSS, so spacing between a section label and its content is set this way.
 
 Either address also takes `z=` in place of `t=`: the text, zlib-compressed and then base64url-encoded, for shorter addresses.
 

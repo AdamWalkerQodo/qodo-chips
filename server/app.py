@@ -4,8 +4,9 @@ Run:  uvicorn server.app:app --port 8095   (from the repository root)
 
   GET /v1/title.svg?t=<title>&n=<number>&w=<width>&c=<chip>&c=<chip>   chip: pill|<colour>|<label> or chip|<icon>|<label>|<mono or color>
   GET /v1/label.svg?t=<word>&i=<icon>
-  GET /v1/link.svg?t=<text>&i=<icon>
-  GET /v1/card.svg?t=<text>&w=<width>
+  GET /v1/link.svg?t=<text>&i=<icon>&pt=<space above>
+  GET /v1/note.svg?t=<text>&pt=<space above>
+  GET /v1/card.svg?t=<text>&w=<width>&pt=<space above>
   Either endpoint also takes z=<text, zlib-compressed then base64url> in place of t, for shorter addresses.
 """
 from __future__ import annotations
@@ -17,7 +18,7 @@ import zlib
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import Response
 
-from server.render import LINK_ICONS, SECTION_ICONS, render_card, render_label, render_link, render_title
+from server.render import LINK_ICONS, SECTION_ICONS, render_card, render_label, render_link, render_note, render_title
 
 MAX_TITLE, MAX_TEXT = 300, 8000
 HEADERS = {
@@ -27,6 +28,7 @@ HEADERS = {
     "Content-Security-Policy": "default-src 'none'; style-src 'unsafe-inline'",
     "X-Content-Type-Options": "nosniff",
 }
+PAD_TOP = Query(0, ge=0, le=32)   # transparent rows above the image: the only way to set spacing inside a comment
 app = FastAPI(title="qodo-chips image server", docs_url=None, redoc_url=None, openapi_url=None)
 
 
@@ -72,12 +74,17 @@ def label(t: str | None = None, z: str | None = None, i: str = Query("", max_len
 
 
 @app.get("/v1/link.svg")
-def link(t: str | None = None, z: str | None = None, i: str = Query("", max_length=20)) -> Response:
+def link(t: str | None = None, z: str | None = None, i: str = Query("", max_length=20), pt: int = PAD_TOP) -> Response:
     if i and i not in LINK_ICONS:
         raise HTTPException(400, f"unknown icon; use one of {sorted(LINK_ICONS)}")
-    return _image(render_link(" ".join(_text(t, z, 160).split()), i))
+    return _image(render_link(" ".join(_text(t, z, 160).split()), i, pt))
+
+
+@app.get("/v1/note.svg")
+def note(t: str | None = None, z: str | None = None, pt: int = PAD_TOP) -> Response:
+    return _image(render_note(" ".join(_text(t, z, 200).split()), pt))
 
 
 @app.get("/v1/card.svg")
-def card(t: str | None = None, z: str | None = None, w: int = Query(760, ge=320, le=1200)) -> Response:
-    return _image(render_card(_text(t, z, MAX_TEXT), w))
+def card(t: str | None = None, z: str | None = None, w: int = Query(760, ge=320, le=1200), pt: int = PAD_TOP) -> Response:
+    return _image(render_card(_text(t, z, MAX_TEXT), w, pt))
