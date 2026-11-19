@@ -3,6 +3,7 @@
 Run:  uvicorn server.app:app --port 8095   (from the repository root)
 
   GET /v1/title.svg?t=<title>&n=<number>
+  GET /v1/label.svg?t=<word>&i=<icon>
   GET /v1/card.svg?t=<text>&w=<width>
   Either endpoint also takes z=<text, zlib-compressed then base64url> in place of t, for shorter addresses.
 """
@@ -15,7 +16,7 @@ import zlib
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import Response
 
-from server.render import render_card, render_title
+from server.render import SECTION_ICONS, render_card, render_label, render_title
 
 MAX_TITLE, MAX_TEXT = 300, 8000
 HEADERS = {
@@ -54,6 +55,13 @@ def health() -> dict[str, str]:
 @app.get("/v1/title.svg")
 def title(t: str | None = None, z: str | None = None, n: str = Query("", max_length=6, pattern=r"^\d*$")) -> Response:
     return _image(render_title(" ".join(_text(t, z, MAX_TITLE).split()), n))
+
+
+@app.get("/v1/label.svg")
+def label(t: str | None = None, z: str | None = None, i: str = Query("", max_length=20)) -> Response:
+    if i and i not in SECTION_ICONS:
+        raise HTTPException(400, f"unknown icon; use one of {sorted(SECTION_ICONS)}")
+    return _image(render_label(" ".join(_text(t, z, 60).split()), i))
 
 
 @app.get("/v1/card.svg")

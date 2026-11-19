@@ -141,7 +141,8 @@ server/run_local.sh
 
 | Address | Draws |
 |---|---|
-| `/v1/title.svg?t={title}&n={number}` | The title chip, 28px tall |
+| `/v1/title.svg?t={title}&n={number}` | The title as an outlined chip, the height of the static chips |
+| `/v1/label.svg?t={word}&i={icon}` | A section label: icon and word. Icons: `description`, `code`, `evidence`, `agent-prompt`, `relevance` |
 | `/v1/card.svg?t={text}&w={width}` | The text card, wrapped to `w` pixels (default 760) |
 
 Either address also takes `z=` in place of `t=`: the text, zlib-compressed and then base64url-encoded, for shorter addresses.
