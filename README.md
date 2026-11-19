@@ -129,7 +129,7 @@ Text is drawn as outlines from the Inter font, because an SVG shown as an image 
 
 ## Image server (experimental)
 
-`server/` draws images that depend on a finding's own text, which cannot be generated ahead of time: the finding title as a long chip, and a monospace text card where `backticked` names are highlighted. It is stateless: the request carries the text and the response is its SVG; nothing is stored.
+`server/` draws images that depend on a finding's own text, which cannot be generated ahead of time: the finding title as a long chip, and a text card where `backticked` names are set in monospace on a rounded tint. It is stateless: the request carries the text and the response is its SVG; nothing is stored.
 
 ```bash
 pip install -r generator/requirements.txt -r server/requirements.txt
