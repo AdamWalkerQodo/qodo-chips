@@ -146,7 +146,7 @@ server/run_local.sh
 | `/v1/label.svg?t={word}&i={icon}` | A section label: icon and word. Icons: `description`, `code`, `evidence`, `agent-prompt`, `relevance` |
 | `/v1/link.svg?t={text}&i={icon}` | A reference chip to wrap in a link: file path, rule id, ticket. Icons: `file`, `rule`, `ticket`, `web`, `pr` |
 | `/v1/note.svg?t={text}` | A quiet one-line note: info icon and muted text |
-| `/v1/card.svg?t={text}&w={width}` | The text card, wrapped to `w` pixels (default 760) |
+| `/v1/card.svg?t={text}&w={width}` | The text card, wrapped to `w` pixels (default 760). `h={heading}` and `i={icon}` add a title row with an icon and a line under it |
 
 `link`, `note` and `card` take `pt={pixels}`: transparent rows above the image. A comment cannot carry CSS, so spacing between a section label and its content is set this way.
 

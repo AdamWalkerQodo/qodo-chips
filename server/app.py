@@ -7,7 +7,7 @@ Run:  uvicorn server.app:app --port 8095   (from the repository root)
   GET /v1/label.svg?t=<word>&i=<icon>
   GET /v1/link.svg?t=<text>&i=<icon>&pt=<space above>
   GET /v1/note.svg?t=<text>&pt=<space above>
-  GET /v1/card.svg?t=<text>&w=<width>&pt=<space above>
+  GET /v1/card.svg?t=<text>&w=<width>&pt=<space above>&h=<heading>&i=<icon>   h turns the card into a panel with a title row
   Either endpoint also takes z=<text, zlib-compressed then base64url> in place of t, for shorter addresses.
 """
 from __future__ import annotations
@@ -90,5 +90,10 @@ def note(t: str | None = None, z: str | None = None, pt: int = PAD_TOP) -> Respo
 
 
 @app.get("/v1/card.svg")
-def card(t: str | None = None, z: str | None = None, w: int = Query(760, ge=320, le=1200), pt: int = PAD_TOP) -> Response:
-    return _image(render_card(_text(t, z, MAX_TEXT), w, pt))
+def card(
+    t: str | None = None, z: str | None = None, w: int = Query(760, ge=320, le=1200), pt: int = PAD_TOP,
+    h: str = Query("", max_length=60), i: str = Query("", max_length=20),
+) -> Response:
+    if i and i not in SECTION_ICONS:
+        raise HTTPException(400, f"unknown icon; use one of {sorted(SECTION_ICONS)}")
+    return _image(render_card(_text(t, z, MAX_TEXT), w, pt, " ".join(h.split()), i))

@@ -28,6 +28,7 @@ SECTION_ICONS = {"description": "text-align-start", "code": "code", "evidence": 
 PROSE_SIZE, CARD_PAD, CARD_LINE = 14, 16, 23
 NAME_SIZE, NAME_PAD = 12.5, 5
 NAME_CHAR_W = NAME_SIZE * 0.6     # every monospace glyph is drawn at this width (textLength pins it)
+CARD_HEAD = 38                    # height of a card's title row
 MAX_WORD = 60                     # longer words are split so they cannot overflow the card
 _TOKEN = re.compile(r"`([^`\n]+)`|(\S+)")
 
@@ -180,8 +181,21 @@ def _tokens(paragraph: str) -> list[tuple[str, bool, bool]]:
     return out
 
 
-def render_card(text: str, width: int = 760, pad_top: int = 0) -> str:
-    """A text card: prose in Inter, `backticked` names in monospace on a rounded tint. Text is wrapped to `width` here, not by the reader's browser."""
+def _card_header(heading: str, icon: str, width: int) -> str:
+    """The title row of a card: an icon and a heading on GitHub's header fill, with a line under it."""
+    x, body = float(CARD_PAD), ""
+    if icon in SECTION_ICONS:
+        body, x = lucide(SECTION_ICONS[icon], x, 'class="s"', 14), x + 14 + 8
+    run, _ = _run(heading, x, "SemiBold", "t", 13)
+    top = (f'<path d="M0.5 {CARD_HEAD}V6.5a6 6 0 0 1 6-6H{width - 6.5}a6 6 0 0 1 6 6V{CARD_HEAD}z" class="h"/>'
+           f'<rect x="0.5" y="{CARD_HEAD - 0.5}" width="{width - 1}" height="1" class="d"/>')
+    return top + f'<g transform="translate(0 {_num((CARD_HEAD - H) / 2)})">{body}{run}</g>'
+
+
+def render_card(text: str, width: int = 760, pad_top: int = 0, heading: str = "", icon: str = "") -> str:
+    """A text card: prose in Inter, `backticked` names in monospace on a rounded tint. Text is wrapped to `width` here, not by the reader's browser.
+
+    With `heading` the card becomes a panel: a title row with an icon, a line, then the text on the page background."""
     _, _, cmap, hmtx, upm, _ = _font("Regular")
     space = hmtx[cmap[ord(" ")]][0] * PROSE_SIZE / upm
     limit, glyphs_used, body = width - CARD_PAD, {}, ""
@@ -205,7 +219,12 @@ def render_card(text: str, width: int = 760, pad_top: int = 0) -> str:
                 x += w
         x, row = float(CARD_PAD), row + 1
     height = 2 * CARD_PAD + CARD_LINE * row - (CARD_LINE - PROSE_SIZE) + 1
-    out = _css({"k": "fill:{card}", "t": "fill:{text}", "b": "fill:{idbg}"})
-    out += f'<defs>{"".join(glyphs_used.values())}</defs>'
-    out += f'<rect width="{width}" height="{_num(height)}" rx="6" class="k"/>'
-    return _svg(width, height + pad_top, f'<g transform="translate(0 {pad_top})">{out}{body}</g>')
+    out = f'<defs>{"".join(glyphs_used.values())}</defs>'
+    if heading:
+        head, height = CARD_HEAD, height + CARD_HEAD
+        out += _css({"k": "fill:none;stroke:{line}", "h": "fill:{bar}", "d": "fill:{line}", "s": "stroke:{muted}", "t": "fill:{text}", "b": "fill:{idbg}"})
+        out += _card_header(heading, icon, width) + f'<rect x="0.5" y="0.5" width="{width - 1}" height="{_num(height - 1)}" rx="6" class="k"/>'
+    else:
+        head = 0
+        out += _css({"k": "fill:{card}", "t": "fill:{text}", "b": "fill:{idbg}"}) + f'<rect width="{width}" height="{_num(height)}" rx="6" class="k"/>'
+    return _svg(width, height + pad_top, f'<g transform="translate(0 {pad_top})">{out}<g transform="translate(0 {head})">{body}</g></g>')
