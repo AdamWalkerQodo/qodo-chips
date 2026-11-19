@@ -126,3 +126,24 @@ Text is drawn as outlines from the Inter font, because an SVG shown as an image 
 
 - Icons: [Lucide](https://lucide.dev), ISC licence.
 - Typeface: [Inter](https://rsms.me/inter/), SIL Open Font License 1.1.
+
+## Image server (experimental)
+
+`server/` draws images that depend on a finding's own text, which cannot be generated ahead of time: the finding title as a long chip, and a monospace text card where `backticked` names are highlighted. It is stateless: the request carries the text and the response is its SVG; nothing is stored.
+
+```bash
+pip install -r generator/requirements.txt -r server/requirements.txt
+```
+
+```bash
+server/run_local.sh
+```
+
+| Address | Draws |
+|---|---|
+| `/v1/title.svg?t={title}&n={number}` | The title chip, 28px tall |
+| `/v1/card.svg?t={text}&w={width}` | The text card, wrapped to `w` pixels (default 760) |
+
+Either address also takes `z=` in place of `t=`: the text, zlib-compressed and then base64url-encoded, for shorter addresses.
+
+On GitHub, wrap the title image in `<picture>` when it sits in a `<summary>`. A bare `<img>` is turned into a link to the image, so a click on the title would open the file and not fold the section.
