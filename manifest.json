@@ -34930,6 +34930,14 @@
   "alt": "Back to top"
  },
  {
+  "file": "v1/button/native/dismiss-finding.svg",
+  "width": 134,
+  "height": 28,
+  "family": "button",
+  "key": "native/dismiss-finding",
+  "alt": "Dismiss finding"
+ },
+ {
   "file": "v1/button/straight/view-in-qodo.svg",
   "width": 121,
   "height": 28,
@@ -34960,6 +34968,14 @@
   "family": "button",
   "key": "straight/back-to-top",
   "alt": "Back to top"
+ },
+ {
+  "file": "v1/button/straight/dismiss-finding.svg",
+  "width": 134,
+  "height": 28,
+  "family": "button",
+  "key": "straight/dismiss-finding",
+  "alt": "Dismiss finding"
  },
  {
   "file": "v1/divider/qodo-band-above.svg",
