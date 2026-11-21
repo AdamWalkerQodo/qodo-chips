@@ -7,8 +7,8 @@ Run:  uvicorn server.app:app --port 8095   (from the repository root)
   GET /v1/label.svg?t=<word>&i=<icon>
   GET /v1/link.svg?t=<text>&i=<icon>&pt=<space above>&square=<true for the outlined square style>
   GET /v1/filebar.svg?t=<path>&w=<width>     the title strip that sits on top of a code block
-  GET /v1/header.svg?t=<title>&i=<icon>&s=<subtitle>&w=<width>&pt=<space above>&pb=<space below>
-  GET /v1/edge.svg?kind=<side, bottom, close, gap, rule, space or divider>&w=<width>&h=<height>&pb=<space below>   border pieces around a code block
+  GET /v1/header.svg?t=<title>&i=<icon>&s=<subtitle>&w=<width>&pt=<space above>&pb=<space below>&middle=&hang=<px continued below>&bh=<band height>&top=<line above>
+  GET /v1/edge.svg?kind=<side, rside, bottom, close, gap, fill, rule, space or divider>&w=<width>&h=<height>&pb=<space below>   border pieces around a code block
   GET /v1/note.svg?t=<text>&pt=<space above>
   GET /v1/card.svg?t=<text>&w=<width>&pt=<space above>&h=<heading>&i=<icon>   h turns the card into a panel with a title row
   Either endpoint also takes z=<text, zlib-compressed then base64url> in place of t, for shorter addresses.
@@ -100,18 +100,19 @@ def header(
     t: str | None = None, z: str | None = None, i: str = Query("", max_length=20), s: str = Query("", max_length=160),
     w: int = Query(760, ge=320, le=1200), pt: int = PAD_TOP, pb: int = Query(0, ge=0, le=32), open_bottom: bool = False,
     pl: int = Query(0, ge=0, le=64), middle: bool = False, c: list[str] = Query([], max_length=4), bare: bool = False,
+    hang: int = Query(0, ge=0, le=32), bh: int = Query(0, ge=0, le=64), top: bool = True,
 ) -> Response:
     if i and i not in SECTION_ICONS:
         raise HTTPException(400, f"unknown icon; use one of {sorted(SECTION_ICONS)}")
     try:
-        return _image(render_header(" ".join(_text(t, z, 60).split()), i, " ".join(s.split()), w, pt, pb, open_bottom, pl, middle, c, bare))
+        return _image(render_header(" ".join(_text(t, z, 60).split()), i, " ".join(s.split()), w, pt, pb, open_bottom, pl, middle, c, bare, hang, bh, top))
     except ValueError as error:
         raise HTTPException(400, str(error)) from error
 
 
 @app.get("/v1/edge.svg")
 def edge(
-    kind: str = Query("side", pattern="^(side|bottom|rule|space|divider|close|gap)$"), w: int = Query(760, ge=320, le=1200), h: int = Query(8, ge=7, le=4000),
+    kind: str = Query("side", pattern="^(side|rside|bottom|rule|space|divider|close|gap|fill)$"), w: int = Query(760, ge=320, le=1200), h: int = Query(8, ge=7, le=4000),
     pb: int = Query(0, ge=0, le=32), pl: int = Query(0, ge=0, le=64),
 ) -> Response:
     return _image(render_edge(kind, w, h, pb, pl))

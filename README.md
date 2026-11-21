@@ -153,6 +153,8 @@ server/run_local.sh
 
 `header.svg?middle=true` draws a section band for use inside a container (square corners, lines above and below, side lines), and `edge.svg?kind=divider` a line across the container with the side lines running on, for a footer. `header` and `edge` take `pl={pixels}`: the container is drawn that far in from the image's left edge, which indents it. `link`, `note` and `card` take `pt={pixels}`: transparent rows above the image. A comment cannot carry CSS, so spacing between a section label and its content is set this way.
 
+**Sections that fold with no gap between them.** A git host leaves empty space under every fold (16px on GitHub). `header.svg?middle=true&hang=16&bh=36&top=false` draws a band 36px tall with no line above or below, its title centred as if the band were 16px taller; `edge.svg?kind=fill&h=16` is that missing lower part (fill, side lines, a line under it). Put the band in the fold's `<summary>` and float the `fill` piece after it: it hangs out of the summary into the empty space, so a folded section is one solid band touching the next. `edge.svg?kind=gap` is the two side lines alone (space inside the container), `kind=close` the side lines with a line under them (the end of unfolded content), and `kind=rside&pl=1` a right-hand side line 1px in from the edge.
+
 Either address also takes `z=` in place of `t=`: the text, zlib-compressed and then base64url-encoded, for shorter addresses.
 
 On GitHub, wrap the title image in `<picture>` when it sits in a `<summary>`. A bare `<img>` is turned into a link to the image, so a click on the title would open the file and not fold the section.

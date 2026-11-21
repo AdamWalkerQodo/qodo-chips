@@ -193,6 +193,13 @@ def render_edge(kind: str, width: int = 760, height: int = 8, pad_bottom: int = 
         inner = width - pad_left
         body = f'<rect width="1" height="{height}" class="d"/><rect x="{inner - 1}" width="1" height="{height}" class="d"/>'
         return _shifted(width, height, pad_left, _css({"d": "fill:{line}"}) + body)
+    if kind == "fill":      # the lower part of a section band, drawn separately so it can hang below the band's own image: fill, side lines, a line under it
+        inner = width - pad_left
+        body = (f'<rect width="{inner}" height="{height}" class="m"/><rect y="{height - 1}" width="{inner}" height="1" class="d"/>'
+                f'<rect width="1" height="{height}" class="d"/><rect x="{inner - 1}" width="1" height="{height}" class="d"/>')
+        return _shifted(width, height, pad_left, _css({"m": "fill:{bar}", "d": "fill:{line}"}) + body)
+    if kind == "rside":     # a side line at the image's left with pad_left px of nothing after it: a right-hand line that sits that far in
+        return _svg(pad_left + 1, height, _css({"d": "fill:{line}"}) + f'<rect width="1" height="{height}" class="d"/>')
     if kind == "space":  # nothing drawn: vertical space, since a comment cannot carry margins
         return _svg(width, height, "")
     if kind == "rule":   # a horizontal separator, with the line in the middle of `height`
@@ -204,14 +211,16 @@ def render_edge(kind: str, width: int = 760, height: int = 8, pad_bottom: int = 
 
 def render_header(
     title: str, icon: str = "", subtitle: str = "", width: int = 760, pad_top: int = 0, pad_bottom: int = 0, open_bottom: bool = False, pad_left: int = 0,
-    middle: bool = False, chips: list[str] | None = None, bare: bool = False,
+    middle: bool = False, chips: list[str] | None = None, bare: bool = False, hang: int = 0, band_height: int = 0, top_rule: bool = True,
 ) -> str:
     """A section header on its own: icon and title, optional chips after the title, an optional muted subtitle on the right.
 
     By default it is a rounded, bordered bar on GitHub's header fill. `open_bottom` squares the bottom so side lines can continue from it;
-    `middle` makes it a band inside a container; `bare` draws only the content, for use inside a table cell that has its own border."""
+    `middle` makes it a band inside a container; `bare` draws only the content, for use inside a table cell that has its own border.
+    A `middle` band can be `band_height` tall, drop its top line (`top_rule`), and continue `hang` px below the image in a separate
+    "fill" edge piece: the content is then centred in the combined height and the image draws no line under itself."""
     full_width, width = width, width - pad_left
-    head, pad = (H + 6, 0) if bare else (CARD_HEAD, CARD_PAD)
+    head, pad = (H + 6, 0) if bare else (band_height or CARD_HEAD, CARD_PAD)
     x, body = float(pad), ""
     if icon in SECTION_ICONS:
         body, x = lucide(SECTION_ICONS[icon], x, 'class="s"', 14), x + 14 + 8
@@ -233,12 +242,13 @@ def render_header(
                  f'<rect x="{width - 1}" y="{head - 1}" width="1" height="{pad_bottom + 1}" class="d"/>')
     if middle:        # a section band inside a container: square corners, a line above and below, the container's side lines on both sides
         tall = head + pad_bottom
-        frame = (f'<rect width="{width}" height="{head}" class="m"/><rect width="{width}" height="1" class="d"/>'
-                 f'<rect y="{head - 1}" width="{width}" height="1" class="d"/>'
+        above = f'<rect width="{width}" height="1" class="d"/>' if top_rule else ""
+        below = "" if hang else f'<rect y="{head - 1}" width="{width}" height="1" class="d"/>'
+        frame = (f'<rect width="{width}" height="{head}" class="m"/>{above}{below}'
                  f'<rect width="1" height="{tall}" class="d"/><rect x="{width - 1}" width="1" height="{tall}" class="d"/>')
     if bare:
         frame = ""
-    inner = f'<g transform="translate(0 {_num((head - H) / 2)})">{body}</g>'
+    inner = f'<g transform="translate(0 {_num((head + hang - H) / 2)})">{body}</g>'
     css = _css({"c": "fill:{bar};stroke:{line}", "m": "fill:{bar}", "d": "fill:{line}", "s": "stroke:{muted}", "t": "fill:{text}", "n": "fill:{muted}"})
     out = css + frame + inner
     return _shifted(full_width, head + pad_top + pad_bottom, pad_left, f'<g transform="translate(0 {pad_top})">{out}</g>')
