@@ -152,9 +152,12 @@ def render_link(text: str, icon: str = "", pad_top: int = 0, pad_bottom: int = 0
 def render_edge(kind: str, width: int = 760, height: int = 8, pad_bottom: int = 0) -> str:
     """Border pieces that continue a header's container around content that is not an image, such as a code block.
 
-    "side" is a 1px vertical line `height` tall; "bottom" is the closing edge: two rounded corners joined by a line, `width` wide."""
+    "side" is a 1px vertical line `height` tall; "bottom" is the closing edge: two rounded corners joined by a line, `width` wide;
+    "rule" is a separator line across `width`."""
     if kind == "side":
         return _svg(1, height, _css({"d": "fill:{line}"}) + f'<rect width="1" height="{height}" class="d"/>')
+    if kind == "rule":   # a horizontal separator, with the line in the middle of `height`
+        return _svg(width, height, _css({"d": "fill:{line}"}) + f'<rect y="{height // 2}" width="{width}" height="1" class="d"/>')
     path = f'<path d="M0.5 0V{height - 6.5}a6 6 0 0 0 6 6H{width - 6.5}a6 6 0 0 0 6-6V0" fill="none" class="k"/>'
     return _svg(width, height + pad_bottom, _css({"k": "stroke:{line}"}) + path)
 
