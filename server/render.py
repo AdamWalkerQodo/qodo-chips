@@ -206,8 +206,8 @@ def render_header(
                  f'<rect y="{CARD_HEAD - 1}" width="{width}" height="1" class="d"/>'
                  f'<rect width="1" height="{tall}" class="d"/><rect x="{width - 1}" width="1" height="{tall}" class="d"/>')
     inner = f'<g transform="translate(0 {_num((CARD_HEAD - H) / 2)})">{body}</g>'
-    out = (_css({"c": "fill:{bar};stroke:{line}", "m": "fill:{bar}", "d": "fill:{line}", "s": "stroke:{muted}", "t": "fill:{text}", "n": "fill:{muted}"})
-           + frame + inner)
+    css = _css({"c": "fill:{bar};stroke:{line}", "m": "fill:{bar}", "d": "fill:{line}", "s": "stroke:{muted}", "t": "fill:{text}", "n": "fill:{muted}"})
+    out = css + frame + inner
     return _shifted(full_width, CARD_HEAD + pad_top + pad_bottom, pad_left, f'<g transform="translate(0 {pad_top})">{out}</g>')
 
 
