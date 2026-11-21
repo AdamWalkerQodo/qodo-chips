@@ -22,6 +22,7 @@ TITLE_SIZE = 12.5
 BAR_HEIGHT, BAR_PAD, BAR_GAP = 36, 12, 6
 BAR_MARGIN = 4                    # transparent rows above and below the bar, so stacked findings do not touch
 BAR_TITLE_SIZE = 14
+TITLE_NUMBER_COL = 24             # where a numbered title's text starts, in px from the image's left edge
 PILL_COLORS = {"red": "#ce2c31", "orange": "#e36209", "yellow": "#d4a72c", "brand": "#634fd1", "gray": "#3d3d3d"}
 IMAGE_HEIGHT = H + CHIP_TOP_PAD   # same box as the static chips, so titles and labels line up with them
 SECTION_ICONS = {"description": "text-align-start", "code": "code", "evidence": "search", "agent-prompt": "bot", "relevance": "info", "actions": "square-check"}
@@ -88,7 +89,7 @@ def render_plain_title(title: str, number: str = "") -> str:
     x, body = 1.0, ""
     if number:
         run, w = _run(f"{number}.", x, "Regular", "n", BAR_TITLE_SIZE)
-        body, x = run, x + w + 6
+        body, x = run, max(x + w + 6, TITLE_NUMBER_COL)   # a fixed column, so the title starts at the same place for "1." and "12."
     run, w = _run(title, x, "SemiBold", "t", BAR_TITLE_SIZE)
     return _chip_height_svg(round(x + w + 2), _css({"n": "fill:{muted}", "t": "fill:{ink}"}) + body + run)
 
@@ -149,25 +150,34 @@ def render_link(text: str, icon: str = "", pad_top: int = 0, pad_bottom: int = 0
     return _svg(width, LINK_HEIGHT + pad_top + pad_bottom, f'<g transform="translate(0 {pad_top})">{out}</g>')
 
 
-def render_edge(kind: str, width: int = 760, height: int = 8, pad_bottom: int = 0) -> str:
+def _shifted(width: int, height: float, pad_left: int, body: str) -> str:
+    """An image `width` wide whose drawing starts `pad_left` px in: how a container is indented without CSS."""
+    return _svg(width, height, f'<g transform="translate({pad_left} 0)">{body}</g>' if pad_left else body)
+
+
+def render_edge(kind: str, width: int = 760, height: int = 8, pad_bottom: int = 0, pad_left: int = 0) -> str:
     """Border pieces that continue a header's container around content that is not an image, such as a code block.
 
     "side" is a 1px vertical line `height` tall; "bottom" is the closing edge: two rounded corners joined by a line, `width` wide;
     "rule" is a separator line across `width`."""
-    if kind == "side":
-        return _svg(1, height, _css({"d": "fill:{line}"}) + f'<rect width="1" height="{height}" class="d"/>')
+    if kind == "side":   # with pad_left the image is wider and the line sits at its right, which indents whatever flows beside it
+        return _svg(pad_left + 1, height, _css({"d": "fill:{line}"}) + f'<rect x="{pad_left}" width="1" height="{height}" class="d"/>')
     if kind == "space":  # nothing drawn: vertical space, since a comment cannot carry margins
         return _svg(width, height, "")
     if kind == "rule":   # a horizontal separator, with the line in the middle of `height`
         return _svg(width, height, _css({"d": "fill:{line}"}) + f'<rect y="{height // 2}" width="{width}" height="1" class="d"/>')
-    path = f'<path d="M0.5 0V{height - 6.5}a6 6 0 0 0 6 6H{width - 6.5}a6 6 0 0 0 6-6V0" fill="none" class="k"/>'
-    return _svg(width, height + pad_bottom, _css({"k": "stroke:{line}"}) + path)
+    inner = width - pad_left
+    path = f'<path d="M0.5 0V{height - 6.5}a6 6 0 0 0 6 6H{inner - 6.5}a6 6 0 0 0 6-6V0" fill="none" class="k"/>'
+    return _shifted(width, height + pad_bottom, pad_left, _css({"k": "stroke:{line}"}) + path)
 
 
-def render_header(title: str, icon: str = "", subtitle: str = "", width: int = 760, pad_top: int = 0, pad_bottom: int = 0, open_bottom: bool = False) -> str:
+def render_header(
+    title: str, icon: str = "", subtitle: str = "", width: int = 760, pad_top: int = 0, pad_bottom: int = 0, open_bottom: bool = False, pad_left: int = 0,
+) -> str:
     """A section header on its own: icon and title on GitHub's header fill inside a border, an optional muted subtitle on the right.
 
     Used above content that cannot sit inside an image, such as a code block the reader must be able to copy."""
+    full_width, width = width, width - pad_left
     x, body = float(CARD_PAD), ""
     if icon in SECTION_ICONS:
         body, x = lucide(SECTION_ICONS[icon], x, 'class="s"', 14), x + 14 + 8
@@ -186,7 +196,7 @@ def render_header(title: str, icon: str = "", subtitle: str = "", width: int = 7
                  f'<rect x="{width - 1}" y="{CARD_HEAD - 1}" width="1" height="{pad_bottom + 1}" class="d"/>')
     inner = f'<g transform="translate(0 {_num((CARD_HEAD - H) / 2)})">{body}</g>'
     out = _css({"c": "fill:{bar};stroke:{line}", "d": "fill:{line}", "s": "stroke:{muted}", "t": "fill:{text}", "n": "fill:{muted}"}) + frame + inner
-    return _svg(width, CARD_HEAD + pad_top + pad_bottom, f'<g transform="translate(0 {pad_top})">{out}</g>')
+    return _shifted(full_width, CARD_HEAD + pad_top + pad_bottom, pad_left, f'<g transform="translate(0 {pad_top})">{out}</g>')
 
 
 def _prose_word(word: str, x: float, y: float, glyphs_used: dict[str, str]) -> tuple[str, float]:

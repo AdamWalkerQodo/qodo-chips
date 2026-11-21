@@ -92,18 +92,19 @@ def link(
 def header(
     t: str | None = None, z: str | None = None, i: str = Query("", max_length=20), s: str = Query("", max_length=160),
     w: int = Query(760, ge=320, le=1200), pt: int = PAD_TOP, pb: int = Query(0, ge=0, le=32), open_bottom: bool = False,
+    pl: int = Query(0, ge=0, le=64),
 ) -> Response:
     if i and i not in SECTION_ICONS:
         raise HTTPException(400, f"unknown icon; use one of {sorted(SECTION_ICONS)}")
-    return _image(render_header(" ".join(_text(t, z, 60).split()), i, " ".join(s.split()), w, pt, pb, open_bottom))
+    return _image(render_header(" ".join(_text(t, z, 60).split()), i, " ".join(s.split()), w, pt, pb, open_bottom, pl))
 
 
 @app.get("/v1/edge.svg")
 def edge(
     kind: str = Query("side", pattern="^(side|bottom|rule|space)$"), w: int = Query(760, ge=320, le=1200), h: int = Query(8, ge=7, le=4000),
-    pb: int = Query(0, ge=0, le=32),
+    pb: int = Query(0, ge=0, le=32), pl: int = Query(0, ge=0, le=64),
 ) -> Response:
-    return _image(render_edge(kind, w, h, pb))
+    return _image(render_edge(kind, w, h, pb, pl))
 
 
 @app.get("/v1/note.svg")

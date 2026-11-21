@@ -150,7 +150,7 @@ server/run_local.sh
 | `/v1/note.svg?t={text}` | A quiet one-line note: info icon and muted text |
 | `/v1/card.svg?t={text}&w={width}` | The text card, wrapped to `w` pixels (default 760). `h={heading}` and `i={icon}` add a title row with an icon and a line under it |
 
-`link`, `note` and `card` take `pt={pixels}`: transparent rows above the image. A comment cannot carry CSS, so spacing between a section label and its content is set this way.
+`header` and `edge` take `pl={pixels}`: the container is drawn that far in from the image's left edge, which indents it. `link`, `note` and `card` take `pt={pixels}`: transparent rows above the image. A comment cannot carry CSS, so spacing between a section label and its content is set this way.
 
 Either address also takes `z=` in place of `t=`: the text, zlib-compressed and then base64url-encoded, for shorter addresses.
 
