@@ -28,6 +28,7 @@ SECTION_ICONS = {"description": "text-align-start", "code": "code", "evidence": 
 PROSE_SIZE, CARD_PAD, CARD_LINE = 14, 16, 23
 NAME_SIZE, NAME_PAD = 12.5, 5
 NAME_CHAR_W = NAME_SIZE * 0.6     # every monospace glyph is drawn at this width (textLength pins it)
+LINK_HEIGHT = 28
 CARD_HEAD = 38                    # height of a card's title row
 MAX_WORD = 60                     # longer words are split so they cannot overflow the card
 _TOKEN = re.compile(r"`([^`\n]+)`|(\S+)")
@@ -134,20 +135,39 @@ def render_note(text: str, pad_top: int = 0) -> str:
 
 
 def render_link(text: str, icon: str = "", pad_top: int = 0) -> str:
-    """A reference chip, e.g. a file path or a rule id: outlined, link-coloured icon and text. Wrap it in a link."""
-    x, body = 8.0, ""
+    """A reference button, e.g. a file path or a rule id: GitHub's header fill and border, an accent icon, an arrow at the end. Wrap it in a link."""
+    x, body = 10.0, ""
     if icon in LINK_ICONS:
-        body, x = lucide(LINK_ICONS[icon], x, 'class="s"', 12), x + 12 + 5
-    try:
-        d, w = text_path(text, 11.5, x)
-        run = f'<path d="{d}" class="t"/>'
-    except KeyError:
-        w = len(text) * 11.5 * 0.58
-        run = (f'<text x="{_num(x)}" y="{_num(H / 2 + 4.1)}" font-family=\'{SANS}\' font-size="11.5" textLength="{_num(w)}" '
-               f'lengthAdjust="spacingAndGlyphs" class="t">{escape(text)}</text>')
-    width = round(x + w + 9)
-    frame = f'<rect x="0.5" y="0.5" width="{width - 1}" height="{H - 1}" rx="5.5" fill="none" class="o"/>'
-    return _chip_height_svg(width, _css({"o": "stroke:{edge}", "s": "stroke:{link}", "t": "fill:{link}"}) + frame + body + run, pad_top)
+        body, x = lucide(LINK_ICONS[icon], x, 'class="a"', 13), x + 13 + 7
+    run, w = _run(text, x, "Regular", "t", 12)
+    x += w + 7
+    body += run + lucide("move-up-right", x, 'class="s"', 10)
+    width = round(x + 10 + 9)
+    frame = f'<rect x="0.5" y="0.5" width="{width - 1}" height="{LINK_HEIGHT - 1}" rx="6" class="c"/>'
+    inner = f'<g transform="translate(0 {_num((LINK_HEIGHT - H) / 2)})">{body}</g>'
+    out = _css({"c": "fill:{bar};stroke:{line}", "a": "stroke:{link}", "s": "stroke:{muted}", "t": "fill:{ink}"}) + frame + inner
+    return _svg(width, LINK_HEIGHT + pad_top, f'<g transform="translate(0 {pad_top})">{out}</g>')
+
+
+def render_header(title: str, icon: str = "", subtitle: str = "", width: int = 760, pad_top: int = 0, pad_bottom: int = 0) -> str:
+    """A section header on its own: icon and title on GitHub's header fill inside a border, an optional muted subtitle on the right.
+
+    Used above content that cannot sit inside an image, such as a code block the reader must be able to copy."""
+    x, body = float(CARD_PAD), ""
+    if icon in SECTION_ICONS:
+        body, x = lucide(SECTION_ICONS[icon], x, 'class="s"', 14), x + 14 + 8
+    run, w = _run(title, x, "SemiBold", "t", 13)
+    body += run
+    room = width - (x + w) - 2 * CARD_PAD
+    while len(subtitle) > 4 and _run(subtitle, 0, "Regular", "n", 12)[1] > room:
+        subtitle = subtitle[:-2].rstrip() + "…"
+    if subtitle:
+        sub_w = _run(subtitle, 0, "Regular", "n", 12)[1]
+        body += _run(subtitle, width - CARD_PAD - sub_w, "Regular", "n", 12)[0]
+    frame = f'<rect x="0.5" y="0.5" width="{width - 1}" height="{CARD_HEAD - 1}" rx="6" class="c"/>'
+    inner = f'<g transform="translate(0 {_num((CARD_HEAD - H) / 2)})">{body}</g>'
+    out = _css({"c": "fill:{bar};stroke:{line}", "s": "stroke:{muted}", "t": "fill:{text}", "n": "fill:{muted}"}) + frame + inner
+    return _svg(width, CARD_HEAD + pad_top + pad_bottom, f'<g transform="translate(0 {pad_top})">{out}</g>')
 
 
 def _prose_word(word: str, x: float, y: float, glyphs_used: dict[str, str]) -> tuple[str, float]:
