@@ -30,6 +30,7 @@ PROSE_SIZE, CARD_PAD, CARD_LINE = 14, 21, 23   # 21px = a 1px side line + the 20
 NAME_SIZE, NAME_PAD = 12.5, 5
 NAME_CHAR_W = NAME_SIZE * 0.6     # every monospace glyph is drawn at this width (textLength pins it)
 LINK_HEIGHT = 28
+FILEBAR_HEIGHT = 32
 CARD_HEAD = 38                    # height of a card's title row
 MAX_WORD = 60                     # longer words are split so they cannot overflow the card
 _TOKEN = re.compile(r"`([^`\n]+)`|(\S+)")
@@ -136,8 +137,22 @@ def render_note(text: str, pad_top: int = 0) -> str:
     return _chip_height_svg(round(18 + w + 2), _css({"s": "stroke:{muted}", "n": "fill:{muted}"}) + body + run, pad_top)
 
 
-def render_link(text: str, icon: str = "", pad_top: int = 0, pad_bottom: int = 0) -> str:
-    """A reference button, e.g. a file path or a rule id: GitHub's header fill and border, an accent icon, an arrow at the end. Wrap it in a link."""
+def render_filebar(text: str, width: int = 760, icon: str = "file") -> str:
+    """The title strip of a code block: a file icon, the path and an arrow, as wide as the block and meant to sit directly on top of it.
+
+    Wrap it in a link to the file. Its top corners are rounded like GitHub's code block; its bottom is flat so the two read as one."""
+    body = lucide(LINK_ICONS.get(icon, "file-text"), 12, 'class="a"', 13)
+    run, _ = _run(text, 12 + 13 + 8, "Regular", "t", 12)
+    body += run + lucide("move-up-right", width - 12 - 10, 'class="s"', 10)
+    frame = f'<path d="M0 {FILEBAR_HEIGHT}V6a6 6 0 0 1 6-6H{width - 6}a6 6 0 0 1 6 6V{FILEBAR_HEIGHT}z" class="c"/>'
+    inner = f'<g transform="translate(0 {_num((FILEBAR_HEIGHT - H) / 2)})">{body}</g>'
+    return _svg(width, FILEBAR_HEIGHT, _css({"c": "fill:{soft}", "a": "stroke:{link}", "s": "stroke:{muted}", "t": "fill:{ink}"}) + frame + inner)
+
+
+def render_link(text: str, icon: str = "", pad_top: int = 0, pad_bottom: int = 0, square: bool = False) -> str:
+    """A reference button, e.g. a file path or a rule id: GitHub's header fill and border, an accent icon, an arrow at the end. Wrap it in a link.
+
+    `square` draws it like the Qodo suggestion panel's outlined buttons: square corners, no fill."""
     x, body = 10.0, ""
     if icon in LINK_ICONS:
         body, x = lucide(LINK_ICONS[icon], x, 'class="a"', 13), x + 13 + 7
@@ -145,9 +160,10 @@ def render_link(text: str, icon: str = "", pad_top: int = 0, pad_bottom: int = 0
     x += w + 7
     body += run + lucide("move-up-right", x, 'class="s"', 10)
     width = round(x + 10 + 9)
-    frame = f'<rect x="0.5" y="0.5" width="{width - 1}" height="{LINK_HEIGHT - 1}" rx="6" class="c"/>'
+    frame = f'<rect x="0.5" y="0.5" width="{width - 1}" height="{LINK_HEIGHT - 1}" rx="{0 if square else 6}" class="c"/>'
     inner = f'<g transform="translate(0 {_num((LINK_HEIGHT - H) / 2)})">{body}</g>'
-    out = _css({"c": "fill:{bar};stroke:{line}", "a": "stroke:{link}", "s": "stroke:{muted}", "t": "fill:{ink}"}) + frame + inner
+    box = "fill:none;stroke:{line}" if square else "fill:{bar};stroke:{line}"
+    out = _css({"c": box, "a": "stroke:{link}", "s": "stroke:{muted}", "t": "fill:{ink}"}) + frame + inner
     return _svg(width, LINK_HEIGHT + pad_top + pad_bottom, f'<g transform="translate(0 {pad_top})">{out}</g>')
 
 

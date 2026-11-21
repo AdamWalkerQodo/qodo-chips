@@ -147,6 +147,7 @@ server/run_local.sh
 | `/v1/link.svg?t={text}&i={icon}` | A reference button to wrap in a link, 28px tall: file path, rule id, ticket. Icons: `file`, `rule`, `ticket`, `web`, `pr` |
 | `/v1/header.svg?t={title}&i={icon}&s={subtitle}&w={width}` | A section header on its own, for content that must stay text, such as a code block: icon and title, optional muted subtitle on the right. Takes `pt` and `pb` |
 | `/v1/edge.svg?kind={side or bottom}&w={width}&h={height}` | Border pieces that continue a header's container around a code block: `side` is a 1px vertical line, `bottom` the closing edge. Use with `header.svg?open_bottom=true` |
+| `/v1/filebar.svg?t={path}&w={width}` | The title strip of a code block: file icon, path and an arrow. Put it in a `<div>` directly above the fenced block and wrap it in a link to the file |
 | `/v1/note.svg?t={text}` | A quiet one-line note: info icon and muted text |
 | `/v1/card.svg?t={text}&w={width}` | The text card, wrapped to `w` pixels (default 760). `h={heading}` and `i={icon}` add a title row with an icon and a line under it |
 

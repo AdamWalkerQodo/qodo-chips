@@ -5,7 +5,8 @@ Run:  uvicorn server.app:app --port 8095   (from the repository root)
   GET /v1/title.svg?t=<title>&n=<number>&frame=0                      text only, no container
   GET /v1/title.svg?t=<title>&n=<number>&w=<width>&c=<chip>&c=<chip>   chip: pill|<colour>|<label> or chip|<icon>|<label>|<mono or color>
   GET /v1/label.svg?t=<word>&i=<icon>
-  GET /v1/link.svg?t=<text>&i=<icon>&pt=<space above>
+  GET /v1/link.svg?t=<text>&i=<icon>&pt=<space above>&square=<true for the outlined square style>
+  GET /v1/filebar.svg?t=<path>&w=<width>     the title strip that sits on top of a code block
   GET /v1/header.svg?t=<title>&i=<icon>&s=<subtitle>&w=<width>&pt=<space above>&pb=<space below>
   GET /v1/edge.svg?kind=<side, bottom, close, rule, space or divider>&w=<width>&h=<height>&pb=<space below>   border pieces around a code block
   GET /v1/note.svg?t=<text>&pt=<space above>
@@ -21,7 +22,7 @@ import zlib
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import Response
 
-from server.render import LINK_ICONS, SECTION_ICONS, render_card, render_edge, render_header, render_label, render_link, render_note, render_plain_title, render_title
+from server.render import LINK_ICONS, SECTION_ICONS, render_card, render_edge, render_filebar, render_header, render_label, render_link, render_note, render_plain_title, render_title
 
 MAX_TITLE, MAX_TEXT = 300, 8000
 HEADERS = {
@@ -82,10 +83,16 @@ def label(t: str | None = None, z: str | None = None, i: str = Query("", max_len
 @app.get("/v1/link.svg")
 def link(
     t: str | None = None, z: str | None = None, i: str = Query("", max_length=20), pt: int = PAD_TOP, pb: int = Query(0, ge=0, le=32),
+    square: bool = False,
 ) -> Response:
     if i and i not in LINK_ICONS:
         raise HTTPException(400, f"unknown icon; use one of {sorted(LINK_ICONS)}")
-    return _image(render_link(" ".join(_text(t, z, 160).split()), i, pt, pb))
+    return _image(render_link(" ".join(_text(t, z, 160).split()), i, pt, pb, square))
+
+
+@app.get("/v1/filebar.svg")
+def filebar(t: str | None = None, z: str | None = None, w: int = Query(760, ge=320, le=1200), i: str = Query("file", max_length=20)) -> Response:
+    return _image(render_filebar(" ".join(_text(t, z, 200).split()), w, i))
 
 
 @app.get("/v1/header.svg")
