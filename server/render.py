@@ -76,7 +76,8 @@ def _inner_chip(spec: str, index: int) -> tuple[str, float]:
     parts = rest.split("|")
     if kind == "pill" and len(parts) == 2 and parts[0] in PILL_COLORS:
         return pill(parts[1][:40], PILL_COLORS[parts[0]])
-    if kind == "chip" and len(parts) == 3 and parts[0] in ICONS and parts[2] in ("mono", "color"):
+    known = parts[0] in ICONS or re.fullmatch(r"(rel|sev):\d", parts[0])   # also the relevance arcs and severity bars
+    if kind == "chip" and len(parts) == 3 and known and parts[2] in ("mono", "color"):
         body, w = chip(parts[0], parts[1][:40], None, parts[2], "auto")
         fill = f".fx{index}{{{{fill:{{inner}}}}}}"
         override = f"<style>{fill.format(**LIGHT)}@media (prefers-color-scheme:dark){{{fill.format(**DARK)}}}</style>"
@@ -167,6 +168,11 @@ def render_edge(kind: str, width: int = 760, height: int = 8, pad_bottom: int = 
         body = (f'<rect width="{inner}" height="1" class="d"/><rect width="1" height="{height}" class="d"/>'
                 f'<rect x="{inner - 1}" width="1" height="{height}" class="d"/>')
         return _shifted(width, height, pad_left, _css({"d": "fill:{line}"}) + body)
+    if kind == "close":     # a container's square closing edge: the side lines, then a line across the bottom
+        inner = width - pad_left
+        body = (f'<rect y="{height - 1}" width="{inner}" height="1" class="d"/><rect width="1" height="{height}" class="d"/>'
+                f'<rect x="{inner - 1}" width="1" height="{height}" class="d"/>')
+        return _shifted(width, height + pad_bottom, pad_left, _css({"d": "fill:{line}"}) + body)
     if kind == "space":  # nothing drawn: vertical space, since a comment cannot carry margins
         return _svg(width, height, "")
     if kind == "rule":   # a horizontal separator, with the line in the middle of `height`
@@ -178,37 +184,44 @@ def render_edge(kind: str, width: int = 760, height: int = 8, pad_bottom: int = 
 
 def render_header(
     title: str, icon: str = "", subtitle: str = "", width: int = 760, pad_top: int = 0, pad_bottom: int = 0, open_bottom: bool = False, pad_left: int = 0,
-    middle: bool = False,
+    middle: bool = False, chips: list[str] | None = None, bare: bool = False,
 ) -> str:
-    """A section header on its own: icon and title on GitHub's header fill inside a border, an optional muted subtitle on the right.
+    """A section header on its own: icon and title, optional chips after the title, an optional muted subtitle on the right.
 
-    Used above content that cannot sit inside an image, such as a code block the reader must be able to copy."""
+    By default it is a rounded, bordered bar on GitHub's header fill. `open_bottom` squares the bottom so side lines can continue from it;
+    `middle` makes it a band inside a container; `bare` draws only the content, for use inside a table cell that has its own border."""
     full_width, width = width, width - pad_left
-    x, body = float(CARD_PAD), ""
+    head, pad = (H + 6, 0) if bare else (CARD_HEAD, CARD_PAD)
+    x, body = float(pad), ""
     if icon in SECTION_ICONS:
         body, x = lucide(SECTION_ICONS[icon], x, 'class="s"', 14), x + 14 + 8
     run, w = _run(title, x, "SemiBold", "t", 13)
-    body += run
-    room = width - (x + w) - 2 * CARD_PAD
+    body, x = body + run, x + w
+    for index, spec in enumerate(chips or []):
+        chip_body, chip_w = _inner_chip(spec, index)
+        body, x = body + f'<g transform="translate({_num(x + 10)} 0)">{chip_body}</g>', x + 10 + chip_w
+    room = width - x - 2 * CARD_PAD
     while len(subtitle) > 4 and _run(subtitle, 0, "Regular", "n", 12)[1] > room:
         subtitle = subtitle[:-2].rstrip() + "…"
     if subtitle:
         sub_w = _run(subtitle, 0, "Regular", "n", 12)[1]
-        body += _run(subtitle, width - CARD_PAD - sub_w, "Regular", "n", 12)[0]
-    frame = f'<rect x="0.5" y="0.5" width="{width - 1}" height="{CARD_HEAD - 1}" rx="6" class="c"/>'
+        body += _run(subtitle, width - pad - sub_w, "Regular", "n", 12)[0]
+    frame = f'<rect x="0.5" y="0.5" width="{width - 1}" height="{head - 1}" rx="6" class="c"/>'
     if open_bottom:   # square bottom corners, and the side lines run on through the space below, so more lines can continue from it
-        frame = (f'<path d="M0.5 {CARD_HEAD - 0.5}V6.5a6 6 0 0 1 6-6H{width - 6.5}a6 6 0 0 1 6 6V{CARD_HEAD - 0.5}z" class="c"/>'
-                 f'<rect y="{CARD_HEAD - 1}" width="1" height="{pad_bottom + 1}" class="d"/>'
-                 f'<rect x="{width - 1}" y="{CARD_HEAD - 1}" width="1" height="{pad_bottom + 1}" class="d"/>')
+        frame = (f'<path d="M0.5 {head - 0.5}V6.5a6 6 0 0 1 6-6H{width - 6.5}a6 6 0 0 1 6 6V{head - 0.5}z" class="c"/>'
+                 f'<rect y="{head - 1}" width="1" height="{pad_bottom + 1}" class="d"/>'
+                 f'<rect x="{width - 1}" y="{head - 1}" width="1" height="{pad_bottom + 1}" class="d"/>')
     if middle:        # a section band inside a container: square corners, a line above and below, the container's side lines on both sides
-        tall = CARD_HEAD + pad_bottom
-        frame = (f'<rect width="{width}" height="{CARD_HEAD}" class="m"/><rect width="{width}" height="1" class="d"/>'
-                 f'<rect y="{CARD_HEAD - 1}" width="{width}" height="1" class="d"/>'
+        tall = head + pad_bottom
+        frame = (f'<rect width="{width}" height="{head}" class="m"/><rect width="{width}" height="1" class="d"/>'
+                 f'<rect y="{head - 1}" width="{width}" height="1" class="d"/>'
                  f'<rect width="1" height="{tall}" class="d"/><rect x="{width - 1}" width="1" height="{tall}" class="d"/>')
-    inner = f'<g transform="translate(0 {_num((CARD_HEAD - H) / 2)})">{body}</g>'
+    if bare:
+        frame = ""
+    inner = f'<g transform="translate(0 {_num((head - H) / 2)})">{body}</g>'
     css = _css({"c": "fill:{bar};stroke:{line}", "m": "fill:{bar}", "d": "fill:{line}", "s": "stroke:{muted}", "t": "fill:{text}", "n": "fill:{muted}"})
     out = css + frame + inner
-    return _shifted(full_width, CARD_HEAD + pad_top + pad_bottom, pad_left, f'<g transform="translate(0 {pad_top})">{out}</g>')
+    return _shifted(full_width, head + pad_top + pad_bottom, pad_left, f'<g transform="translate(0 {pad_top})">{out}</g>')
 
 
 def _prose_word(word: str, x: float, y: float, glyphs_used: dict[str, str]) -> tuple[str, float]:
