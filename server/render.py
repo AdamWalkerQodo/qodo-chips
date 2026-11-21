@@ -162,6 +162,11 @@ def render_edge(kind: str, width: int = 760, height: int = 8, pad_bottom: int = 
     "rule" is a separator line across `width`."""
     if kind == "side":   # with pad_left the image is wider and the line sits at its right, which indents whatever flows beside it
         return _svg(pad_left + 1, height, _css({"d": "fill:{line}"}) + f'<rect x="{pad_left}" width="1" height="{height}" class="d"/>')
+    if kind == "divider":   # a line across a container with its side lines running on below it, for a footer
+        inner = width - pad_left
+        body = (f'<rect width="{inner}" height="1" class="d"/><rect width="1" height="{height}" class="d"/>'
+                f'<rect x="{inner - 1}" width="1" height="{height}" class="d"/>')
+        return _shifted(width, height, pad_left, _css({"d": "fill:{line}"}) + body)
     if kind == "space":  # nothing drawn: vertical space, since a comment cannot carry margins
         return _svg(width, height, "")
     if kind == "rule":   # a horizontal separator, with the line in the middle of `height`
@@ -173,6 +178,7 @@ def render_edge(kind: str, width: int = 760, height: int = 8, pad_bottom: int = 
 
 def render_header(
     title: str, icon: str = "", subtitle: str = "", width: int = 760, pad_top: int = 0, pad_bottom: int = 0, open_bottom: bool = False, pad_left: int = 0,
+    middle: bool = False,
 ) -> str:
     """A section header on its own: icon and title on GitHub's header fill inside a border, an optional muted subtitle on the right.
 
@@ -194,8 +200,14 @@ def render_header(
         frame = (f'<path d="M0.5 {CARD_HEAD - 0.5}V6.5a6 6 0 0 1 6-6H{width - 6.5}a6 6 0 0 1 6 6V{CARD_HEAD - 0.5}z" class="c"/>'
                  f'<rect y="{CARD_HEAD - 1}" width="1" height="{pad_bottom + 1}" class="d"/>'
                  f'<rect x="{width - 1}" y="{CARD_HEAD - 1}" width="1" height="{pad_bottom + 1}" class="d"/>')
+    if middle:        # a section band inside a container: square corners, a line above and below, the container's side lines on both sides
+        tall = CARD_HEAD + pad_bottom
+        frame = (f'<rect width="{width}" height="{CARD_HEAD}" class="m"/><rect width="{width}" height="1" class="d"/>'
+                 f'<rect y="{CARD_HEAD - 1}" width="{width}" height="1" class="d"/>'
+                 f'<rect width="1" height="{tall}" class="d"/><rect x="{width - 1}" width="1" height="{tall}" class="d"/>')
     inner = f'<g transform="translate(0 {_num((CARD_HEAD - H) / 2)})">{body}</g>'
-    out = _css({"c": "fill:{bar};stroke:{line}", "d": "fill:{line}", "s": "stroke:{muted}", "t": "fill:{text}", "n": "fill:{muted}"}) + frame + inner
+    out = (_css({"c": "fill:{bar};stroke:{line}", "m": "fill:{bar}", "d": "fill:{line}", "s": "stroke:{muted}", "t": "fill:{text}", "n": "fill:{muted}"})
+           + frame + inner)
     return _shifted(full_width, CARD_HEAD + pad_top + pad_bottom, pad_left, f'<g transform="translate(0 {pad_top})">{out}</g>')
 
 
