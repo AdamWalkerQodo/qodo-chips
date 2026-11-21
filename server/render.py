@@ -149,7 +149,17 @@ def render_link(text: str, icon: str = "", pad_top: int = 0) -> str:
     return _svg(width, LINK_HEIGHT + pad_top, f'<g transform="translate(0 {pad_top})">{out}</g>')
 
 
-def render_header(title: str, icon: str = "", subtitle: str = "", width: int = 760, pad_top: int = 0, pad_bottom: int = 0) -> str:
+def render_edge(kind: str, width: int = 760, height: int = 8, pad_bottom: int = 0) -> str:
+    """Border pieces that continue a header's container around content that is not an image, such as a code block.
+
+    "side" is a 1px vertical line `height` tall; "bottom" is the closing edge: two rounded corners joined by a line, `width` wide."""
+    if kind == "side":
+        return _svg(1, height, _css({"d": "fill:{line}"}) + f'<rect width="1" height="{height}" class="d"/>')
+    path = f'<path d="M0.5 0V{height - 6.5}a6 6 0 0 0 6 6H{width - 6.5}a6 6 0 0 0 6-6V0" fill="none" class="k"/>'
+    return _svg(width, height + pad_bottom, _css({"k": "stroke:{line}"}) + path)
+
+
+def render_header(title: str, icon: str = "", subtitle: str = "", width: int = 760, pad_top: int = 0, pad_bottom: int = 0, open_bottom: bool = False) -> str:
     """A section header on its own: icon and title on GitHub's header fill inside a border, an optional muted subtitle on the right.
 
     Used above content that cannot sit inside an image, such as a code block the reader must be able to copy."""
@@ -165,8 +175,12 @@ def render_header(title: str, icon: str = "", subtitle: str = "", width: int = 7
         sub_w = _run(subtitle, 0, "Regular", "n", 12)[1]
         body += _run(subtitle, width - CARD_PAD - sub_w, "Regular", "n", 12)[0]
     frame = f'<rect x="0.5" y="0.5" width="{width - 1}" height="{CARD_HEAD - 1}" rx="6" class="c"/>'
+    if open_bottom:   # square bottom corners, and the side lines run on through the space below, so more lines can continue from it
+        frame = (f'<path d="M0.5 {CARD_HEAD - 0.5}V6.5a6 6 0 0 1 6-6H{width - 6.5}a6 6 0 0 1 6 6V{CARD_HEAD - 0.5}z" class="c"/>'
+                 f'<rect y="{CARD_HEAD - 1}" width="1" height="{pad_bottom + 1}" class="d"/>'
+                 f'<rect x="{width - 1}" y="{CARD_HEAD - 1}" width="1" height="{pad_bottom + 1}" class="d"/>')
     inner = f'<g transform="translate(0 {_num((CARD_HEAD - H) / 2)})">{body}</g>'
-    out = _css({"c": "fill:{bar};stroke:{line}", "s": "stroke:{muted}", "t": "fill:{text}", "n": "fill:{muted}"}) + frame + inner
+    out = _css({"c": "fill:{bar};stroke:{line}", "d": "fill:{line}", "s": "stroke:{muted}", "t": "fill:{text}", "n": "fill:{muted}"}) + frame + inner
     return _svg(width, CARD_HEAD + pad_top + pad_bottom, f'<g transform="translate(0 {pad_top})">{out}</g>')
 
 

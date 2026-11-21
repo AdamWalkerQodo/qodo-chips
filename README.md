@@ -146,6 +146,7 @@ server/run_local.sh
 | `/v1/label.svg?t={word}&i={icon}` | A section label: icon and word. Icons: `description`, `code`, `evidence`, `agent-prompt`, `relevance` |
 | `/v1/link.svg?t={text}&i={icon}` | A reference button to wrap in a link, 28px tall: file path, rule id, ticket. Icons: `file`, `rule`, `ticket`, `web`, `pr` |
 | `/v1/header.svg?t={title}&i={icon}&s={subtitle}&w={width}` | A section header on its own, for content that must stay text, such as a code block: icon and title, optional muted subtitle on the right. Takes `pt` and `pb` |
+| `/v1/edge.svg?kind={side or bottom}&w={width}&h={height}` | Border pieces that continue a header's container around a code block: `side` is a 1px vertical line, `bottom` the closing edge. Use with `header.svg?open_bottom=true` |
 | `/v1/note.svg?t={text}` | A quiet one-line note: info icon and muted text |
 | `/v1/card.svg?t={text}&w={width}` | The text card, wrapped to `w` pixels (default 760). `h={heading}` and `i={icon}` add a title row with an icon and a line under it |
 
@@ -154,3 +155,18 @@ server/run_local.sh
 Either address also takes `z=` in place of `t=`: the text, zlib-compressed and then base64url-encoded, for shorter addresses.
 
 On GitHub, wrap the title image in `<picture>` when it sits in a `<summary>`. A bare `<img>` is turned into a link to the image, so a click on the title would open the file and not fold the section.
+
+### A code block inside a header's container
+
+A code block must stay text so it can be copied, so it cannot be drawn into an image. To make it look like part of its header's container, draw the border around it in pieces:
+
+```html
+<div><img src="{server}/v1/header.svg?t=Code&i=code&w=954&open_bottom=true&pb=16" width="954" align="top"></div>
+<div><img src="{server}/v1/edge.svg?kind=side&h={H}" width="1" height="{H}" align="left"><img src="{server}/v1/edge.svg?kind=side&h={H}" width="1" height="{H}" align="right"></div>
+
+(the fenced code block)
+
+<div><img src="{server}/v1/edge.svg?kind=bottom&w=954" width="954" align="top"></div>
+```
+
+`H` is the code block's height plus its 16px bottom margin. On GitHub a code block is 32px of padding plus 17.4px per line, so `H = round(32 + 17.4 × lines) + 16`. GitHub adds 20px of space beside a floated image, which is what insets the block from the lines.
