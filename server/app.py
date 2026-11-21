@@ -80,10 +80,12 @@ def label(t: str | None = None, z: str | None = None, i: str = Query("", max_len
 
 
 @app.get("/v1/link.svg")
-def link(t: str | None = None, z: str | None = None, i: str = Query("", max_length=20), pt: int = PAD_TOP) -> Response:
+def link(
+    t: str | None = None, z: str | None = None, i: str = Query("", max_length=20), pt: int = PAD_TOP, pb: int = Query(0, ge=0, le=32),
+) -> Response:
     if i and i not in LINK_ICONS:
         raise HTTPException(400, f"unknown icon; use one of {sorted(LINK_ICONS)}")
-    return _image(render_link(" ".join(_text(t, z, 160).split()), i, pt))
+    return _image(render_link(" ".join(_text(t, z, 160).split()), i, pt, pb))
 
 
 @app.get("/v1/header.svg")

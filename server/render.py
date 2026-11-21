@@ -134,7 +134,7 @@ def render_note(text: str, pad_top: int = 0) -> str:
     return _chip_height_svg(round(18 + w + 2), _css({"s": "stroke:{muted}", "n": "fill:{muted}"}) + body + run, pad_top)
 
 
-def render_link(text: str, icon: str = "", pad_top: int = 0) -> str:
+def render_link(text: str, icon: str = "", pad_top: int = 0, pad_bottom: int = 0) -> str:
     """A reference button, e.g. a file path or a rule id: GitHub's header fill and border, an accent icon, an arrow at the end. Wrap it in a link."""
     x, body = 10.0, ""
     if icon in LINK_ICONS:
@@ -146,7 +146,7 @@ def render_link(text: str, icon: str = "", pad_top: int = 0) -> str:
     frame = f'<rect x="0.5" y="0.5" width="{width - 1}" height="{LINK_HEIGHT - 1}" rx="6" class="c"/>'
     inner = f'<g transform="translate(0 {_num((LINK_HEIGHT - H) / 2)})">{body}</g>'
     out = _css({"c": "fill:{bar};stroke:{line}", "a": "stroke:{link}", "s": "stroke:{muted}", "t": "fill:{ink}"}) + frame + inner
-    return _svg(width, LINK_HEIGHT + pad_top, f'<g transform="translate(0 {pad_top})">{out}</g>')
+    return _svg(width, LINK_HEIGHT + pad_top + pad_bottom, f'<g transform="translate(0 {pad_top})">{out}</g>')
 
 
 def render_edge(kind: str, width: int = 760, height: int = 8, pad_bottom: int = 0) -> str:
