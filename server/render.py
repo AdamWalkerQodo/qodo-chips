@@ -189,6 +189,10 @@ def render_edge(kind: str, width: int = 760, height: int = 8, pad_bottom: int = 
         body = (f'<rect y="{height - 1}" width="{inner}" height="1" class="d"/><rect width="1" height="{height}" class="d"/>'
                 f'<rect x="{inner - 1}" width="1" height="{height}" class="d"/>')
         return _shifted(width, height + pad_bottom, pad_left, _css({"d": "fill:{line}"}) + body)
+    if kind == "gap":       # only the container's two side lines, across the full width: vertical space inside a container
+        inner = width - pad_left
+        body = f'<rect width="1" height="{height}" class="d"/><rect x="{inner - 1}" width="1" height="{height}" class="d"/>'
+        return _shifted(width, height, pad_left, _css({"d": "fill:{line}"}) + body)
     if kind == "space":  # nothing drawn: vertical space, since a comment cannot carry margins
         return _svg(width, height, "")
     if kind == "rule":   # a horizontal separator, with the line in the middle of `height`
