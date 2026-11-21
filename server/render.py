@@ -24,8 +24,8 @@ BAR_MARGIN = 4                    # transparent rows above and below the bar, so
 BAR_TITLE_SIZE = 14
 PILL_COLORS = {"red": "#ce2c31", "orange": "#e36209", "yellow": "#d4a72c", "brand": "#634fd1", "gray": "#3d3d3d"}
 IMAGE_HEIGHT = H + CHIP_TOP_PAD   # same box as the static chips, so titles and labels line up with them
-SECTION_ICONS = {"description": "text-align-start", "code": "code", "evidence": "search", "agent-prompt": "bot", "relevance": "info"}
-PROSE_SIZE, CARD_PAD, CARD_LINE = 14, 16, 23
+SECTION_ICONS = {"description": "text-align-start", "code": "code", "evidence": "search", "agent-prompt": "bot", "relevance": "info", "actions": "square-check"}
+PROSE_SIZE, CARD_PAD, CARD_LINE = 14, 21, 23   # 21px = a 1px side line + the 20px GitHub puts beside a floated image, so text, code and buttons share a left edge
 NAME_SIZE, NAME_PAD = 12.5, 5
 NAME_CHAR_W = NAME_SIZE * 0.6     # every monospace glyph is drawn at this width (textLength pins it)
 LINK_HEIGHT = 28
@@ -226,10 +226,11 @@ def _card_header(heading: str, icon: str, width: int) -> str:
     return top + f'<g transform="translate(0 {_num((CARD_HEAD - H) / 2)})">{body}{run}</g>'
 
 
-def render_card(text: str, width: int = 760, pad_top: int = 0, heading: str = "", icon: str = "") -> str:
+def render_card(text: str, width: int = 760, pad_top: int = 0, heading: str = "", icon: str = "", open_bottom: bool = False) -> str:
     """A text card: prose in Inter, `backticked` names in monospace on a rounded tint. Text is wrapped to `width` here, not by the reader's browser.
 
-    With `heading` the card becomes a panel: a title row with an icon, a line, then the text on the page background."""
+    With `heading` the card becomes a panel: a title row with an icon, a line, then the text on the page background.
+    `open_bottom` leaves the panel without its bottom edge, so more content can follow inside the same container."""
     _, _, cmap, hmtx, upm, _ = _font("Regular")
     space = hmtx[cmap[ord(" ")]][0] * PROSE_SIZE / upm
     limit, glyphs_used, body = width - CARD_PAD, {}, ""
@@ -257,7 +258,10 @@ def render_card(text: str, width: int = 760, pad_top: int = 0, heading: str = ""
     if heading:
         head, height = CARD_HEAD, height + CARD_HEAD
         out += _css({"k": "fill:none;stroke:{line}", "h": "fill:{bar}", "d": "fill:{line}", "s": "stroke:{muted}", "t": "fill:{text}", "b": "fill:{idbg}"})
-        out += _card_header(heading, icon, width) + f'<rect x="0.5" y="0.5" width="{width - 1}" height="{_num(height - 1)}" rx="6" class="k"/>'
+        border = f'<rect x="0.5" y="0.5" width="{width - 1}" height="{_num(height - 1)}" rx="6" class="k"/>'
+        if open_bottom:
+            border = f'<path d="M0.5 {_num(height)}V6.5a6 6 0 0 1 6-6H{width - 6.5}a6 6 0 0 1 6 6V{_num(height)}" class="k"/>'
+        out += _card_header(heading, icon, width) + border
     else:
         head = 0
         out += _css({"k": "fill:{card}", "t": "fill:{text}", "b": "fill:{idbg}"}) + f'<rect width="{width}" height="{_num(height)}" rx="6" class="k"/>'

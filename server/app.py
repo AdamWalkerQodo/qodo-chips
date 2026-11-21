@@ -112,8 +112,8 @@ def note(t: str | None = None, z: str | None = None, pt: int = PAD_TOP) -> Respo
 @app.get("/v1/card.svg")
 def card(
     t: str | None = None, z: str | None = None, w: int = Query(760, ge=320, le=1200), pt: int = PAD_TOP,
-    h: str = Query("", max_length=60), i: str = Query("", max_length=20),
+    h: str = Query("", max_length=60), i: str = Query("", max_length=20), open_bottom: bool = False,
 ) -> Response:
     if i and i not in SECTION_ICONS:
         raise HTTPException(400, f"unknown icon; use one of {sorted(SECTION_ICONS)}")
-    return _image(render_card(_text(t, z, MAX_TEXT), w, pt, " ".join(h.split()), i))
+    return _image(render_card(_text(t, z, MAX_TEXT), w, pt, " ".join(h.split()), i, open_bottom))
