@@ -287,6 +287,28 @@ def render_fluid_edge(kind: str, height: int = 16, left_percent: float = 0, pad_
     return _fluid_svg(height + pad_top, f'{css}<g shape-rendering="crispEdges">{body}</g>')
 
 
+def render_fluid_filebar(text: str, left_percent: float, bar_percent: float, icon: str = "file", left_pad: int = 20, right_pad: int = 21) -> str:
+    """The title strip of a code block as a full-width piece of a container that stretches with the page.
+
+    It draws the container's two borders (the left one `left_percent` of the width in) and, between them, the strip: from
+    `bar_percent` of the width plus `left_pad` px to `right_pad` px before the right edge, which is where a code block sits
+    between a floated left side line `bar_percent` wide and a 1px right one. Top corners rounded, bottom flat."""
+    h, clip = FILEBAR_HEIGHT, right_pad + 6
+    css = _css({"c": "fill:{soft}", "a": "stroke:{link}", "s": "stroke:{muted}", "t": "fill:{ink}", "d": "fill:{line}"})
+    middle = _num((h - H) / 2)
+    bar = _from_right(f'<rect x="{left_pad + clip}" width="100%" height="{h + 8}" rx="6" class="c"/>', bar_percent)
+    bar = f'<svg x="-{clip}" width="100%" height="{h}">{bar}</svg>'     # shifted left, so its right edge cuts the strip off before the corner
+    cap = f'<svg x="-{right_pad + 40}" width="40" height="{h}"><rect width="40" height="{h + 8}" rx="6" class="c"/></svg>'
+    label = lucide(LINK_ICONS.get(icon, "file-text"), 12, 'class="a"', 13) + _run(text, 12 + 13 + 8, "Regular", "t", 12)[0]
+    label = _from_right(f'<g transform="translate({left_pad} {middle})">{label}</g>', bar_percent)
+    mark = lucide("move-up-right", 0, 'class="s"', 10)
+    arrow = _from_right(f'<g transform="translate({-right_pad - 12 - 10} {middle})">{mark}</g>')
+    line = f'<rect width="1" height="{h}" class="d"/>'
+    last = f'<rect x="-1" width="1" height="{h}" class="d"/>'
+    borders = f'<g shape-rendering="crispEdges">{_from_right(line, left_percent)}{_from_right(last)}</g>'
+    return _fluid_svg(h, css + bar + _from_right(cap) + label + arrow + borders)
+
+
 def render_fluid_band(
     title: str, icon: str = "", subtitle: str = "", chips: list[str] | None = None, band_height: int = 36, hang: int = 0,
     top_rule: bool = False, pad_top: int = 0,

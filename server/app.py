@@ -23,7 +23,7 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import Response
 
 from server.render import (
-    LINK_ICONS, SECTION_ICONS, render_card, render_edge, render_filebar, render_fluid_band, render_fluid_edge, render_header, render_label,
+    LINK_ICONS, SECTION_ICONS, render_card, render_edge, render_filebar, render_fluid_band, render_fluid_edge, render_fluid_filebar, render_header, render_label,
     render_link, render_note, render_plain_title, render_title,
 )
 
@@ -94,7 +94,12 @@ def link(
 
 
 @app.get("/v1/filebar.svg")
-def filebar(t: str | None = None, z: str | None = None, w: int = Query(760, ge=120, le=1200), i: str = Query("file", max_length=20)) -> Response:
+def filebar(
+    t: str | None = None, z: str | None = None, w: int = Query(760, ge=120, le=1200), i: str = Query("file", max_length=20),
+    fluid: bool = False, lp: float = Query(0, ge=0, le=50), bl: float = Query(0, ge=0, le=50),
+) -> Response:
+    if fluid:
+        return _image(render_fluid_filebar(" ".join(_text(t, z, 200).split()), lp, bl, i))
     return _image(render_filebar(" ".join(_text(t, z, 200).split()), w, i))
 
 
