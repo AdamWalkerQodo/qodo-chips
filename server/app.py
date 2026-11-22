@@ -22,7 +22,10 @@ import zlib
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import Response
 
-from server.render import LINK_ICONS, SECTION_ICONS, render_card, render_edge, render_filebar, render_header, render_label, render_link, render_note, render_plain_title, render_title
+from server.render import (
+    LINK_ICONS, SECTION_ICONS, render_card, render_edge, render_filebar, render_fluid_band, render_fluid_edge, render_header, render_label,
+    render_link, render_note, render_plain_title, render_title,
+)
 
 MAX_TITLE, MAX_TEXT = 300, 8000
 HEADERS = {
@@ -91,7 +94,7 @@ def link(
 
 
 @app.get("/v1/filebar.svg")
-def filebar(t: str | None = None, z: str | None = None, w: int = Query(760, ge=320, le=1200), i: str = Query("file", max_length=20)) -> Response:
+def filebar(t: str | None = None, z: str | None = None, w: int = Query(760, ge=120, le=1200), i: str = Query("file", max_length=20)) -> Response:
     return _image(render_filebar(" ".join(_text(t, z, 200).split()), w, i))
 
 
@@ -100,11 +103,13 @@ def header(
     t: str | None = None, z: str | None = None, i: str = Query("", max_length=20), s: str = Query("", max_length=160),
     w: int = Query(760, ge=320, le=1200), pt: int = PAD_TOP, pb: int = Query(0, ge=0, le=32), open_bottom: bool = False,
     pl: int = Query(0, ge=0, le=64), middle: bool = False, c: list[str] = Query([], max_length=4), bare: bool = False,
-    hang: int = Query(0, ge=0, le=32), bh: int = Query(0, ge=0, le=64), top: bool = True,
+    hang: int = Query(0, ge=0, le=32), bh: int = Query(0, ge=0, le=64), top: bool = True, fluid: bool = False,
 ) -> Response:
     if i and i not in SECTION_ICONS:
         raise HTTPException(400, f"unknown icon; use one of {sorted(SECTION_ICONS)}")
     try:
+        if fluid:
+            return _image(render_fluid_band(" ".join(_text(t, z, 60).split()), i, " ".join(s.split()), c, bh or 36, hang, top, pt))
         return _image(render_header(" ".join(_text(t, z, 60).split()), i, " ".join(s.split()), w, pt, pb, open_bottom, pl, middle, c, bare, hang, bh, top))
     except ValueError as error:
         raise HTTPException(400, str(error)) from error
@@ -112,9 +117,12 @@ def header(
 
 @app.get("/v1/edge.svg")
 def edge(
-    kind: str = Query("side", pattern="^(side|rside|bottom|rule|space|divider|close|gap|fill)$"), w: int = Query(760, ge=320, le=1200), h: int = Query(8, ge=7, le=4000),
+    kind: str = Query("side", pattern="^(side|rside|lside|bottom|rule|space|divider|close|gap|fill)$"), w: int = Query(760, ge=320, le=1200), h: int = Query(8, ge=7, le=4000),
     pb: int = Query(0, ge=0, le=32), pl: int = Query(0, ge=0, le=64), pr: int = Query(0, ge=0, le=64),
+    fluid: bool = False, lp: float = Query(0, ge=0, le=100), pt: int = PAD_TOP,
 ) -> Response:
+    if fluid:
+        return _image(render_fluid_edge(kind, h, lp, pt))
     return _image(render_edge(kind, w, h, pb, pl, pr))
 
 

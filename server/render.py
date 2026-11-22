@@ -254,6 +254,71 @@ def render_header(
     return _shifted(full_width, head + pad_top + pad_bottom, pad_left, f'<g transform="translate(0 {pad_top})">{out}</g>')
 
 
+def _fluid_svg(height: float, body: str) -> str:
+    """An image with no fixed width: it is drawn at whatever width the page gives it, with nothing scaled.
+
+    Positions are fixed distances from the left edge, or from the right edge through `_from_right`."""
+    return f'<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="{_num(height)}">{body}</svg>'
+
+
+def _from_right(body: str, percent: float = 100, css_class: str = "") -> str:
+    """`body` drawn with x=0 at `percent` of the image's width; negative x values sit left of that point."""
+    extra = f' class="{css_class}"' if css_class else ""
+    return f'<svg x="{_num(percent)}%" overflow="visible"{extra}>{body}</svg>'
+
+
+def render_fluid_edge(kind: str, height: int = 16, left_percent: float = 0, pad_top: int = 0) -> str:
+    """Border pieces of a container that stretches with the page: the image is used at a percentage width.
+
+    The container runs from `left_percent` of the image's width to its right edge. Kinds: "fill", "gap", "close" and "space" as in
+    `render_edge`; "rule" is a line across the top of the container; "lside" is only the left border, at `left_percent` of the
+    image's width, for a narrow image floated left. Lines snap to whole pixels, so they stay sharp at any width."""
+    css = _css({"m": "fill:{bar}", "d": "fill:{line}"})
+    if kind == "space":
+        return _fluid_svg(height, "")
+    line = f'<rect y="{pad_top}" width="1" height="{height}" class="d"/>'
+    body = _from_right(line, left_percent)
+    if kind != "lside":
+        span = f'x="{_num(left_percent)}%" width="{_num(100 - left_percent)}%"'
+        fill = f'<rect {span} height="{height}" class="m"/>' if kind == "fill" else ""
+        under = f'<rect {span} y="{height - 1}" height="1" class="d"/>' if kind in ("fill", "close") else ""
+        over = f'<rect {span} height="1" class="d"/>' if kind == "rule" else ""
+        body = fill + under + over + body + _from_right(f'<rect x="-1" width="1" height="{height}" class="d"/>')
+    return _fluid_svg(height + pad_top, f'{css}<g shape-rendering="crispEdges">{body}</g>')
+
+
+def render_fluid_band(
+    title: str, icon: str = "", subtitle: str = "", chips: list[str] | None = None, band_height: int = 36, hang: int = 0,
+    top_rule: bool = False, pad_top: int = 0,
+) -> str:
+    """A section band that stretches with the page: fill across the whole image, a border at each end, the title at the left
+    and the subtitle against the right.
+
+    The subtitle is dropped when the image is too narrow to hold it beside the title."""
+    x, body = float(CARD_PAD), ""
+    if icon in SECTION_ICONS:
+        body, x = lucide(SECTION_ICONS[icon], x, 'class="s"', 14), x + 14 + 8
+    run, w = _run(title, x, "SemiBold", "t", 13)
+    body, x = body + run, x + w
+    for index, spec in enumerate(chips or []):
+        chip_body, chip_w = _inner_chip(spec, index)
+        body, x = body + f'<g transform="translate({_num(x + 10)} 0)">{chip_body}</g>', x + 10 + chip_w
+    top = _num(pad_top + (band_height + hang - H) / 2)
+    frame = f'<rect y="{pad_top}" width="100%" height="{band_height}" class="m"/>'
+    frame += f'<rect y="{pad_top}" width="100%" height="1" class="d"/>' if top_rule else ""
+    frame += f'<rect y="{pad_top}" width="1" height="{band_height}" class="d"/>'
+    frame += _from_right(f'<rect x="-1" y="{pad_top}" width="1" height="{band_height}" class="d"/>')
+    frame = f'<g shape-rendering="crispEdges">{frame}</g>'
+    hide = ""
+    if subtitle:
+        sub_run, sub_w = _run(subtitle, 0, "Regular", "n", 12)
+        body_right = f'<g transform="translate({_num(-CARD_PAD - sub_w)} {top})">{sub_run}</g>'
+        frame += _from_right(body_right, css_class="sub")
+        hide = f"<style>@media (max-width:{_num(x + sub_w + 2 * CARD_PAD + 16)}px){{.sub{{display:none}}}}</style>"
+    css = _css({"m": "fill:{bar}", "d": "fill:{line}", "s": "stroke:{muted}", "t": "fill:{text}", "n": "fill:{muted}"})
+    return _fluid_svg(band_height + pad_top, css + hide + frame + f'<g transform="translate(0 {top})">{body}</g>')
+
+
 def _prose_word(word: str, x: float, y: float, glyphs_used: dict[str, str]) -> tuple[str, float]:
     """One prose word in Inter. Each glyph shape is defined once and reused, which keeps a long card small."""
     _, glyphs, cmap, hmtx, upm, _ = _font("Regular")
