@@ -172,29 +172,29 @@ def _shifted(width: int, height: float, pad_left: int, body: str) -> str:
     return _svg(width, height, f'<g transform="translate({pad_left} 0)">{body}</g>' if pad_left else body)
 
 
-def render_edge(kind: str, width: int = 760, height: int = 8, pad_bottom: int = 0, pad_left: int = 0) -> str:
+def render_edge(kind: str, width: int = 760, height: int = 8, pad_bottom: int = 0, pad_left: int = 0, pad_right: int = 0) -> str:
     """Border pieces that continue a header's container around content that is not an image, such as a code block.
 
     "side" is a 1px vertical line `height` tall; "bottom" is the closing edge: two rounded corners joined by a line, `width` wide;
-    "rule" is a separator line across `width`."""
+    "rule" is a separator line across `width`. `pad_right` keeps that much of the image's right side empty."""
     if kind == "side":   # with pad_left the image is wider and the line sits at its right, which indents whatever flows beside it
         return _svg(pad_left + 1, height, _css({"d": "fill:{line}"}) + f'<rect x="{pad_left}" width="1" height="{height}" class="d"/>')
     if kind == "divider":   # a line across a container with its side lines running on below it, for a footer
-        inner = width - pad_left
+        inner = width - pad_left - pad_right
         body = (f'<rect width="{inner}" height="1" class="d"/><rect width="1" height="{height}" class="d"/>'
                 f'<rect x="{inner - 1}" width="1" height="{height}" class="d"/>')
         return _shifted(width, height, pad_left, _css({"d": "fill:{line}"}) + body)
     if kind == "close":     # a container's square closing edge: the side lines, then a line across the bottom
-        inner = width - pad_left
+        inner = width - pad_left - pad_right
         body = (f'<rect y="{height - 1}" width="{inner}" height="1" class="d"/><rect width="1" height="{height}" class="d"/>'
                 f'<rect x="{inner - 1}" width="1" height="{height}" class="d"/>')
         return _shifted(width, height + pad_bottom, pad_left, _css({"d": "fill:{line}"}) + body)
     if kind == "gap":       # only the container's two side lines, across the full width: vertical space inside a container
-        inner = width - pad_left
+        inner = width - pad_left - pad_right
         body = f'<rect width="1" height="{height}" class="d"/><rect x="{inner - 1}" width="1" height="{height}" class="d"/>'
         return _shifted(width, height, pad_left, _css({"d": "fill:{line}"}) + body)
     if kind == "fill":      # the lower part of a section band, drawn separately so it can hang below the band's own image: fill, side lines, a line under it
-        inner = width - pad_left
+        inner = width - pad_left - pad_right
         body = (f'<rect width="{inner}" height="{height}" class="m"/><rect y="{height - 1}" width="{inner}" height="1" class="d"/>'
                 f'<rect width="1" height="{height}" class="d"/><rect x="{inner - 1}" width="1" height="{height}" class="d"/>')
         return _shifted(width, height, pad_left, _css({"m": "fill:{bar}", "d": "fill:{line}"}) + body)
@@ -204,7 +204,7 @@ def render_edge(kind: str, width: int = 760, height: int = 8, pad_bottom: int = 
         return _svg(width, height, "")
     if kind == "rule":   # a horizontal separator, with the line in the middle of `height`
         return _svg(width, height, _css({"d": "fill:{line}"}) + f'<rect y="{height // 2}" width="{width}" height="1" class="d"/>')
-    inner = width - pad_left
+    inner = width - pad_left - pad_right
     path = f'<path d="M0.5 0V{height - 6.5}a6 6 0 0 0 6 6H{inner - 6.5}a6 6 0 0 0 6-6V0" fill="none" class="k"/>'
     return _shifted(width, height + pad_bottom, pad_left, _css({"k": "stroke:{line}"}) + path)
 
