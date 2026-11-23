@@ -25,7 +25,10 @@ BAR_TITLE_SIZE = 14
 TITLE_NUMBER_COL = 24             # where a numbered title's text starts, in px from the image's left edge
 PILL_COLORS = {"red": "#ce2c31", "orange": "#e36209", "yellow": "#d4a72c", "brand": "#634fd1", "gray": "#3d3d3d"}
 IMAGE_HEIGHT = H + CHIP_TOP_PAD   # same box as the static chips, so titles and labels line up with them
-SECTION_ICONS = {"description": "text-align-start", "code": "code", "evidence": "search", "agent-prompt": "bot", "relevance": "info", "actions": "square-check"}
+SECTION_ICONS = {
+    "description": "text-align-start", "code": "code", "evidence": "search", "agent-prompt": "bot", "relevance": "info", "actions": "square-check",
+    "diagram": "waypoints", "files": "file-text", "assessment": "sparkles", "user": "users", "risk": "triangle-alert",
+}
 PROSE_SIZE, CARD_PAD, CARD_LINE = 14, 21, 23   # 21px = a 1px side line + the 20px GitHub puts beside a floated image, so text, code and buttons share a left edge
 NAME_SIZE, NAME_PAD = 12.5, 5
 NAME_CHAR_W = NAME_SIZE * 0.6     # every monospace glyph is drawn at this width (textLength pins it)
@@ -311,10 +314,10 @@ def render_fluid_filebar(text: str, left_percent: float, bar_percent: float, ico
 
 def render_fluid_band(
     title: str, icon: str = "", subtitle: str = "", chips: list[str] | None = None, band_height: int = 36, hang: int = 0,
-    top_rule: bool = False, pad_top: int = 0,
+    top_rule: bool = False, pad_top: int = 0, bottom_rule: bool = False,
 ) -> str:
     """A section band that stretches with the page: fill across the whole image, a border at each end, the title at the left
-    and the subtitle against the right.
+    and the subtitle against the right. With `top_rule` and `bottom_rule` it is a closed box, for a band standing on its own.
 
     The subtitle is dropped when the image is too narrow to hold it beside the title."""
     x, body = float(CARD_PAD), ""
@@ -328,6 +331,7 @@ def render_fluid_band(
     top = _num(pad_top + (band_height + hang - H) / 2)
     frame = f'<rect y="{pad_top}" width="100%" height="{band_height}" class="m"/>'
     frame += f'<rect y="{pad_top}" width="100%" height="1" class="d"/>' if top_rule else ""
+    frame += f'<rect y="{pad_top + band_height - 1}" width="100%" height="1" class="d"/>' if bottom_rule else ""
     frame += f'<rect y="{pad_top}" width="1" height="{band_height}" class="d"/>'
     frame += _from_right(f'<rect x="-1" y="{pad_top}" width="1" height="{band_height}" class="d"/>')
     frame = f'<g shape-rendering="crispEdges">{frame}</g>'
