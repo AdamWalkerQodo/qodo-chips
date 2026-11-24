@@ -34858,6 +34858,14 @@
   "alt": "Merge risk: Waiting"
  },
  {
+  "file": "v1/card/merge-risk/calculating.svg",
+  "width": "100%",
+  "height": 68,
+  "family": "card",
+  "key": "merge-risk/calculating",
+  "alt": "Merge risk: Calculating"
+ },
+ {
   "file": "v1/title/qodo-logo.svg",
   "width": 135,
   "height": 46,
