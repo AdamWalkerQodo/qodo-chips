@@ -42,18 +42,18 @@ RISK_DAMAGE = ["Cosmetic", "Reversible", "Recoverable", "Incorrect results", "Te
 RISK_FACTORS = [("complexity", "waypoints", "🧩", RISK_COMPLEXITY), ("damage", "flame", "🩹", RISK_DAMAGE)]
 # Merge suggestion cards: (tone, reason key, label, detail line, icon). The engine picks one by suggestion and main reason.
 SUGGESTIONS = [   # copy is kept short so it is not cut off when the card is narrow
-    ("not-safe", "high-findings", "Not ready", "High findings", "circle-x"),
-    ("not-safe", "high-risk-findings", "Not ready", "High risk, findings", "circle-x"),
-    ("consider", "medium-findings", "Needs review", "Medium findings", "eye"),
-    ("consider", "security-findings", "Needs review", "Security findings", "eye"),
-    ("consider", "high-risk", "Needs review", "High risk", "eye"),
-    ("consider", "medium-risk", "Needs review", "Medium risk", "eye"),
-    ("consider", "open-findings", "Needs review", "Open findings", "eye"),
-    ("safe", "clear", "Looks ready", "Nothing blocking", "circle-check"),
+    ("not-safe", "high-findings", "Fix first", "High findings", "circle-x"),
+    ("not-safe", "high-risk-findings", "Fix first", "High risk, findings", "circle-x"),
+    ("consider", "medium-findings", "Take a look", "Medium findings", "eye"),
+    ("consider", "security-findings", "Take a look", "Security findings", "eye"),
+    ("consider", "high-risk", "Take a look", "High risk", "eye"),
+    ("consider", "medium-risk", "Take a look", "Medium risk", "eye"),
+    ("consider", "open-findings", "Take a look", "Open findings", "eye"),
+    ("safe", "clear", "All clear", "Nothing blocking", "circle-check"),
     # When a merge workflow decided: its criteria were met, a blocking rule matched, or neither.
-    ("safe", "workflow-passed", "Looks ready", "Workflow passed", "circle-check"),
-    ("not-safe", "workflow-blocked", "Not ready", "Workflow blocked", "circle-x"),
-    ("consider", "workflow-not-met", "Needs review", "Workflow not met", "eye"),
+    ("safe", "workflow-passed", "All clear", "Workflow passed", "circle-check"),
+    ("not-safe", "workflow-blocked", "Fix first", "Workflow blocked", "circle-x"),
+    ("consider", "workflow-not-met", "Take a look", "Workflow not met", "eye"),
 ]
 NOTES = [("copy-prompt", "Copy this prompt and use it to remediate the issue with your preferred AI generation tools"),
          ("past-prs", "Recommendations generated based on similar findings in past PRs")]
