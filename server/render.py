@@ -17,7 +17,7 @@ SANS = 'system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif'
 # Surfaces and inks are GitHub's own (comment header, code block, default text), so the images sit in the page like native parts.
 LIGHT = {"bar": "#f6f8fa", "soft": "#eff2f5", "inner": "#e4e8ec", "chip": "#f4f4f4", "ink": "#1f2328", "muted": "#59636e", "card": "#f6f8fa", "line": "#d1d9e0", "text": "#1f2328", "idbg": "#e6eaef", "edge": "#d1d9e0", "link": "#0969da"}
 DARK = {"bar": "#151b23", "soft": "#212830", "inner": "#2a313c", "chip": "#3d3d3d", "ink": "#f0f6fc", "muted": "#9198a1", "card": "#151b23", "line": "#3d444d", "text": "#f0f6fc", "idbg": "#2a313c", "edge": "#3d444d", "link": "#4493f8"}
-LINK_ICONS = {"file": "file-text", "rule": "book-marked", "ticket": "clipboard-check", "web": "external-link", "pr": "git-pull-request"}
+LINK_ICONS = {"file": "file-text", "rule": "book-marked", "ticket": "clipboard-check", "web": "external-link", "pr": "git-pull-request", "open": "move-up-right"}
 TITLE_SIZE = 12.5
 BAR_HEIGHT, BAR_PAD, BAR_GAP = 36, 12, 6
 BAR_MARGIN = 4                    # transparent rows above and below the bar, so stacked findings do not touch
@@ -131,6 +131,11 @@ def render_label(text: str, icon: str = "") -> str:
     width = round(x + w + 10)
     frame = f'<rect x="0.5" y="0.5" width="{width - 1}" height="{H - 1}" rx="5.5" class="c"/>'
     return _chip_height_svg(width, _css({"c": "fill:{bar};stroke:{line}", "s": "stroke:{muted}", "t": "fill:{ink}"}) + frame + body + run)
+
+
+def render_icon(icon: str) -> str:
+    """A reference icon on its own, no text, to sit in front of a native link."""
+    return _chip_height_svg(16, _css({"s": "stroke:{muted}"}) + lucide({**SECTION_ICONS, **LINK_ICONS}[icon], 1, 'class="s"', 14))
 
 
 def render_note(text: str, pad_top: int = 0) -> str:
@@ -288,6 +293,37 @@ def render_fluid_edge(kind: str, height: int = 16, left_percent: float = 0, pad_
         over = f'<rect {span} height="1" class="d"/>' if kind == "rule" else ""
         body = fill + under + over + body + _from_right(f'<rect x="-1" width="1" height="{height}" class="d"/>')
     return _fluid_svg(height + pad_top, f'{css}<g shape-rendering="crispEdges">{body}</g>')
+
+
+def render_fluid_tab_bottom(height: int, left_percent: float, bar_percent: float, left_pad: int = 20, right_pad: int = 22) -> str:
+    """The lower part of a code block's title tab: the container's borders and the tab's two sides, nothing across, so the code
+    block can start right under it."""
+    css = _css({"d": "fill:{line}"})
+    sides = _from_right(f'<rect x="{left_pad}" width="1" height="100%" class="d"/>', bar_percent) + _from_right(f'<rect x="{-right_pad}" width="1" height="100%" class="d"/>')
+    borders = _from_right('<rect width="1" height="100%" class="d"/>', left_percent) + _from_right('<rect x="-1" width="1" height="100%" class="d"/>')
+    return _fluid_svg(height, css + f'<g shape-rendering="crispEdges">{borders}{sides}</g>')
+
+
+def render_tab_end(height: int = 21, width: int = 34) -> str:
+    """The right end of a title tab's text line: the tab's right side, with the link arrow 12px inside it."""
+    css = _css({"d": "fill:{line}", "s": "stroke:{muted}"})
+    arrow = lucide("move-up-right", width - 1 - 12 - 12, 'class="s"', 12)
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}">{css}{arrow}'
+            f'<rect x="{width - 1}" width="1" height="{height}" class="d" shape-rendering="crispEdges"/></svg>')
+
+
+def render_fluid_tab(height: int, left_percent: float, bar_percent: float, left_pad: int = 20, right_pad: int = 22, radius: int = 6) -> str:
+    """The top of a code block's title tab, with no text: the container's two borders and, between them, the tab's top edge with
+    rounded corners, from `bar_percent` of the width plus `left_pad` px to `right_pad` px before the right edge. The title itself
+    is native text on the line below, between 1px tab sides."""
+    css = _css({"d": "fill:{line}", "s": "stroke:{line}"})
+    r, start = radius, left_pad + 0.5
+    left_arc = _from_right(f'<path d="M{start} {height}V{r + 0.5}a{r} {r} 0 0 1 {r} -{r}" fill="none" class="s"/>', bar_percent)
+    right_arc = _from_right(f'<path d="M{-right_pad - r + 0.5} 0.5a{r} {r} 0 0 1 {r} {r}V{height}" fill="none" class="s"/>')
+    top = _from_right(f'<rect x="{left_pad + r + right_pad + r}" width="100%" height="1" class="d"/>', bar_percent)
+    top = f'<svg x="-{right_pad + r}" width="100%" height="{height}">{top}</svg>'      # the top edge stops where the right corner starts
+    borders = _from_right('<rect width="1" height="100%" class="d"/>', left_percent) + _from_right('<rect x="-1" width="1" height="100%" class="d"/>')
+    return _fluid_svg(height, css + f'<g shape-rendering="crispEdges">{borders}{top}</g>' + left_arc + right_arc)
 
 
 def render_fluid_filebar(text: str, left_percent: float, bar_percent: float, icon: str = "file", left_pad: int = 20, right_pad: int = 21) -> str:

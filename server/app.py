@@ -23,8 +23,8 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import Response
 
 from server.render import (
-    LINK_ICONS, SECTION_ICONS, render_card, render_edge, render_filebar, render_fluid_band, render_fluid_edge, render_fluid_filebar, render_header, render_label,
-    render_link, render_note, render_plain_title, render_title,
+    LINK_ICONS, SECTION_ICONS, render_card, render_edge, render_filebar, render_fluid_band, render_fluid_edge, render_fluid_filebar, render_fluid_tab, render_fluid_tab_bottom, render_header, render_icon, render_label,
+    render_link, render_note, render_plain_title, render_tab_end, render_title,
 )
 
 MAX_TITLE, MAX_TEXT = 300, 8000
@@ -76,6 +76,13 @@ def title(
         raise HTTPException(400, str(error)) from error
 
 
+@app.get("/v1/icon.svg")
+def icon(i: str = Query(..., max_length=20)) -> Response:
+    if i not in LINK_ICONS and i not in SECTION_ICONS:
+        raise HTTPException(400, f"unknown icon; use one of {sorted({*LINK_ICONS, *SECTION_ICONS})}")
+    return _image(render_icon(i))
+
+
 @app.get("/v1/label.svg")
 def label(t: str | None = None, z: str | None = None, i: str = Query("", max_length=20)) -> Response:
     if i and i not in SECTION_ICONS:
@@ -122,10 +129,16 @@ def header(
 
 @app.get("/v1/edge.svg")
 def edge(
-    kind: str = Query("side", pattern="^(side|rside|lside|bottom|rule|space|divider|close|gap|fill)$"), w: int = Query(760, ge=320, le=1200), h: int = Query(8, ge=7, le=4000),
+    kind: str = Query("side", pattern="^(side|rside|lside|bottom|rule|space|divider|close|gap|fill|tab|tabbottom|tabend)$"), w: int = Query(760, ge=320, le=1200), h: int = Query(8, ge=7, le=4000),
     pb: int = Query(0, ge=0, le=32), pl: int = Query(0, ge=0, le=64), pr: int = Query(0, ge=0, le=64),
-    fluid: bool = False, lp: float = Query(0, ge=0, le=100), pt: int = PAD_TOP,
+    fluid: bool = False, lp: float = Query(0, ge=0, le=100), pt: int = PAD_TOP, bl: float = Query(0, ge=0, le=50),
 ) -> Response:
+    if fluid and kind == "tab":
+        return _image(render_fluid_tab(h, lp, bl))
+    if fluid and kind == "tabbottom":
+        return _image(render_fluid_tab_bottom(h, lp, bl))
+    if kind == "tabend":
+        return _image(render_tab_end(h))
     if fluid:
         return _image(render_fluid_edge(kind, h, lp, pt))
     return _image(render_edge(kind, w, h, pb, pl, pr))
