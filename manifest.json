@@ -34850,6 +34850,14 @@
   "alt": "Merge risk: Unknown"
  },
  {
+  "file": "v1/card/merge-risk/waiting.svg",
+  "width": "100%",
+  "height": 68,
+  "family": "card",
+  "key": "merge-risk/waiting",
+  "alt": "Merge risk: Waiting"
+ },
+ {
   "file": "v1/title/qodo-logo.svg",
   "width": 135,
   "height": 46,
@@ -34991,6 +34999,14 @@
   "height": 20,
   "family": "divider",
   "key": "qodo-band-below",
+  "alt": ""
+ },
+ {
+  "file": "v1/divider/qodo-line.svg",
+  "width": "100%",
+  "height": 20,
+  "family": "divider",
+  "key": "qodo-line",
   "alt": ""
  },
  {

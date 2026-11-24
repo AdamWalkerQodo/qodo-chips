@@ -179,7 +179,7 @@ def main() -> None:
         form = f"count-{count.replace('+', 'plus')}"
         card(f"open-findings/{form}", metric_card("Open findings", count, "clipboard-check"), f"Open findings: {count}")
         card(f"blocking-rules/{form}", metric_card("Blocking rules", count, "shield-plus"), f"Blocking rules: {count}")
-    for level, value in [("high", "High"), ("medium", "Medium"), ("low", "Low"), ("unavailable", "Unknown")]:
+    for level, value in [("high", "High"), ("medium", "Medium"), ("low", "Low"), ("unavailable", "Unknown"), ("waiting", "Waiting")]:
         card(f"merge-risk/{level}", metric_card("Merge risk", value, "triangle-alert"), f"Merge risk: {value}")
     (OUT / "v1" / "title").mkdir(parents=True, exist_ok=True)
     shutil.copy(Path(__file__).parent / "assets" / "qodo-logo.svg", OUT / "v1" / "title" / "qodo-logo.svg")
@@ -206,7 +206,8 @@ def main() -> None:
             target.write_text(f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{BUTTON_H}" viewBox="0 0 {w} {BUTTON_H}">{body}</svg>')
             manifest.append({"file": f"v1/button/{style}/{key}.svg", "width": w, "height": BUTTON_H, "family": "button", "key": f"{style}/{key}", "alt": label})
     (OUT / "v1" / "divider").mkdir(parents=True, exist_ok=True)
-    for name, (svg, height) in [("qodo-band-above", qodo_band(offset=11, height=21)), ("qodo-band-below", qodo_band(offset=10, height=20))]:
+    for name, (svg, height) in [("qodo-band-above", qodo_band(offset=11, height=21)), ("qodo-band-below", qodo_band(offset=10, height=20)),
+                         ("qodo-line", qodo_band(offset=10, height=20, glow=False))]:
         (OUT / "v1" / "divider" / f"{name}.svg").write_text(svg)
         manifest.append({"file": f"v1/divider/{name}.svg", "width": "100%", "height": height, "family": "divider", "key": name, "alt": ""})
 

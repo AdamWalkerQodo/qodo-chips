@@ -254,19 +254,20 @@ def link_action(label: str, icon: str) -> tuple[str, float]:
     return css + body, width + 6
 
 
-def qodo_band(offset: int = 0, height: int | None = None) -> tuple[str, int]:
+def qodo_band(offset: int = 0, height: int | None = None, glow: bool = True) -> tuple[str, int]:
     """The band around Qodo's header row: a thin neutral line (white on dark pages, grey on light ones) with a
     faint glow below. It has no viewBox and a 100% width, so it spans any width.
 
     `offset` is empty space above the line. `height` cuts the image short, which trims the glow: a band placed
-    above a row uses both, so its line sits just over the row. Returns (svg, height)."""
+    above a row uses both, so its line sits just over the row. `glow=False` draws the line alone. Returns (svg, height)."""
     height = height or offset + 14
+    glow_rect = '<rect width="100%" height="14" fill="url(#v)"/>'
     return ('<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="' + str(height) + '">'
             '<style>.n{fill:#d8dee4}.g{stop-color:#8c959f}'
             '@media (prefers-color-scheme:dark){.n{fill:#e6edf3;fill-opacity:.25}.g{stop-color:#ffffff}}</style>'
             '<defs><linearGradient id="v" x1="0" x2="0" y1="0" y2="1"><stop offset="0" class="g" stop-opacity=".06"/>'
             '<stop offset="1" class="g" stop-opacity="0"/></linearGradient></defs>'
-            f'<g transform="translate(0 {offset})"><rect width="100%" height="14" fill="url(#v)"/>'
+            f'<g transform="translate(0 {offset})">{glow_rect if glow else ""}'
             '<rect width="100%" height="1" class="n"/></g></svg>'), height
 
 
