@@ -207,7 +207,7 @@ def main() -> None:
             manifest.append({"file": f"v1/button/{style}/{key}.svg", "width": w, "height": BUTTON_H, "family": "button", "key": f"{style}/{key}", "alt": label})
     (OUT / "v1" / "divider").mkdir(parents=True, exist_ok=True)
     for name, (svg, height) in [("qodo-band-above", qodo_band(offset=11, height=21)), ("qodo-band-below", qodo_band(offset=10, height=20)),
-                         ("qodo-line", qodo_band(offset=10, height=20, glow=False))]:
+                         ("qodo-line", qodo_band(offset=10, height=20))]:
         (OUT / "v1" / "divider" / f"{name}.svg").write_text(svg)
         manifest.append({"file": f"v1/divider/{name}.svg", "width": "100%", "height": height, "family": "divider", "key": name, "alt": ""})
 
