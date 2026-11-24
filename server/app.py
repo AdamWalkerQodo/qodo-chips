@@ -5,6 +5,7 @@ Run:  uvicorn server.app:app --port 8095   (from the repository root)
   GET /v1/title.svg?t=<title>&n=<number>&frame=0                      text only, no container
   GET /v1/title.svg?t=<title>&n=<number>&w=<width>&c=<chip>&c=<chip>   chip: pill|<colour>|<label> or chip|<icon>|<label>|<mono or color>
   GET /v1/label.svg?t=<word>&i=<icon>
+  GET /v1/diffstat.svg?a=<lines added>&d=<lines removed>            "+N −N" in GitHub's diff green and red
   GET /v1/link.svg?t=<text>&i=<icon>&pt=<space above>&square=<true for the outlined square style>
   GET /v1/filebar.svg?t=<path>&w=<width>     the title strip that sits on top of a code block
   GET /v1/header.svg?t=<title>&i=<icon>&s=<subtitle>&w=<width>&pt=<space above>&pb=<space below>&middle=&hang=<px continued below>&bh=<band height>&top=<line above>&fluid=<stretch>&bottom=<line below, fluid>
@@ -23,7 +24,7 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import Response
 
 from server.render import (
-    LINK_ICONS, SECTION_ICONS, render_card, render_edge, render_filebar, render_fluid_band, render_fluid_edge, render_fluid_filebar, render_fluid_tab, render_fluid_tab_bottom, render_header, render_icon, render_label,
+    LINK_ICONS, SECTION_ICONS, render_card, render_diffstat, render_edge, render_filebar, render_fluid_band, render_fluid_edge, render_fluid_filebar, render_fluid_tab, render_fluid_tab_bottom, render_header, render_icon, render_label,
     render_link, render_note, render_plain_title, render_tab_end, render_title,
 )
 
@@ -88,6 +89,11 @@ def label(t: str | None = None, z: str | None = None, i: str = Query("", max_len
     if i and i not in SECTION_ICONS:
         raise HTTPException(400, f"unknown icon; use one of {sorted(SECTION_ICONS)}")
     return _image(render_label(" ".join(_text(t, z, 60).split()), i))
+
+
+@app.get("/v1/diffstat.svg")
+def diffstat(a: int = Query(..., ge=0, le=99_999_999), d: int = Query(..., ge=0, le=99_999_999)) -> Response:
+    return _image(render_diffstat(a, d))
 
 
 @app.get("/v1/link.svg")

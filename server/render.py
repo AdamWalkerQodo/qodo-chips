@@ -10,7 +10,7 @@ from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.transformPen import TransformPen
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "generator"))
-from chips import CHIP_TOP_PAD, ICONS, H, _font, _num, chip, lucide, pill, text_path  # noqa: E402
+from chips import CHIP_TOP_PAD, ICONS, PALETTES, H, _font, _num, chip, lucide, pill, text_path  # noqa: E402
 
 MONO = 'ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace'
 SANS = 'system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif'
@@ -131,6 +131,22 @@ def render_label(text: str, icon: str = "") -> str:
     width = round(x + w + 10)
     frame = f'<rect x="0.5" y="0.5" width="{width - 1}" height="{H - 1}" rx="5.5" class="c"/>'
     return _chip_height_svg(width, _css({"c": "fill:{bar};stroke:{line}", "s": "stroke:{muted}", "t": "fill:{ink}"}) + frame + body + run)
+
+
+DIFF_COLORS = {"light": ("#1a7f37", "#d1242f"), "dark": ("#3fb950", "#f85149")}   # GitHub's diff stat green and red
+
+
+def render_diffstat(added: int, removed: int) -> str:
+    """Lines added and removed as a mono chip: "+N" in GitHub's diff green, "−N" in its red, on the static chips' fill."""
+    def rules(theme: str) -> str:
+        green, red = DIFF_COLORS[theme]
+        return f'.f{{fill:{PALETTES[theme]["fill"]}}}.a{{fill:{green}}}.r{{fill:{red}}}'
+    css = f'<style>{rules("light")}@media (prefers-color-scheme:dark){{{rules("dark")}}}</style>'
+    plus, w = text_path(f"+{added}", 11.5, 7, "SemiBold")
+    minus, w2 = text_path(f"\u2212{removed}", 11.5, 7 + w + 6, "SemiBold")
+    width = round(7 + w + 6 + w2 + 7)
+    body = f'<rect width="{width}" height="{H}" rx="6" class="f"/><path d="{plus}" class="a"/><path d="{minus}" class="r"/>'
+    return _chip_height_svg(width, css + body)
 
 
 def render_icon(icon: str) -> str:
